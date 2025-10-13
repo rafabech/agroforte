@@ -1,79 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- ======== META BÁSICO ======== -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Agroforte – Fertilizantes e Biológicos | (17) 99140-5464</title>
-  <meta name="description" content="Agroforte: soluções em nutrição e proteção de plantas. Fale no WhatsApp (17) 99140-5464.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agroforte — Fertilizantes e Biológicos com Suporte Técnico | WhatsApp (17) 99140-5464</title>
+  <meta name="description" content="Agroforte: soluções em nutrição de plantas e controle biológico com atendimento técnico. Fale no WhatsApp (17) 99140-5464 e receba recomendação para sua lavoura.">
+  <meta name="theme-color" content="#0b2d5c">
+  <link rel="canonical" href="https://agroforte.netlify.app/">
+  <link rel="icon" type="image/png" href="/img/brand/logo-512.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="/img/brand/logo-512.png">
+
+  <!-- ======== PERFORMANCE HINTS ======== -->
+  <link rel="preload" as="image" href="/img/brand/logo-512.webp" imagesrcset="/img/brand/logo-512.webp" />
+  <link rel="preconnect" href="https://wa.me" crossorigin>
+
+  <!-- ======== OPEN GRAPH / TWITTER ======== -->
+  <meta property="og:site_name" content="Agroforte">
+  <meta property="og:title" content="Agroforte — Fertilizantes e Biológicos com Suporte Técnico">
+  <meta property="og:description" content="Atendimento técnico que resolve. Chame no WhatsApp (17) 99140-5464.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agroforte.netlify.app/">
+  <meta property="og:image" content="https://agroforte.netlify.app/img/brand/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agroforte — Fertilizantes e Biológicos">
+  <meta name="twitter:description" content="Soluções com respaldo técnico. WhatsApp (17) 99140-5464.">
+  <meta name="twitter:image" content="https://agroforte.netlify.app/img/brand/og-image.jpg">
+
+  <!-- ======== ESTILOS (CSS) ======== -->
   <style>
-    :root{--azul:#0b2d5c;--azul2:#0c3470;--verde:#25d366;--txt:#1f2937;--max:1120px;--radius:18px}
-    *{box-sizing:border-box}html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--txt)}
-    a{text-decoration:none;color:inherit}.container{max-width:var(--max);margin:0 auto;padding:0 16px}
-    header{position:sticky;top:0;background:var(--azul);color:#fff;z-index:10}
-    .top{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    nav a{color:#fff;margin:0 10px;font-weight:600}
-    .cta{background:var(--verde);color:#063;padding:10px 14px;border-radius:999px;font-weight:700}
-    .hero{background:linear-gradient(90deg,#0b2d5c,#0c3470);color:#fff;padding:56px 0}
+    /* Design tokens */
+    :root{
+      --brand:#0b2d5c; --brand-2:#0c3470; --accent:#25d366; --accent-2:#1aa74d;
+      --ink:#111827; --ink-2:#374151; --muted:#6b7280; --bg:#ffffff; --bg-2:#f5f7fb;
+      --card:#ffffff; --border:#e5e7eb; --max:1180px; --r:16px; --shadow:0 10px 24px rgba(2,6,23,.08);
+    }
+    /* Resetzinho esperto */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.45;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    /* Layout */
+    .container{max-width:var(--max);margin-inline:auto;padding-inline:16px}
+    header{position:sticky;top:0;z-index:50;background:var(--brand);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{width:40px;height:40px}
+    nav a{color:#fff;opacity:.95;font-weight:600;margin:0 10px}
+    .btn{display:inline-block;border-radius:999px;padding:12px 16px;font-weight:800}
+    .btn-accent{background:var(--accent);color:#063}
+    .btn-dark{background:var(--brand-2);color:#fff}
+    .btn-link{color:var(--brand-2);font-weight:700}
+    .hero{background:linear-gradient(90deg,var(--brand) 0%, var(--brand-2) 60%);color:#fff;padding:56px 0}
+    .hero h1{font-size:clamp(28px,3.5vw,44px);margin:0 0 10px}
+    .hero p{margin:0 0 18px;opacity:.95}
+    .badges{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+    .badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:10px;border-radius:12px;text-align:center}
+    section{scroll-margin-top:80px}
+    .section{padding:56px 0}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{border:1px solid #e5e7eb;border-radius:var(--radius);padding:18px;box-shadow:0 10px 18px rgba(2,6,23,.06)}
-    .card img{width:100%;height:200px;object-fit:contain;background:#fff}
-    footer{background:#0b2d5c;color:#cfe3ff;padding:22px 0;margin-top:28px}
-    .whats{position:fixed;right:16px;bottom:16px;background:var(--verde);color:#063;padding:12px 16px;border-radius:999px;font-weight:800}
-    @media(max-width:940px){.grid-3{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:8px 0 8px}
+    .card p{color:var(--ink-2);margin:0 0 6px}
+    .card ul{margin:8px 0 0 18px}
+    .tag{display:inline-block;background:#eef2ff;color:#1e3a8a;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;margin-bottom:8px}
+    .strip{background:linear-gradient(90deg,#19a34a, var(--accent));color:#053a1b;padding:22px 0}
+    .strip .cta{background:#053a1b;color:#fff;border-radius:12px;padding:12px 16px;font-weight:800;display:inline-block}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .feature{background:var(--bg-2);border:1px solid var(--border);border-radius:14px;padding:16px}
+    .faq .item{border:1px solid var(--border);border-radius:12px;background:#fff}
+    .faq summary{cursor:pointer;padding:16px 18px;font-weight:700}
+    .faq .content{padding:0 18px 16px;color:var(--ink-2)}
+    footer{background:var(--brand);color:#cfe3ff;padding:28px 0;margin-top:28px}
+    .float-whats{position:fixed;right:16px;bottom:16px;background:var(--accent);color:#063;padding:14px 16px;border-radius:999px;font-weight:900;box-shadow:var(--shadow);z-index:60}
+    .float-whats small{display:block;font-weight:600;opacity:.8}
+    /* Responsivo */
+    @media (max-width:980px){
+      .badges{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+      nav{display:none}
+      .menu-btn{display:inline-block}
+    }
+    @media (min-width:981px){ .menu-btn{display:none} }
+    /* Menu mobile */
+    .mobile{position:fixed;inset:0 0 auto auto;top:64px;right:16px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:8px;display:none}
+    .mobile a{display:block;padding:10px 12px;color:var(--ink);border-radius:8px}
+    .mobile a:hover{background:var(--bg-2)}
+    .show{display:block}
+    /* A11y focos */
+    :focus-visible{outline:3px solid #84cc16;outline-offset:3px;border-radius:6px}
   </style>
+
+  <!-- ======== JSON-LD (SCHEMA.ORG) ======== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Agroforte",
+    "url": "https://agroforte.netlify.app/",
+    "logo": "https://agroforte.netlify.app/img/brand/logo-512.png",
+    "identifier": "CNPJ 48.480.158/0001-32",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+55-17-99140-5464",
+      "contactType": "customer service",
+      "areaServed": "BR",
+      "availableLanguage": ["pt-BR"]
+    }],
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://agroforte.netlify.app/",
+    "name":"Agroforte",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://agroforte.netlify.app/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
-  <a class="whats" href="https://wa.me/5517991405464" target="_blank" rel="noopener">WhatsApp (17) 99140-5464</a>
 
+  <!-- ======== BOTÃO FLUTUANTE WHATSAPP ======== -->
+  <a class="float-whats" href="https://wa.me/5517991405464" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com o Sandro">
+    WhatsApp (17) 99140-5464
+    <small>Falar com o Sandro</small>
+  </a>
+
+  <!-- ======== HEADER ======== -->
   <header>
-    <div class="container top">
-      <strong>Agroforte</strong>
-      <nav>
+    <div class="container top" role="navigation" aria-label="Principal">
+      <div class="brand">
+        <picture>
+          <source srcset="/img/brand/logo-512.webp" type="image/webp">
+          <img src="/img/brand/logo-512.png" alt="Agroforte" width="40" height="40" loading="eager" decoding="sync">
+        </picture>
+        <strong aria-label="Agroforte">Agroforte</strong>
+      </div>
+      <nav id="nav">
         <a href="#produtos">Produtos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">Dúvidas</a>
         <a href="#contato">Contato</a>
-        <a class="cta" href="https://wa.me/5517991405464" target="_blank" rel="noopener">Fale no WhatsApp</a>
+        <a class="btn btn-accent" href="https://wa.me/5517991405464" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">Fale no WhatsApp</a>
       </nav>
+      <button class="menu-btn btn btn-accent" aria-expanded="false" aria-controls="mobile-menu" id="menuBtn">Menu</button>
+    </div>
+    <!-- menu mobile -->
+    <div id="mobile-menu" class="mobile container" role="menu" aria-label="Menu mobile">
+      <a href="#produtos" role="menuitem">Produtos</a>
+      <a href="#como-funciona" role="menuitem">Como funciona</a>
+      <a href="#faq" role="menuitem">Dúvidas</a>
+      <a href="#contato" role="menuitem">Contato</a>
+      <a class="btn btn-accent" href="https://wa.me/5517991405464" target="_blank" rel="noopener">Fale no WhatsApp</a>
     </div>
   </header>
 
-  <section class="hero">
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="inicio">
     <div class="container">
-      <h1>Nutrição e biológicos com atendimento técnico.</h1>
-      <p>Fale com o Sandro e receba indicação personalizada para sua lavoura.</p>
-      <p><a class="cta" href="https://wa.me/5517991405464" target="_blank" rel="noopener">Falar com o especialista</a></p>
+      <h1>Nutrição e biológicos com atendimento técnico que resolve.</h1>
+      <p>Portfólio selecionado, orientação prática e entrega ágil. Fale com o especialista e veja a melhor estratégia para sua lavoura.</p>
+      <p>
+        <a class="btn btn-accent" href="https://wa.me/5517991405464" target="_blank" rel="noopener">Falar com o Sandro no WhatsApp</a>
+        <a class="btn btn-dark" href="#produtos">Ver produtos</a>
+      </p>
+      <div class="badges" aria-label="Diferenciais">
+        <div class="badge">Entrega rápida</div>
+        <div class="badge">Compra 100% segura</div>
+        <div class="badge">Atendimento técnico</div>
+        <div class="badge">Linha completa</div>
+      </div>
     </div>
   </section>
 
-  <main class="container" id="produtos" style="padding:32px 0">
-    <h2>Produtos em destaque</h2>
-    <div class="grid-3">
-      <article class="card">
-        <img src="./fitoneem.webp" alt="Fitoneem – óleo de neem" width="600" height="400" loading="lazy" decoding="async">
-        <h3>Fitoneem – Óleo de Neem</h3>
-        <p>Bioinseticida botânico com múltiplos modos de ação.</p>
-        <p><a class="cta" href="https://wa.me/5517991405464?text=Quero%20saber%20mais%20sobre%20o%20Fitoneem" target="_blank" rel="noopener">Consultar</a></p>
-      </article>
-      <article class="card">
-        <img src="./bioolimpo.webp" alt="Bioolimpo – Beauveria + Metarhizium" width="600" height="400" loading="lazy" decoding="async">
-        <h3>Bioolimpo – Beauveria + Metarhizium</h3>
-        <p>Controle biológico seletivo com conídios viáveis.</p>
-        <p><a class="cta" href="https://wa.me/5517991405464?text=Tenho%20interesse%20no%20Bioolimpo" target="_blank" rel="noopener">Consultar</a></p>
-      </article>
-      <article class="card">
-        <img src="./takotrop.webp" alt="Takotrop – tecnologia D.O.P" width="600" height="400" loading="lazy" decoding="async">
-        <h3>Takotrop – Tecnologia D.O.P</h3>
-        <p>Metabólitos bioativos que auxiliam na sanidade vegetal.</p>
-        <p><a class="cta" href="https://wa.me/5517991405464?text=Quero%20detalhes%20do%20Takotrop" target="_blank" rel="noopener">Consultar</a></p>
-      </article>
-    </div>
-  </main>
+  <!-- ======== PRODUTOS ======== -->
+  <section id="produtos" class="section">
+    <div class="container">
+      <h2>Produtos em destaque</h2>
+      <p class="muted" style="color:var(--muted);margin-top:4px">Biológicos &amp; proteção com foco em eficiência e seletividade.</p>
 
-  <section id="contato" class="container" style="padding-bottom:28px">
-    <h2>Contato</h2>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5517991405464" target="_blank" rel="noopener">(17) 99140-5464</a> — Sandro</p>
+      <div class="grid-3" role="list">
+        <!-- FITONEEM -->
+        <article class="card" role="listitem" aria-labelledby="p-fitoneem">
+          <span class="tag">Botânico</span>
+          <picture>
+            <source srcset="/img/products/fitoneem.webp" type="image/webp">
+            <img src="/img/products/fitoneem.png" alt="Fitoneem — óleo de neem" width="520" height="330" loading="lazy" decoding="async" style="background:#fff">
+          </picture>
+          <h3 id="p-fitoneem">Fitoneem — Óleo de Neem</h3>
+          <p>Bioinseticida de base botânica (Azadirachta indica) com ação por contato e ingestão e efeito antialimentar.</p>
+          <ul>
+            <li>MIP e agricultura orgânica compatíveis.</li>
+            <li>Auxilia em mosca-branca, pulgões, tripes, cochonilhas e lagartas jovens.</li>
+            <li>Múltiplos pontos de ação → menor risco de resistência.</li>
+          </ul>
+          <p><a class="btn btn-dark" href="https://wa.me/5517991405464?text=Quero%20saber%20mais%20sobre%20o%20Fitoneem" target="_blank" rel="noopener">Consultar especialista</a></p>
+        </article>
+
+        <!-- BIOOLIMPO -->
+        <article class="card" role="listitem" aria-labelledby="p-bioolimpo">
+          <span class="tag">Biológico</span>
+          <picture>
+            <source srcset="/img/products/bioolimpo.webp" type="image/webp">
+            <img src="/img/products/bioolimpo.png" alt="Bioolimpo — Beauveria bassiana + Metarhizium anisopliae" width="520" height="330" loading="lazy" decoding="async" style="background:#fff">
+          </picture>
+          <h3 id="p-bioolimpo">Bioolimpo — Beauveria + Metarhizium</h3>
+          <p>Mistura de conídios viáveis que aderem ao tegumento do inseto, germinam e colonizam o hospedeiro.</p>
+          <ul>
+            <li>Efeito multissítio: reduz probabilidade de resistência.</li>
+            <li>Integra-se a práticas culturais e rotação dentro do MIP.</li>
+            <li>Seletividade funcional, favorecendo inimigos naturais.</li>
+          </ul>
+          <p><a class="btn btn-dark" href="https://wa.me/5517991405464?text=Tenho%20interesse%20no%20Bioolimpo" target="_blank" rel="noopener">Falar no Whats</a></p>
+        </article>
+
+        <!-- TAKOTROP -->
+        <article class="card" role="listitem" aria-labelledby="p-takotrop">
+          <span class="tag">Tecnologia D.O.P</span>
+          <picture>
+            <source srcset="/img/products/takotrop.webp" type="image/webp">
+            <img src="/img/products/takotrop.png" alt="Takotrop — formulação com Pseudomonas (D.O.P)" width="520" height="330" loading="lazy" decoding="async" style="background:#fff">
+          </picture>
+          <h3 id="p-takotrop">Takotrop — Pseudomonas &amp; metabólitos</h3>
+          <p>Formulação com cepas selecionadas e metabólitos bioativos que auxiliam na sanidade e no controle de pragas.</p>
+          <ul>
+            <li>Rápida colonização foliar.</li>
+            <li>Auxilia na redução da pressão de seleção por químicos.</li>
+            <li>Estimula o crescimento vegetal.</li>
+          </ul>
+          <p><a class="btn btn-dark" href="https://wa.me/5517991405464?text=Quero%20detalhes%20do%20Takotrop" target="_blank" rel="noopener">Tirar dúvidas</a></p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <footer><div class="container">© <span id="y"></span> Agroforte — Todos os direitos reservados.</div></footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+  <!-- JSON-LD de PRODUTOS -->
+  <script type="application/ld+json">
+  [{
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Fitoneem — Óleo de Neem",
+    "brand":{"@type":"Brand","name":"Agroforte"},
+   
