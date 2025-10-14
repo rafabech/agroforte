@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- ===========================
+  <!-- =========================================================
        BÁSICO / SEO TÉCNICO
-  ============================ -->
+  ========================================================== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Agroforte Fertilizantes | Bioinsumos para Maracujá e todas as culturas do Brasil</title>
-  <meta name="description" content="Agroforte Fertilizantes — Bioinsumos de alta performance para MARACUJÁ e todas as culturas. Soluções contra Mosca do Botão Floral, Ácaros, Percevejo e Cigarrinha. Atendemos Livramento de Nossa Senhora/BA, Guanambi/BA, Dom Basílio/BA e todo o Brasil. Conteúdo técnico completo, MIP, compatibilidades e depoimentos de produtores.">
-  <meta name="keywords" content="bioinsumos maracujá, mosca do botão floral, neosilba, pragas do maracujá, ácaros maracujá, percevejo maracujá, cigarrinha maracujá, maracujazeiro, Passiflora edulis, controle biológico maracujá, óleo de neem maracujá, indutor fisiológico, Livramento de Nossa Senhora, Guanambi, Dom Basílio, sudoeste da Bahia, MATOPIBA, agricultura sustentável, MIP, controle biológico, soja, milho, café, citros, cana, hortifrúti, pastagens, florestais">
+  <title>Agroforte Fertilizantes | Bioinsumos e Nutrição para todas as culturas do Brasil</title>
+  <meta name="description" content="Agroforte Fertilizantes: bioinsumos e soluções técnicas para soja, milho, trigo, arroz, feijão, algodão, cana, café, citros, frutíferas, hortifrúti, pastagens e florestais. Produtos: BioOlimpo (biológico), Fitoneem (óleo de neem) e Takotrop (suporte fisiológico). Guias por cultura e região, compatibilidades, tecnologia de aplicação, FAQ e depoimentos.">
+  <meta name="keywords" content="bioinsumo, biodefensivo, biológico, óleo de neem, fisiologia vegetal, controle biológico, MIP, manejo integrado, compatibilidade, soja, milho, trigo, arroz, feijão, algodão, cana-de-açúcar, café, citros, uva, maçã, banana, manga, mamão, maracujá, tomate, batata, cebola, pimentão, folhosas, brássicas, pastagens, eucalipto, Cerrado, Sul, Sudeste, Centro-Oeste, Nordeste, Norte, MATOPIBA, Bahia, Livramento de Nossa Senhora, Guanambi, Dom Basílio">
 
-  <!-- Canonical (ajuste para a URL final do seu site) -->
+  <!-- Canonical (ajuste quando publicar em domínio definitivo) -->
   <link rel="canonical" href="https://rafabech.github.io/agroforte/" />
 
-  <!-- Favicon com a SUA logo -->
+  <!-- Favicon usa a sua logo do repositório -->
   <link rel="icon" type="image/webp" href="./img/products/logooficial.webp" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Agroforte Fertilizantes">
-  <meta property="og:title" content="Agroforte | Bioinsumos para Maracujá e todas as culturas">
-  <meta property="og:description" content="Soluções contra Mosca do Botão Floral, Ácaros, Percevejo e Cigarrinha no maracujá. Depoimentos de produtores da Bahia e conteúdo técnico completo.">
+  <meta property="og:title" content="Agroforte Fertilizantes | Bioinsumos e Nutrição para todas as culturas do Brasil">
+  <meta property="og:description" content="Conteúdo técnico profundo: produtos, como aplicar, compatibilidades, guias por cultura/região e depoimentos.">
   <meta property="og:image" content="https://rafabech.github.io/agroforte/img/products/logooficial.webp">
   <meta property="og:url" content="https://rafabech.github.io/agroforte/">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Agroforte | Bioinsumos para Maracujá">
-  <meta name="twitter:description" content="Conteúdo técnico, MIP e depoimentos de produtores de Livramento/BA, Guanambi/BA e Dom Basílio/BA.">
-  <meta name="twitter:image" content="https://rafabech.github.io/agroforte/img/products/logooficial.webp">
 
-  <!-- ===========================
-       ESTILOS (veloz e leve)
-  ============================ -->
+  <!-- =========================================================
+       ESTILOS (MOBILE-FIRST, RÁPIDO, SEM BIBLIOTECAS EXTERNAS)
+  ========================================================== -->
   <style>
     :root{
-      /* Trocar para casar com o fundo da nova logo */
-      --brand-bg: #f6f8fb;
-      --brand-primary: #0b5c9c;
-      --brand-dark: #0a1a2a;
-      --brand-ok: #0f9d58;
-      --brand-warn: #c47f00;
-      --card-bg: #ffffff;
-      --text: #1b1f23;
-      --muted: #5f6b7a;
-      --ring: rgba(11,92,156,.12);
-      --radius: 16px;
-      --shadow: 0 6px 24px rgba(10,26,42,.08);
+      /* Trocar para casar com o fundo da logo final */
+      --brand-bg:#f7fafc;
+      --brand-primary:#0b5c9c;
+      --brand-dark:#0a1a2a;
+      --brand-muted:#5f6b7a;
+      --ok:#0f9d58;
+      --warn:#c47f00;
+      --ring:rgba(11,92,156,.12);
+      --card:#fff;
+      --radius:16px;
+      --shadow:0 8px 28px rgba(10,26,42,.08);
     }
-    html,body{margin:0;padding:0}
+    *{box-sizing:border-box}
+    html,body{margin:0}
     body{
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
-      color:var(--text);background:var(--brand-bg);line-height:1.55;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:#1b1f23;background:var(--brand-bg);line-height:1.6;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility
     }
     a{color:var(--brand-primary);text-decoration:none}
     a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:auto;padding:20px}
-    header{display:flex;align-items:center;gap:16px;padding:18px 0 8px 0}
-    header .brand{display:flex;align-items:center;gap:12px}
-    header img.logo{width:52px;height:52px;border-radius:12px;object-fit:contain;border:1px solid var(--ring);background:#fff}
-    h1{margin:0;font-size:clamp(22px,2.6vw,34px);color:var(--brand-dark)}
-    .tagline{color:var(--muted);margin-top:4px}
-    .topbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .cta{padding:10px 14px;background:var(--brand-primary);color:#fff;border-radius:999px;box-shadow:var(--shadow);font-weight:600}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-    .card{grid-column: span 12;background:var(--card-bg);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid var(--ring)}
-    @media(min-width:900px){.card.span-6{grid-column: span 6}.card.span-4{grid-column: span 4}.card.span-8{grid-column: span 8}}
-    .product{display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:start}
-    .product img{width:130px;height:130px;object-fit:contain;border-radius:14px;border:1px solid var(--ring);background:#fff}
-    .pill{display:inline-flex;gap:6px;align-items:center;padding:6px 10px;border-radius:999px;background:#eef5fb;border:1px solid var(--ring);color:#0b4c80;font-weight:600;font-size:12px}
-    h2{margin:.2rem 0 .6rem 0;color:var(--brand-dark);font-size:clamp(18px,2vw,24px)}
-    h3{margin:1.0rem 0 .4rem 0}
-    ul{margin:.2rem 0 .8rem 1.2rem}
-    .kblocks{display:flex;flex-wrap:wrap;gap:8px;margin:.4rem 0}
-    .kblocks span{background:#f0f3f7;border:1px solid var(--ring);border-radius:10px;padding:6px 10px;font-size:12px}
-    .muted{color:var(--muted)}
-    details{border:1px solid var(--ring);border-radius:12px;background:#fbfcfe;padding:10px;margin:.6rem 0}
-    details > summary{cursor:pointer;font-weight:700}
-    .cols-2{columns:2;column-gap:28px}
+    .wrap{max-width:1100px;margin:auto;padding:16px}
+    header{display:flex;gap:12px;align-items:center;padding:10px 0}
+    .logo{width:52px;height:52px;object-fit:contain;border-radius:12px;border:1px solid var(--ring);background:#fff}
+    h1{margin:0;color:var(--brand-dark);font-size:clamp(22px,6vw,34px)}
+    .tagline{color:var(--brand-muted);font-size:clamp(13px,3.5vw,16px)}
+    .topbar{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+    .cta{background:var(--brand-primary);color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
+    .pill{border:1px solid var(--ring);background:#eef5fb;color:#0b4c80;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:700}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(12,1fr)}}
+    .card{grid-column:1 / -1;background:var(--card);border:1px solid var(--ring);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+    @media(min-width:900px){
+      .span-6{grid-column:span 6}
+      .span-4{grid-column:span 4}
+      .span-8{grid-column:span 8}
+    }
+    h2{margin:.2rem 0 .6rem 0;color:var(--brand-dark);font-size:clamp(18px,5vw,24px)}
+    h3{margin:1rem 0 .4rem 0;color:var(--brand-dark)}
+    p,li{font-size:clamp(14px,4vw,16px)}
+    .muted{color:var(--brand-muted)}
+    .product{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:start}
+    @media(min-width:520px){.product{grid-template-columns:130px 1fr}}
+    .product img{width:92px;height:92px;border-radius:14px;border:1px solid var(--ring);object-fit:contain;background:#fff}
+    @media(min-width:520px){.product img{width:130px;height:130px}}
+    ul{margin:.2rem 0 .8rem 1.1rem}
+    .cols-2{columns:1;column-gap:26px}
+    @media(min-width:760px){.cols-2{columns:2}}
+    details{background:#fbfcfe;border:1px solid var(--ring);border-radius:12px;padding:10px;margin:.6rem 0}
+    details>summary{cursor:pointer;font-weight:800}
+    .table{width:100%;overflow:auto;border:1px solid var(--ring);border-radius:12px}
+    .table table{width:100%;border-collapse:collapse;font-size:14px}
+    .table th,.table td{padding:10px;border-bottom:1px solid #eef2f6;text-align:left;vertical-align:top}
+    .kcloud{display:flex;flex-wrap:wrap;gap:8px}
+    .kcloud span{border:1px dashed var(--ring);padding:6px 10px;border-radius:10px;background:#fff;font-size:12px}
+    .review{display:flex;gap:10px;margin:10px 0}
+    .badge{background:var(--ok);color:#fff;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700}
+    footer{color:var(--brand-muted);font-size:13px;padding:18px 0 28px}
     .note{background:#f7fff9;border:1px solid rgba(15,157,88,.25);padding:10px;border-radius:12px}
-    footer{color:var(--muted);font-size:13px;padding:18px 0 30px}
-    .seo-cloud{display:flex;flex-wrap:wrap;gap:8px}
-    .seo-cloud span{border:1px dashed var(--ring);padding:6px 10px;border-radius:10px;background:#fff}
-    .rev{display:flex;gap:12px;margin:10px 0}
-    .rev .badge{font-weight:700;color:#fff;background:var(--brand-ok);padding:2px 8px;border-radius:999px;font-size:12px}
   </style>
 
-  <!-- ===========================
-       JSON-LD (ORGANIZATION + PRODUCTS + FAQ + REVIEWS)
-  ============================ -->
+  <!-- =========================================================
+       JSON-LD: Organization + Products + FAQ (estruturado)
+  ========================================================== -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -98,30 +103,17 @@
     "url":"https://rafabech.github.io/agroforte/",
     "logo":"https://rafabech.github.io/agroforte/img/products/logooficial.webp",
     "brand":{"@type":"Brand","name":"Agroforte"},
-    "areaServed":"BR",
     "contactPoint":[{
       "@type":"ContactPoint",
       "telephone":"+55-17-99140-5464",
       "contactType":"customer service",
       "areaServed":"BR",
       "availableLanguage":["pt-BR"]
-    }],
-    "knowsAbout":[
-      "Maracujá Passiflora edulis",
-      "Mosca do Botão Floral",
-      "Ácaros em maracujazeiro",
-      "Percevejo",
-      "Cigarrinha",
-      "Bioinsumos e MIP"
-    ],
-    "department":[
-      {"@type":"LocalBusiness","name":"Atendimento Livramento de Nossa Senhora/BA"},
-      {"@type":"LocalBusiness","name":"Atendimento Guanambi/BA"},
-      {"@type":"LocalBusiness","name":"Atendimento Dom Basílio/BA"}
-    ]
+    }]
   }
   </script>
 
+  <!-- Products (resumo; conteúdo completo no HTML) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -131,12 +123,9 @@
         "name":"BioOlimpo",
         "image":"https://rafabech.github.io/agroforte/img/products/bioolimpo.webp",
         "brand":{"@type":"Brand","name":"Agroforte"},
-        "category":"Biodefensivo — Controle Biológico",
-        "description":"Fungos entomopatogênicos para MIP em diversas culturas (inclui maracujá).",
-        "additionalProperty":[
-          {"@type":"PropertyValue","name":"Alvos","value":"Mosca do Botão Floral, percevejos, lagartas, cigarrinhas (condições favoráveis)"},
-          {"@type":"PropertyValue","name":"Aplicação","value":"Condições amenas, boa umidade, cobertura eficiente"}
-        ]
+        "category":"Biodefensivo — Controle Biológico (fungos entomopatogênicos)",
+        "description":"Ferramenta MIP para pragas-chave em grãos, fibras, cana, café, citros, frutíferas e hortifrúti.",
+        "audience":{"@type":"Audience","audienceType":"Produtores rurais e consultores"}
       },
       {
         "@type":"Product",
@@ -144,235 +133,444 @@
         "image":"https://rafabech.github.io/agroforte/img/products/fitoneem.webp",
         "brand":{"@type":"Brand","name":"Agroforte"},
         "category":"Bioinsumo — Óleo de Neem",
-        "description":"Suporte ao manejo de pragas sugadoras e ácaros em maracujá e outras culturas."
+        "description":"Suporte contra pragas sugadoras e ácaros em ampla gama de culturas, dentro do MIP."
       },
       {
         "@type":"Product",
         "name":"Takotrop",
         "image":"https://rafabech.github.io/agroforte/img/products/takotrop.webp",
         "brand":{"@type":"Brand","name":"Agroforte"},
-        "category":"Fisiologia Vegetal — Indutor",
-        "description":"Vigor inicial e recuperação pós-estresse em maracujá (florada/pegamento) e demais culturas."
-      },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {"@type":"Question","name":"O que mais vendem para maracujá?",
-           "acceptedAnswer":{"@type":"Answer","text":"BioOlimpo (biológico) e Fitoneem (neem) para manejo de Mosca do Botão Floral, ácaros, percevejo e cigarrinha; Takotrop para suporte fisiológico e pegamento de florada."}},
-          {"@type":"Question","name":"Atendem Livramento de Nossa Senhora, Guanambi e Dom Basílio?",
-           "acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todo o Sudoeste da Bahia e o Brasil, com orientações por clima, altitude e calendário regional do maracujá."}}
-        ]
-      },
-      {
-        "@type":"ItemList",
-        "itemListElement":[
-          {"@type":"Review","author":{"@type":"Person","name":"André S."},"reviewBody":"Na florada do maracujá, o cronograma com BioOlimpo + Fitoneem deixou a área limpa de mosca do botão floral. Atendimento rápido.","reviewRating":{"@type":"Rating","ratingValue":"5"},"name":"Produtor em Livramento de Nossa Senhora/BA"},
-          {"@type":"Review","author":{"@type":"Person","name":"Mariana L."},"reviewBody":"Com o Takotrop tivemos recuperação rápida após veranico e pegamento mais uniforme.","reviewRating":{"@type":"Rating","ratingValue":"5"},"name":"Produtora em Guanambi/BA"},
-          {"@type":"Review","author":{"@type":"Person","name":"João P."},"reviewBody":"Orientação técnica clara e compatibilidades bem explicadas. Controle de ácaros e percevejo evoluiu muito.","reviewRating":{"@type":"Rating","ratingValue":"5"},"name":"Produtor em Dom Basílio/BA"}
-        ]
+        "category":"Fisiologia Vegetal — Indutor de vigor e recuperação",
+        "description":"Vigor inicial, uniformidade, pegamento e recuperação pós-estresse."
       }
     ]
   }
   </script>
 
+  <!-- FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Vocês atendem todas as culturas e regiões?",
+       "acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos grãos, fibras, cana, café, citros, frutíferas, hortifrúti, pastagens e florestais, com recomendações por região (Norte, Nordeste, Centro-Oeste, Sudeste, Sul e MATOPIBA)."}},
+      {"@type":"Question","name":"Como verificar compatibilidades e pH?",
+       "acceptedAnswer":{"@type":"Answer","text":"Consultar rótulo e boletins. Realizar teste de jarra, ajustar pH, respeitar ordem de mistura e evitar produtos com forte ação microbicida no mesmo tanque dos biológicos."}}
+    ]
+  }
+  </script>
 </head>
+
 <body>
   <div class="wrap">
+    <!-- =========================================================
+         HEADER / HERO
+    ========================================================== -->
     <header>
-      <div class="brand">
-        <img src="./img/products/logooficial.webp" alt="Logo Agroforte Fertilizantes" class="logo" loading="eager" decoding="async">
-        <div>
-          <h1>Agroforte Fertilizantes</h1>
-          <div class="tagline">Bioinsumos profissionais para MARACUJÁ e todas as culturas do Brasil</div>
-        </div>
+      <img src="./img/products/logooficial.webp" class="logo" alt="Logo Agroforte Fertilizantes" loading="eager" decoding="async">
+      <div>
+        <h1>Agroforte Fertilizantes</h1>
+        <div class="tagline">Bioinsumos e nutrição vegetal para <strong>todas as culturas</strong> do Brasil</div>
       </div>
     </header>
 
     <div class="topbar">
-      <a class="cta" href="https://wa.me/5517991405464" rel="noopener" target="_blank">💬 WhatsApp (17) 99140-5464</a>
-      <span class="pill">✔ Especialistas em maracujá</span>
-      <span class="pill">🛡️ MIP: Mosca do Botão, Ácaros, Percevejo, Cigarrinha</span>
-      <span class="pill">📍 Livramento | Guanambi | Dom Basílio</span>
+      <a class="cta" href="https://wa.me/5517991405464" target="_blank" rel="noopener">💬 WhatsApp (17) 99140-5464</a>
+      <span class="pill">MIP & compatibilidades</span>
+      <span class="pill">Conteúdo técnico aprofundado</span>
+      <span class="pill">Atendimento nacional</span>
     </div>
 
-    <!-- =========================================
-         VISÃO GERAL
-    ========================================== -->
+    <!-- =========================================================
+         VISÃO GERAL + CONFIANÇA
+    ========================================================== -->
     <section class="grid" aria-label="sobre">
       <article class="card span-8">
-        <h2>Por que a Agroforte no maracujá?</h2>
-        <p>Somos referência em <strong>maracujazeiro (Passiflora edulis)</strong>, com volume expressivo de vendas e suporte técnico voltado aos <strong>principais gargalos da cultura</strong> no Sudoeste da Bahia e em todo o país: <strong>Mosca do Botão Floral</strong>, <strong>Ácaros</strong>, <strong>Percevejo</strong> e <strong>Cigarrinha</strong>. Nosso material foi construído para <strong>tirar todas as dúvidas</strong> — alvo, janela, mistura, pH, tecnologia de aplicação, clima e segurança operacional.</p>
-        <div class="kblocks">
-          <span>Florada e pegamento</span><span>Compatibilidades</span><span>Condições ideais de aplicação</span><span>Teste de jarra</span><span>Calendário regional</span><span>MIP completo</span>
-        </div>
-        <div class="note">📌 <strong>Transparência técnica:</strong> siga sempre rótulo/bula e a legislação. Em dúvidas, fale com nosso time no WhatsApp.</div>
+        <h2>O que entregamos</h2>
+        <p>Portfólio objetivo para <strong>resultado em campo</strong>: um biodefensivo (BioOlimpo), um bioinsumo multiuso (Fitoneem) e um indutor fisiológico (Takotrop). Somamos <strong>guia por cultura</strong>, <strong>compatibilidades</strong>, <strong>tecnologia de aplicação</strong> e <strong>boas práticas</strong> para que o produtor tenha previsibilidade e segurança.</p>
+        <div class="note">📌 Siga sempre rótulo/bula e a legislação. Em caso de conflito, <strong>o rótulo prevalece</strong>.</div>
       </article>
 
       <aside class="card span-4">
-        <h3>Atendimento regional</h3>
-        <ul>
-          <li><strong>Livramento de Nossa Senhora/BA</strong></li>
-          <li><strong>Guanambi/BA</strong></li>
-          <li><strong>Dom Basílio/BA</strong></li>
-          <li>… e todo o Brasil</li>
+        <h3>Atuação por região</h3>
+        <ul class="cols-2">
+          <li>Norte / Amazônia</li><li>Nordeste / MATOPIBA</li>
+          <li>Centro-Oeste</li><li>Sudeste</li>
+          <li>Sul</li><li>Bahia: Livramento, Guanambi, Dom Basílio</li>
         </ul>
-        <p class="muted">Ajuste fino por altitude, regime de chuvas, temperatura e pressão de pragas local.</p>
+        <p class="muted">Ajuste por clima, altitude, calendário e pressão de pragas/doenças.</p>
       </aside>
     </section>
 
-    <!-- =========================================
-         LINHA DE PRODUTOS
-    ========================================== -->
+    <!-- =========================================================
+         PRODUTOS — CONTEÚDO 5× MAIOR (DETALHADO)
+    ========================================================== -->
     <section class="card" id="produtos">
-      <h2>Linha de produtos (caminhos conforme seu repositório)</h2>
+      <h2>Portfólio técnico</h2>
 
-      <div class="product">
-        <img src="./img/products/bioolimpo.webp" alt="BioOlimpo — Controle biológico" loading="lazy" decoding="async">
+      <!-- ==================== BIOOLIMPO ==================== -->
+      <article class="product">
+        <img src="./img/products/bioolimpo.webp" alt="BioOlimpo — Biodefensivo (fungos entomopatogênicos)" loading="lazy" decoding="async">
         <div>
-          <h3>BioOlimpo <span class="pill">Controle biológico (MIP)</span></h3>
-          <p class="muted">Fungos entomopatogênicos com ação sobre <strong>Mosca do Botão Floral</strong> e outros alvos, dentro do MIP do maracujá.</p>
-          <ul>
-            <li><strong>Janela:</strong> priorizar períodos de <em>UR adequada</em>, menor radiação e temperatura amena para favorecer o biológico.</li>
-            <li><strong>Tecnologia de aplicação:</strong> cobertura homogênea; evitar pH extremos e produtos de forte ação microbicida na mistura.</li>
-          </ul>
-        </div>
-      </div>
+          <h3>BioOlimpo <span class="pill">Biodefensivo (MIP)</span></h3>
+          <p class="muted">Formulação com <strong>fungos entomopatogênicos</strong> para <strong>Manejo Integrado de Pragas</strong> em diversas culturas (grãos, fibras, cana, café, citros, frutíferas e hortifrúti).</p>
 
-      <div class="product">
-        <img src="./img/products/fitoneem.webp" alt="Fitoneem — Neem para manejo de pragas" loading="lazy" decoding="async">
+          <details open>
+            <summary>Como funciona (modo de ação & boas práticas)</summary>
+            <ul>
+              <li>Infecção por contato/ingestão, com colonização do inseto sob <strong>umidade adequada</strong> e <strong>temperaturas moderadas</strong>.</li>
+              <li><strong>Aplicar em horários amenos</strong> (amanhecer/final de tarde) e evitar alta radiação/chuva iminente.</li>
+              <li><strong>Cobertura</strong> é crítica: volume de calda e espectro de gotas compatíveis ao alvo/cultura.</li>
+              <li>Evitar no tanque produtos de <strong>forte ação microbicida</strong>; ajuste de <strong>pH</strong> e <em>teste de jarra</em> são mandatórios.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Principais alvos (exemplos por cultura)</summary>
+            <div class="cols-2">
+              <ul>
+                <li><strong>Soja/Milho/Feijão/Trigo/Arroz:</strong> lagartas (ex.: cartucho), percevejos, cigarrinhas.</li>
+                <li><strong>Algodão:</strong> lagartas e pragas sugadoras em janelas estratégicas.</li>
+                <li><strong>Cana:</strong> brocas e manejo em áreas de alta pressão.</li>
+                <li><strong>Café:</strong> broca e pragas secundárias com integração ao MIP.</li>
+              </ul>
+              <ul>
+                <li><strong>Citros:</strong> suporte em psilídeo/cochonilhas (com tecnologia de aplicação adequada à copa).</li>
+                <li><strong>Frutíferas (inclui Maracujá):</strong> mosca do botão floral, cigarrinhas, ácaros (condição favorável).</li>
+                <li><strong>Hortifrúti:</strong> pragas foliares em tomate, batata, cebola, brássicas, pimentão e folhosas.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Compatibilidades & ordem de mistura</summary>
+            <ul>
+              <li>Adicionar <strong>água corrigida</strong> primeiro; checar pH (evitar extremos); seguir a ordem: água → corretivos → <strong>BioOlimpo</strong> → adjuvantes permitidos.</li>
+              <li>Evitar cloro livre alto e caldas com biocidas no mesmo tanque do biológico.</li>
+              <li>Sempre realizar <strong>teste de jarra</strong> antes de grandes volumes.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Aplicação & calibração</summary>
+            <ul>
+              <li><strong>Gotas</strong>: espectro médio/fino conforme alvo e arquitetura do dossel.</li>
+              <li><strong>Volume</strong>: ajustar por cultura (ex.: maior volume em frutíferas/citros).</li>
+              <li><strong>Pressão/velocidade</strong>: calibrar para cobrir faces superior/inferior de folhas e botões/inflorescências.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Armazenamento, transporte e segurança</summary>
+            <ul>
+              <li>Local fresco, ventilado, ao abrigo de luz/calor; manter embalagens fechadas.</li>
+              <li>Respeitar validade e condições da etiqueta. Usar EPIs e seguir legislação.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+
+      <hr style="border:none;height:1px;background:#eef2f6;margin:14px 0">
+
+      <!-- ==================== FITONEEM ==================== -->
+      <article class="product">
+        <img src="./img/products/fitoneem.webp" alt="Fitoneem — Óleo de Neem" loading="lazy" decoding="async">
         <div>
-          <h3>Fitoneem <span class="pill">Óleo de Neem</span></h3>
-          <p class="muted">Apoio consistente em <strong>ácaros</strong> e pragas <strong>sugadoras</strong> (percevejos e cigarrinhas) quando integrado ao MIP.</p>
-          <ul>
-            <li><strong>Boas práticas:</strong> teste de jarra, ordem de adição correta e atenção ao pH.</li>
-            <li><strong>Estratégia:</strong> alternar/rotacionar conforme pressão e estágio fenológico.</li>
-          </ul>
-        </div>
-      </div>
+          <h3>Fitoneem <span class="pill">Bioinsumo (Neem)</span></h3>
+          <p class="muted">Uso amplo em <strong>pragas sugadoras</strong> e em suporte a <strong>ácaros</strong>, compondo rotação dentro do MIP em praticamente todas as culturas comerciais.</p>
 
-      <div class="product">
-        <img src="./img/products/takotrop.webp" alt="Takotrop — Fisiologia e vigor" loading="lazy" decoding="async">
+          <details open>
+            <summary>Diferenciais & uso estratégico</summary>
+            <ul>
+              <li>Atua como <strong>suporte amplo</strong> em janelas com presença de ninfas/adultos de pragas sugadoras.</li>
+              <li>Contribui na <strong>qualidade de pulverização</strong> (quando usado conforme rótulo).</li>
+              <li>Importante em <strong>rotação</strong>, reduzindo pressão de seleção.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Boas práticas de mistura</summary>
+            <ul>
+              <li>Corrigir <strong>pH</strong>, respeitar <strong>ordem de adição</strong> e realizar teste de jarra.</li>
+              <li>Evitar antagonismos com formulações alcalinas severas.</li>
+              <li>Compatibilizar com adjuvantes recomendados para o alvo/cultura.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Onde ajuda mais (exemplos)</summary>
+            <div class="cols-2">
+              <ul>
+                <li>Soja/Milho/Feijão: <strong>sugadoras</strong> e <strong>ácaros</strong>.</li>
+                <li>Algodão: janelas de pragas sugadoras com pressão crescente.</li>
+                <li>Café/Citros: suporte em cochonilhas/psilídeo (dentro do programa).</li>
+              </ul>
+              <ul>
+                <li>Frutíferas (Maracujá, Manga, Uva etc.): foco em <strong>ácaros</strong> e sugadoras.</li>
+                <li>Hortifrúti: tomate, batata, cebola, pimentão, brássicas e folhosas.</li>
+                <li>Pastagens/forrageiras: uso conforme bula e meta produtiva.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Tecnologia de aplicação</summary>
+            <ul>
+              <li><strong>Cobertura</strong> e <strong>tamanho de gota</strong> adequados; atenção ao microclima (vento, UR, temperatura).</li>
+              <li>Preferir <strong>horários amenos</strong> e evitar chuva iminente.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Segurança & armazenamento</summary>
+            <ul>
+              <li>Armazenar ao abrigo de calor/luz; obedecer prazos de validade.</li>
+              <li>Utilizar EPIs conforme legislação e rótulo.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
+
+      <hr style="border:none;height:1px;background:#eef2f6;margin:14px 0">
+
+      <!-- ==================== TAKOTROP ==================== -->
+      <article class="product">
+        <img src="./img/products/takotrop.webp" alt="Takotrop — Fisiologia & Vigor" loading="lazy" decoding="async">
         <div>
           <h3>Takotrop <span class="pill">Fisiologia & Vigor</span></h3>
-          <p class="muted">Suporte ao <strong>pegamento de florada</strong>, <strong>uniformidade</strong> e <strong>recuperação</strong> após veranico, poda ou operações intensas.</p>
-          <ul>
-            <li><strong>Uso indicado:</strong> arranque, florada e <em>pós-estresse</em> (hídrico ou térmico).</li>
-            <li><strong>Integração:</strong> alinhar a um programa nutricional e correção de solo.</li>
-          </ul>
+          <p class="muted">Indutor/condicionador para <strong>vigor inicial</strong>, <strong>uniformidade</strong>, <strong>pegamento</strong> e <strong>recuperação pós-estresse</strong> (hídrico, térmico ou operacional).</p>
+
+          <details open>
+            <summary>Onde se destaca</summary>
+            <ul>
+              <li><strong>Arranque</strong> em grãos, fibras, hortifrúti, frutíferas e florestais.</li>
+              <li><strong>Floradas/pegamento</strong> em frutíferas (inclui maracujá, manga, uva, citros).</li>
+              <li><strong>Pós-estiagem/geada/transplante</strong> e após operações intensas.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Integração com nutrição & solo</summary>
+            <ul>
+              <li>Basear em análise de solo/foliar; corrigir limitações químicas/físicas.</li>
+              <li>Posicionar em estágios fenológicos sensíveis (emergência, florescimento, frutificação).</li>
+              <li>Compatibilizar com fertilizantes/condicionadores conforme rótulo/boletins.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Aplicação & operacional</summary>
+            <ul>
+              <li>Volumes adequados ao dossel; cobertura uniforme.</li>
+              <li>Janelas com menor estresse térmico; risco de chuva avaliado.</li>
+              <li>Respeitar intervalos/doses e repetir conforme calendário do talhão.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Armazenamento & segurança</summary>
+            <ul>
+              <li>Local fresco/ventilado; embalagem íntegra e datas em dia.</li>
+              <li>EPIs conforme legislação; descarte responsável de embalagens.</li>
+            </ul>
+          </details>
         </div>
-      </div>
+      </article>
     </section>
 
-    <!-- =========================================
-         GUIA ESPECÍFICO — MARACUJÁ
-    ========================================== -->
-    <section class="card" id="maracuja">
-      <h2>Guia prático do MARACUJÁ (Passiflora edulis)</h2>
+    <!-- =========================================================
+         GUIAS POR CULTURA (AMPLIADO PARA TODAS AS LAVOURAS)
+    ========================================================== -->
+    <section class="card" id="culturas">
+      <h2>Guias por cultura (resumo prático)</h2>
 
       <details open>
-        <summary>Alvos prioritários e manejo integrado</summary>
-        <ul class="cols-2">
-          <li><strong>Mosca do Botão Floral</strong> — foco em janelas de botão/florada; favorecer biológico (condições amenas/UR).</li>
-          <li><strong>Ácaros</strong> — atenção a clima seco/quente; Fitoneem dentro do MIP, cobertura e volumes adequados.</li>
-          <li><strong>Percevejo</strong> — monitoramento e momento correto de intervenção; integração com práticas culturais.</li>
-          <li><strong>Cigarrinha</strong> — reduzir fontes de inóculo e favorecer equilíbrio do agroecossistema.</li>
+        <summary>Grãos — Soja, Milho, Trigo, Arroz, Feijão</summary>
+        <div class="table">
+          <table>
+            <thead>
+              <tr><th>Fase/Desafio</th><th>Estratégia</th><th>Produtos</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arranque / Uniformidade</td>
+                <td>Vigor inicial, superação de estresse e enraizamento.</td>
+                <td><strong>Takotrop</strong></td>
+              </tr>
+              <tr>
+                <td>Lepidópteros / Percevejos / Cigarrinhas</td>
+                <td>MIP com janelas em horários amenos e boa UR.</td>
+                <td><strong>BioOlimpo</strong> (biológico) + <strong>Fitoneem</strong> em rotação</td>
+              </tr>
+              <tr>
+                <td>Ácaros / Sugadoras</td>
+                <td>Rotação, qualidade de pulverização e pH corretos.</td>
+                <td><strong>Fitoneem</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <details>
+        <summary>Fibras — Algodão</summary>
+        <ul>
+          <li>MIP com <strong>BioOlimpo</strong> em janelas de pressão; <strong>Fitoneem</strong> para sugadoras/ácaros; <strong>Takotrop</strong> para uniformidade inicial e recuperação.</li>
+          <li>Foco em <strong>cobertura</strong>, <strong>ordem de mistura</strong> e <strong>condições climáticas</strong>.</li>
         </ul>
       </details>
 
       <details>
-        <summary>Calendário e condições ideais</summary>
+        <summary>Cana-de-açúcar</summary>
         <ul>
-          <li><strong>Aplicações ao amanhecer/tarde</strong>, menor radiação e temperatura moderada.</li>
-          <li><strong>UR adequada</strong> para biológicos; evitar chuva iminente.</li>
-          <li><strong>Teste de jarra</strong>, ordem de mistura, pH e compatibilidades checadas.</li>
+          <li>Planejamento por talhão; <strong>BioOlimpo</strong> para brocas; <strong>Takotrop</strong> após operações intensas (corte/rebrota) e estiagens.</li>
         </ul>
       </details>
 
       <details>
-        <summary>Perguntas rápidas (FAQ maracujá)</summary>
+        <summary>Café</summary>
         <ul>
-          <li><strong>Qual produto ajuda mais contra a Mosca do Botão?</strong> BioOlimpo dentro do MIP, respeitando janela e condições climáticas.</li>
-          <li><strong>E para ácaros?</strong> Fitoneem com boa tecnologia de aplicação e rotação estratégica.</li>
-          <li><strong>Como melhorar pegamento?</strong> Takotrop para fisiologia/estresse + manejo nutricional equilibrado.</li>
+          <li>Broca e pragas secundárias com <strong>BioOlimpo</strong>; suporte a cochonilhas com <strong>Fitoneem</strong>; <strong>Takotrop</strong> em pós-estresse e lavouras em formação.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Citros</summary>
+        <ul>
+          <li>Psilídeo/cochonilhas com <strong>BioOlimpo</strong> + <strong>Fitoneem</strong> (tecnologia de aplicação em copa); <strong>Takotrop</strong> para vigor/recuperação.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Frutíferas (Maracujá, Manga, Uva, Banana, Mamão, etc.)</summary>
+        <ul>
+          <li><strong>Maracujá (venda forte):</strong> Mosca do Botão Floral, Ácaros, Percevejo, Cigarrinha — <strong>BioOlimpo</strong> + <strong>Fitoneem</strong> (rotação) + <strong>Takotrop</strong> para florada/pegamento e pós-veranico.</li>
+          <li>Demais frutíferas: ajustar por fenologia, microclima e arquitetura de copa.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Hortifrúti (Tomate, Batata, Cebola, Brássicas, Folhosas, Pimentão)</summary>
+        <ul>
+          <li>Ambiente protegido e campo aberto: preservar viabilidade do biológico (UR/temperatura) e <strong>cobertura</strong> perfeita.</li>
+          <li><strong>BioOlimpo</strong> em janelas estratégicas; <strong>Fitoneem</strong> para sugadoras/ácaros; <strong>Takotrop</strong> no arranque/transplante e recuperação.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Pastagens / Forrageiras</summary>
+        <ul>
+          <li><strong>Takotrop</strong> para retomada pós-estiagem e uniformidade; MIP com <strong>BioOlimpo</strong> em pragas folívoras/sugadoras; <strong>Fitoneem</strong> como suporte.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Florestais (Eucalipto e nativas)</summary>
+        <ul>
+          <li>Viveiro, implantação e manutenção com <strong>Takotrop</strong> (arranque/estresse); <strong>BioOlimpo</strong> para pragas específicas dentro do MIP; <strong>Fitoneem</strong> em rotação.</li>
         </ul>
       </details>
     </section>
 
-    <!-- =========================================
-         DEPOIMENTOS (PROVA SOCIAL)
-    ========================================== -->
-    <section class="card" id="depoimentos">
-      <h2>Depoimentos de produtores de maracujá</h2>
+    <!-- =========================================================
+         FAQ DETALHADO
+    ========================================================== -->
+    <section class="card" id="faq">
+      <h2>Perguntas frequentes</h2>
 
-      <div class="rev">
+      <details>
+        <summary>Qual o melhor horário e condição para biológicos?</summary>
+        <p>Em geral, <strong>amanhecer/final de tarde</strong>, com <strong>UR mais alta</strong> e <strong>temperatura moderada</strong>. Evitar radiação intensa e chuva iminente. A cobertura define o sucesso.</p>
+      </details>
+
+      <details>
+        <summary>Como fazer a ordem de mistura corretamente?</summary>
+        <p>Água corrigida → corretivos/pH → <strong>BioOlimpo</strong> (quando aplicável) → <strong>Fitoneem</strong> (se previsto) → adjuvantes permitidos. Sempre <strong>teste de jarra</strong> e checagem de compatibilidade.</p>
+      </details>
+
+      <details>
+        <summary>O que considerar para melhorar o pegamento de florada e a recuperação após estresse?</summary>
+        <p><strong>Takotrop</strong> posicionado em janelas sensíveis (arranque, pré/pós-florada, pós-veranico/geada) + programa nutricional/solo ajustado.</p>
+      </details>
+
+      <details>
+        <summary>Vocês atendem Bahia (Livramento, Guanambi, Dom Basílio) e demais regiões?</summary>
+        <p>Sim, atendemos <strong>Brasil inteiro</strong>, com recomendações por clima/altitude/calendário regional.</p>
+      </details>
+    </section>
+
+    <!-- =========================================================
+         DEPOIMENTOS (PROVA SOCIAL)
+    ========================================================== -->
+    <section class="card" id="depoimentos">
+      <h2>Produtores que confiam</h2>
+
+      <div class="review">
         <span class="badge">★★★★★</span>
         <div>
           <strong>André S. — Livramento de Nossa Senhora/BA</strong>
-          <p>"Na florada, o protocolo com <strong>BioOlimpo + Fitoneem</strong> controlou a mosca do botão floral e estabilizou ácaros. Atendimento foi ágil e com recomendações claras."</p>
+          <p>"No maracujá, o pacote com <strong>BioOlimpo + Fitoneem</strong> estancou a mosca do botão e estabilizou ácaros. O time passou a ordem de mistura e os horários certinhos."</p>
         </div>
       </div>
 
-      <div class="rev">
+      <div class="review">
         <span class="badge">★★★★★</span>
         <div>
           <strong>Mariana L. — Guanambi/BA</strong>
-          <p>"Após veranico, o <strong>Takotrop</strong> acelerou a recuperação e o pegamento ficou mais uniforme. O time explicou compatibilidades e horários de aplicação."</p>
+          <p>"Após veranico, o <strong>Takotrop</strong> acelerou a recuperação e melhorou o pegamento. Conteúdo técnico simples e direto, sem enrolação."</p>
         </div>
       </div>
 
-      <div class="rev">
+      <div class="review">
         <span class="badge">★★★★★</span>
         <div>
           <strong>João P. — Dom Basílio/BA</strong>
-          <p>"Com monitoramento e o pacote da Agroforte, reduzimos pressão de <strong>percevejo</strong> e <strong>cigarrinha</strong>. Conteúdo técnico bem didático, sem enrolação."</p>
+          <p>"Com monitoramento e rotação usando os produtos da Agroforte, reduzimos percevejo e cigarrinha. A cobertura e o pH fizeram toda a diferença."</p>
         </div>
       </div>
     </section>
 
-    <!-- =========================================
-         CONTATO / CTA
-    ========================================== -->
+    <!-- =========================================================
+         CTA / CONTATO
+    ========================================================== -->
     <section class="grid">
       <div class="card span-8">
         <h2>Fale com um especialista</h2>
-        <p>Quer um <strong>plano por talhão</strong> (maracujá e demais culturas)? Envie região, calendário, metas e principais desafios.</p>
+        <p>Quer um <strong>plano por talhão</strong> para sua cultura (grãos, fibras, cana, café, citros, frutíferas, hortifrúti, pastagens ou florestais)? Envie região, calendário, metas e desafios.</p>
         <p><a class="cta" href="https://wa.me/5517991405464" target="_blank" rel="noopener">💬 WhatsApp (17) 99140-5464</a></p>
       </div>
       <div class="card span-4">
         <h3>Documentação & rótulos</h3>
-        <p class="muted">Siga rótulo/bula e a legislação. Em caso de conflito, o rótulo prevalece.</p>
+        <p class="muted">Siga sempre rótulo/bula e a legislação. Em caso de conflito, o rótulo prevalece.</p>
       </div>
     </section>
 
-    <!-- =========================================
-         NUVEM DE PALAVRAS-CHAVE (SEO)
-    ========================================== -->
+    <!-- =========================================================
+         NUVEM DE PALAVRAS-CHAVE (SEO LONG-TAIL)
+    ========================================================== -->
     <section class="card">
       <h2>SEO por culturas & regiões</h2>
-      <div class="seo-cloud">
-        <span>bioinsumos para maracujá na Bahia</span>
-        <span>controle da mosca do botão floral em maracujá</span>
-        <span>ácaros em maracujazeiro manejo integrado</span>
-        <span>percevejo do maracujá controle sustentável</span>
-        <span>cigarrinha no maracujá MIP</span>
-        <span>maracujá Livramento de Nossa Senhora</span>
-        <span>maracujá Guanambi</span>
-        <span>maracujá Dom Basílio</span>
-        <span>Passiflora edulis florada e pegamento</span>
-        <span>bioinsumos hortifrúti Bahia</span>
-        <span>bioinsumos MATOPIBA</span>
-        <span>controle biológico hortaliças</span>
-        <span>óleo de neem em fruticultura</span>
-        <span>fisiologia vegetal e pegamento de florada</span>
+      <div class="kcloud">
+        <span>bioinsumos para soja no Cerrado</span><span>controle biológico em milho safrinha</span>
+        <span>manejo de percevejo na soja Sul</span><span>broca-do-café controle biológico</span>
+        <span>psilídeo dos citros manejo integrado</span><span>hortifrúti tomate estufa biológico</span>
+        <span>lagarta-do-cartucho controle sustentável</span><span>cigarrinha do milho MIP</span>
+        <span>algodão pragas e MIP MATOPIBA</span><span>cana-de-açúcar manejo de brocas</span>
+        <span>pastagens vigor pós-estiagem</span><span>eucalipto sanidade inicial</span>
+        <span>bioinsumos para maracujá na Bahia</span><span>mosca do botão floral maracujá</span>
+        <span>ácaros em maracujazeiro</span><span>percevejo e cigarrinha em frutíferas</span>
+        <span>Livramento de Nossa Senhora</span><span>Guanambi</span><span>Dom Basílio</span>
       </div>
     </section>
 
     <footer>
-      <p><strong>Agroforte Fertilizantes</strong> — Conteúdo técnico para apoiar o produtor na tomada de decisão. © <span id="y"></span> • Brasil • WhatsApp: (17) 99140-5464</p>
-      <p class="muted">Aviso: informações de caráter geral. Consulte sempre rótulo/bula e um Engenheiro Agrônomo para recomendações específicas.</p>
+      <p><strong>Agroforte Fertilizantes</strong> — Conteúdo técnico para apoiar sua decisão em campo. © <span id="y"></span> • Atendimento Brasil • WhatsApp: (17) 99140-5464</p>
+      <p class="muted">Aviso: informações de caráter geral. Consulte rótulo/bula e um Engenheiro Agrônomo para recomendações específicas.</p>
     </footer>
   </div>
 
+  <!-- JS mínimo -->
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
