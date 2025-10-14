@@ -1,426 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AgroForte Fertilizantes | Biológicos & Nutrição • Atendimento técnico no campo</title>
-  <meta name="description" content="Soluções profissionais em biológicos e nutrição vegetal. Fitoneem (óleo de neem), Bioolimpo (Beauveria + Metarhizium) e Takotrop (Pseudomonas – tecnologia D.O.P). Fale com o Sandro no WhatsApp.">
+  <!-- ===========================
+       BÁSICO / SEO TÉCNICO
+  ============================ -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Canonical (ajuste para seu domínio final, se quiser) -->
-  <link rel="canonical" href="https://agroforte.netlify.app/">
+  <title>Agroforte Fertilizantes | Bioinsumos para todas as culturas do Brasil</title>
+  <meta name="description" content="Agroforte Fertilizantes — Bioinsumos e soluções de alta performance para todas as culturas e regiões agrícolas do Brasil. Portfólio: BioOlimpo (Beauveria + Metarhizium), Fitoneem (óleo de neem) e Takotrop (indutor fisiológico). Conteúdo técnico completo, manejo integrado de pragas e nutrição vegetal, FAQs, estudos e recomendações por cultura.">
+
+  <!-- Palavras-chave amplas (SEO de cauda longa por culturas/ regiões) -->
+  <meta name="keywords" content="bioinsumos, agricultura, fertilizantes, biodefensivos, controle biológico, manejo integrado de pragas, MIP, agricultura sustentável, soja, milho, algodão, café, citros, cana-de-açúcar, arroz, feijão, trigo, hortifrúti, tomate, batata, cebola, folhosas, brassicas, pimentão, uva, maçã, pera, banana, manga, mamão, coco, cacau, pastagens, forrageiras, eucalipto, florestais, Cerrado, Sul, Sudeste, Centro-Oeste, Nordeste, Norte, MATOPIBA, Amazônia, Caatinga, Mata Atlântica, Pantanal, Pampa">
+
+  <!-- Canonical (ajuste para sua URL final de produção) -->
+  <link rel="canonical" href="https://rafabech.github.io/agroforte/" />
+
+  <!-- Favicon: usa a logo oficial do repositório -->
+  <link rel="icon" type="image/webp" href="./img/products/logooficial.webp" />
 
   <!-- Open Graph -->
-  <meta property="og:site_name" content="AgroForte Fertilizantes">
-  <meta property="og:title" content="AgroForte Fertilizantes | Biológicos & Nutrição">
-  <meta property="og:description" content="Linha completa com suporte técnico: Fitoneem, Bioolimpo e Takotrop. Fale com o especialista.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/img/products/logo.webp">
-  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Agroforte Fertilizantes">
+  <meta property="og:title" content="Agroforte Fertilizantes | Bioinsumos para todas as culturas do Brasil">
+  <meta property="og:description" content="Portfólio técnico completo: BioOlimpo (Beauveria + Metarhizium), Fitoneem (óleo de neem) e Takotrop (indutor fisiológico). Conteúdo profundo, confiável e orientado a resultados.">
+  <meta property="og:image" content="https://rafabech.github.io/agroforte/img/products/logooficial.webp">
+  <meta property="og:url" content="https://rafabech.github.io/agroforte/">
 
-  <!-- Favicons (opcional) -->
-  <link rel="icon" href="/img/products/logo.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agroforte Fertilizantes | Bioinsumos">
+  <meta name="twitter:description" content="Soluções profissionais para todas as culturas e regiões do país.">
+  <meta name="twitter:image" content="https://rafabech.github.io/agroforte/img/products/logooficial.webp">
 
+  <!-- ===========================
+       ESTILOS (veloz e leve)
+  ============================ -->
   <style>
     :root{
-      --blue-900:#0b2a4a;   /* fundo do cabeçalho */
-      --blue-800:#123b6a;
-      --green-500:#2ecc71;  /* CTA / acentos */
-      --green-600:#26b863;
-      --text-900:#0c1b2a;
-      --text-700:#223447;
-      --text-500:#5a6b7b;
-      --bg:#ffffff;
-      --bg-soft:#f5f7fb;
-      --card:#ffffff;
-      --radius:16px;
-      --shadow:0 10px 30px rgba(3,27,78,.08);
+      /* Troque esta cor quando enviar a nova logo para casar 100% com o fundo */
+      --brand-bg: #f6f8fb;      /* fundo geral neutro/limpo */
+      --brand-primary: #0b5c9c; /* cor de destaque nos títulos/links */
+      --brand-dark: #0a1a2a;
+      --brand-ok: #0f9d58;
+      --brand-warn: #c47f00;
+      --card-bg: #ffffff;
+      --text: #1b1f23;
+      --muted: #5f6b7a;
+      --ring: rgba(11,92,156,.12);
+      --radius: 16px;
+      --shadow: 0 6px 24px rgba(10,26,42,.08);
     }
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    html,body{margin:0;padding:0}
     body{
-      margin:0;
-      font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-      color:var(--text-900);
-      background:var(--bg);
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:var(--text);
+      background:var(--brand-bg);
+      line-height:1.55;
     }
-    a{color:var(--blue-800);text-decoration:none}
-    a:hover{opacity:.9}
-    img{max-width:100%;display:block}
-
-    /* Layouts utilitários */
-    .container{width:min(1200px, 92vw); margin-inline:auto}
-    .grid{display:grid; gap:28px}
-    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
-    @media(max-width:980px){.grid-3{grid-template-columns:1fr 1fr}}
-    @media(max-width:720px){.grid-3,.grid-2{grid-template-columns:1fr}}
-
-    /* Header */
-    .header{
-      position:sticky; top:0; z-index:50;
-      background:var(--blue-900); color:#fff; box-shadow:0 4px 18px rgb(0 0 0 / .06);
+    a{color:var(--brand-primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:auto;padding:20px}
+    header{
+      display:flex;align-items:center;gap:16px;padding:18px 0 8px 0
     }
-    .nav{
-      display:flex; align-items:center; gap:22px;
-      padding:14px 0;
+    header .brand{
+      display:flex;align-items:center;gap:12px
     }
-    .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.2px}
-    .brand img{width:132px; height:auto}
-    .nav a{color:#fff; opacity:.9; font-weight:600}
-    .nav-links{display:flex; gap:18px; margin-left:auto}
-    .btn{
-      appearance:none; border:0; cursor:pointer;
-      padding:12px 18px; border-radius:999px; font-weight:700;
-      background:var(--green-500); color:#052410;
-      box-shadow:0 6px 18px rgba(46,204,113,.28);
+    header img.logo{
+      width:52px;height:52px;border-radius:12px;object-fit:contain;border:1px solid var(--ring);background:#fff
     }
-    .btn:hover{background:var(--green-600)}
-    .btn-outline{
-      background:transparent; color:#fff; border:1.5px solid #2b8ee6
+    h1{margin:0;font-size:clamp(22px,2.6vw,34px);color:var(--brand-dark)}
+    .tagline{color:var(--muted);margin-top:4px}
+    .topbar{
+      display:flex;flex-wrap:wrap;gap:10px;margin-top:10px
     }
-
-    /* Hero */
-    .hero{
-      background:linear-gradient(180deg,var(--blue-900) 0%, var(--blue-800) 100%);
-      color:#fff; padding:56px 0 40px;
+    .cta{
+      padding:10px 14px;background:var(--brand-primary);color:#fff;border-radius:999px;box-shadow:var(--shadow);font-weight:600
     }
-    .hero h1{font-size:clamp(28px,4vw,42px); line-height:1.15; margin:0 0 10px}
-    .hero p{margin:0 0 22px; color:#e9f4ff}
-    .pill{display:inline-flex; gap:8px; align-items:center; padding:6px 12px; border-radius:999px; background:rgba(255,255,255,.1); color:#cde4ff; font-weight:600; font-size:14px}
-
-    /* Cards de produto */
+    .grid{
+      display:grid;grid-template-columns:repeat(12,1fr);gap:18px
+    }
     .card{
-      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow);
-      overflow:hidden; display:flex; flex-direction:column; min-height:100%;
-      border:1px solid #e8eef7;
+      grid-column: span 12;
+      background:var(--card-bg);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border:1px solid var(--ring)
     }
-    .media{
-      background:var(--bg-soft);
-      /* quadro padronizado, sem distorção */
-      aspect-ratio: 4 / 3;
-      display:grid; place-items:center;
-      padding:10px;
-      border-bottom:1px solid #eef3fb;
+    @media(min-width:900px){
+      .card.span-6{grid-column: span 6;}
+      .card.span-4{grid-column: span 4;}
+      .card.span-8{grid-column: span 8;}
     }
-    .media picture, .media img{
-      width:100%; height:100%; object-fit:contain;
+    .product{
+      display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:start
     }
-    .card .body{padding:18px 18px 8px}
-    .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:#e6f5ff; color:#0a5aa8; font-weight:700; font-size:12px; margin:14px 14px 0}
-    .card h3{margin:10px 0 6px; font-size:20px}
-    .muted{color:var(--text-500)}
-    .card .list{margin:12px 0; padding-left:18px}
-    .card .list li{margin:6px 0}
-    .card .foot{padding:14px 18px 18px; margin-top:auto}
-    .btn-small{padding:10px 14px; font-size:14px}
-
-    /* Tabelas bonitinhas */
-    .table{width:100%; border-collapse:collapse; font-size:14px; margin:10px 0}
-    .table th,.table td{border:1px solid #e7edf6; padding:10px 12px; text-align:left}
-    .table thead th{background:#f3f7fc; color:#314f6b}
-
-    /* Seção Avaliações */
-    .reviews{background:var(--bg-soft); padding:44px 0}
-    .review{
-      background:#fff; padding:18px; border-radius:14px; box-shadow:var(--shadow); border:1px solid #e8eef7
+    .product img{
+      width:130px;height:130px;object-fit:contain;border-radius:14px;border:1px solid var(--ring);background:#fff
     }
-    .stars{color:#ffb20f; font-size:18px; letter-spacing:1px}
-    .review h4{margin:6px 0 4px}
-    .review .crop{color:var(--text-500); font-size:14px}
-
-    /* Diferenciais + FAQ */
-    .feature{background:#fff; border:1px solid #e8eef7; border-radius:14px; padding:18px; box-shadow:var(--shadow)}
-    details{border:1px solid #e8eef7; border-radius:12px; padding:14px 16px; background:#fff}
-    details+details{margin-top:12px}
-    details summary{cursor:pointer; font-weight:700}
-    details[open]{box-shadow:var(--shadow)}
-
-    /* Footer */
-    .footer{background:#0f2744; color:#cfe4ff; padding:28px 0; margin-top:42px}
-    .footer a{color:#fff}
-
-    /* WPP bolha */
-    .wpp{
-      position:fixed; right:18px; bottom:18px; z-index:60;
-      display:inline-flex; align-items:center; gap:10px;
-      padding:12px 16px; border-radius:999px; background:#25D366; color:#053015; font-weight:800;
-      box-shadow:0 10px 24px rgba(37,211,102,.35)
+    .pill{
+      display:inline-flex;gap:6px;align-items:center;
+      padding:6px 10px;border-radius:999px;background:#eef5fb;border:1px solid var(--ring);color:#0b4c80;font-weight:600;font-size:12px
     }
-    .wpp svg{width:18px; height:18px; fill:#053015}
+    h2{margin:.2rem 0 0.6rem 0;color:var(--brand-dark);font-size:clamp(18px,2vw,24px)}
+    h3{margin:1.0rem 0 .4rem 0}
+    ul{margin:.2rem 0 .8rem 1.2rem}
+    .kblocks{display:flex;flex-wrap:wrap;gap:8px;margin:.4rem 0}
+    .kblocks span{background:#f0f3f7;border:1px solid var(--ring);border-radius:10px;padding:6px 10px;font-size:12px}
+    .muted{color:var(--muted)}
+    details{border:1px solid var(--ring);border-radius:12px;background:#fbfcfe;padding:10px;margin:.6rem 0}
+    details > summary{cursor:pointer;font-weight:700}
+    .cols-2{columns:2;column-gap:28px}
+    .note{background:#f7fff9;border:1px solid rgba(15,157,88,.25);padding:10px;border-radius:12px}
+    footer{color:var(--muted);font-size:13px;padding:18px 0 30px}
+    .seo-cloud{display:flex;flex-wrap:wrap;gap:8px}
+    .seo-cloud span{border:1px dashed var(--ring);padding:6px 10px;border-radius:10px;background:#fff}
   </style>
-</head>
-<body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav">
-      <a href="#topo" class="brand" aria-label="AgroForte Fertilizantes">
-        <img src="/img/products/logo.webp" width="132" height="32" alt="AgroForte Fertilizantes">
-        <span>AgroForte • fertilizantes</span>
-      </a>
-      <nav class="nav-links" aria-label="Principal">
-        <a href="#produtos">Produtos</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contato" class="btn btn-outline">Contato</a>
-        <a class="btn" href="https://wa.me/5517991405464?text=Olá%20Sandro!%20Quero%20saber%20sobre%20os%20biológicos%20e%20nutrição%20da%20AgroForte." target="_blank" rel="noopener">Fale no WhatsApp</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero" id="topo">
-    <div class="container">
-      <span class="pill">Atendimento técnico • (17) 99140-5464 • Sandro</span>
-      <h1>Nutrição e biológicos para sua lavoura, com <strong>eficiência, seletividade e suporte técnico</strong>.</h1>
-      <p>Produtos com tecnologia e respaldo agronômico para controle sustentável de pragas e melhoria da sanidade vegetal.</p>
-      <div style="display:flex; gap:12px; flex-wrap:wrap">
-        <a class="btn" href="#produtos">Ver produtos</a>
-        <a class="btn btn-outline" href="https://wa.me/5517991405464?text=Oi%20Sandro!%20Preciso%20de%20indicação%20para%20minha%20lavoura." target="_blank" rel="noopener">Falar com o Sandro</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Produtos -->
-  <main class="container" id="produtos" style="padding:36px 0 8px">
-    <h2 style="margin:0 0 16px">Produtos em destaque</h2>
-
-    <div class="grid grid-3">
-
-      <!-- FITONEEM -->
-      <article class="card" id="fitoneem">
-        <span class="badge">Botânico</span>
-        <div class="media">
-          <picture>
-            <source srcset="/img/products/fitoneem.webp" type="image/webp">
-            <img src="/img/products/fitoneem.webp" alt="Fitoneem — Óleo de Neem padronizado" loading="lazy">
-          </picture>
-        </div>
-        <div class="body">
-          <h3>Fitoneem — <em>Óleo de neem</em> padronizado</h3>
-          <p class="muted">Bioinseticida natural com ação por contato e ingestão, efeito anti-alimentar, IGR e quebra de postura. A matriz oleosa padronizada melhora <strong>molhamento, espalhamento e adesão</strong>.</p>
-          <ul class="list">
-            <li><strong>Como atua:</strong> anti-alimentar, IGR (ecdise/metamorfose), repelência/desorientação e ação de contato/ingestão.</li>
-            <li><strong>Alvos:</strong> mosca-branca <em>(Bemisia, Trialeurodes)</em>, pulgões e <em>tripes</em>, lagartas jovens e cochonilhas.</li>
-            <li><strong>Diferenciais:</strong> baixo risco de resistência; cobertura eficiente; compatível com MIP e agricultura orgânica.</li>
-          </ul>
-
-          <h4>Garantias / Composição</h4>
-          <table class="table" aria-label="Garantias Fitoneem">
-            <thead>
-              <tr><th>Composição</th><th>Concentração</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Óleo de neem</td><td>850 g/L (85,0% m/v)</td></tr>
-              <tr><td>Azadiractina A</td><td>2,00 g/L (0,200% m/v)</td></tr>
-              <tr><td>Azadiractina B</td><td>1,00 g/L (0,100% m/v)</td></tr>
-              <tr><td>Outros ingredientes</td><td>150 g/L (15,0% m/v)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="foot">
-          <a class="btn btn-small" href="https://wa.me/5517991405464?text=Olá%20Sandro!%20Quero%20Fitoneem%20para%20minha%20lavoura." target="_blank" rel="noopener">Quero o Fitoneem</a>
-        </div>
-      </article>
-
-      <!-- BIOOLIMPO -->
-      <article class="card" id="bioolimpo">
-        <span class="badge">Biológico • Fungos entomopatogênicos</span>
-        <div class="media">
-          <picture>
-            <source srcset="/img/products/bioolimpo.webp" type="image/webp">
-            <img src="/img/products/bioolimpo.webp" alt="Bioolimpo — Beauveria + Metarhizium" loading="lazy">
-          </picture>
-        </div>
-        <div class="body">
-          <h3>Bioolimpo — <em>Beauveria</em> + <em>Metarhizium</em></h3>
-          <p class="muted">Conídios viáveis (IBCB 66 e IBCB 425) com ação por contato, germinação e colonização do hospedeiro. <strong>Efeito multissítio</strong> ideal para rotação no MIP e alta seletividade a inimigos naturais.</p>
-          <ul class="list">
-            <li><strong>Como funciona:</strong> os conídios aderem à cutícula do inseto, germinam e penetram por ação enzimática/mecânica, levando à mortalidade.</li>
-            <li><strong>Vantagens:</strong> reduz probabilidade de resistência; sustentabilidade; ampla compatibilidade com práticas culturais.</li>
-          </ul>
-
-          <h4>Garantias / Composição</h4>
-          <table class="table" aria-label="Garantias Bioolimpo">
-            <thead>
-              <tr><th>Componente</th><th>Isolado</th><th>Concentração microbiológica</th><th>Quantidade</th><th>Fração (m/m)</th></tr>
-            </thead>
-            <tbody>
-              <tr><td><em>Beauveria bassiana</em></td><td>IBCB 66</td><td>1,4 × 10^5 UFC/g</td><td>150 g/kg</td><td>15%</td></tr>
-              <tr><td><em>Metarhizium anisopliae</em> (Metsch.)</td><td>IBCB 425</td><td>1,4 × 10^5 UFC/g</td><td>150 g/kg</td><td>15%</td></tr>
-              <tr><td>Outros ingredientes</td><td>–</td><td>–</td><td>700 g/kg</td><td>70%</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="foot">
-          <a class="btn btn-small" href="https://wa.me/5517991405464?text=Olá%20Sandro!%20Quero%20Bioolimpo%20para%20minha%20lavoura." target="_blank" rel="noopener">Quero o Bioolimpo</a>
-        </div>
-      </article>
-
-      <!-- TAKOTROP -->
-      <article class="card" id="takotrop">
-        <span class="badge">Tecnologia D.O.P</span>
-        <div class="media">
-          <picture>
-            <source srcset="/img/products/takotrop.webp" type="image/webp">
-            <img src="/img/products/takotrop.webp" alt="Takotrop — Pseudomonas (D.O.P)" loading="lazy">
-          </picture>
-        </div>
-        <div class="body">
-          <h3>Takotrop — <em>Pseudomonas</em> + metabólitos</h3>
-          <p class="muted">Formulação baseada na tecnologia exclusiva <strong>D.O.P – Delivering Outstanding Performance</strong>, induzindo produção de <em>fitormônios</em> e metabólitos com ação inseticida, atuando diretamente na sanidade vegetal e na interrupção do ciclo das pragas.</p>
-          <ul class="list">
-            <li><strong>Diferenciais:</strong> controle eficaz de pragas-alvo; menor pressão de seleção; estímulo ao crescimento; <em>rápida colonização foliar</em>.</li>
-            <li><strong>Base microbiológica:</strong> <em>Pseudomonas chlororaphis</em> em associação com <em>Pseudomonas fluorescens</em>, selecionadas e registradas para uso agrícola.</li>
-          </ul>
-        </div>
-        <div class="foot">
-          <a class="btn btn-small" href="https://wa.me/5517991405464?text=Olá%20Sandro!%20Quero%20o%20Takotrop%20e%20indicação%20para%20minha%20cultura." target="_blank" rel="noopener">Quero o Takotrop</a>
-        </div>
-      </article>
-
-    </div>
-  </main>
-
-  <!-- Diferenciais -->
-  <section class="container" style="padding:26px 0 10px">
-    <div class="grid grid-3">
-      <div class="feature">
-        <h3>Baixo risco de resistência</h3>
-        <p class="muted">Mecanismos multissítio (bioquímico + físico), melhorando a longevidade do controle e a rotação dentro do MIP.</p>
-      </div>
-      <div class="feature">
-        <h3>Seletividade & equilíbrio</h3>
-        <p class="muted">Compatibilidade com inimigos naturais e práticas culturais, favorecendo o equilíbrio ecológico e a segurança da lavoura.</p>
-      </div>
-      <div class="feature">
-        <h3>Cobertura eficiente</h3>
-        <p class="muted">Matriz oleosa e formulações estáveis que melhoram molhamento, espalhamento e adesão — menos retrabalho e custo/ha otimizado.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Avaliações -->
-  <section class="reviews" id="avaliacoes">
-    <div class="container">
-      <h2 style="margin-top:0">O que dizem os produtores</h2>
-      <div class="grid grid-3">
-        <article class="review">
-          <div class="stars">★★★★★</div>
-          <h4>João Martins</h4>
-          <div class="crop">Soja • Jales/SP</div>
-          <p>Usei o <strong>Fitoneem</strong> no início do surto de mosca-branca e o resultado foi rápido. Gostei do espalhamento e do suporte do Sandro.</p>
-        </article>
-        <article class="review">
-          <div class="stars">★★★★★</div>
-          <h4>Carla Nogueira</h4>
-          <div class="crop">Tomate • Ibiúna/SP</div>
-          <p>O <strong>Bioolimpo</strong> entrou na rotação e segurou bem tripes e pulgões, sem parar a colheita. Achei bem seletivo aos benéficos.</p>
-        </article>
-        <article class="review">
-          <div class="stars">★★★★☆</div>
-          <h4>Luiz Ferreira</h4>
-          <div class="crop">HF • Região de Araraquara/SP</div>
-          <p><strong>Takotrop</strong> ajudou a reduzir pressão de praga e ainda percebi melhor vigor das plantas. Boa velocidade de colonização.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="container" id="faq" style="padding:30px 0">
-    <h2>Perguntas frequentes</h2>
-    <details>
-      <summary>Posso usar os biológicos em agricultura orgânica?</summary>
-      <p>Sim, produtos como <strong>Fitoneem</strong> e <strong>Bioolimpo</strong> são compatíveis com programas de agricultura orgânica quando utilizados conforme rótulo.</p>
-    </details>
-    <details>
-      <summary>Há compatibilidade com outros produtos?</summary>
-      <p>De modo geral há boa compatibilidade. Para misturas em tanque, recomendamos <strong>teste de jarra</strong> e seguir as orientações de rótulo/boas práticas.</p>
-    </details>
-    <details>
-      <summary>Preciso de recomendação de dose?</summary>
-      <p>As doses variam por cultura, alvo e momento. <a href="https://wa.me/5517991405464?text=Olá%20Sandro!%20Preciso%20de%20recomendação%20de%20dose." target="_blank" rel="noopener">Fale com o Sandro</a> para uma indicação rápida e segura para sua lavoura.</p>
-    </details>
-  </section>
-
-  <!-- Contato -->
-  <section class="container" id="contato" style="padding:6px 0 20px">
-    <div class="feature">
-      <h2 style="margin-top:0">Fale com o especialista</h2>
-      <p class="muted">Suporte técnico, posicionamento em MIP e acompanhamento de aplicação.</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5517991405464" target="_blank" rel="noopener">(17) 99140-5464</a> — Sandro</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="grid grid-2">
-        <div>
-          <div class="brand" style="color:#fff"><img src="/img/products/logo.webp" alt="" width="120" height="30"><span>AgroForte Fertilizantes</span></div>
-          <p style="margin:10px 0 0">CNPJ: 48.480.158/0001-32</p>
-          <p class="muted" style="color:#b8d6ff">© AgroForte. Todos os direitos reservados.</p>
-        </div>
-        <div>
-          <p style="margin:0 0 6px"><strong>Aviso importante</strong></p>
-          <p class="muted" style="color:#cfe4ff">Utilize sempre conforme rótulo e boas práticas agrícolas. Recomenda-se consulta técnica para posicionamento de dose e momento de uso por cultura/alvo.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Botão flutuante WPP -->
-  <a class="wpp" href="https://wa.me/5517991405464?text=Olá%20Sandro!%20Quero%20saber%20sobre%20os%20produtos%20da%20AgroForte." target="_blank" rel="noopener" aria-label="Fale com o Sandro no WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.44c-.25-.12-1.45-.71-1.67-.79-.22-.08-.38-.12-.54.12s-.62.79-.76.95-.28.18-.52.06c-.25-.12-1.06-.39-2.02-1.23-.75-.66-1.26-1.47-1.41-1.72-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.25-.43.08-.17.04-.32-.02-.46-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.41-.54-.41h-.46c-.15 0-.4.06-.6.29-.2.23-.79.77-.79 1.88s.81 2.18.92 2.34c.12.15 1.6 2.45 3.88 3.43.54.23.96.36 1.29.46.54.17 1.03.15 1.41.09.43-.07 1.33-.54 1.52-1.07.19-.52.19-.96.13-1.06-.05-.09-.23-.15-.48-.27zM16.02 3.2C9.83 3.2 4.8 8.24 4.8 14.43c0 2.5.82 4.81 2.2 6.67L6.11 28.8l7.87-2.06c1.54.48 3.18.74 4.88.74 6.19 0 11.22-5.03 11.22-11.22S22.21 3.2 16.02 3.2zm0 20.33c-1.6 0-3.12-.42-4.41-1.16l-2.99.78.8-2.91c-.83-1.32-1.31-2.88-1.31-4.55 0-4.76 3.87-8.63 8.63-8.63s8.63 3.87 8.63 8.63-3.87 8.63-8.63 8.63z"/></svg>
-    WhatsApp (17) 99140-5464
-  </a>
-
-  <!-- JSON-LD: Organization + Products + FAQ -->
+  <!-- ===========================
+       JSON-LD (ORGANIZATION + PRODUCTS + FAQ)
+  ============================ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
-    "name":"AgroForte Fertilizantes",
-    "url":"https://agroforte.netlify.app/",
-    "logo":"https://agroforte.netlify.app/img/products/logo.webp",
+    "name":"Agroforte Fertilizantes",
+    "url":"https://rafabech.github.io/agroforte/",
+    "logo":"https://rafabech.github.io/agroforte/img/products/logooficial.webp",
+    "brand":{"@type":"Brand","name":"Agroforte"},
     "contactPoint":[{
       "@type":"ContactPoint",
-      "contactType":"customer support",
       "telephone":"+55-17-99140-5464",
-      "areaServed":"BR"
-    }]
+      "contactType":"customer service",
+      "areaServed":"BR",
+      "availableLanguage":["pt-BR"]
+    }],
+    "sameAs":[]
   }
   </script>
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[
+    "@graph":[
       {
         "@type":"Product",
-        "name":"Fitoneem",
-        "image":"https://agroforte.netlify.app/img/products/fitoneem.webp",
-        "description":"Óleo de neem padronizado com azadiractinas. Ação anti-alimentar, IGR, contato/ingestão e repelência.",
-        "brand":"AgroForte",
-        "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127"}
+        "name":"BioOlimpo",
+        "image":"https://rafabech.github.io/agroforte/img/products/bioolimpo.webp",
+        "brand":{"@type":"Brand","name":"Agroforte"},
+        "category":"Biodefensivo — Controle Biológico",
+        "description":"Formulação com fungos entomopatogênicos (ex.: Beauveria e Metarhizium) para programas de MIP em diversas culturas.",
+        "audience":{"@type":"Audience","audienceType":"Produtores rurais e consultores"}
       },
       {
         "@type":"Product",
-        "name":"Bioolimpo",
-        "image":"https://agroforte.netlify.app/img/products/bioolimpo.webp",
-        "description":"Beauveria bassiana IBCB 66 + Metarhizium anisopliae IBCB 425. Efeito multissítio e seletivo.",
-        "brand":"AgroForte",
-        "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"96"}
+        "name":"Fitoneem",
+        "image":"https://rafabech.github.io/agroforte/img/products/fitoneem.webp",
+        "brand":{"@type":"Brand","name":"Agroforte"},
+        "category":"Bioinsumo — Óleo de Neem",
+        "description":"Produto à base de extratos/óleo de neem (Azadirachta indica) para manejo de pragas em larga variedade de culturas."
       },
       {
         "@type":"Product",
         "name":"Takotrop",
-        "image":"https://agroforte.netlify.app/img/products/takotrop.webp",
-        "description":"Pseudomonas (chlororaphis + fluorescens) com tecnologia D.O.P — metabólitos com ação inseticida e estímulo.",
-        "brand":"AgroForte",
-        "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"83"}
+        "image":"https://rafabech.github.io/agroforte/img/products/takotrop.webp",
+        "brand":{"@type":"Brand","name":"Agroforte"},
+        "category":"Fisiologia Vegetal — Indutor/Condicionador",
+        "description":"Solução para suporte fisiológico e vigor inicial, potencializando estabelecimento e recuperação pós-estresse."
       }
     ]
   }
@@ -431,12 +175,263 @@
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {"@type":"Question","name":"Posso usar os biológicos em agricultura orgânica?","acceptedAnswer":{"@type":"Answer","text":"Sim, produtos como Fitoneem e Bioolimpo são compatíveis com programas orgânicos quando utilizados conforme rótulo."}},
-      {"@type":"Question","name":"Há compatibilidade com outros produtos?","acceptedAnswer":{"@type":"Answer","text":"Em geral há boa compatibilidade. Para misturas em tanque, recomenda-se teste de jarra e seguir rótulo/boas práticas."}},
-      {"@type":"Question","name":"Preciso de recomendação de dose?","acceptedAnswer":{"@type":"Answer","text":"As doses variam por cultura, alvo e momento. Fale com o Sandro via WhatsApp para posicionamento técnico."}}
+      {"@type":"Question","name":"Os bioinsumos da Agroforte servem para quais culturas?",
+       "acceptedAnswer":{"@type":"Answer","text":"Atendem grãos (soja, milho, trigo, arroz, feijão), fibras (algodão), cana, café, citros, fruticultura, hortifrúti, pastagens e florestais, com orientações por região e condição climática."}},
+      {"@type":"Question","name":"Posso integrar os produtos ao MIP?",
+       "acceptedAnswer":{"@type":"Answer","text":"Sim. Nossos produtos são pensados para programas de Manejo Integrado de Pragas, complementando práticas culturais, monitoramento, controle biológico e químico quando necessário."}},
+      {"@type":"Question","name":"Há compatibilidade com adjuvantes e misturas?",
+       "acceptedAnswer":{"@type":"Answer","text":"Consultar rótulo e boletins de compatibilidade. Em geral, evitar pH extremos, produtos com forte ação microbicida no mesmo tanque e sempre realizar teste de jarra antes."}},
+      {"@type":"Question","name":"Como armazenar corretamente?",
+       "acceptedAnswer":{"@type":"Answer","text":"Guarde em local fresco, ventilado, ao abrigo de luz e calor. Mantenha a embalagem fechada e siga as instruções de rótulo para preservar a viabilidade/estabilidade."}}
     ]
   }
   </script>
+</head>
 
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="./img/products/logooficial.webp" alt="Logo Agroforte Fertilizantes" class="logo" loading="eager" decoding="async">
+        <div>
+          <h1>Agroforte Fertilizantes</h1>
+          <div class="tagline">Bioinsumos profissionais para todas as culturas e regiões agrícolas do Brasil</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="topbar">
+      <a class="cta" href="https://wa.me/5517991405464" rel="noopener" target="_blank">💬 Fale no WhatsApp (17) 99140-5464</a>
+      <span class="pill">✔ Conteúdo técnico aprofundado</span>
+      <span class="pill">🌱 Foco em produtividade sustentável</span>
+      <span class="pill">🛡️ MIP | Compatibilidade | Boas práticas</span>
+    </div>
+
+    <!-- =========================================
+         SESSÃO: VISÃO GERAL & PROVA DE CONFIANÇA
+    ========================================== -->
+    <section class="grid" aria-label="sobre">
+      <article class="card span-8">
+        <h2>Por que a Agroforte?</h2>
+        <p>Somos especialistas em **bioinsumos e nutrição vegetal** com portfólio pensado para <strong>resultados consistentes em campo</strong>, respeitando a realidade de cada região (clima, solo, pressão de pragas e calendário). Nosso material técnico foi construído para <strong>tirar todas as dúvidas do produtor</strong> — desde o planejamento da safra até a execução.</p>
+        <div class="kblocks">
+          <span>Planos por cultura</span><span>Recomendações por região</span><span>Manejo Integrado</span><span>Compatibilidades</span><span>Calendário de aplicação</span><span>Alvos-chave</span><span>Cuidados de armazenamento</span>
+        </div>
+        <div class="note">
+          📌 <strong>Transparência técnica:</strong> Siga sempre o rótulo/bula e a legislação vigente. Em caso de dúvida, fale com nosso suporte técnico no WhatsApp.
+        </div>
+      </article>
+
+      <aside class="card span-4">
+        <h3>Aplicações por cultura (exemplos)</h3>
+        <ul class="cols-2">
+          <li>Soja, Milho, Trigo, Arroz, Feijão</li>
+          <li>Café, Citros, Cana-de-açúcar</li>
+          <li>Algodão, Sorgo</li>
+          <li>Uva e frutas de clima temperado</li>
+          <li>Banana, Manga, Mamão, Cacau</li>
+          <li>Hortifrúti: tomate, batata, cebola, pimentão, folhosas, brássicas</li>
+          <li>Pastagens/forrageiras</li>
+          <li>Florestais (eucalipto, nativas)</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- =========================================
+         PRODUTO: BIOOLIMPO
+    ========================================== -->
+    <section class="card" id="bioolimpo">
+      <div class="product">
+        <img src="./img/products/bioolimpo.webp" alt="BioOlimpo — Controle biológico com fungos entomopatogênicos" loading="lazy" decoding="async">
+        <div>
+          <h2>BioOlimpo <span class="pill">Controle biológico (MIP)</span></h2>
+          <p class="muted">Formulação com <strong>fungos entomopatogênicos</strong> (ex.: <em>Beauveria</em> e <em>Metarhizium</em>) direcionada ao manejo integrado em diversas culturas.</p>
+
+          <h3>Principais benefícios</h3>
+          <ul>
+            <li><strong>Efeito biológico</strong> sobre pragas-chave, contribuindo para redução de populações sob pressão.</li>
+            <li><strong>Compatível com MIP</strong> e boas práticas de rotação de mecanismos.</li>
+            <li><strong>Segurança operacional</strong> quando utilizado conforme rótulo (intervalo de segurança, EPIs e condições ambientais adequadas).</li>
+          </ul>
+
+          <h3>Alvos & situações de uso (exemplos)</h3>
+          <ul class="cols-2">
+            <li>Mosca-branca</li><li>Percevejos</li><li>Lagartas (ex.: cartucho)</li>
+            <li>Cigarrinhas</li><li>Brocas (ex.: café)</li><li>Ácaros (condições favoráveis)</li>
+          </ul>
+
+          <details>
+            <summary>Como potencializar a eficiência</summary>
+            <ul>
+              <li>Aplicar em <strong>horários mais amenos</strong> (baixa radiação/temperatura moderada) e com **boa umidade**.</li>
+              <li>Evitar misturas com produtos de <strong>forte ação microbicida</strong> no mesmo tanque. Fazer <em>teste de jarra</em>.</li>
+              <li>Regular gota/volume para <strong>boa cobertura</strong>, respeitando tecnologia de aplicação da fazenda.</li>
+              <li>Armazenar e transportar preservando a **viabilidade** (temperatura e luz controladas).</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PRODUTO: FITONEEM
+    ========================================== -->
+    <section class="card" id="fitoneem">
+      <div class="product">
+        <img src="./img/products/fitoneem.webp" alt="Fitoneem — Bioinsumo à base de óleo de neem" loading="lazy" decoding="async">
+        <div>
+          <h2>Fitoneem <span class="pill">Óleo de Neem</span></h2>
+          <p class="muted">Bioinsumo formulado com <strong>neem (Azadirachta indica)</strong>, utilizado em programas de manejo para ampla gama de culturas.</p>
+
+          <h3>Diferenciais</h3>
+          <ul>
+            <li><strong>Amplia o espectro</strong> de manejo quando integrado a estratégias culturais e biológicas.</li>
+            <li>Útil em <strong>janelas de pressão</strong> de pragas sugadoras e mastigadoras.</li>
+            <li>Suporte à <strong>qualidade de pulverização</strong> quando usado conforme recomendação.</li>
+          </ul>
+
+          <details>
+            <summary>Boas práticas de uso</summary>
+            <ul>
+              <li>Ajustar <strong>pH</strong> e <strong>ordem de mistura</strong> no tanque; realizar teste de jarra.</li>
+              <li>Respeitar condições climáticas: vento, temperatura, UR e risco de chuva.</li>
+              <li>Integrar com <strong>monitoramento de pragas</strong> e nível de dano econômico (NDE).</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PRODUTO: TAKOTROP
+    ========================================== -->
+    <section class="card" id="takotrop">
+      <div class="product">
+        <img src="./img/products/takotrop.webp" alt="Takotrop — Suporte fisiológico e vigor" loading="lazy" decoding="async">
+        <div>
+          <h2>Takotrop <span class="pill">Fisiologia & Vigor</span></h2>
+          <p class="muted">Solução voltada a <strong>suporte fisiológico</strong>, auxiliando no <strong>estabelecimento</strong>, **uniformidade** e **recuperação pós-estresse** (climático ou operacional).</p>
+
+          <h3>Onde se destaca</h3>
+          <ul>
+            <li><strong>Arranque de plântulas</strong> e vigor inicial em grãos, fibras, hortifrúti e pastagens.</li>
+            <li>Recondicionamento após <strong>estiagem</strong>, geadas leves, transplantio ou operações intensas.</li>
+            <li>Em conjunto com um <strong>programa nutricional equilibrado</strong> e correções de solo.</li>
+          </ul>
+
+          <details>
+            <summary>Integração com nutrição e solo</summary>
+            <ul>
+              <li>Alinhar com análise de solo/foliar e metas de produtividade da fazenda.</li>
+              <li>Compatibilizar com fertilizantes e condicionadores conforme rótulo/boletim técnico.</li>
+              <li>Observar intervalos, dose e estágios fenológicos indicados.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         GUIAS POR CULTURA & REGIÃO (SEO)
+    ========================================== -->
+    <section class="card">
+      <h2>Guias rápidos por cultura</h2>
+      <p class="muted">Conteúdo de referência para planejamento de safra por bioma/região. Ajuste sempre à realidade local e consulte um engenheiro agrônomo.</p>
+
+      <details open>
+        <summary>Grãos (Soja, Milho, Trigo, Arroz, Feijão)</summary>
+        <ul>
+          <li><strong>Soja (Cerrado, Sul, MATOPIBA):</strong> integrar BioOlimpo ao MIP em janelas de percevejos e lagartas; Fitoneem como suporte a pressão de sugadoras; Takotrop no arranque e em pós-estresse.</li>
+          <li><strong>Milho (1ª/2ª safra):</strong> monitoramento intenso de lagartas e cigarrinha; cobertura eficiente e horários amenos maximizam o desempenho do biológico.</li>
+          <li><strong>Trigo/Arroz/Feijão:</strong> integrar bioinsumos ao calendário regional; avaliar UR/temperatura na aplicação.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Perene/semiperene (Café, Citros, Cana-de-açúcar)</summary>
+        <ul>
+          <li><strong>Café (Sul de MG, Cerrado Mineiro):</strong> janelas para broca e pragas secundárias com BioOlimpo; Fitoneem no manejo de sugadoras; Takotrop após estresse hídrico.</li>
+          <li><strong>Citros (SP, MS):</strong> suporte em pressão de psilídeo e cochonilhas dentro do MIP; atenção à tecnologia de aplicação em copa.</li>
+          <li><strong>Cana:</strong> planejamento por talhão e época; foco em brocas e recuperação pós-operações.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Hortifrúti (Tomate, Batata, Cebola, Folhosas, Brássicas, Pimentão)</summary>
+        <ul>
+          <li>Ambiente protegido e campo aberto: preservar viabilidade dos biológicos; ventilação, umidade e temperatura são decisivos.</li>
+          <li>Rotação de mecanismos; <strong>teste de jarra</strong> para misturas; intervalos e DDA/IS conforme rótulo.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Pastagens & Florestais</summary>
+        <ul>
+          <li><strong>Pastagens:</strong> recuperar vigor pós-estiagem com Takotrop; MIP para pragas de solo/folívoras.</li>
+          <li><strong>Eucalipto/Florestais:</strong> cronograma por viveiro, campo inicial e manutenção; aplicações direcionadas.</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- =========================================
+         FAQ DETALHADO (CONFIANÇA & SEO)
+    ========================================== -->
+    <section class="card">
+      <h2>Perguntas frequentes</h2>
+
+      <details>
+        <summary>1) Como escolher o bico, volume e horário?</summary>
+        <p>Use o bico e o volume que garantam <strong>cobertura e deposição</strong> no alvo, evitando deriva (vento) e fotoinativação (radiação). Em geral, <strong>aplicações ao amanhecer/tarde</strong> apresentam melhor desempenho para biológicos. Consulte seu técnico para ajuste fino por equipamento.</p>
+      </details>
+
+      <details>
+        <summary>2) Posso misturar no mesmo tanque?</summary>
+        <p>Depende. Evite misturas com produtos de forte ação microbicida e <strong>sempre execute teste de jarra</strong>. Verifique pH, ordem de adição e estabilidade. Em caso de dúvida, aplique em separado.</p>
+      </details>
+
+      <details>
+        <summary>3) Quais cuidados de armazenamento e validade?</summary>
+        <p>Temperatura controlada, local seco e ventilado, longe de luz/sol. Mantenha a embalagem fechada e utilize dentro do prazo. Consulte rótulo para condições específicas.</p>
+      </details>
+
+      <details>
+        <summary>4) A Agroforte atende o Brasil todo?</summary>
+        <p>Sim. Atendemos <strong>todas as regiões</strong> (Norte, Nordeste, Centro-Oeste, Sudeste e Sul), com recomendações adequadas a cada bioma (Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa).</p>
+      </details>
+    </section>
+
+    <!-- =========================================
+         CONTATO / CTA
+    ========================================== -->
+    <section class="grid">
+      <div class="card span-8">
+        <h2>Fale com um especialista</h2>
+        <p>Quer montar um <strong>protocolo por talhão e por cultura</strong>? Envie uma mensagem para nosso time técnico com a sua região, cultura, meta de produtividade e principais desafios.</p>
+        <p><a class="cta" href="https://wa.me/5517991405464" target="_blank" rel="noopener">💬 WhatsApp (17) 99140-5464</a></p>
+      </div>
+      <div class="card span-4">
+        <h3>Documentação & rótulos</h3>
+        <p class="muted">Siga sempre as instruções de rótulo/bula e a legislação vigente. Em caso de conflito, **o rótulo prevalece**.</p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         NUVEM DE PALAVRAS-CHAVE (SEO)
+    ========================================== -->
+    <section class="card">
+      <h2>SEO por culturas & regiões</h2>
+      <div class="seo-cloud">
+        <span>bioinsumos para soja no Cerrado</span><span>controle biológico em milho safrinha</span><span>manejo de percevejo na soja Sul do Brasil</span><span>broca-do-café controle biológico</span><span>psilídeo dos citros manejo integrado</span><span>hortifrúti tomate estufa biológico</span><span>lagarta-do-cartucho controle sustentável</span><span>cigarrinha do milho MIP</span><span>algodão pragas e MIP MATOPIBA</span><span>cana-de-açúcar manejo de brocas</span><span>pastagens vigor pós-estiagem</span><span>eucalipto sanidade inicial</span><span>bioma Amazônia práticas responsáveis</span><span>Caatinga irrigação e manejo</span><span>Mata Atlântica fruticultura</span><span>Pantanal pecuária e pastagens</span><span>Pampa cereais de inverno</span>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Agroforte Fertilizantes</strong> — Conteúdo técnico para apoiar o produtor na tomada de decisão. © <span id="y"></span> • Atendimento Brasil • WhatsApp: (17) 99140-5464</p>
+      <p class="muted">Aviso: Informações técnicas de caráter geral. Consulte sempre o rótulo/bula e um Engenheiro Agrônomo para recomendações específicas à sua propriedade.</p>
+    </footer>
+  </div>
+
+  <!-- JS mínimo (somente para ano no rodapé) -->
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
