@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Página principal do produto -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <!-- Troque as imagens quando subir as definitivas -->
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg</image:loc>
+      <image:title>Fitoneem 1L – óleo de neem</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/fitoneem/aplicacao-campo.jpg</image:loc>
+      <image:title>Aplicação de Fitoneem no campo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Ficha técnica -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/ficha-tecnica/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Bula (resumo + PDF) -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/bula/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Culturas e pragas-alvo -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/culturas-pragas/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Como usar (dose, preparo da calda, intervalos) -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/como-usar/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/faq/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- Orçamento / contato (Sandro – WhatsApp) -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/orcamento/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Avaliações (placeholders até termos depoimentos reais) -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/avaliacoes/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- Segurança de uso / EPI / descarte -->
+  <url>
+    <loc>https://innovetecnologias.com.br/fitoneem/seguranca/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+</urlset>
