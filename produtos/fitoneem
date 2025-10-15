@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fitoneem – Óleo de Neem para Controle de Pragas | Agroforte</title>
-  <link rel="canonical" href="https://innovetecnologias.com.br/fitoneem/"/>
+  <link rel="canonical" href="https://innovetecnologias.com.br/produtos/fitoneem/"/>
   <meta name="description" content="Fitoneem (óleo de neem) com alta concentração de azadiractina. Ação por contato e ingestão, efeito anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução. Atende diversas culturas. Fale com a Agroforte: (17) 99140-5464."/>
   <meta name="robots" content="index,follow"/>
 
@@ -12,7 +12,7 @@
   <meta property="og:type" content="product"/>
   <meta property="og:title" content="Fitoneem – Óleo de Neem | Agroforte"/>
   <meta property="og:description" content="Inseticida natural à base de óleo de neem. Modos de ação múltiplos e certificado para uso em sistemas orgânicos."/>
-  <meta property="og:url" content="https://innovetecnologias.com.br/fitoneem/"/>
+  <meta property="og:url" content="https://innovetecnologias.com.br/produtos/fitoneem/"/>
   <meta property="og:image" content="https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg"/>
 
   <!-- WhatsApp CTA (Sandro) -->
@@ -180,14 +180,14 @@
     "brand":{"@type":"Brand","name":"Agroforte"},
     "description":"Inseticida botânico à base de óleo de neem (azadiractina) com ação por contato e ingestão. Modos de ação: anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução.",
     "image":["https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg"],
-    "url":"https://innovetecnologias.com.br/fitoneem/",
+    "url":"https://innovetecnologias.com.br/produtos/fitoneem/",
     "offers":{
       "@type":"Offer",
       "availability":"https://schema.org/InStock",
       "priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL"},
-      "url":"https://innovetecnologias.com.br/fitoneem/orcamento/"
+      "url":"https://innovetecnologias.com.br/produtos/fitoneem/orcamento/"
     },
-    "isAccessoryOrSparePartFor": "https://innovetecnologias.com.br/fitoneem/"
+    "isAccessoryOrSparePartFor": "https://innovetecnologias.com.br/produtos/fitoneem/"
   }
   </script>
 </body>
