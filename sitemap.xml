@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Fitoneem -->
+  <sitemap>
+    <loc>https://agroforte.com.br/sitemap-fitoneem.xml</loc>
+    <lastmod>2025-10-15</lastmod>
+  </sitemap>
+
+  <!-- Próximos produtos: adicionar mais itens aqui quando criarmos -->
+  <!--
+  <sitemap>
+    <loc>https://agroforte.com.br/sitemap-takotrop.xml</loc>
+    <lastmod>2025-10-15</lastmod>
+  </sitemap>
+  -->
+</sitemapindex>
