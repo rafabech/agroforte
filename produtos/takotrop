@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Takotrop® – Inseticida Biológico com Pseudomonas | Agroforte</title>
+  <link rel="canonical" href="https://innovetecnologias.com.br/produtos/takotrop/"/>
+
+  <!-- Favicon (logo fundo verde) -->
+  <link rel="icon" type="image/webp" href="/img/produtos/logooficialfundoverde.webp"/>
+
+  <meta name="description" content="Takotrop® é um inseticida biológico inovador com Pseudomonas chlororaphis e Pseudomonas fluorescens. Modo de ação por contato, ingestão e absorção (cuticular e tarsal). Ideal para MIP. Baixe a bula e ficha técnica."/>
+  <meta name="robots" content="index,follow"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product"/>
+  <meta property="og:title" content="Takotrop® – Inseticida Biológico com Pseudomonas | Agroforte"/>
+  <meta property="og:description" content="Tecnologia D.O.P: performance, seletividade e múltiplos modos de ação. Compatível com químicos e biológicos. Atendimento Sandro: (17) 99140-5464."/>
+  <meta property="og:url" content="https://innovetecnologias.com.br/produtos/takotrop/"/>
+  <meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/takotrop.webp"/>
+
+  <style>
+    :root{
+      --green:#0f5b2f; --green2:#1a7f44; --yellow:#f1b82d;
+      --bg:#0f5b2f; --ink:#183023; --surface:#ffffff; --line:#e6efe6;
+      --radius:14px; --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:#fff;line-height:1.55}
+    a{color:#fff;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+    header{background:linear-gradient(90deg,var(--green) 0%, var(--green2) 100%)}
+    .top{display:flex;align-items:center;gap:14px;padding:16px 0}
+    .top img{height:136px} /* 4x maior */
+    .back{margin-left:auto}
+    .back a{color:#fff;border:2px solid #fff;border-radius:999px;padding:6px 12px;font-weight:700;background:transparent}
+    .back a:hover{background:rgba(255,255,255,.12)}
+
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:6px 0 18px}
+    .badge{display:inline-block;background:#fff;color:var(--green);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;margin:8px 0 12px}
+    h1{font-size:42px;line-height:1.08;margin:0 0 12px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;border-radius:12px;padding:12px 16px;font-weight:700}
+    .btn-wpp{background:var(--yellow);color:#000}
+    .btn-ghost{border:2px solid #fff}
+    .btn-light{border:2px solid #cadcc9;color:#1a3c2a;background:#fff}
+
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px}
+    .rightCard{padding:10px;border-radius:18px}
+    .productShot{border-radius:12px;margin:0}
+
+    /* Botões logo abaixo da imagem (compacto) */
+    .thumb-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+    .thumb-actions .btn{min-height:44px;text-align:center;color:#1a3c2a}
+    .mini-info{margin-top:8px;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fcfffc;color:#183023;font-size:14px}
+    .mini-info h4{margin:0 0 6px;font-size:15px}
+    .mini-info ul{margin:0;padding-left:18px}
+    .mini-info li{margin:2px 0}
+
+    main{background:#f7fbf7;color:#183023}
+    section{padding:26px 0}
+    h2{font-size:28px;margin:0 0 12px}
+    .grid{display:grid;gap:18px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .list{margin:0;padding-left:18px}
+    .card-soft{background:#ffffff;border:1px solid #eaf2ea;border-radius:14px;padding:16px}
+    .tag{display:inline-block;background:#e7f6ea;color:#0e6b3a;border:1px solid #cbe9d2;border-radius:999px;padding:4px 10px;font-size:12px;margin:2px 6px 0 0}
+
+    details{background:#fff;border:1px solid #e6efe6;border-radius:12px;padding:12px;margin:10px 0}
+    summary{cursor:pointer;font-weight:700;outline:none}
+
+    footer{background:#0a2d1a;color:#cfe6d7;padding:24px 0}
+    footer a{color:#cfe6d7;text-decoration:underline}
+    .socials{display:flex;gap:12px;align-items:center}
+    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:#0f5b2f;border:1px solid #2b7a4a;color:#cfe6d7}
+    .socials a:hover{filter:brightness(1.1)}
+
+    /* WhatsApp flutuante discreto */
+    .wpp-float{position:fixed;right:14px;bottom:14px;z-index:50}
+    .wpp-float a{display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;border-radius:999px;padding:10px 12px;box-shadow:0 8px 24px rgba(0,0,0,.18);font-weight:700}
+    .wpp-float small{opacity:.95}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .top img{height:120px}
+      .thumb-actions{grid-template-columns:1fr}
+      .cols-2{grid-template-columns:1fr}
+      .cols-3{grid-template-columns:1fr}
+    }
+  </style>
+
+  <script defer>
+    const WPP="5517991405464";
+    function wppUrl(msg="Olá! Tenho interesse no Takotrop®."){return `https://wa.me/${WPP}?text=${encodeURIComponent(msg)}`}
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <!-- LOGO OFICIAL FUNDO VERDE -->
+      <img src="/img/produtos/logooficialfundoverde.webp" alt="Agroforte" loading="eager">
+      <div class="back"><a href="/" title="Voltar para a página inicial">← Voltar</a></div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <span class="badge">Biológico • Tecnologia D.O.P • Pseudomonas</span>
+        <h1>Takotrop® – biológico inovador, controle inteligente e seletivo</h1>
+        <p>Takotrop® é um inseticida biológico de <b>alta eficiência</b>, formulado com <b>Pseudomonas chlororaphis</b> (cepa inédita no uso agrícola) em associação à <b>Pseudomonas fluorescens</b>. Atua por <b>contato, ingestão e absorção</b> – com efeitos <b>cuticular</b> (pela pele) e <b>tarsal</b> (pelas patas) – promovendo ação direta e sustentada sobre as pragas-alvo, desde a primeira aplicação.</p>
+        <div class="cta">
+          <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Quero cotar o Takotrop®.');return false;">Pedir orçamento no WhatsApp</a>
+          <a class="btn btn-ghost" href="#faq">Perguntas & respostas</a>
+        </div>
+      </div>
+
+      <!-- Card da direita – compacto -->
+      <div class="card rightCard">
+        <picture>
+          <source srcset="/img/produtos/takotrop.webp" type="image/webp">
+          <img class="productShot" src="/img/produtos/takotrop.webp" alt="Takotrop®" loading="lazy">
+        </picture>
+
+        <!-- Botões de documentos (suba em /produtos/takotrop/docs/) -->
+        <div class="thumb-actions">
+          <a class="btn btn-light" href="/produtos/takotrop/docs/Takotrop-Bula.pdf" target="_blank" rel="noopener">📑 Baixar Bula (PDF)</a>
+          <a class="btn btn-light" href="/produtos/takotrop/docs/Takotrop-Ficha-Tecnica.pdf" target="_blank" rel="noopener">📄 Ficha Técnica (PDF)</a>
+        </div>
+
+        <!-- Destaques técnicos -->
+        <div class="mini-info">
+          <h4>O que diferencia o Takotrop®</h4>
+          <ul>
+            <li><b>Tecnologia D.O.P</b> – induz produção natural de fitormônios e metabólitos bioativos com ação inseticida.</li>
+            <li><b>Triplo modo de ação</b> – contato, ingestão e absorção (cuticular e tarsal).</li>
+            <li><b>Compatível</b> com fungicidas e inseticidas químicos/biológicos.</li>
+            <li><b>Seguro</b> a inimigos naturais e polinizadores. 100% natural e biodegradável.</li>
+            <li><b>Registro MAPA</b> nº 16122.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <!-- Benefícios -->
+    <section id="beneficios">
+      <h2>Benefícios práticos do Takotrop®</h2>
+      <div class="grid cols-3">
+        <div class="card-soft"><b>Controle eficaz</b><br>Atua em diferentes pontos do ciclo biológico, com colonização foliar rápida.</div>
+        <div class="card-soft"><b>MIP e sustentabilidade</b><br>Reduz pressão de seleção por químicos e encaixa em programas de MIP.</div>
+        <div class="card-soft"><b>Compatibilidade ampla</b><br>Misturas com químicos/biológicos (pH 5,5–7,0) e sem fitotoxicidade reportada.</div>
+      </div>
+    </section>
+
+    <!-- Alvos e dosagens -->
+    <section id="alvos">
+      <h2>Alvos biológicos e dosagem</h2>
+      <div class="card-soft">
+        <p>Recomenda-se  <b>1,0 a 1,2 L/ha</b> para as pragas abaixo (seguir posicionamento conforme monitoramento e orientação técnica):</p>
+        <div class="grid cols-2">
+          <ul class="list">
+            <li><b>Cigarrinha-do-milho</b> (<i>Dalbulus maidis</i>)</li>
+            <li><b>Percevejo-marrom</b> (<i>Euschistus heros</i>)</li>
+            <li><b>Mosca-branca</b> (<i>Bemisia tabaci</i> raça B)</li>
+            <li><b>Pulgão-do-algodoeiro</b> (<i>Aphis gossypii</i>)</li>
+            <li><b>Pulgão-verde-dos-cereais</b> (<i>Rhopalosiphum graminum</i>)</li>
+          </ul>
+          <ul class="list">
+            <li><b>Tripes</b> (<i>Caliothrips brasiliensis</i>, <i>Frankliniella schultzei</i>)</li>
+            <li><b>Ácaro-rajado</b> (<i>Tetranychus urticae</i>)</li>
+            <li><b>Bicho-mineiro</b> (<i>Leucoptera coffeella</i>)</li>
+            <li><b>Cigarrinha-verde</b> (<i>Empoasca vitis</i>)</li>
+            <li><b>Percevejo-barriga-verde</b> (<i>Dichelops melacanthus</i>)</li>
+            <li><b>Psilídeo dos citros</b> (<i>Diaphorina citri</i>)</li>
+          </ul>
+        </div>
+        <div style="margin-top:8px">
+          <span class="tag">dose: 1,0–1,2 L/ha</span>
+          <span class="tag">pulverização foliar</span>
+          <span class="tag">cobertura uniforme</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Composição -->
+    <section id="composicao">
+      <h2>Composição qualitativa</h2>
+      <div class="grid cols-2">
+        <div class="card-soft">
+          <ul class="list">
+            <li><b>Pseudomonas fluorescens</b> – isolado CCTB03<br/>Concentração: <b>1,1 × 10⁴ UFC/mL</b> (≈ 6 g/L)</li>
+            <li><b>Pseudomonas chlororaphis</b> – isolado CCTB19<br/>Concentração: <b>5,2 × 10⁷ UFC/mL</b> (≈ 12 g/L)</li>
+          </ul>
+          <p>As bactérias produzem <b>metabólitos bioativos</b> e enzimas que impactam diretamente os insetos, podendo causar efeitos secundários no foco populacional (“efeito dominó”) no campo.</p>
+        </div>
+        <div class="card-soft">
+          <h3 style="margin:0 0 8px">Tecnologia D.O.P – Delivering Outstanding Performance</h3>
+          <p>A formulação induz a produção de fitormônios e compostos com ação inseticida, favorecendo a <b>sanidade vegetal</b>, a <b>interrupção do ciclo</b> das pragas e a <b>colonização foliar</b> rápida.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modo de aplicação -->
+    <section id="aplicacao">
+      <h2>Modo de aplicação</h2>
+      <div class="grid cols-2">
+        <div class="card-soft">
+          <ul class="list">
+            <li><b>Via:</b> pulverização foliar (costal, tratorizado, autopropelido).</li>
+            <li><b>Volume de calda</b>: 200–400 L/ha (porte baixo: hortaliças, soja, milho) e 500–800 L/ha (porte alto: frutíferas, café, citros). Ajustar ao estádio e densidade foliar.</li>
+            <li><b>Frequência</b>: iniciar no primeiro sinal de infestação ou de forma preventiva em áreas com histórico. Reaplicar a cada <b>7–10 dias</b> conforme pressão e orientação técnica.</li>
+          </ul>
+        </div>
+        <div class="card-soft">
+          <ul class="list">
+            <li><b>Compatibilidade</b>: químicos e biológicos; pH da água <b>5,5–7,0</b>; pulverizar logo após o preparo.</li>
+            <li><b>Condições</b>: preferir manhã/tarde; evitar calor e insolação intensos; manter agitação constante.</li>
+            <li><b>Cuidados</b>: limpar tanque e bicos antes/depois; evitar resíduos agressivos; usar EPIs.</li>
+          </ul>
+          <p style="font-size:14px;color:#355c40;margin-top:8px">Não aplicar sob sol intenso ou plantas sob estresse hídrico severo. Usar imediatamente após o preparo; não armazenar diluído.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentos -->
+    <section id="docs">
+      <h2>Documentos técnicos</h2>
+      <div class="card-soft" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div>
+          <p>Baixe os materiais oficiais (PDFs):</p>
+          <div class="cta">
+            <a class="btn btn-light" href="/produtos/takotrop/docs/Takotrop-Bula.pdf" target="_blank" rel="noopener">📑 Bula</a>
+            <a class="btn btn-light" href="/produtos/takotrop/docs/Takotrop-Ficha-Tecnica.pdf" target="_blank" rel="noopener">📄 Ficha Técnica</a>
+          </div>
+        </div>
+        <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Preciso de orientação técnica do Takotrop®.');return false;">Falar com Sandro</a>
+      </div>
+    </section>
+
+    <!-- FAQ SEO -->
+    <section id="faq">
+      <h2>Perguntas e respostas (Takotrop®)</h2>
+
+      <details>
+        <summary>Qual o <b>modo de ação</b> do Takotrop®?</summary>
+        <p>Triplo modo: <b>contato</b>, <b>ingestão</b> e <b>absorção</b> com efeitos <b>cuticular</b> (pela pele) e <b>tarsal</b> (pelas patas). Os metabólitos e enzimas produzidos pelas bactérias causam interferências metabólicas que impactam o ciclo das pragas.</p>
+      </details>
+
+      <details>
+        <summary>O produto é <b>compatível</b> com outros defensivos?</summary>
+        <p>Sim. É compatível com fungicidas e inseticidas químicos e biológicos. Para misturas, manter pH entre <b>5,5–7,0</b> e pulverizar logo após o preparo. Realize teste de jarra quando necessário.</p>
+      </details>
+
+      <details>
+        <summary>Existe risco de <b>fitotoxicidade</b>?</summary>
+        <p>Não há relato de fitotoxicidade nas recomendações indicadas. Respeite volumes de calda, horários e condições de aplicação.</p>
+      </details>
+
+      <details>
+        <summary>Qual a <b>dose</b> recomendada?</summary>
+        <p>Aplicar <b>1,0 a 1,2 L/ha</b> conforme praga e pressão populacional, seguindo orientação técnica local.</p>
+      </details>
+
+      <details>
+        <summary>Como armazenar e qual a <b>validade</b>?</summary>
+        <p>Validade de <b>9 meses</b>. Armazenar em local seco, ventilado e ao abrigo de luz solar direta. Não necessita de refrigeração. Não armazenar o produto já diluído.</p>
+      </details>
+
+      <details>
+        <summary>Em quais culturas posso utilizar?</summary>
+        <p>Takotrop® é indicado para programas de MIP em diversas culturas (grãos, HF e perenes), observando os <b>alvos biológicos</b> listados, o monitoramento e o posicionamento técnico local.</p>
+      </details>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <div>© <span id="y"></span> Agroforte — innovetecnologias.com.br</div>
+    <!-- Espaço para redes sociais (links placeholders) -->
+    <div class="socials" title="Nossas redes (em breve)">
+      <a href="#" aria-label="Instagram (definir link futuramente)">
+        <!-- Ícone Instagram -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM18 6.5a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2.001z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Facebook (definir link futuramente)">
+        <!-- Ícone Facebook -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0 1 14.5 6H17V2h-2.5A5.5 5.5 0 0 0 9 7.5V10H6v4h3v8h4z"/>
+        </svg>
+      </a>
+    </div>
+    <div><a href="/">Home</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots</a></div>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+
+<!-- Botão flutuante discreto do WhatsApp -->
+<div class="wpp-float" aria-live="polite">
+  <a href="#" onclick="location.href=wppUrl('Olá! Vim da página do Takotrop®.');return false;" aria-label="WhatsApp Agroforte">
+    <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.09c-.27-.13-1.59-.78-1.84-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.13-1.13-.42-2.16-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.11-.55.11-.11.27-.29.41-.44.14-.16.18-.27.27-.45.09-.18.05-.33-.02-.46-.07-.13-.61-1.48-.84-2.03-.22-.53-.45-.45-.61-.46l-.52-.01c-.18 0-.46.07-.7.33-.24.27-.92.9-.92 2.2s.94 2.55 1.07 2.73c.13.18 1.84 2.81 4.46 3.94.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.11.5-.07 1.59-.65 1.82-1.27.23-.62.23-1.14.16-1.27-.07-.13-.25-.2-.52-.33z"/><path d="M16.01 3.2c-7.11 0-12.87 5.76-12.87 12.87 0 2.27.6 4.51 1.75 6.48L3 29l6.6-1.73a12.75 12.75 0 0 0 6.41 1.72h.01c7.11 0 12.87-5.76 12.87-12.87S23.12 3.2 16.01 3.2zm7.56 20.43c-.32.9-1.85 1.72-2.58 1.84-.66.12-1.51.16-2.44-.15-1.41-.46-2.89-1.01-4.99-2.12-3.77-1.97-6.2-5.75-6.38-6.01-.18-.27-1.53-2.04-1.53-3.9 0-1.86.93-2.77 1.26-3.16.32-.39.7-.49.93-.49.23 0 .46 0 .66.01.21.01.49-.08.76.58.27.66.91 2.27.99 2.44.08.16.13.35.02.57-.11.23-.17.37-.34.57-.18.2-.35.45-.5.61-.16.16-.32.33-.14.66.18.33.78 1.28 1.67 2.08 1.15 1.03 2.12 1.35 2.45 1.51.33.16.53.13.73-.08.23-.23.84-.93 1.06-1.25.23-.33.45-.27.74-.16.29.1 1.86.88 2.18 1.04.32.16.53.23.61.35.08.12.08.69-.24 1.59z"/></svg>
+    <small>WhatsApp</small>
+  </a>
+</div>
+
+</body>
+</html>
