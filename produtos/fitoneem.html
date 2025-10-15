@@ -6,8 +6,8 @@
   <title>Fitoneem – Óleo de Neem | Agroforte</title>
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/fitoneem/"/>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="/img/produtos/logooficial.webp"/>
+  <!-- Favicon (logo fundo verde) -->
+  <link rel="icon" type="image/webp" href="/img/produtos/logooficialfundoverde.webp"/>
 
   <meta name="description" content="Fitoneem (óleo de neem) com azadiractina. Modos de ação: anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução. Baixe a bula e a ficha técnica. Suporte técnico Agroforte."/>
   <meta name="robots" content="index,follow"/>
@@ -21,8 +21,9 @@
 
   <style>
     :root{
-      --green:#0f5b2f; --green2:#1a7f44; --yellow:#f1b82d; --bg:#0f5b2f; --ink:#183023;
-      --surface:#ffffff; --line:#e6efe6; --radius:14px; --max:1120px;
+      --green:#0f5b2f; --green2:#1a7f44; --yellow:#f1b82d;
+      --bg:#0f5b2f; --ink:#183023; --surface:#ffffff; --line:#e6efe6;
+      --radius:14px; --max:1120px;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -33,7 +34,7 @@
 
     header{background:linear-gradient(90deg,var(--green) 0%, var(--green2) 100%)}
     .top{display:flex;align-items:center;gap:14px;padding:16px 0}
-    .top img{height:506px} /* 4x maior */
+    .top img{height:136px} /* 4x maior */
     .back{margin-left:auto}
     .back a{color:#fff;border:2px solid #fff;border-radius:999px;padding:6px 12px;font-weight:700;background:transparent}
     .back a:hover{background:rgba(255,255,255,.12)}
@@ -45,16 +46,15 @@
     .btn{display:inline-block;border-radius:12px;padding:12px 16px;font-weight:700}
     .btn-wpp{background:var(--yellow);color:#000}
     .btn-ghost{border:2px solid #fff}
-    .btn-outline{border:2px solid var(--green2);color:var(--green2)}
     .btn-light{border:2px solid #cadcc9;color:#1a3c2a;background:#fff}
 
     .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px}
     .rightCard{padding:10px;border-radius:18px}
     .productShot{border-radius:12px;margin:0}
 
-    /* Botões logo abaixo da imagem (mais colados, menos espaço em branco) */
+    /* Botões logo abaixo da imagem (compacto) */
     .thumb-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
-    .thumb-actions .btn{min-height:44px;text-align:center;color:var(--green2)}
+    .thumb-actions .btn{min-height:44px;text-align:center;color:#1a3c2a}
     .mini-info{margin-top:8px;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fcfffc;color:#183023;font-size:14px}
     .mini-info h4{margin:0 0 6px;font-size:15px}
     .mini-info ul{margin:0;padding-left:18px}
@@ -73,8 +73,12 @@
     details{background:#fff;border:1px solid #e6efe6;border-radius:12px;padding:12px;margin:10px 0}
     summary{cursor:pointer;font-weight:700;outline:none}
 
-    footer{background:#0a2d1a;color:#cfe6d7;padding:20px 0}
+    footer{background:#0a2d1a;color:#cfe6d7;padding:24px 0}
     footer a{color:#cfe6d7;text-decoration:underline}
+
+    .socials{display:flex;gap:12px;align-items:center}
+    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:#0f5b2f;border:1px solid #2b7a4a;color:#cfe6d7}
+    .socials a:hover{filter:brightness(1.1)}
 
     /* WhatsApp flutuante discreto */
     .wpp-float{position:fixed;right:14px;bottom:14px;z-index:50}
@@ -100,7 +104,8 @@
 <header>
   <div class="wrap">
     <div class="top">
-      <img src="img/produtos/logooficialfundoverde.webp" alt="Agroforte" loading="eager">
+      <!-- LOGO OFICIAL FUNDO VERDE -->
+      <img src="/img/produtos/logooficialfundoverde.webp" alt="Agroforte" loading="eager">
       <div class="back"><a href="/" title="Voltar para a página inicial">← Voltar</a></div>
     </div>
 
@@ -115,7 +120,7 @@
         </div>
       </div>
 
-      <!-- Card da direita – compacto (menos branco) -->
+      <!-- Card da direita – compacto -->
       <div class="card rightCard">
         <picture>
           <source srcset="/img/produtos/fitoneem.webp" type="image/webp">
@@ -205,7 +210,7 @@
 
       <details>
         <summary>Quais pragas-alvo o Fitoneem ajuda a manejar?</summary>
-        <p>O produto apresenta ação sobre insetos de partes moles e suctoras (ex.: <b>mosca-branca</b>, <b>pulgões</b>, <b>tripes</b>) e pode auxiliar em ácaros e doenças relacionadas ao desequilíbrio do sistema, conforme as orientações do fabricante. <b>Siga a bula</b> para enquadramento e estágios de desenvolvimento.</p>
+        <p>O produto apresenta ação sobre insetos de partes moles e suctoras (ex.: <b>mosca-branca</b>, <b>pulgões</b>, <b>tripes</b>) e pode auxiliar em ácaros e situações de desequilíbrio no sistema, conforme as orientações do fabricante. <b>Siga a bula</b> para enquadramento e estágios de desenvolvimento.</p>
       </details>
 
       <details>
@@ -252,9 +257,24 @@
 </main>
 
 <footer>
-  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
     <div>© <span id="y"></span> Agroforte — innovetecnologias.com.br</div>
-    <div><a href="/">Home</a> ·
+    <!-- Espaço para redes sociais (links placeholders) -->
+    <div class="socials" title="Nossas redes (em breve)">
+      <a href="#" aria-label="Instagram (definir link futuramente)">
+        <!-- Ícone Instagram -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM18 6.5a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2.001z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Facebook (definir link futuramente)">
+        <!-- Ícone Facebook -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0 1 14.5 6H17V2h-2.5A5.5 5.5 0 0 0 9 7.5V10H6v4h3v8h4z"/>
+        </svg>
+      </a>
+    </div>
+    <div><a href="/">Home</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots</a></div>
   </div>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </footer>
