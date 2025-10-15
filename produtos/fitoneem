@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitoneem – Óleo de Neem para Controle de Pragas | Agroforte</title>
+  <link rel="canonical" href="https://innovetecnologias.com.br/fitoneem/"/>
+  <meta name="description" content="Fitoneem (óleo de neem) com alta concentração de azadiractina. Ação por contato e ingestão, efeito anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução. Atende diversas culturas. Fale com a Agroforte: (17) 99140-5464."/>
+  <meta name="robots" content="index,follow"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product"/>
+  <meta property="og:title" content="Fitoneem – Óleo de Neem | Agroforte"/>
+  <meta property="og:description" content="Inseticida natural à base de óleo de neem. Modos de ação múltiplos e certificado para uso em sistemas orgânicos."/>
+  <meta property="og:url" content="https://innovetecnologias.com.br/fitoneem/"/>
+  <meta property="og:image" content="https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg"/>
+
+  <!-- WhatsApp CTA (Sandro) -->
+  <script>
+    const WPP = "5517991405464";
+    function wppUrl(msg="Olá! Tenho interesse no Fitoneem.") {
+      return `https://wa.me/${WPP}?text=${encodeURIComponent(msg)}`;
+    }
+  </script>
+
+  <style>
+    :root{
+      --green:#0f5b2f; --green-2:#1a7f44; --yellow:#f1b82d; --bg:#f7fbf7; --text:#183023;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
+    header{background:linear-gradient(90deg, var(--green) 0%, var(--green-2) 100%);color:#fff;padding:28px 18px}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand h1{font-size:22px;margin:0}
+    .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;padding:28px 0}
+    .hero h2{font-size:38px;line-height:1.1;margin:0 0 12px}
+    .badge{display:inline-block;background:#fff;color:var(--green);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:10px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer}
+    .btn-wpp{background:var(--yellow);color:#000}
+    .btn-ghost{background:transparent;color:#fff;border:2px solid #fff}
+    section{padding:38px 0}
+    h3{font-size:28px;margin:0 0 12px}
+    .grid{display:grid;gap:18px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:#fff;border-radius:14px;padding:18px;border:1px solid #e6efe6}
+    .list{margin:0;padding-left:18px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+    .kpi{background:#fff;border:1px solid #e6efe6;border-radius:14px;padding:16px;text-align:center}
+    .kpi b{display:block;font-size:22px}
+    .note{font-size:14px;color:#333}
+    .banner-cert{background:#fff;border:1px dashed #d6e5d6;border-radius:14px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .reviews .placeholder{opacity:.7}
+    footer{background:#0a2d1a;color:#cfe6d7;padding:28px 0;margin-top:28px}
+    a{color:var(--green-2);text-decoration:none}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .cols-2{grid-template-columns:1fr}
+      .cols-3{grid-template-columns:1fr}
+      .kpis{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <img src="/img/agroforte-logo.png" alt="Agroforte" style="height:34px">
+      <h1>Agroforte · Distribuição e suporte técnico</h1>
+    </div>
+    <div class="wrap hero">
+      <div>
+        <span class="badge">100% origem vegetal • óleo de neem</span>
+        <h2>Fitoneem – controle inteligente de pragas com azadiractina</h2>
+        <p>Produto à base de óleo de neem com ação por contato e ingestão. Atua como <b>anti-alimentar</b>, <b>regulador do crescimento</b>, <b>repelente</b> e <b>inibidor da reprodução</b>, ajudando a reduzir rapidamente a pressão de pragas em diversas culturas.</p>
+        <div class="cta">
+          <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Quero cotar Fitoneem.');return false;">Pedir orçamento no WhatsApp</a>
+          <a class="btn btn-ghost" href="#docs">Ficha técnica e bula (PDF)</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/fitoneem/packshot-1l.jpg" alt="Fitoneem 1L" style="width:100%;border-radius:12px">
+        <div class="kpis">
+          <div class="kpi"><b>Contato + ingestão</b><span>Modos de ação</span></div>
+          <div class="kpi"><b>Multi-alvo</b><span>Várias pragas</span></div>
+          <div class="kpi"><b>Uso amplo</b><span>Diversas culturas</span></div>
+          <div class="kpi"><b>Suporte</b><span>(17) 99140-5464</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="sobre">
+      <h3>Sobre o produto</h3>
+      <div class="grid cols-2">
+        <div class="card">
+          <p>Fitoneem é um inseticida de origem botânica obtido do óleo das sementes de <i>Azadirachta indica</i> (neem). A presença de compostos como a <b>azadiractina</b> confere efeito anti-alimentar e perturba funções vitais dos insetos, auxiliando no controle de pragas e na proteção das plantas.</p>
+          <ul class="list">
+            <li><b>Ação:</b> contato e ingestão</li>
+            <li><b>Modos de ação:</b> anti-alimentar, regulador de crescimento, repelente, inibidor da reprodução</li>
+            <li><b>Aplicação:</b> pulverização foliar (conforme rótulo/bula)</li>
+          </ul>
+          <p class="note">Sempre siga a bula/rótulo do fabricante e consulte assistência técnica.</p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 6px">Modos de ação (resumo)</h4>
+          <ul class="list">
+            <li><b>Anti-alimentar:</b> reduz o consumo foliar.</li>
+            <li><b>Regulador do crescimento:</b> dificulta muda e desenvolvimento.</li>
+            <li><b>Repelente:</b> insetos evitam as superfícies tratadas.</li>
+            <li><b>Inibidor da reprodução:</b> atrasa acasalamento e postura.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="vantagens">
+      <h3>Vantagens</h3>
+      <div class="grid cols-3">
+        <div class="card"><b>Amplo espectro</b><br>Auxilia no manejo de diferentes pragas.</div>
+        <div class="card"><b>Múltiplos mecanismos</b><br>Ajuda a reduzir resistência.</div>
+        <div class="card"><b>Compatibilidade</b><br>Usado em programas de MIP.</div>
+      </div>
+    </section>
+
+    <section id="docs">
+      <h3>Documentos técnicos</h3>
+      <div class="grid cols-2">
+        <div class="card">
+          <h4 style="margin:0 0 6px">Ficha técnica</h4>
+          <p>Especificações, recomendações gerais e preparo.</p>
+          <p><a href="/docs/FITONEEM.pdf" target="_blank" rel="noopener">Baixar Ficha (PDF)</a></p>
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 6px">Bula</h4>
+          <p>Informações oficiais do fabricante para uso seguro.</p>
+          <p><a href="/docs/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">Baixar Bula (PDF)</a></p>
+        </div>
+      </div>
+      <div class="banner-cert" style="margin-top:16px">
+        <div>
+          <b>Atendimento Agroforte</b><br>
+          Sandro · <a href="#" onclick="location.href=wppUrl('Olá Sandro, preciso de orientação sobre o Fitoneem.');return false;">WhatsApp (17) 99140-5464</a><br>
+          <span class="note">Orçamento rápido e suporte técnico.</span>
+        </div>
+        <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Quero cotar Fitoneem (óleo de neem).');return false;">Pedir orçamento</a>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="reviews">
+      <h3>Avaliações</h3>
+      <div class="card placeholder">
+        <p><b>Em breve:</b> depoimentos verificados de clientes (nome + cidade). Para enviar o seu, fale conosco no WhatsApp.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div>
+          <b>Agroforte</b><br>
+          Atendimento: <a style="color:#fff" href="#" onclick="location.href=wppUrl();return false;">(17) 99140-5464</a><br>
+          E-mail: contato@innovetecnologias.com.br
+        </div>
+        <div class="note">© <span id="y"></span> Agroforte · innovetecnologias.com.br</div>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
+
+  <!-- JSON-LD Product -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Fitoneem",
+    "brand":{"@type":"Brand","name":"Agroforte"},
+    "description":"Inseticida botânico à base de óleo de neem (azadiractina) com ação por contato e ingestão. Modos de ação: anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução.",
+    "image":["https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg"],
+    "url":"https://innovetecnologias.com.br/fitoneem/",
+    "offers":{
+      "@type":"Offer",
+      "availability":"https://schema.org/InStock",
+      "priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL"},
+      "url":"https://innovetecnologias.com.br/fitoneem/orcamento/"
+    },
+    "isAccessoryOrSparePartFor": "https://innovetecnologias.com.br/fitoneem/"
+  }
+  </script>
+</body>
+</html>
 
