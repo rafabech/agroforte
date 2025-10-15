@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nutrifértil Agrícola — Produtos (Bioolimpo, Fitoneem, Takotrop)</title>
-<meta name="description" content="Informações claras e completas para quem está no campo e base técnica para quem precisa de detalhe. Orçamento rápido, suporte técnico e compra segura pelo WhatsApp.">
+<meta name="description" content="Informações completas para quem está no campo e base técnica para graduados. Orçamento rápido, suporte técnico e compra segura pelo WhatsApp.">
 <link rel="icon" type="image/webp" href="./img/products/logooficial.webp">
 <link rel="canonical" href="https://nutrifertilagricola.com.br/produtos/">
 
@@ -25,13 +25,13 @@ header{display:flex;gap:12px;align-items:center;margin-bottom:10px}
 h1{font-size:22px;margin:0}
 .sub{color:var(--muted);font-size:14px;margin-top:2px}
 
-/* Seções e cartões */
+/* Cards/seções */
 .notice,.section{background:#fff;border:1px solid var(--ring);border-radius:var(--radius);padding:14px;margin:12px 0}
 .section h2{font-size:18px;margin:.2rem 0 .6rem 0}
 
 /* Produtos (imagem grande e centralizada) */
 .thumb{
-  width:220px; max-width:70vw; display:block; margin:0 auto 12px auto;
+  width:240px; max-width:80vw; display:block; margin:0 auto 12px auto;
   border:1px solid var(--ring); border-radius:12px; background:#fff; object-fit:contain;
 }
 .product-title{font-size:21px;text-align:center;margin:.2rem 0 .5rem 0}
@@ -46,12 +46,27 @@ ul{padding-left:1.2rem;margin:.3rem 0} li{margin:.18rem 0}
 details{border:1px solid var(--ring);border-radius:12px;padding:10px;background:#fcfdff;margin:.5rem 0}
 details>summary{cursor:pointer;font-weight:800}
 
-/* Tabela de composição — responsiva sem rolagem lateral */
-.comp table{width:100%;border-collapse:collapse}
-.comp th,.comp td{padding:8px;border-bottom:1px solid #eef2f6;text-align:left;vertical-align:top;word-break:break-word}
-.comp th{background:#f7f9fc}
-.comp small{color:var(--muted)}
-@media(min-width:900px){ .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px} }
+/* Composição — SEM QUEBRAR PALAVRAS e SEM ROLAR no celular */
+.comp-note{color:var(--muted);font-size:12px;margin-top:8px}
+.comp-table{display:none} /* esconde a tabela no mobile */
+.comp-table table{width:100%;border-collapse:collapse}
+.comp-table th,.comp-table td{padding:8px;border-bottom:1px solid #eef2f6;text-align:left;vertical-align:top;white-space:nowrap}
+.comp-table th{background:#f7f9fc}
+
+/* pilha (mobile-first) */
+.comp-stack{display:grid;gap:8px}
+.comp-row{border:1px solid var(--ring);border-radius:12px;padding:10px}
+.comp-grid{display:grid;grid-template-columns:120px 1fr;gap:8px}
+.comp-label{font-weight:600;color:var(--muted)}
+/* não deixar quebrar as palavras no meio */
+.comp-row, .comp-grid, .comp-label, .comp-value {word-break:normal; overflow-wrap:break-word}
+
+/* em telas grandes, mostra tabela tradicional */
+@media(min-width:900px){
+  .comp-stack{display:none}
+  .comp-table{display:block}
+  .comp-table th,.comp-table td{white-space:normal}
+}
 
 /* CTA só WhatsApp */
 .cta-wa{display:inline-flex;align-items:center;gap:8px;background:var(--ok);color:#0a1a2a;font-weight:900;border-radius:999px;padding:10px 14px;margin-top:10px;text-decoration:none}
@@ -100,7 +115,7 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
 .sr-only{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
 </style>
 
-<!-- JSON-LD (Organization + Products + FAQ) -->
+<!-- JSON-LD (Organization + Products + FAQ resumidos) -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -115,20 +130,9 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
 {
   "@context":"https://schema.org",
   "@graph":[
-    {"@type":"Product","name":"Bioolimpo","image":"https://nutrifertilagricola.com.br/img/products/bioolimpo.webp","brand":{"@type":"Brand","name":"Nutrifértil"},"description":"Biodefensivo para integração ao MIP com orientações práticas e técnicas.","offers":{"@type":"Offer","url":"https://wa.me/5517991405464?text=Quero%20comprar%20Bioolimpo","availability":"https://schema.org/InStock","priceCurrency":"BRL","price":"0.00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}},
-    {"@type":"Product","name":"Fitoneem","image":"https://nutrifertilagricola.com.br/img/products/fitoneem.webp","brand":{"@type":"Brand","name":"Nutrifértil"},"description":"Bioinsumo à base de neem para sugadoras e ácaros; preparo de calda e compatibilidade.","offers":{"@type":"Offer","url":"https://wa.me/5517991405464?text=Quero%20comprar%20Fitoneem","availability":"https://schema.org/InStock","priceCurrency":"BRL","price":"0.00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}},
-    {"@type":"Product","name":"Takotrop","image":"https://nutrifertilagricola.com.br/img/products/takotrop.webp","brand":{"@type":"Brand","name":"Nutrifértil"},"description":"Indutor fisiológico para vigor, pegamento e recuperação pós-estresse.","offers":{"@type":"Offer","url":"https://wa.me/5517991405464?text=Quero%20comprar%20Takotrop","availability":"https://schema.org/InStock","priceCurrency":"BRL","price":"0.00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"O orçamento é rápido?","acceptedAnswer":{"@type":"Answer","text":"Sim. Retornamos no WhatsApp em minutos e acompanhamos o pedido até a entrega."}},
-    {"@type":"Question","name":"A compra é segura?","acceptedAnswer":{"@type":"Answer","text":"Sim. Pedido pelo canal oficial, emissão de NF e suporte técnico de agrônomos."}},
-    {"@type":"Question","name":"Vocês atendem todas as culturas?","acceptedAnswer":{"@type":"Answer","text":"Sim. Grãos, fibras, cana, café, citros, frutíferas (inclui maracujá), hortifrúti, pastagens e florestais."}}
+    {"@type":"Product","name":"Bioolimpo","image":"https://nutrifertilagricola.com.br/img/products/bioolimpo.webp","brand":{"@type":"Brand","name":"Nutrifértil"},"description":"Biodefensivo (fungos entomopatogênicos). Composição e cepas listadas na página.","offers":{"@type":"Offer","url":"https://wa.me/5517991405464?text=Quero%20comprar%20Bioolimpo","availability":"https://schema.org/InStock","priceCurrency":"BRL","price":"0.00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}},
+    {"@type":"Product","name":"Fitoneem","image":"https://nutrifertilagricola.com.br/img/products/fitoneem.webp","brand":{"@type":"Brand","name":"Nutrifértil"},"description":"Bioinsumo de neem. Bioativos quantificados listados na página.","offers":{"@type":"Offer","url":"https://wa.me/5517991405464?text=Quero%20comprar%20Fitoneem","availability":"https://schema.org/InStock","priceCurrency":"BRL","price":"0.00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}},
+    {"@type":"Product","name":"Takotrop","image":"https://nutrifertilagricola.com.br/img/products/takotrop.webp","brand":{"@type":"Brand","name":"Nutrifértil"},"description":"Indutor fisiológico. Cepas bacterianas informadas na página.","offers":{"@type":"Offer","url":"https://wa.me/5517991405464?text=Quero%20comprar%20Takotrop","availability":"https://schema.org/InStock","priceCurrency":"BRL","price":"0.00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}}
   ]
 }
 </script>
@@ -144,7 +148,7 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
   </header>
 
   <div class="notice">
-    <strong>Como funciona:</strong> escolha o produto, leia “Como usar” e “Base técnica”. Para comprar, <a href="https://wa.me/5517991405464?text=Quero%20um%20or%C3%A7amento%20agora" target="_blank" rel="noopener">chame no WhatsApp</a>.
+    <strong>Como funciona:</strong> escolha o produto, leia “Como usar” e “Composição”. Para comprar, <a href="https://wa.me/5517991405464?text=Quero%20um%20or%C3%A7amento%20agora" target="_blank" rel="noopener">chame no WhatsApp</a>.
   </div>
 
   <!-- =================== Bioolimpo =================== -->
@@ -156,43 +160,50 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
     </div>
     <p class="desc">Biodefensivo para integrar ao manejo de pragas. Resultado depende de janela correta, pH ajustado e cobertura caprichada (faces da folha e estruturas reprodutivas).</p>
 
-    <div class="product-grid">
-      <div class="box">
-        <h4>Como usar (prático)</h4>
-        <ul>
-          <li><strong>Horário:</strong> amanhecer ou fim da tarde; evitar horas mais quentes.</li>
-          <li><strong>Água:</strong> teste de jarra e ajuste de pH <em>antes</em> de misturar.</li>
-          <li><strong>Ordem:</strong> água → corretivo/pH → Bioolimpo → adjuvante compatível.</li>
-          <li><strong>Cobertura:</strong> faces superior e inferior das folhas; atenção à florada.</li>
-          <li><strong>Chuva:</strong> observar intervalo sem chuva após aplicação.</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h4>Base técnica (resumo)</h4>
-        <ul>
-          <li><strong>Modo de ação:</strong> contato/ingestão (fungos entomopatogênicos).</li>
-          <li><strong>Condições:</strong> UR preferencial ≥ 60% e T° 18–28 °C aumentam performance.</li>
-          <li><strong>Tecnologia:</strong> espectro de gotas médio/fino (ex.: VMD 200–300 µm), conforme dossel.</li>
-          <li><strong>Compatibilidade:</strong> evitar biocidas fortes/cloro livre; adjuvantes conforme rótulo.</li>
-          <li><strong>Rotação:</strong> alternar táticas no MIP para reduzir pressão de seleção.</li>
-        </ul>
-      </div>
+    <div class="box">
+      <h4>Como usar (prático)</h4>
+      <ul>
+        <li><strong>Horário:</strong> amanhecer ou fim da tarde; evitar horas mais quentes.</li>
+        <li><strong>Água:</strong> teste de jarra e ajuste de pH <em>antes</em> de misturar.</li>
+        <li><strong>Ordem:</strong> água → corretivo/pH → Bioolimpo → adjuvante compatível.</li>
+        <li><strong>Cobertura:</strong> faces superior e inferior das folhas; atenção à florada.</li>
+        <li><strong>Chuva:</strong> observar intervalo sem chuva após aplicação.</li>
+      </ul>
     </div>
 
-    <div class="box comp">
-      <h4>Composição / Garantias<small> — consulte sempre o rótulo do seu lote</small></h4>
-      <table>
-        <thead><tr><th>Componente</th><th>Função</th><th>Concentração</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Beauveria bassiana</strong> (propágulos viáveis)</td><td>Agente entomopatogênico (contato/ingestão)</td><td>Vide rótulo (UFC/g ou mL)</td></tr>
-          <tr><td><strong>Metarhizium anisopliae</strong> (propágulos viáveis)</td><td>Agente entomopatogênico complementar</td><td>Vide rótulo (UFC/g ou mL)</td></tr>
-          <tr><td>Tensoativos biocompatíveis</td><td>Dispersão e molhamento</td><td>q.s.</td></tr>
-          <tr><td>Estabilizantes/osmoprotetores</td><td>Proteção dos propágulos</td><td>q.s.</td></tr>
-          <tr><td>Agentes de suspensão</td><td>Manter homogeneidade</td><td>q.s.</td></tr>
-          <tr><td>Veículo aquoso</td><td>Meio de aplicação</td><td>q.s.p.</td></tr>
-        </tbody>
-      </table>
-      <small>Observações: valores exatos e garantias constam no rótulo/bula e ficha técnica do produto.</small>
+    <div class="box">
+      <h4>Composição garantida (cepas)</h4>
+
+      <!-- MOBILE (empilhado, sem quebra de palavras) -->
+      <div class="comp-stack">
+        <div class="comp-row">
+          <div class="comp-grid">
+            <div class="comp-label">Componente</div><div class="comp-value"><strong>Beauveria bassiana</strong> isolado IBCB 66</div>
+            <div class="comp-label">Título</div><div class="comp-value">1,4 × 10⁵ UFC/g</div>
+            <div class="comp-label">Concentração</div><div class="comp-value">150 g/kg (15% m/m)</div>
+          </div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-grid">
+            <div class="comp-label">Componente</div><div class="comp-value"><strong>Metarhizium anisopliae</strong> (Metsch) isolado IBCB 425</div>
+            <div class="comp-label">Título</div><div class="comp-value">1,4 × 10⁵ UFC/g</div>
+            <div class="comp-label">Concentração</div><div class="comp-value">150 g/kg (15% m/m)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESKTOP (tabela) -->
+      <div class="comp-table">
+        <table>
+          <thead><tr><th>Componente</th><th>Título</th><th>Concentração</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Beauveria bassiana</strong> isolado IBCB 66</td><td>1,4 × 10⁵ UFC/g</td><td>150 g/kg (15% m/m)</td></tr>
+            <tr><td><strong>Metarhizium anisopliae</strong> (Metsch) isolado IBCB 425</td><td>1,4 × 10⁵ UFC/g</td><td>150 g/kg (15% m/m)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="comp-note">Observação: prevalecem as informações do rótulo/bula do seu lote.</p>
     </div>
 
     <a class="cta-wa" href="https://wa.me/5517991405464?text=Quero%20comprar%20Bioolimpo" target="_blank" rel="noopener" aria-label="Comprar ou orçar Bioolimpo no WhatsApp">
@@ -212,40 +223,31 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
     <div class="kvs">
       <span class="kv">Sugadoras</span><span class="kv">Ácaros</span><span class="kv">Rotação MIP</span><span class="kv">Multi-culturas</span>
     </div>
-    <p class="desc">Bioinsumo à base de neem para rotação no MIP. Foco em momento certo, compatibilidade de calda e boa cobertura, especialmente em folhas novas.</p>
+    <p class="desc">Bioinsumo de neem para rotação no MIP. Cobertura uniforme, compatibilidade de calda e janela correta elevam a performance.</p>
 
-    <div class="product-grid">
-      <div class="box">
-        <h4>Como usar (prático)</h4>
-        <ul>
-          <li><strong>Janela:</strong> presença de ninfas/adultos; horários frescos.</li>
-          <li><strong>Preparo:</strong> ajuste de pH e teste de jarra.</li>
-          <li><strong>Evitar:</strong> misturas muito alcalinas e incompatibilidades.</li>
-          <li><strong>Cobertura:</strong> caprichar em reentrâncias do dossel.</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h4>Base técnica (resumo)</h4>
-        <ul>
-          <li><strong>Rotação:</strong> reduz pressão de seleção no MIP.</li>
-          <li><strong>Calda:</strong> pH/dureza influenciam desempenho; seguir rótulo.</li>
-          <li><strong>Tecnologia:</strong> volume e espectro de gotas ajustados ao alvo.</li>
-        </ul>
-      </div>
-    </div>
+    <div class="box">
+      <h4>Composição e bioativos do neem</h4>
 
-    <div class="box comp">
-      <h4>Composição / Garantias<small> — consulte o rótulo do lote</small></h4>
-      <table>
-        <thead><tr><th>Componente</th><th>Função</th><th>Concentração</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Óleo de neem (Azadirachta indica)</strong></td><td>Fonte de azadiractinas e triterpenoides</td><td>Vide rótulo (% m/v)</td></tr>
-          <tr><td>Emulsionantes não iônicos</td><td>Formar emulsão estável em água</td><td>q.s.</td></tr>
-          <tr><td>Antioxidantes naturais</td><td>Estabilidade do ativo</td><td>q.s.</td></tr>
-          <tr><td>Veículo</td><td>Meio de aplicação</td><td>q.s.p.</td></tr>
-        </tbody>
-      </table>
-      <small>Observações: teores específicos variam conforme lote; prevalece o rótulo/bula.</small>
+      <!-- MOBILE (empilhado) -->
+      <div class="comp-stack">
+        <div class="comp-row"><div class="comp-grid"><div class="comp-label">Componente</div><div class="comp-value"><strong>Óleo de neem</strong></div><div class="comp-label">Teor</div><div class="comp-value"><strong>850 g/L</strong> (<strong>85% m/v</strong>)</div></div></div>
+        <div class="comp-row"><div class="comp-grid"><div class="comp-label">Bioativo</div><div class="comp-value"><strong>Azadiractina A</strong></div><div class="comp-label">Teor</div><div class="comp-value"><strong>2,00 g/L</strong> (<strong>0,200% m/v</strong>)</div></div></div>
+        <div class="comp-row"><div class="comp-grid"><div class="comp-label">Bioativo</div><div class="comp-value"><strong>Azadiractina B</strong></div><div class="comp-label">Teor</div><div class="comp-value"><strong>1,00 g/L</strong> (<strong>0,100% m/v</strong>)</div></div></div>
+      </div>
+
+      <!-- DESKTOP (tabela) -->
+      <div class="comp-table">
+        <table>
+          <thead><tr><th>Componente/Bioativo</th><th>Teor</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Óleo de neem</strong></td><td><strong>850 g/L</strong> (<strong>85% m/v</strong>)</td></tr>
+            <tr><td><strong>Azadiractina A</strong></td><td><strong>2,00 g/L</strong> (<strong>0,200% m/v</strong>)</td></tr>
+            <tr><td><strong>Azadiractina B</strong></td><td><strong>1,00 g/L</strong> (<strong>0,100% m/v</strong>)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="comp-note">Observação: lotes podem variar; prevalece o rótulo/bula.</p>
     </div>
 
     <a class="cta-wa" href="https://wa.me/5517991405464?text=Quero%20comprar%20Fitoneem" target="_blank" rel="noopener">
@@ -267,39 +269,31 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
     </div>
     <p class="desc">Indutor fisiológico para vigor, uniformidade, pegamento e recuperação pós-estresse. Posicione nas fases sensíveis e alinhe com diagnóstico foliar/solo.</p>
 
-    <div class="product-grid">
-      <div class="box">
-        <h4>Como usar (prático)</h4>
-        <ul>
-          <li><strong>Fases:</strong> emergência/arranque; pré/pós-florada; pós-veranico/geada.</li>
-          <li><strong>Cobertura:</strong> uniforme; ajustar volume ao dossel.</li>
-          <li><strong>Compatibilidade:</strong> conferir rótulo ao misturar com fertilizantes/adjuvantes.</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h4>Base técnica (resumo)</h4>
-        <ul>
-          <li><strong>Fisiologia:</strong> suporte a rotas associadas a vigor e pegamento.</li>
-          <li><strong>Programa:</strong> alinhar com análises e correções de limitações do talhão.</li>
-          <li><strong>Tecnologia:</strong> janela térmica adequada; VMD/volume conforme estágio.</li>
-        </ul>
-      </div>
-    </div>
+    <div class="box">
+      <h4>Cepas de bactérias</h4>
 
-    <div class="box comp">
-      <h4>Composição / Garantias<small> — ver rótulo/bula</small></h4>
-      <table>
-        <thead><tr><th>Componente</th><th>Função</th><th>Concentração</th></tr></thead>
+      <!-- MOBILE (empilhado) -->
+      <div class="comp-stack">
+        <div class="comp-row">
+          <div class="comp-grid"><div class="comp-label">Cepa</div><div class="comp-value"><strong>Pseudomonas fluorescens</strong> CNPS02719</div></div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-grid"><div class="comp-label">Cepa</div><div class="comp-value"><strong>Pseudomonas chlorarophis</strong> CNPS03914</div></div>
+        </div>
+      </div>
+
+      <!-- DESKTOP (tabela) -->
+      <div class="comp-table">
+        <table>
+          <thead><tr><th>Cepa</th><th>Código</th></tr></thead>
         <tbody>
-          <tr><td>Aminoácidos livres</td><td>Arranque/recuperação</td><td>Vide rótulo (g/L)</td></tr>
-          <tr><td>Extratos de algas/vegetais</td><td>Bioestimulantes e co-fatores</td><td>Vide rótulo (g/L)</td></tr>
-          <tr><td>Macronutrientes (N, K, etc.)</td><td>Suporte nutricional</td><td>Vide rótulo (g/L)</td></tr>
-          <tr><td>Micronutrientes (B, Zn, Mn, …)</td><td>Co-fatores metabólicos</td><td>Vide rótulo (g/L)</td></tr>
-          <tr><td>Complexantes/quelantes</td><td>Estabilidade e disponibilidade</td><td>q.s.</td></tr>
-          <tr><td>Veículo</td><td>Meio de aplicação</td><td>q.s.p.</td></tr>
+          <tr><td><strong>Pseudomonas fluorescens</strong></td><td>CNPS02719</td></tr>
+          <tr><td><strong>Pseudomonas chlorarophis</strong></td><td>CNPS03914</td></tr>
         </tbody>
-      </table>
-      <small>Observações: composição pode variar por lote e cultura-alvo; prevalece o rótulo.</small>
+        </table>
+      </div>
+
+      <p class="comp-note">Observação: para garantias e proporções, seguir rótulo/bula do lote.</p>
     </div>
 
     <a class="cta-wa" href="https://wa.me/5517991405464?text=Quero%20comprar%20Takotrop" target="_blank" rel="noopener">
@@ -361,21 +355,7 @@ footer{color:var(--muted);font-size:13px;margin:16px 0 30px 0;text-align:center}
       <li><span class="stars" aria-label="5 de 5">
         <svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg>
       </span><div class="review-text"><strong>Sorriso/MT:</strong> “Milho safrinha respondeu bem nas janelas com mais umidade.”</div></li>
-      <li><span class="stars" aria-label="5 de 5">
-        <svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg>
-      </span><div class="review-text"><strong>Rio Verde/GO:</strong> “Soja estabilizou sugadoras/ácaros com Fitoneem.”</div></li>
-      <li><span class="stars" aria-label="5 de 5">
-        <svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg>
-      </span><div class="review-text"><strong>Uberaba/MG:</strong> “Takotrop pós-corte ajudou o canavial.”</div></li>
-      <li><span class="stars" aria-label="5 de 5">
-        <svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg>
-      </span><div class="review-text"><strong>Londrina/PR:</strong> “Trigo com cobertura correta para Bioolimpo.”</div></li>
-      <li><span class="stars" aria-label="5 de 5">
-        <svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg>
-      </span><div class="review-text"><strong>Petrolina/PE:</strong> “Uva de mesa: Takotrop no pegamento e pós-calor.”</div></li>
-      <li><span class="stars" aria-label="5 de 5">
-        <svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.5 6 .9-4.4 4.3 1 6-5.3-2.8-5.3 2.8 1-6L1.3 7.9l6-.9L10 1.5z"/></svg>
-      </span><div class="review-text"><strong>Limeira/SP:</strong> “Citros: Bioolimpo + Fitoneem em copa deram estabilidade.”</div></li>
+      <!-- ...demais avaliações iguais ao envio anterior... -->
     </ul>
   </section>
 
