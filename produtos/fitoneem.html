@@ -1,195 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fitoneem – Óleo de Neem para Controle de Pragas | Agroforte</title>
-  <link rel="canonical" href="https://innovetecnologias.com.br/produtos/fitoneem/"/>
-  <meta name="description" content="Fitoneem (óleo de neem) com alta concentração de azadiractina. Ação por contato e ingestão, efeito anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução. Atende diversas culturas. Fale com a Agroforte: (17) 99140-5464."/>
-  <meta name="robots" content="index,follow"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agroforte – Bioolimpo, Fitoneem e Takotrop</title>
+  <meta name="description" content="Agroforte: informações claras para o produtor e base técnica detalhada. Orçamento rápido, suporte técnico e compra segura pelo WhatsApp.">
+  <link rel="canonical" href="https://innovetecnologias.com.br/">
+
+  <!-- Ícone -->
+  <link rel="icon" type="image/webp" href="/img/produtos/logooficial.webp">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="product"/>
-  <meta property="og:title" content="Fitoneem – Óleo de Neem | Agroforte"/>
-  <meta property="og:description" content="Inseticida natural à base de óleo de neem. Modos de ação múltiplos e certificado para uso em sistemas orgânicos."/>
-  <meta property="og:url" content="https://innovetecnologias.com.br/produtos/fitoneem/"/>
-  <meta property="og:image" content="https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg"/>
-
-  <!-- WhatsApp CTA (Sandro) -->
-  <script>
-    const WPP = "5517991405464";
-    function wppUrl(msg="Olá! Tenho interesse no Fitoneem.") {
-      return `https://wa.me/${WPP}?text=${encodeURIComponent(msg)}`;
-    }
-  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agroforte – Bioolimpo, Fitoneem e Takotrop">
+  <meta property="og:description" content="Distribuição com suporte técnico. Fale no WhatsApp: (17) 99140-5464.">
+  <meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/logooficial.webp">
+  <meta property="og:url" content="https://innovetecnologias.com.br/">
 
   <style>
     :root{
-      --green:#0f5b2f; --green-2:#1a7f44; --yellow:#f1b82d; --bg:#f7fbf7; --text:#183023;
+      --bg:#f6faf6; --surface:#ffffff; --ink:#13202c; --muted:#5b6672; --brand:#0f723f;
+      --ring:#6ecf62; --shadow:0 10px 30px rgba(0,0,0,.06); --radius:14px; --max:1120px;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
-    header{background:linear-gradient(90deg, var(--green) 0%, var(--green-2) 100%);color:#fff;padding:28px 18px}
-    .wrap{max-width:1120px;margin:0 auto;padding:0 18px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand h1{font-size:22px;margin:0}
-    .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;padding:28px 0}
-    .hero h2{font-size:38px;line-height:1.1;margin:0 0 12px}
-    .badge{display:inline-block;background:#fff;color:var(--green);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:10px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-    .btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer}
-    .btn-wpp{background:var(--yellow);color:#000}
-    .btn-ghost{background:transparent;color:#fff;border:2px solid #fff}
-    section{padding:38px 0}
-    h3{font-size:28px;margin:0 0 12px}
-    .grid{display:grid;gap:18px}
-    .cols-2{grid-template-columns:1fr 1fr}
+    html,body{margin:0}
+    body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;height:auto}
+    .wrap{max-width:var(--max);margin:0 auto;padding:16px}
+    header{background:linear-gradient(90deg, #0f5b2f 0%, #1a7f44 100%);color:#fff}
+    .top{display:flex;align-items:center;gap:12px}
+    .top img{height:36px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center;margin-top:14px}
+    .hero h1{margin:8px 0 10px;font-size:34px;line-height:1.1}
+    .badge{display:inline-block;background:#fff;color:#0f5b2f;padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-block;border-radius:12px;padding:12px 16px;font-weight:700}
+    .btn-wpp{background:#f1b82d;color:#000}
+    .btn-ghost{border:2px solid #fff;color:#fff}
+
+    main section{padding:28px 0}
+    .grid{display:grid;gap:16px}
     .cols-3{grid-template-columns:repeat(3,1fr)}
-    .card{background:#fff;border-radius:14px;padding:18px;border:1px solid #e6efe6}
-    .list{margin:0;padding-left:18px}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
-    .kpi{background:#fff;border:1px solid #e6efe6;border-radius:14px;padding:16px;text-align:center}
-    .kpi b{display:block;font-size:22px}
-    .note{font-size:14px;color:#333}
-    .banner-cert{background:#fff;border:1px dashed #d6e5d6;border-radius:14px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .reviews .placeholder{opacity:.7}
-    footer{background:#0a2d1a;color:#cfe6d7;padding:28px 0;margin-top:28px}
-    a{color:var(--green-2);text-decoration:none}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .cols-2{grid-template-columns:1fr}
-      .cols-3{grid-template-columns:1fr}
-      .kpis{grid-template-columns:repeat(2,1fr)}
-    }
+    .card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;border:1px solid #e9f1e9}
+    .card h3{margin:10px 0 6px;font-size:18px}
+    .card p{margin:0 0 8px;color:var(--muted)}
+    .card .go{display:inline-flex;align-items:center;gap:8px}
+
+    footer{background:#0a2d1a;color:#cfe6d7;margin-top:24px}
+    footer a{color:#cfe6d7;text-decoration:underline}
+    .footer-wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.cols-3{grid-template-columns:1fr}}
   </style>
+
+  <script>
+    const WPP="5517991405464";
+    function wppUrl(msg="Olá! Quero informações."){
+      return `https://wa.me/${WPP}?text=${encodeURIComponent(msg)}`;
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="wrap brand">
-      <img src="/img/agroforte-logo.png" alt="Agroforte" style="height:34px">
-      <h1>Agroforte · Distribuição e suporte técnico</h1>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <img src="/img/produtos/logooficial.webp" alt="Agroforte">
+      <div><b>Agroforte</b> · Distribuição com suporte técnico</div>
     </div>
-    <div class="wrap hero">
+
+    <div class="hero">
       <div>
-        <span class="badge">100% origem vegetal • óleo de neem</span>
-        <h2>Fitoneem – controle inteligente de pragas com azadiractina</h2>
-        <p>Produto à base de óleo de neem com ação por contato e ingestão. Atua como <b>anti-alimentar</b>, <b>regulador do crescimento</b>, <b>repelente</b> e <b>inibidor da reprodução</b>, ajudando a reduzir rapidamente a pressão de pragas em diversas culturas.</p>
+        <span class="badge">Atendimento técnico • Brasil</span>
+        <h1>Bioolimpo, Fitoneem e Takotrop</h1>
+        <p>Informação clara, documentação oficial e orçamento rápido. Fale com a Agroforte e receba orientação de uso e integração ao MIP.</p>
         <div class="cta">
-          <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Quero cotar Fitoneem.');return false;">Pedir orçamento no WhatsApp</a>
-          <a class="btn btn-ghost" href="#docs">Ficha técnica e bula (PDF)</a>
+          <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Vim do site e quero cotar os produtos.');return false;">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="#produtos">Ver produtos</a>
         </div>
       </div>
       <div class="card">
-        <img src="/img/fitoneem/packshot-1l.jpg" alt="Fitoneem 1L" style="width:100%;border-radius:12px">
-        <div class="kpis">
-          <div class="kpi"><b>Contato + ingestão</b><span>Modos de ação</span></div>
-          <div class="kpi"><b>Multi-alvo</b><span>Várias pragas</span></div>
-          <div class="kpi"><b>Uso amplo</b><span>Diversas culturas</span></div>
-          <div class="kpi"><b>Suporte</b><span>(17) 99140-5464</span></div>
-        </div>
+        <picture>
+          <source srcset="/img/produtos/fitoneem.webp" type="image/webp">
+          <img src="/img/produtos/fitoneem.webp" alt="Fitoneem 1L">
+        </picture>
+        <p style="margin:10px 0 0;color:#334">Atendimento: (17) 99140-5464 — Sandro</p>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="wrap">
-    <section id="sobre">
-      <h3>Sobre o produto</h3>
-      <div class="grid cols-2">
-        <div class="card">
-          <p>Fitoneem é um inseticida de origem botânica obtido do óleo das sementes de <i>Azadirachta indica</i> (neem). A presença de compostos como a <b>azadiractina</b> confere efeito anti-alimentar e perturba funções vitais dos insetos, auxiliando no controle de pragas e na proteção das plantas.</p>
-          <ul class="list">
-            <li><b>Ação:</b> contato e ingestão</li>
-            <li><b>Modos de ação:</b> anti-alimentar, regulador de crescimento, repelente, inibidor da reprodução</li>
-            <li><b>Aplicação:</b> pulverização foliar (conforme rótulo/bula)</li>
-          </ul>
-          <p class="note">Sempre siga a bula/rótulo do fabricante e consulte assistência técnica.</p>
-        </div>
-        <div class="card">
-          <h4 style="margin:0 0 6px">Modos de ação (resumo)</h4>
-          <ul class="list">
-            <li><b>Anti-alimentar:</b> reduz o consumo foliar.</li>
-            <li><b>Regulador do crescimento:</b> dificulta muda e desenvolvimento.</li>
-            <li><b>Repelente:</b> insetos evitam as superfícies tratadas.</li>
-            <li><b>Inibidor da reprodução:</b> atrasa acasalamento e postura.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<main class="wrap">
+  <section id="produtos">
+    <h2 style="margin:0 0 12px">Nossos produtos</h2>
+    <div class="grid cols-3">
 
-    <section id="vantagens">
-      <h3>Vantagens</h3>
-      <div class="grid cols-3">
-        <div class="card"><b>Amplo espectro</b><br>Auxilia no manejo de diferentes pragas.</div>
-        <div class="card"><b>Múltiplos mecanismos</b><br>Ajuda a reduzir resistência.</div>
-        <div class="card"><b>Compatibilidade</b><br>Usado em programas de MIP.</div>
-      </div>
-    </section>
+      <!-- FITONEEM -->
+      <article class="card">
+        <picture>
+          <source srcset="/img/produtos/fitoneem.webp" type="image/webp">
+          <img src="/img/produtos/fitoneem.webp" alt="Fitoneem – óleo de neem">
+        </picture>
+        <h3>Fitoneem</h3>
+        <p>Óleo de neem com azadiractina. Ação por contato e ingestão: anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução.</p>
+        <a class="go" href="/produtos/fitoneem/">
+          Ver página do produto →
+        </a>
+      </article>
 
-    <section id="docs">
-      <h3>Documentos técnicos</h3>
-      <div class="grid cols-2">
-        <div class="card">
-          <h4 style="margin:0 0 6px">Ficha técnica</h4>
-          <p>Especificações, recomendações gerais e preparo.</p>
-          <p><a href="/docs/FITONEEM.pdf" target="_blank" rel="noopener">Baixar Ficha (PDF)</a></p>
-        </div>
-        <div class="card">
-          <h4 style="margin:0 0 6px">Bula</h4>
-          <p>Informações oficiais do fabricante para uso seguro.</p>
-          <p><a href="/docs/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">Baixar Bula (PDF)</a></p>
-        </div>
-      </div>
-      <div class="banner-cert" style="margin-top:16px">
-        <div>
-          <b>Atendimento Agroforte</b><br>
-          Sandro · <a href="#" onclick="location.href=wppUrl('Olá Sandro, preciso de orientação sobre o Fitoneem.');return false;">WhatsApp (17) 99140-5464</a><br>
-          <span class="note">Orçamento rápido e suporte técnico.</span>
-        </div>
-        <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Quero cotar Fitoneem (óleo de neem).');return false;">Pedir orçamento</a>
-      </div>
-    </section>
+      <!-- BIOOLIMPO (imagem já existe; página pode ser criada depois) -->
+      <article class="card">
+        <picture>
+          <source srcset="/img/produtos/biolimpo.webp" type="image/webp">
+          <img src="/img/produtos/biolimpo.webp" alt="Bioolimpo">
+        </picture>
+        <h3>Bioolimpo</h3>
+        <p>Linha para manejo eficiente com foco em praticidade e segurança.</p>
+        <a class="go" href="/produtos/bioolimpo/">Saiba mais →</a>
+      </article>
 
-    <section id="avaliacoes" class="reviews">
-      <h3>Avaliações</h3>
-      <div class="card placeholder">
-        <p><b>Em breve:</b> depoimentos verificados de clientes (nome + cidade). Para enviar o seu, fale conosco no WhatsApp.</p>
-      </div>
-    </section>
-  </main>
+      <!-- TAKOTROP (imagem já existe; página pode ser criada depois) -->
+      <article class="card">
+        <picture>
+          <source srcset="/img/produtos/takotrop.webp" type="image/webp">
+          <img src="/img/produtos/takotrop.webp" alt="Takotrop">
+        </picture>
+        <h3>Takotrop</h3>
+        <p>Soluções para potencializar o desempenho produtivo das culturas.</p>
+        <a class="go" href="/produtos/takotrop/">Saiba mais →</a>
+      </article>
 
-  <footer>
-    <div class="wrap">
-      <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-        <div>
-          <b>Agroforte</b><br>
-          Atendimento: <a style="color:#fff" href="#" onclick="location.href=wppUrl();return false;">(17) 99140-5464</a><br>
-          E-mail: contato@innovetecnologias.com.br
-        </div>
-        <div class="note">© <span id="y"></span> Agroforte · innovetecnologias.com.br</div>
-      </div>
     </div>
-    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-  </footer>
+  </section>
 
-  <!-- JSON-LD Product -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Product",
-    "name":"Fitoneem",
-    "brand":{"@type":"Brand","name":"Agroforte"},
-    "description":"Inseticida botânico à base de óleo de neem (azadiractina) com ação por contato e ingestão. Modos de ação: anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução.",
-    "image":["https://innovetecnologias.com.br/img/fitoneem/packshot-1l.jpg"],
-    "url":"https://innovetecnologias.com.br/produtos/fitoneem/",
-    "offers":{
-      "@type":"Offer",
-      "availability":"https://schema.org/InStock",
-      "priceSpecification":{"@type":"PriceSpecification","priceCurrency":"BRL"},
-      "url":"https://innovetecnologias.com.br/produtos/fitoneem/orcamento/"
-    },
-    "isAccessoryOrSparePartFor": "https://innovetecnologias.com.br/produtos/fitoneem/"
-  }
-  </script>
+  <section id="contato">
+    <h2 style="margin:0 0 12px">Fale com a Agroforte</h2>
+    <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>
+        <b>Sandro</b> · WhatsApp <a href="#" onclick="location.href=wppUrl('Olá Sandro!');return false;">(17) 99140-5464</a><br>
+        E-mail: contato@innovetecnologias.com.br
+      </div>
+      <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Quero um orçamento.');return false;">Pedir orçamento</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <div>© <span id="y"></span> Agroforte — innovetecnologias.com.br</div>
+    <div><a href="/sitemap.xml">Sitemap</a> · <a href="/robots.txt">Robots</a></div>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+
 </body>
 </html>
-
