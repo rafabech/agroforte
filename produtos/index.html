@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>AgroForte — Produtos</title>
-  <meta name="description" content="Catálogo AgroForte: Takotrop, Bioolimpo, Fitoneem e Nutri Completo. Acesse por categoria: Nutrição Solo Premium, Nutrição Foliar Premium, Indutores de Defesa, Adjuvantes Premium, Proteção com Neem e Biológicos Controle de Pragas." />
-  <link rel="icon" href="/img/produtos/logoficialfundoverde.webp" type="image/webp" />
+  <meta name="description" content="Catálogo AgroForte: Takotrop, Bioolimpo, Fitoneem e Nutri Completo. Acesse por categoria: Nutrição Solo Premium, Nutrição Foliar Premium, Indutores de Defesa, Adjuvantes Premium, Proteção com Neem e Biológicos Controle Pragas."/>
+  <link rel="icon" href="/agroforte/img/produtos/logooficialfundoverde.webp" type="image/webp"/>
+
   <style>
     :root{
-      /* dois verdes do seu padrão */
+      /* apenas dois verdes (padrão) */
       --brand:#0D5E2E;      /* principal */
-      --brand-dark:#0A4823; /* topo / fundo */
-      --surface:#ffffff;
+      --brand-dark:#0A4823; /* topo/fundo */
+      --surface:#fff;
       --ink:#0b2316;
-      --accent:#15c15c;     /* único destaque (CTA) */
+      --accent:#15c15c;     /* CTA único */
       --shadow:0 10px 28px rgba(0,0,0,.18);
       --radius:16px;
     }
@@ -27,7 +28,6 @@
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-
     .wrap{max-width:1200px;margin:0 auto;padding:0 16px}
 
     /* header */
@@ -49,27 +49,26 @@
     .btn{
       display:inline-flex;align-items:center;gap:8px;border-radius:999px;
       padding:10px 16px;font-weight:900;border:0;background:var(--accent);
-      color:#063a1f;box-shadow:var(--shadow);cursor:pointer
+      color:#063a1f;box-shadow:var(--shadow);cursor:pointer;
+      white-space:nowrap;
     }
     .btn:hover{filter:brightness(1.06)}
 
-    /* telefone (topo e rodapé) */
+    /* telefone (não ocupar largura toda) */
     .phone{
+      display:inline-flex;align-items:center;gap:8px;
       border:1px solid rgba(255,255,255,.14);
       background:rgba(255,255,255,.05);
-      padding:6px 10px;
-      border-radius:999px;
-      font-weight:800;
-      white-space:nowrap;
-      font-size:14px;
-      line-height:1.1;
+      padding:6px 10px;border-radius:999px;font-weight:800;
+      white-space:nowrap;font-size:14px;line-height:1.1;
+      width:auto;max-width:max-content;
     }
-    /* deixa ainda menor no desktop para o rodapé */
+    /* ainda menor no desktop no rodapé */
     @media (min-width:1024px){
       .phone.phone--small{font-size:13px;padding:6px 10px}
     }
 
-    /* dropdown produtos */
+    /* dropdown produtos (abre por clique) */
     .dropdown{position:relative}
     .drop-btn{
       border:1px solid rgba(255,255,255,.14);
@@ -88,13 +87,15 @@
     /* categorias */
     h1.title{margin:14px 0 6px;font-size:28px}
     .cats{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;margin:10px 0}
-    .cats .inner{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:12px}
+    .cats .inner{
+      display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:12px
+    }
     .chip{
       border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:12px 16px;
       font-weight:900;background:rgba(255,255,255,.05);white-space:nowrap
     }
     .chip:hover{background:rgba(255,255,255,.12)}
-    /* Removido o .chip.active para todos ficarem iguais */
+    /* todos iguais (sem destaque diferente) */
 
     /* grid produtos */
     .grid{display:grid;gap:16px;margin:16px 0 28px;grid-template-columns:1fr}
@@ -105,18 +106,28 @@
       background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
       border-radius:16px;overflow:hidden;box-shadow:var(--shadow)
     }
-    .media{background:#fff;border-bottom:1px solid rgba(0,0,0,.06);padding:14px;display:flex;justify-content:center;align-items:center}
+    .media{
+      background:#fff;border-bottom:1px solid rgba(0,0,0,.06);
+      padding:14px;display:flex;justify-content:center;align-items:center
+    }
     .media img{max-height:190px;width:auto}
     .body{padding:14px}
     .body h3{margin:0 0 6px;font-size:18px;color:#fff}
-    .tag{display:inline-flex;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-weight:700;margin:6px 6px 0 0}
+    .tag{
+      display:inline-flex;gap:6px;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;
+      font-weight:700;margin:6px 6px 0 0
+    }
     .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .btn-outline{padding:8px 12px;border-radius:999px;font-weight:900;border:2px solid var(--accent);background:transparent;color:#fff}
+    .btn-outline{
+      padding:8px 12px;border-radius:999px;font-weight:900;
+      border:2px solid var(--accent);background:transparent;color:#fff
+    }
     .btn-outline:hover{background:var(--accent);color:#063a1f}
 
     /* rodapé */
     footer{margin:20px 0 86px;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
-    .foot{display:grid;gap:10px}
+    .foot{display:grid;gap:10px;align-items:center;justify-content:start}
     .foot-cta{display:flex;gap:10px;flex-wrap:wrap}
 
     /* zap bolinha */
@@ -134,9 +145,8 @@
       <div class="brand">
         <a href="/">
           <picture>
-            <source srcset="/img/produtos/logoficialfundoverde.webp" type="image/webp" />
-            <source srcset="/img/produtos/logo-oficial-fundo-verde.png" type="image/png" />
-            <img id="logoAgf" src="/img/produtos/logooficial.webp" alt="AgroForte" />
+            <source srcset="/agroforte/img/produtos/logooficialfundoverde.webp" type="image/webp"/>
+            <img id="logoAgf" src="/agroforte/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
           </picture>
         </a>
         <strong>AgroForte</strong>
@@ -145,16 +155,16 @@
       <div class="nav-right">
         <a class="pill" href="/">Home</a>
 
-        <!-- Produtos com toggle (clique) -->
+        <!-- Produtos (abre por clique e tem links de categoria) -->
         <div class="dropdown">
           <button class="drop-btn" id="btnProdutos" type="button" aria-haspopup="true" aria-expanded="false">Produtos</button>
           <div class="drop-menu" id="menuProdutos" role="menu">
-            <a class="drop-item" href="/produtos/nutricao-solo-premium">Nutrição Solo Premium</a>
-            <a class="drop-item" href="/produtos/nutricao-foliar-premium">Nutrição Foliar Premium</a>
-            <a class="drop-item" href="/produtos/indutores-de-defesa">Indutores de Defesa</a>
-            <a class="drop-item" href="/produtos/adjuvantes-premium">Adjuvantes Premium</a>
-            <a class="drop-item" href="/produtos/protecao-com-neem">Proteção com Neem</a>
-            <a class="drop-item" href="/produtos/biologicos-controle-pragas">Biológicos Controle de Pragas</a>
+            <a class="drop-item" href="/agroforte/produtos/nutricao-solo-premium">Nutrição Solo Premium</a>
+            <a class="drop-item" href="/agroforte/produtos/nutricao-foliar-premium">Nutrição Foliar Premium</a>
+            <a class="drop-item" href="/agroforte/produtos/indutores-de-defesa">Indutores de Defesa</a>
+            <a class="drop-item" href="/agroforte/produtos/adjuvantes-premium">Adjuvantes Premium</a>
+            <a class="drop-item" href="/agroforte/produtos/protecao-com-neem">Proteção com Neem</a>
+            <a class="drop-item" href="/agroforte/produtos/biologicos-controle-pragas">Biológicos Controle Pragas</a>
           </div>
         </div>
 
@@ -166,29 +176,31 @@
 
   <main class="wrap">
     <h1 class="title">Produtos AgroForte</h1>
+
+    <!-- Categorias em linha (quebra bonitinho no celular, sem rolagem lateral) -->
     <section class="cats" aria-label="Navegue por categorias">
       <div class="inner">
-        <a class="chip" href="/produtos/nutricao-solo-premium">Nutrição Solo Premium</a>
-        <a class="chip" href="/produtos/nutricao-foliar-premium">Nutrição Foliar Premium</a>
-        <a class="chip" href="/produtos/indutores-de-defesa">Indutores de Defesa</a>
-        <a class="chip" href="/produtos/adjuvantes-premium">Adjuvantes Premium</a>
-        <a class="chip" href="/produtos/protecao-com-neem">Proteção com Neem</a>
-        <a class="chip" href="/produtos/biologicos-controle-pragas">Biológicos Controle Pragas</a>
+        <a class="chip" href="/agroforte/produtos/nutricao-solo-premium">Nutrição Solo Premium</a>
+        <a class="chip" href="/agroforte/produtos/nutricao-foliar-premium">Nutrição Foliar Premium</a>
+        <a class="chip" href="/agroforte/produtos/indutores-de-defesa">Indutores de Defesa</a>
+        <a class="chip" href="/agroforte/produtos/adjuvantes-premium">Adjuvantes Premium</a>
+        <a class="chip" href="/agroforte/produtos/protecao-com-neem">Proteção com Neem</a>
+        <a class="chip" href="/agroforte/produtos/biologicos-controle-pragas">Biológicos Controle Pragas</a>
       </div>
     </section>
 
-    <!-- cards -->
+    <!-- Lista de produtos -->
     <section class="grid" aria-label="Lista de produtos">
       <!-- Takotrop -->
       <article class="card">
-        <a class="media" href="/produtos/takotrop/">
-          <img src="/img/produtos/takotrop.webp" alt="Takotrop — Biológico inovador com Pseudomonas" />
+        <a class="media" href="/agroforte/produtos/takotrop/">
+          <img src="/agroforte/img/produtos/takotrop.webp" alt="Takotrop — biológico para controle de pragas"/>
         </a>
         <div class="body">
           <h3>Takotrop</h3>
-          <div><span class="tag">Biológico</span><span class="tag">MIP</span></div>
+          <div><span class="tag">Biológico</span><span class="tag">Controle de pragas</span></div>
           <div class="cta">
-            <a class="btn" href="/produtos/takotrop/">Ver detalhes</a>
+            <a class="btn" href="/agroforte/produtos/takotrop/">Ver detalhes</a>
             <a class="btn-outline" id="zapTakotrop" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
@@ -196,14 +208,14 @@
 
       <!-- Bioolimpo -->
       <article class="card">
-        <a class="media" href="/produtos/bioolimpo/">
-          <img src="/img/produtos/bioolimpo.webp" alt="Bioolimpo — Beauveria bassiana IBCB 66 + Metarhizium anisopliae IBCB 425" />
+        <a class="media" href="/agroforte/produtos/bioolimpo/">
+          <img src="/agroforte/img/produtos/bioolimpo.webp" alt="Bioolimpo — fungos benéficos para controle de pragas"/>
         </a>
         <div class="body">
           <h3>Bioolimpo</h3>
-          <div><span class="tag">Biológico</span><span class="tag">Beauveria + Metarhizium</span></div>
+          <div><span class="tag">Biológico</span><span class="tag">Controle de pragas</span></div>
           <div class="cta">
-            <a class="btn" href="/produtos/bioolimpo/">Ver detalhes</a>
+            <a class="btn" href="/agroforte/produtos/bioolimpo/">Ver detalhes</a>
             <a class="btn-outline" id="zapBioolimpo" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
@@ -211,14 +223,14 @@
 
       <!-- Fitoneem (fundo branco) -->
       <article class="card">
-        <a class="media" href="/produtos/fitoneem/">
-          <img src="/img/produtos/fitoneem-fundo-branco.webp" alt="Óleo de Neem — Fitoneem com alta concentração de azadiractina" />
+        <a class="media" href="/agroforte/produtos/fitoneem/">
+          <img src="/agroforte/img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem — óleo de neem para proteção das plantas"/>
         </a>
         <div class="body">
-          <h3>Proteção Neem — Fitoneem</h3>
-          <div><span class="tag">Neem</span><span class="tag">Orgânico</span></div>
+          <h3>Proteção com Neem — Fitoneem</h3>
+          <div><span class="tag">Óleo de neem</span><span class="tag">Origem vegetal</span></div>
           <div class="cta">
-            <a class="btn" href="/produtos/fitoneem/">Ver detalhes</a>
+            <a class="btn" href="/agroforte/produtos/fitoneem/">Ver detalhes</a>
             <a class="btn-outline" id="zapFitoneem" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
@@ -226,14 +238,14 @@
 
       <!-- Nutri Completo (fundo branco) -->
       <article class="card">
-        <a class="media" href="/produtos/nutri-completo/">
-          <img src="/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — Nutrição foliar premium com aminoácidos e algas" />
+        <a class="media" href="/agroforte/produtos/nutri-completo/">
+          <img src="/agroforte/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — nutrição foliar com aminoácidos e algas marinhas"/>
         </a>
         <div class="body">
           <h3>Nutrição Foliar — Nutri Completo</h3>
-          <div><span class="tag">Aminoácidos</span><span class="tag">Algas</span></div>
+          <div><span class="tag">Aminoácidos</span><span class="tag">Algas marinhas</span></div>
           <div class="cta">
-            <a class="btn" href="/produtos/nutri-completo/">Ver detalhes</a>
+            <a class="btn" href="/agroforte/produtos/nutri-completo/">Ver detalhes</a>
             <a class="btn-outline" id="zapNutri" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
@@ -247,62 +259,52 @@
       <a id="phoneBottom" class="phone phone--small" href="#" target="_blank" rel="noopener">📞 (17) 99140-5464</a>
       <div class="foot-cta">
         <a class="btn" href="/">Voltar para a página principal</a>
-        <a class="btn" href="/produtos/">Ver outros produtos</a>
+        <a class="btn" href="/agroforte/produtos/">Ver outros produtos</a>
       </div>
       <small style="opacity:.85">© AgroForte — Todos os direitos reservados.</small>
     </div>
   </footer>
 
-  <!-- ZAP bolinha -->
+  <!-- Bolinha do WhatsApp -->
   <a class="zap" id="zapFloat" aria-label="Fale no WhatsApp" target="_blank" rel="noopener">
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
   </a>
 
   <script>
-    /* WhatsApp */
-    const PHONE_DISPLAY = '(17) 99140-5464';
-    const PHONE_WA = '5517991405464';
-    const waMsg = encodeURIComponent(
-      'Olá, equipe AgroForte! Quero atendimento rápido pelo WhatsApp.\n' +
-      '• Assunto: Envio para minha cidade (informe seu CEP)\n' +
-      '• Produto de interesse: Takotrop | Bioolimpo | Fitoneem | Nutri Completo\n\n' +
+    // Telefone e WhatsApp
+    const PHONE_DISPLAY='(17) 99140-5464';
+    const PHONE_WA='5517991405464';
+    const waMsg=encodeURIComponent(
+      'Olá! Quero informações e envio para minha cidade.\n' +
+      '• Produto de interesse: vou definir depois\n\n' +
       'Por favor, direcionar meu contato ao consultor Sandro. Obrigado!'
     );
-    const waLink = `https://wa.me/${PHONE_WA}?text=${waMsg}`;
+    const waLink=`https://wa.me/${PHONE_WA}?text=${waMsg}`;
 
     ['phoneTop','phoneBottom'].forEach(id=>{
       const a=document.getElementById(id);
-      a.textContent='📞 '+PHONE_DISPLAY;
-      a.href=waLink;
+      if(a){a.textContent='📞 '+PHONE_DISPLAY; a.href=waLink;}
     });
     ['zapTakotrop','zapBioolimpo','zapFitoneem','zapNutri','zapFloat'].forEach(id=>{
       const a=document.getElementById(id);
-      if(a) a.href = waLink;
+      if(a) a.href=waLink;
     });
 
-    /* Dropdown Produtos (abre por clique; fecha ao clicar fora) */
-    const btn = document.getElementById('btnProdutos');
-    const menu = document.getElementById('menuProdutos');
-    btn.addEventListener('click', e=>{
+    // Dropdown Produtos (clique / fecha ao clicar fora)
+    const btn=document.getElementById('btnProdutos');
+    const menu=document.getElementById('menuProdutos');
+    btn.addEventListener('click',e=>{
       e.stopPropagation();
-      const open = menu.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open?'true':'false');
+      const open=menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
     });
-    document.addEventListener('click', e=>{
-      if(menu.classList.contains('open')){
-        menu.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-      }
-    });
+    document.addEventListener('click',()=>{menu.classList.remove('open'); btn.setAttribute('aria-expanded','false');});
 
-    /* Fallback extra da LOGO (garante abrir no celular) */
-    const logo = document.getElementById('logoAgf');
-    logo.onerror = function(){
-      const src = this.getAttribute('src') || '';
-      if(src.includes('logooficial.webp')){
-        this.src='/img/produtos/logo-oficial-fundo-verde.png';
-      }else if(src.includes('logo-oficial-fundo-verde.png')){
-        this.src='/img/produtos/logoficialfundoverde.webp';
+    // Fallback extra para LOGO (garante abrir no celular)
+    const logo=document.getElementById('logoAgf');
+    logo.onerror=function(){
+      if(this.src.indexOf('logooficialfundoverde.webp')>-1){
+        this.src='/agroforte/img/produtos/logo-oficial-fundo-verde.png';
       }
     };
   </script>
