@@ -66,9 +66,14 @@
     .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
     .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
     .card a{display:block}
-    .card img{aspect-ratio:4/3;object-fit:contain;background:#fff}
-    /* >>> Ajuste pedido: ampliar apenas Fitoneem e Nutri Completo (reduz letterbox de fundo branco) */
-    #imgFit, #imgNutri{object-fit:cover;object-position:center center}
+
+    /* 👇 AQUI o ajuste que corrige o “pequeno demais” SEM cortar */
+    .card img{
+      width:100%;
+      height:clamp(180px, 24vw, 260px); /* altura uniforme e responsiva */
+      object-fit:contain;               /* nunca corta */
+      background:#fff;                  /* base branca padrão */
+    }
 
     .pad{padding:12px}
     .card h3{margin:0 0 6px;font-size:16px}
@@ -98,7 +103,7 @@
 </head>
 <body>
 
-  <!-- Bolinha do WhatsApp (apenas o ícone) -->
+  <!-- Bolinha do WhatsApp -->
   <a class="zap-float" aria-label="WhatsApp"
      href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20Assunto:%20(Informe)%20Produto:%20(Informe)%0APor%20favor,%20direcionar%20ao%20consultor%20Sandro.">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
@@ -108,13 +113,11 @@
 
   <header>
     <div class="wrap topbar">
-      <!-- LOGO -->
       <a class="brand" href="./index.html" aria-label="Página inicial">
         <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
-      <!-- MENU + CONTATOS -->
       <nav>
         <a class="nav-btn" href="./index.html">Home</a>
         <a class="nav-btn" href="./produtos/index.html">Produtos</a>
@@ -126,13 +129,11 @@
   </header>
 
   <main class="wrap">
-    <!-- HERO -->
     <section class="hero">
       <h1>Fertilizantes e soluções simples que funcionam no campo</h1>
       <p>Nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
     </section>
 
-    <!-- CATEGORIAS -->
     <section class="section" id="categorias">
       <p class="kicker">Navegue por categoria</p>
       <h2 class="h2">Acesse por categoria</h2>
@@ -146,7 +147,6 @@
       </div>
     </section>
 
-    <!-- PRODUTOS -->
     <section class="section" aria-labelledby="destaques">
       <p class="kicker">Destaques</p>
       <h2 class="h2" id="destaques">Produtos com maior procura</h2>
@@ -194,7 +194,6 @@
       </div>
     </section>
 
-    <!-- FAQ visível -->
     <section class="section">
       <p class="kicker">Perguntas frequentes</p>
       <h2 class="h2">Dúvidas que aceleram sua decisão</h2>
@@ -205,7 +204,6 @@
       </div>
     </section>
 
-    <!-- Comentário -> WhatsApp (centralizado) -->
     <section class="section">
       <p class="kicker">Fale com a gente</p>
       <h2 class="h2">Deixe seu comentário</h2>
@@ -238,7 +236,6 @@
   </footer>
 
   <script>
-    /* WhatsApp do formulário */
     function goZap(e){
       e.preventDefault();
       const nome=(document.getElementById('nome').value||'').trim();
@@ -254,20 +251,18 @@
       return false;
     }
 
-    /* FALLBACKS de imagem (corrige variações de nome) */
+    /* FALLBACKS de imagem */
     function fallbackChain(el, paths){
-      if(!el) return;
-      let i=0; el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } };
-      el.src = el.src; // revalida
+      if(!el) return; let i=0;
+      el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } };
+      el.src = el.src;
     }
-    // Logo
     fallbackChain(document.getElementById('logoAgf'), [
       './img/produtos/logooficialfundoverde.webp',
       './img/produtos/logoficialfundoverde.webp',
       './img/produtos/logo-oficial-fundo-verde.png',
       './img/produtos/logooficial.webp'
     ]);
-    // Produtos
     fallbackChain(document.getElementById('imgFit'), [
       './img/produtos/fitoneem-fundo-branco.webp',
       './img/produtos/fitoneem_fundo_branco.webp',
@@ -278,12 +273,8 @@
       './img/produtos/nutricompleto-fundo-branco.webp',
       './img/produtos/nutricompleto.webp'
     ]);
-    fallbackChain(document.getElementById('imgTako'), [
-      './img/produtos/takotrop.webp'
-    ]);
-    fallbackChain(document.getElementById('imgBio'), [
-      './img/produtos/bioolimpo.webp'
-    ]);
+    fallbackChain(document.getElementById('imgTako'), ['./img/produtos/takotrop.webp']);
+    fallbackChain(document.getElementById('imgBio'), ['./img/produtos/bioolimpo.webp']);
   </script>
 </body>
 </html>
