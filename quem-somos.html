@@ -29,7 +29,9 @@
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-    .wrap{max-width:var(--max);margin:auto;padding:0 16px}
+
+    /* padding lateral mais generoso (nada colado nas bordas) */
+    .wrap{max-width:var(--max);margin:auto;padding:0 clamp(16px,4vw,28px)}
 
     /* ================= HEADER (igual da home/produtos) ================= */
     header{
@@ -93,9 +95,9 @@
     .hero p{margin:0;color:var(--muted);max-width:80ch}
     @media (max-width:720px){ .hero h1{font-size:28px} }
 
-    /* Bloco imagem fundo branco */
+    /* Bloco imagem fundo branco (com padding lateral maior) */
     .white-block{background:#fff;color:var(--ink)}
-    .white-in{max-width:var(--max);margin:auto;padding:14px 16px}
+    .white-in{max-width:var(--max);margin:auto;padding:14px clamp(16px,4vw,28px)}
     .white-in img{margin:auto;max-width:900px}
 
     .section{padding:20px 0}
@@ -158,7 +160,6 @@
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
         <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro."
            aria-label="Abrir WhatsApp" title="Abrir WhatsApp">
-          <!-- Logo oficial branco dentro da bolinha verde -->
           <svg width="20" height="20" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
             <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
           </svg>
@@ -177,8 +178,8 @@
     <!-- IMAGEM EM FUNDO BRANCO -->
     <section class="white-block">
       <div class="white-in">
-        <!-- Usa .wepg (como você pediu) e tem fallback para .webp -->
-        <img id="imgQuem" src="./img/produtos/quemsomosfundobranco.wepg" alt="AgroForte — Quem Somos">
+        <!-- src padrão em .webp; fallbacks para .wepg e nomes alternativos -->
+        <img id="imgQuem" src="./img/produtos/quemsomosfundobranco.webp" alt="AgroForte — Quem Somos">
       </div>
     </section>
 
@@ -266,10 +267,11 @@
       './img/produtos/logooficial.webp'
     ]);
 
-    // Imagem principal (usa .wepg e cai para .webp se necessário)
+    // Imagem principal (padrão .webp, depois .wepg e outras variações)
     fallbackChain(document.getElementById('imgQuem'), [
-      './img/produtos/quemsomosfundobranco.wepg',
       './img/produtos/quemsomosfundobranco.webp',
+      './img/produtos/quemsomosfundobranco.wepg',
+      './img/produtos/quemsomos-fundo-branco.webp',
       './img/produtos/quemsomos-fundo-branco.png'
     ]);
   </script>
