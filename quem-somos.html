@@ -29,10 +29,10 @@
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
 
-    /* padding lateral mais generoso */
-    .wrap{max-width:var(--max);margin:auto;padding:0 clamp(16px,4vw,28px)}
+    /* padding lateral mais generoso (evita texto colado na esquerda no celular) */
+    .wrap{max-width:var(--max);margin:auto;padding:0 clamp(20px, 6vw, 40px)}
 
-    /* HEADER (mesmo padrão, tel e zap maiores) */
+    /* ================= HEADER (padrão aprovado) ================= */
     header{
       position:sticky;top:0;z-index:60;
       background:rgba(9,79,45,.96);
@@ -82,15 +82,21 @@
       .wa-circle{width:40px;height:40px}
     }
 
-    /* SEÇÕES */
+    /* ================= SEÇÕES ================= */
     .hero{padding:20px 0 6px}
     .hero h1{margin:0 0 8px;font-size:36px;line-height:1.1;font-weight:900;letter-spacing:-.3px}
     .hero p{margin:0;color:var(--muted);max-width:80ch}
     @media (max-width:720px){ .hero h1{font-size:28px} }
 
+    /* Bloco da imagem em fundo branco, com paddings laterais maiores */
     .white-block{background:#fff;color:var(--ink)}
-    .white-in{max-width:var(--max);margin:auto;padding:14px clamp(16px,4vw,28px)}
-    .white-in img{margin:auto;max-width:900px}
+    .white-in{max-width:var(--max);margin:auto;padding:14px clamp(20px, 6vw, 40px)}
+    .white-in img{
+      margin:auto;
+      width:100%;
+      max-width:clamp(260px, 90vw, 680px); /* limita o tamanho da imagem no celular e desktop */
+      height:auto;
+    }
 
     .section{padding:20px 0}
     .text{max-width:var(--max);margin:auto}
@@ -160,10 +166,10 @@
       <p>Ao lado do produtor rural, com tecnologia, portfólio completo e suporte técnico para aumentar produtividade e rentabilidade.</p>
     </section>
 
-    <!-- IMAGEM EM FUNDO BRANCO (usa exatamente o caminho informado) -->
+    <!-- IMAGEM EM FUNDO BRANCO (limitada, sem distorcer) -->
     <section class="white-block">
       <div class="white-in">
-        <img id="imgQuem" src="./img/produtos/quem-somos-fundo-branco.png" alt="AgroForte — Quem Somos">
+        <img id="imgQuem" src="./Img/produtos/quem-somos-fundo-branco.png" alt="AgroForte — Quem Somos">
       </div>
     </section>
 
@@ -236,7 +242,7 @@
   </footer>
 
   <script>
-    /* Fallbacks: mantém seu caminho como prioridade e tenta alternativas se necessário */
+    /* Fallbacks de imagem — mantém seu caminho como prioridade e tenta alternativas se necessário */
     function fallbackChain(el, paths){ if(!el) return; let i=0; el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } }; el.src=el.src; }
 
     // Logo
