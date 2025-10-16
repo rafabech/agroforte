@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Quem Somos — AgroForte Fertilizantes</title>
-  <meta name="description" content="Conheça a AgroForte Fertilizantes: missão, visão, valores e diferenciais. Soluções em nutrição e fisiologia vegetal, proteção com neem e biológicos para aumentar a produtividade do produtor rural."/>
+  <title>AgroForte — Produtos</title>
+  <meta name="description" content="Catálogo AgroForte: Takotrop, Bioolimpo, Fitoneem e Nutri Completo. Acesse por categoria: Nutrição Solo Premium, Nutrição Foliar Premium, Indutores de Defesa, Adjuvantes Premium, Proteção com Neem e Biológicos Controle Pragas."/>
   <link rel="icon" href="../img/produtos/logooficialfundoverde.webp" type="image/webp"/>
 
   <style>
@@ -13,7 +13,7 @@
       --brand-dark:#0A4823; /* topo/fundo */
       --surface:#fff;
       --ink:#0b2316;
-      --accent:#25D366;     /* WhatsApp */
+      --accent:#15c15c;     /* CTA único */
       --shadow:0 10px 28px rgba(0,0,0,.18);
       --radius:16px;
     }
@@ -21,7 +21,8 @@
     html,body{margin:0;padding:0}
     body{
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
-      color:#fff;background:linear-gradient(180deg,var(--brand-dark),var(--brand));
+      color:var(--surface);
+      background:linear-gradient(180deg,var(--brand-dark),var(--brand));
       overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
@@ -32,53 +33,100 @@
     .topbar{position:sticky;top:0;z-index:60;background:var(--brand-dark);border-bottom:1px solid rgba(255,255,255,.08)}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
     .brand{display:flex;align-items:center;gap:10px}
+    .brand picture{display:block}
     .brand img{width:56px;height:56px;border-radius:50%;background:#fff;box-shadow:var(--shadow)}
     .brand strong{font-size:20px;letter-spacing:.2px}
     .nav-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-    .pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 16px;font-weight:800;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)}
+
+    .pill{
+      display:inline-flex;align-items:center;gap:10px;border-radius:999px;
+      padding:10px 16px;font-weight:800;border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05)
+    }
     .pill:hover{background:rgba(255,255,255,.12)}
-    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;font-weight:900;border:0;background:#15c15c;color:#063a1f;box-shadow:var(--shadow);cursor:pointer;white-space:nowrap}
+
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+      padding:10px 16px;font-weight:900;border:0;background:var(--accent);
+      color:#063a1f;box-shadow:var(--shadow);cursor:pointer;
+      white-space:nowrap;
+    }
     .btn:hover{filter:brightness(1.06)}
-    .phone{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);padding:6px 10px;border-radius:999px;font-weight:800;white-space:nowrap;font-size:14px;line-height:1.1}
+
+    .phone{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05);
+      padding:6px 10px;border-radius:999px;font-weight:800;
+      white-space:nowrap;font-size:14px;line-height:1.1;
+      width:auto;max-width:max-content;
+    }
     .phone.phone--small{font-size:13px;padding:6px 10px}
 
-    /* hero */
-    .hero{padding:28px 0 10px}
-    .hero h1{margin:0;font-size:36px}
-
-    /* seção branca */
-    .white{
-      background:#fff;color:var(--ink);border-radius:16px;margin:16px 0;box-shadow:var(--shadow);overflow:hidden
+    /* dropdown produtos (clique) */
+    .dropdown{position:relative}
+    .drop-btn{
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05);
+      color:#fff;border-radius:999px;padding:10px 16px;font-weight:900;cursor:pointer
     }
-    .white .inner{padding:18px}
-    .white .grid{
-      display:grid;gap:16px;align-items:center;
-      grid-template-columns:1fr
+    .drop-btn:after{content:"▾";margin-left:8px;font-size:12px;opacity:.9}
+    .drop-menu{
+      position:absolute;top:120%;left:0;background:#0c3a20;border:1px solid rgba(255,255,255,.15);
+      border-radius:14px;box-shadow:var(--shadow);min-width:320px;padding:8px;display:none
     }
-    @media (min-width:900px){.white .grid{grid-template-columns:1.1fr 1fr}}
-    .white h2{margin:0 0 8px}
-    .white p{margin:0 0 10px;line-height:1.6}
+    .drop-menu.open{display:block}
+    .drop-item{display:block;padding:12px 14px;border-radius:10px;font-weight:800}
+    .drop-item:hover{background:rgba(255,255,255,.08)}
 
-    /* blocos */
-    .cards{display:grid;gap:14px;margin:12px 0;grid-template-columns:1fr}
-    @media (min-width:800px){.cards{grid-template-columns:repeat(3,1fr)}}
+    /* categorias */
+    h1.title{margin:14px 0 6px;font-size:28px}
+    .cats{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;margin:10px 0}
+    .cats .inner{
+      display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:12px
+    }
+    .chip{
+      border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:12px 16px;
+      font-weight:900;background:rgba(255,255,255,.05);white-space:nowrap
+    }
+    .chip:hover{background:rgba(255,255,255,.12)}
+
+    /* grid produtos */
+    .grid{display:grid;gap:16px;margin:16px 0 28px;grid-template-columns:1fr}
+    @media (min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (min-width:1040px){.grid{grid-template-columns:repeat(4,1fr)}}
+
     .card{
       background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
-      border-radius:16px;padding:14px;box-shadow:var(--shadow)
+      border-radius:16px;overflow:hidden;box-shadow:var(--shadow)
     }
-    .card h3{margin:0 0 8px}
-    .list{margin:0;padding-left:18px}
-    .list li{margin:6px 0}
+    .media{
+      background:#fff;border-bottom:1px solid rgba(0,0,0,.06);
+      padding:14px;display:flex;justify-content:center;align-items:center
+    }
+    .media img{max-height:190px;width:auto}
+    .body{padding:14px}
+    .body h3{margin:0 0 6px;font-size:18px;color:#fff}
+    .tag{
+      display:inline-flex;gap:6px;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;
+      font-weight:700;margin:6px 6px 0 0
+    }
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn-outline{
+      padding:8px 12px;border-radius:999px;font-weight:900;
+      border:2px solid var(--accent);background:transparent;color:#fff
+    }
+    .btn-outline:hover{background:var(--accent);color:#063a1f}
 
-    footer{margin:24px 0 90px;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
-    .foot{display:grid;gap:10px}
+    footer{margin:20px 0 86px;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
+    .foot{display:grid;gap:10px;align-items:center;justify-content:start}
     .foot-cta{display:flex;gap:10px;flex-wrap:wrap}
 
     /* zap bolinha */
     .zap{
       position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;
-      background:var(--accent);display:flex;align-items:center;justify-content:center;
-      box-shadow:0 8px 26px rgba(0,0,0,.3);z-index:70
+      background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(0,0,0,.3);z-index:70
     }
     .zap img{width:28px;height:28px}
   </style>
@@ -88,14 +136,31 @@
   <header class="topbar">
     <div class="wrap nav">
       <div class="brand">
-        <a href="../index.html" aria-label="Voltar para a página inicial">
-          <img id="logoAgf" src="../img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
+        <a href="../index.html">
+          <picture>
+            <source srcset="../img/produtos/logooficialfundoverde.webp" type="image/webp"/>
+            <img id="logoAgf" src="../img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
+          </picture>
         </a>
         <strong>AgroForte</strong>
       </div>
+
       <div class="nav-right">
         <a class="pill" href="../index.html">Home</a>
-        <a class="pill" href="./produtos/">Produtos</a>
+
+        <!-- Produtos (clique) -->
+        <div class="dropdown">
+          <button class="drop-btn" id="btnProdutos" type="button" aria-haspopup="true" aria-expanded="false">Produtos</button>
+          <div class="drop-menu" id="menuProdutos" role="menu">
+            <a class="drop-item" href="./nutricao-solo-premium">Nutrição Solo Premium</a>
+            <a class="drop-item" href="./nutricao-foliar-premium">Nutrição Foliar Premium</a>
+            <a class="drop-item" href="./indutores-de-defesa">Indutores de Defesa</a>
+            <a class="drop-item" href="./adjuvantes-premium">Adjuvantes Premium</a>
+            <a class="drop-item" href="./protecao-com-neem">Proteção com Neem</a>
+            <a class="drop-item" href="./biologicos-controle-pragas">Biológicos Controle Pragas</a>
+          </div>
+        </div>
+
         <a class="btn" href="#contato">Fale Conosco</a>
         <a id="phoneTop" class="phone" href="#" target="_blank" rel="noopener">📞 (17) 99140-5464</a>
       </div>
@@ -103,90 +168,81 @@
   </header>
 
   <main class="wrap">
-    <section class="hero">
-      <h1>Quem Somos</h1>
-      <p style="opacity:.9;max-width:72ch">Desde a fundação, a AgroForte Fertilizantes evolui continuamente seus produtos e processos industriais para aumentar a produtividade e a rentabilidade do produtor rural.</p>
-    </section>
+    <h1 class="title">Produtos AgroForte</h1>
 
-    <!-- BLOCO BRANCO COM A IMAGEM -->
-    <section class="white" aria-labelledby="sobre">
-      <div class="inner grid">
-        <div>
-          <h2 id="sobre">AgroForte Fertilizantes</h2>
-          <p>A Agro Forte Fertilizantes é caracterizada por um grande dinamismo e desde a sua fundação vem aprimorando constantemente os seus produtos e os processos industriais.</p>
-          <p>Neste momento, a Agro Forte Fertilizantes possui mais de 50 produtos atendendo as necessidades das mais diversas culturas e o mercado de nutrição animal. Estes produtos são classificados como acaricidas, adjuvantes, condicionador de solos, fertilizantes de solo, fertilizantes foliares, fertilizantes para fertirrigação, fertilizantes para tratamento das sementes, inoculantes, isca formicida e sais para agricultura e pecuária.</p>
-          <p>A Agro Forte Fertilizantes mantém uma equipe de agrônomos e assistentes técnicos em constante contato com os produtores rurais para otimizar a utilização dos seus produtos com a finalidade de aumentar a produtividade e a rentabilidade agrícola.</p>
-          <p>A Agro Forte Fertilizantes sempre esteve ao lado do produtor rural e sempre buscou alternativas para atender as suas necessidades e colaborar para maximizar o potencial produtivo das suas culturas e dos seus rebanhos.</p>
-        </div>
-        <div>
-          <!-- imagem solicitada em fundo branco -->
-          <img id="imgQuem" src="../img/produtos/quemsomosfundobranco.wepg" alt="AgroForte — Quem Somos (fundo branco)"/>
-        </div>
-      </div>
-    </section>
-
-    <!-- MISSÃO / VISÃO / VALORES -->
-    <section class="cards" aria-label="Missão, visão e valores">
-      <article class="card">
-        <h3>Missão</h3>
-        <p>Disponibilizar à agricultura soluções, inovações e tecnologia em nutrição e fisiologia vegetal, através de excelência em produtos e serviços.</p>
-      </article>
-      <article class="card">
-        <h3>Visão</h3>
-        <p>Ser creditada como a melhor empresa brasileira de nutrição e fisiologia vegetal em geração de valor para clientes e colaboradores.</p>
-      </article>
-      <article class="card">
-        <h3>Valores</h3>
-        <ul class="list">
-          <li>Satisfação do cliente;</li>
-          <li>Ética e integridade;</li>
-          <li>Foco no cliente;</li>
-          <li>Inovação e criatividade;</li>
-          <li>Resiliência;</li>
-          <li>Persistência;</li>
-          <li>Respeito e responsabilidade socioambiental.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- DIFERENCIAIS -->
-    <section class="cards" aria-label="Nossos diferenciais">
-      <article class="card">
-        <h3>Investimento constante</h3>
-        <p>Desde a sua fundação, a Nutrifértil Agrícola investe constantemente no melhoramento de seus produtos e processos, garantindo soluções eficazes para o produtor rural.</p>
-      </article>
-      <article class="card">
-        <h3>Localização estratégica</h3>
-        <p>Estamos na região de São José do Rio Preto/SP, polo agroindustrial que facilita a distribuição dos nossos produtos para todo o Brasil.</p>
-      </article>
-      <article class="card">
-        <h3>Linha completa de produtos</h3>
-        <p>Portfólio amplo para diversas culturas e fases do plantio, com manejo eficiente e sustentável.</p>
-      </article>
-      <article class="card">
-        <h3>Suporte técnico</h3>
-        <p>Equipe de agrônomos e consultores ao lado do produtor rural para garantir o melhor uso e resultados.</p>
-      </article>
-      <article class="card">
-        <h3>Compromisso com o produtor</h3>
-        <p>Entendemos as necessidades do campo e oferecemos soluções que impulsionam a produtividade e os negócios.</p>
-      </article>
-      <article class="card">
-        <h3>Responsabilidade ambiental</h3>
-        <p>Sustentabilidade no centro das operações para uma agricultura mais verde.</p>
-      </article>
-    </section>
-
-    <!-- CHAMADA -->
-    <section class="white" aria-label="Fale com o consultor">
+    <!-- Categorias (uma linha; responsivo sem rolar lateral) -->
+    <section class="cats" aria-label="Navegue por categorias">
       <div class="inner">
-        <h2>Chegou a hora de impulsionar os resultados da sua lavoura</h2>
-        <p>Envie uma mensagem no WhatsApp e saiba como podemos ajudar a aumentar a sua produtividade.</p>
-        <div class="foot-cta" style="margin-top:8px">
-          <a id="ctaZap" class="btn" target="_blank" rel="noopener">Falar com o Consultor</a>
-          <a class="pill" href="./produtos/">Ver produtos</a>
-        </div>
+        <a class="chip" href="./nutricao-solo-premium">Nutrição Solo Premium</a>
+        <a class="chip" href="./nutricao-foliar-premium">Nutrição Foliar Premium</a>
+        <a class="chip" href="./indutores-de-defesa">Indutores de Defesa</a>
+        <a class="chip" href="./adjuvantes-premium">Adjuvantes Premium</a>
+        <a class="chip" href="./protecao-com-neem">Proteção com Neem</a>
+        <a class="chip" href="./biologicos-controle-pragas">Biológicos Controle Pragas</a>
       </div>
+    </section>
+
+    <!-- Lista de produtos -->
+    <section class="grid" aria-label="Lista de produtos">
+      <!-- Takotrop -->
+      <article class="card">
+        <a class="media" href="./takotrop/">
+          <img src="../img/produtos/takotrop.webp" alt="Takotrop — biológico para controle de pragas"/>
+        </a>
+        <div class="body">
+          <h3>Takotrop</h3>
+          <div><span class="tag">Biológico</span><span class="tag">Controle de pragas</span></div>
+          <div class="cta">
+            <a class="btn" href="./takotrop/">Ver detalhes</a>
+            <a class="btn-outline" id="zapTakotrop" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bioolimpo -->
+      <article class="card">
+        <a class="media" href="./bioolimpo/">
+          <img src="../img/produtos/bioolimpo.webp" alt="Bioolimpo — fungos benéficos para controle de pragas"/>
+        </a>
+        <div class="body">
+          <h3>Bioolimpo</h3>
+          <div><span class="tag">Biológico</span><span class="tag">Controle de pragas</span></div>
+          <div class="cta">
+            <a class="btn" href="./bioolimpo/">Ver detalhes</a>
+            <a class="btn-outline" id="zapBioolimpo" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Fitoneem (arquivo correto com underscore e hífen) -->
+      <article class="card">
+        <a class="media" href="./fitoneem/">
+          <img src="../img/produtos/fitoneem_fundo-branco.webp" alt="Fitoneem — óleo de neem para proteção das plantas"/>
+        </a>
+        <div class="body">
+          <h3>Proteção com Neem — Fitoneem</h3>
+          <div><span class="tag">Óleo de neem</span><span class="tag">Origem vegetal</span></div>
+          <div class="cta">
+            <a class="btn" href="./fitoneem/">Ver detalhes</a>
+            <a class="btn-outline" id="zapFitoneem" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Nutri Completo (fundo branco) -->
+      <article class="card">
+        <a class="media" href="./nutri-completo/">
+          <img src="../img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — nutrição foliar com aminoácidos e algas marinhas"/>
+        </a>
+        <div class="body">
+          <h3>Nutrição Foliar — Nutri Completo</h3>
+          <div><span class="tag">Aminoácidos</span><span class="tag">Algas marinhas</span></div>
+          <div class="cta">
+            <a class="btn" href="./nutri-completo/">Ver detalhes</a>
+            <a class="btn-outline" id="zapNutri" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
@@ -196,7 +252,7 @@
       <a id="phoneBottom" class="phone phone--small" href="#" target="_blank" rel="noopener">📞 (17) 99140-5464</a>
       <div class="foot-cta">
         <a class="btn" href="../index.html">Voltar para a página principal</a>
-        <a class="btn" href="./produtos/">Ver produtos</a>
+        <a class="btn" href="./">Ver outros produtos</a>
       </div>
       <small style="opacity:.85">© AgroForte — Todos os direitos reservados.</small>
     </div>
@@ -208,39 +264,42 @@
   </a>
 
   <script>
-    // WhatsApp único
+    // Telefone e WhatsApp
     const PHONE_DISPLAY='(17) 99140-5464';
     const PHONE_WA='5517991405464';
     const waMsg=encodeURIComponent(
       'Olá, equipe AgroForte! Quero atendimento rápido pelo WhatsApp.\n' +
-      '• Assunto: entender melhor a empresa e portfólio\n' +
+      '• Assunto: envio para minha cidade\n' +
       '• Produto de interesse: definir depois\n\n' +
       'Por favor, direcionar meu contato ao consultor Sandro. Obrigado!'
     );
     const waLink=`https://wa.me/${PHONE_WA}?text=${waMsg}`;
 
-    ['phoneTop','phoneBottom','ctaZap','zapFloat'].forEach(id=>{
+    ['phoneTop','phoneBottom'].forEach(id=>{
       const a=document.getElementById(id);
-      if(a){a.href=waLink;}
+      if(a){a.textContent='📞 '+PHONE_DISPLAY; a.href=waLink;}
     });
-    document.getElementById('phoneTop').textContent='📞 '+PHONE_DISPLAY;
-    document.getElementById('phoneBottom').textContent='📞 '+PHONE_DISPLAY;
+    ['zapTakotrop','zapBioolimpo','zapFitoneem','zapNutri','zapFloat'].forEach(id=>{
+      const a=document.getElementById(id);
+      if(a) a.href=waLink;
+    });
 
-    // Fallbacks para arquivos no servidor
+    // Dropdown Produtos
+    const btn=document.getElementById('btnProdutos');
+    const menu=document.getElementById('menuProdutos');
+    btn.addEventListener('click',e=>{
+      e.stopPropagation();
+      const open=menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    document.addEventListener('click',()=>{menu.classList.remove('open'); btn.setAttribute('aria-expanded','false');});
+
+    // Fallback logo (garante abrir no celular)
     const logo=document.getElementById('logoAgf');
     logo.onerror=function(){
-      // fallback para png caso .webp não carregue
-      this.src='../img/produtos/logo-oficial-fundo-verde.png';
-    };
-
-    const imgQuem=document.getElementById('imgQuem');
-    imgQuem.onerror=function(){
-      // o usuário informou .wepg; se não existir, tentamos variantes png conhecidas
-      this.onerror=null;
-      // tenta primeiro quem-somos-fundo-branco.png
-      this.src='../img/produtos/quem-somos-fundo-branco.png';
-      // se ainda falhar, tenta quem-somosfundobranco.png
-      this.addEventListener('error',()=>{ this.src='../img/produtos/quem-somosfundobranco.png'; }, {once:true});
+      if(this.src.indexOf('logooficialfundoverde.webp')>-1){
+        this.src='../img/produtos/logo-oficial-fundo-verde.png';
+      }
     };
   </script>
 </body>
