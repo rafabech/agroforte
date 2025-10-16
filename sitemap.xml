@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Fitoneem -->
-  <sitemap>
-    <loc>https://agroforte.com.br/sitemap-fitoneem.xml</loc>
-    <lastmod>2025-10-15</lastmod>
-  </sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Página inicial -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/index.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/logooficialfundoverde.webp</image:loc>
+      <image:title>AgroForte — Fertilizantes e Biológicos</image:title>
+    </image:image>
+  </url>
 
-  <!-- Próximos produtos: adicionar mais itens aqui quando criarmos -->
-  <!--
-  <sitemap>
-    <loc>https://agroforte.com.br/sitemap-takotrop.xml</loc>
-    <lastmod>2025-10-15</lastmod>
-  </sitemap>
-  -->
-</sitemapindex>
+  <!-- Quem Somos -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/quem-somos.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/quem-somos-fundo-branco.png</image:loc>
+      <image:title>AgroForte — Quem Somos</image:title>
+    </image:image>
+  </url>
+
+  <!-- Listagem de produtos -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/produtos/index.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Fitoneem -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/produtos/fitoneem.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/fitoneem-fundo-branco.webp</image:loc>
+      <image:title>Fitoneem — Óleo de Neem</image:title>
+    </image:image>
+  </url>
+
+  <!-- Takotrop -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/produtos/takotrop.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/takotrop.webp</image:loc>
+      <image:title>Takotrop — Bioinseticida</image:title>
+    </image:image>
+  </url>
+
+  <!-- Bioolimpo -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/produtos/bioolimpo.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/bioolimpo.webp</image:loc>
+      <image:title>Bioolimpo — Beauveria + Metarhizium</image:title>
+    </image:image>
+  </url>
+
+  <!-- Nutri Completo -->
+  <url>
+    <loc>https://innovetecnologias.com.br/agroforte/produtos/nutri-completo.html</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
+      <image:title>Nutri Completo — Nutrição Foliar</image:title>
+    </image:image>
+  </url>
+</urlset>
