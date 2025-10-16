@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quem Somos — AgroForte Fertilizantes</title>
+  <meta name="description" content="Conheça a AgroForte Fertilizantes: missão, visão, valores e diferenciais. Soluções em nutrição e fisiologia vegetal, proteção com neem e biológicos para aumentar a produtividade do produtor rural."/>
+  <link rel="icon" href="../img/produtos/logooficialfundoverde.webp" type="image/webp"/>
 
+  <style>
+    :root{
+      --brand:#0D5E2E;      /* verde padrão */
+      --brand-dark:#0A4823; /* topo/fundo */
+      --surface:#fff;
+      --ink:#0b2316;
+      --accent:#25D366;     /* WhatsApp */
+      --shadow:0 10px 28px rgba(0,0,0,.18);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:#fff;background:linear-gradient(180deg,var(--brand-dark),var(--brand));
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+
+    /* header */
+    .topbar{position:sticky;top:0;z-index:60;background:var(--brand-dark);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{width:56px;height:56px;border-radius:50%;background:#fff;box-shadow:var(--shadow)}
+    .brand strong{font-size:20px;letter-spacing:.2px}
+    .nav-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 16px;font-weight:800;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05)}
+    .pill:hover{background:rgba(255,255,255,.12)}
+    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;font-weight:900;border:0;background:#15c15c;color:#063a1f;box-shadow:var(--shadow);cursor:pointer;white-space:nowrap}
+    .btn:hover{filter:brightness(1.06)}
+    .phone{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);padding:6px 10px;border-radius:999px;font-weight:800;white-space:nowrap;font-size:14px;line-height:1.1}
+    .phone.phone--small{font-size:13px;padding:6px 10px}
+
+    /* hero */
+    .hero{padding:28px 0 10px}
+    .hero h1{margin:0;font-size:36px}
+
+    /* seção branca */
+    .white{
+      background:#fff;color:var(--ink);border-radius:16px;margin:16px 0;box-shadow:var(--shadow);overflow:hidden
+    }
+    .white .inner{padding:18px}
+    .white .grid{
+      display:grid;gap:16px;align-items:center;
+      grid-template-columns:1fr
+    }
+    @media (min-width:900px){.white .grid{grid-template-columns:1.1fr 1fr}}
+    .white h2{margin:0 0 8px}
+    .white p{margin:0 0 10px;line-height:1.6}
+
+    /* blocos */
+    .cards{display:grid;gap:14px;margin:12px 0;grid-template-columns:1fr}
+    @media (min-width:800px){.cards{grid-template-columns:repeat(3,1fr)}}
+    .card{
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+      border-radius:16px;padding:14px;box-shadow:var(--shadow)
+    }
+    .card h3{margin:0 0 8px}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+
+    footer{margin:24px 0 90px;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
+    .foot{display:grid;gap:10px}
+    .foot-cta{display:flex;gap:10px;flex-wrap:wrap}
+
+    /* zap bolinha */
+    .zap{
+      position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;
+      background:var(--accent);display:flex;align-items:center;justify-content:center;
+      box-shadow:0 8px 26px rgba(0,0,0,.3);z-index:70
+    }
+    .zap img{width:28px;height:28px}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="wrap nav">
+      <div class="brand">
+        <a href="../index.html" aria-label="Voltar para a página inicial">
+          <img id="logoAgf" src="../img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
+        </a>
+        <strong>AgroForte</strong>
+      </div>
+      <div class="nav-right">
+        <a class="pill" href="../index.html">Home</a>
+        <a class="pill" href="./produtos/">Produtos</a>
+        <a class="btn" href="#contato">Fale Conosco</a>
+        <a id="phoneTop" class="phone" href="#" target="_blank" rel="noopener">📞 (17) 99140-5464</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Quem Somos</h1>
+      <p style="opacity:.9;max-width:72ch">Desde a fundação, a AgroForte Fertilizantes evolui continuamente seus produtos e processos industriais para aumentar a produtividade e a rentabilidade do produtor rural.</p>
+    </section>
+
+    <!-- BLOCO BRANCO COM A IMAGEM -->
+    <section class="white" aria-labelledby="sobre">
+      <div class="inner grid">
+        <div>
+          <h2 id="sobre">AgroForte Fertilizantes</h2>
+          <p>A Agro Forte Fertilizantes é caracterizada por um grande dinamismo e desde a sua fundação vem aprimorando constantemente os seus produtos e os processos industriais.</p>
+          <p>Neste momento, a Agro Forte Fertilizantes possui mais de 50 produtos atendendo as necessidades das mais diversas culturas e o mercado de nutrição animal. Estes produtos são classificados como acaricidas, adjuvantes, condicionador de solos, fertilizantes de solo, fertilizantes foliares, fertilizantes para fertirrigação, fertilizantes para tratamento das sementes, inoculantes, isca formicida e sais para agricultura e pecuária.</p>
+          <p>A Agro Forte Fertilizantes mantém uma equipe de agrônomos e assistentes técnicos em constante contato com os produtores rurais para otimizar a utilização dos seus produtos com a finalidade de aumentar a produtividade e a rentabilidade agrícola.</p>
+          <p>A Agro Forte Fertilizantes sempre esteve ao lado do produtor rural e sempre buscou alternativas para atender as suas necessidades e colaborar para maximizar o potencial produtivo das suas culturas e dos seus rebanhos.</p>
+        </div>
+        <div>
+          <!-- imagem solicitada em fundo branco -->
+          <img id="imgQuem" src="../img/produtos/quemsomosfundobranco.wepg" alt="AgroForte — Quem Somos (fundo branco)"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSÃO / VISÃO / VALORES -->
+    <section class="cards" aria-label="Missão, visão e valores">
+      <article class="card">
+        <h3>Missão</h3>
+        <p>Disponibilizar à agricultura soluções, inovações e tecnologia em nutrição e fisiologia vegetal, através de excelência em produtos e serviços.</p>
+      </article>
+      <article class="card">
+        <h3>Visão</h3>
+        <p>Ser creditada como a melhor empresa brasileira de nutrição e fisiologia vegetal em geração de valor para clientes e colaboradores.</p>
+      </article>
+      <article class="card">
+        <h3>Valores</h3>
+        <ul class="list">
+          <li>Satisfação do cliente;</li>
+          <li>Ética e integridade;</li>
+          <li>Foco no cliente;</li>
+          <li>Inovação e criatividade;</li>
+          <li>Resiliência;</li>
+          <li>Persistência;</li>
+          <li>Respeito e responsabilidade socioambiental.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="cards" aria-label="Nossos diferenciais">
+      <article class="card">
+        <h3>Investimento constante</h3>
+        <p>Desde a sua fundação, a Nutrifértil Agrícola investe constantemente no melhoramento de seus produtos e processos, garantindo soluções eficazes para o produtor rural.</p>
+      </article>
+      <article class="card">
+        <h3>Localização estratégica</h3>
+        <p>Estamos na região de São José do Rio Preto/SP, polo agroindustrial que facilita a distribuição dos nossos produtos para todo o Brasil.</p>
+      </article>
+      <article class="card">
+        <h3>Linha completa de produtos</h3>
+        <p>Portfólio amplo para diversas culturas e fases do plantio, com manejo eficiente e sustentável.</p>
+      </article>
+      <article class="card">
+        <h3>Suporte técnico</h3>
+        <p>Equipe de agrônomos e consultores ao lado do produtor rural para garantir o melhor uso e resultados.</p>
+      </article>
+      <article class="card">
+        <h3>Compromisso com o produtor</h3>
+        <p>Entendemos as necessidades do campo e oferecemos soluções que impulsionam a produtividade e os negócios.</p>
+      </article>
+      <article class="card">
+        <h3>Responsabilidade ambiental</h3>
+        <p>Sustentabilidade no centro das operações para uma agricultura mais verde.</p>
+      </article>
+    </section>
+
+    <!-- CHAMADA -->
+    <section class="white" aria-label="Fale com o consultor">
+      <div class="inner">
+        <h2>Chegou a hora de impulsionar os resultados da sua lavoura</h2>
+        <p>Envie uma mensagem no WhatsApp e saiba como podemos ajudar a aumentar a sua produtividade.</p>
+        <div class="foot-cta" style="margin-top:8px">
+          <a id="ctaZap" class="btn" target="_blank" rel="noopener">Falar com o Consultor</a>
+          <a class="pill" href="./produtos/">Ver produtos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap" id="contato">
+    <div class="foot">
+      <strong>AgroForte</strong>
+      <a id="phoneBottom" class="phone phone--small" href="#" target="_blank" rel="noopener">📞 (17) 99140-5464</a>
+      <div class="foot-cta">
+        <a class="btn" href="../index.html">Voltar para a página principal</a>
+        <a class="btn" href="./produtos/">Ver produtos</a>
+      </div>
+      <small style="opacity:.85">© AgroForte — Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <!-- Bolinha do WhatsApp -->
+  <a class="zap" id="zapFloat" aria-label="Fale no WhatsApp" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+  </a>
+
+  <script>
+    // WhatsApp único
+    const PHONE_DISPLAY='(17) 99140-5464';
+    const PHONE_WA='5517991405464';
+    const waMsg=encodeURIComponent(
+      'Olá, equipe AgroForte! Quero atendimento rápido pelo WhatsApp.\n' +
+      '• Assunto: entender melhor a empresa e portfólio\n' +
+      '• Produto de interesse: definir depois\n\n' +
+      'Por favor, direcionar meu contato ao consultor Sandro. Obrigado!'
+    );
+    const waLink=`https://wa.me/${PHONE_WA}?text=${waMsg}`;
+
+    ['phoneTop','phoneBottom','ctaZap','zapFloat'].forEach(id=>{
+      const a=document.getElementById(id);
+      if(a){a.href=waLink;}
+    });
+    document.getElementById('phoneTop').textContent='📞 '+PHONE_DISPLAY;
+    document.getElementById('phoneBottom').textContent='📞 '+PHONE_DISPLAY;
+
+    // Fallbacks para arquivos no servidor
+    const logo=document.getElementById('logoAgf');
+    logo.onerror=function(){
+      // fallback para png caso .webp não carregue
+      this.src='../img/produtos/logo-oficial-fundo-verde.png';
+    };
+
+    const imgQuem=document.getElementById('imgQuem');
+    imgQuem.onerror=function(){
+      // o usuário informou .wepg; se não existir, tentamos variantes png conhecidas
+      this.onerror=null;
+      // tenta primeiro quem-somos-fundo-branco.png
+      this.src='../img/produtos/quem-somos-fundo-branco.png';
+      // se ainda falhar, tenta quem-somosfundobranco.png
+      this.addEventListener('error',()=>{ this.src='../img/produtos/quem-somosfundobranco.png'; }, {once:true});
+    };
+  </script>
+</body>
+</html>
