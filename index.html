@@ -24,6 +24,7 @@
       --bg:#0e5b36; --bg2:#094f2d; --surface:#0b3e26; --brand:#15c15c;
       --ink:#0b1f14; --white:#fff; --muted:#cfead9; --ring:#9ae6b4;
       --shadow:0 10px 24px rgba(0,0,0,.18); --radius:16px; --max:1100px;
+      --zap:#25D366; --zap-border:#1DB954;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -37,56 +38,59 @@
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* ================= HEADER (fixo com botões + tel + WhatsApp) ================= */
+    /* ================= HEADER (sem sobreposição) ================= */
     header{
       position:sticky;top:0;z-index:60;
       background:rgba(9,79,45,.96);
       backdrop-filter:saturate(140%) blur(6px);
       border-bottom:1px solid rgba(255,255,255,.08)
     }
-    .bar{
-      display:grid;grid-template-columns:auto 1fr;align-items:center;
-      padding:6px 0; /* bem compacto */
-      gap:10px;
+    /* Grid com áreas: no desktop tudo em 1 linha; no mobile vira 2 linhas */
+    .head{
+      display:grid;align-items:center;gap:8px;
+      grid-template-columns:auto 1fr auto;
+      grid-template-areas:"brand nav actions";
+      padding:6px 0;
     }
-    .brand{display:flex;align-items:center;gap:10px;min-width:0}
+    .brand{grid-area:brand;display:flex;align-items:center;gap:10px;min-width:0}
     .brand img{width:180px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
     .brand strong{font-size:18px;letter-spacing:.2px;white-space:nowrap}
 
-    .right{
-      display:flex;align-items:center;justify-content:flex-end;gap:8px;min-width:0;
-      flex-wrap:nowrap; /* tudo paradinho numa linha */
-    }
-    .nav{display:flex;gap:6px;min-width:0;flex-wrap:nowrap}
+    .nav{grid-area:nav;display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;min-width:0}
     .nav-btn{
       padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
       background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap
     }
     .nav-btn:hover{background:rgba(255,255,255,.12)}
 
-    .chip{
-      display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);
-      font-weight:800;white-space:nowrap;font-size:14px
+    .actions{grid-area:actions;display:flex;align-items:center;gap:8px;min-width:0}
+    .tel{
+      display:flex;align-items:center;gap:6px;
+      padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap
     }
-
-    .wa-circle{
-      width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
-      background:#25D366;border:1px solid #1DB954;color:#fff;flex:0 0 auto
+    .circle{
+      width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;
+      background:var(--zap);border:1px solid var(--zap-border);color:#fff
     }
-    .wa-circle svg{display:block}
+    .circle svg{display:block}
 
-    /* MOBILE: mantém tudo em 1 linha, só reduz tamanhos */
+    /* MOBILE: nav em 2ª linha compacta, sem sobreposição; logo menor */
     @media (max-width:720px){
+      .head{
+        grid-template-columns:1fr auto;
+        grid-template-areas:
+          "brand actions"
+          "nav   nav";
+        padding:4px 0;
+      }
       .brand img{width:130px}
       .brand strong{display:none}
+      .nav{justify-content:flex-start;gap:6px}
       .nav-btn{padding:6px 10px;font-size:13px}
-      .chip{padding:5px 8px;font-size:13px}
-      .wa-circle{width:34px;height:34px}
-      .bar{padding:4px 0}
-      /* previne quebra: se ficar muito apertado, o conjunto pode rolar horizontalmente apenas no header */
-      .right{overflow-x:auto;scrollbar-width:none}
-      .right::-webkit-scrollbar{display:none}
+      .actions{gap:6px}
+      .tel{padding:4px 8px;font-size:13px}
+      .circle{width:34px;height:34px}
     }
 
     /* ================= HERO ================= */
@@ -112,8 +116,8 @@
     .card a{display:block}
     .card img{
       width:100%;
-      height:clamp(180px, 24vw, 260px); /* altura uniforme e responsiva */
-      object-fit:contain;               /* sem cortes */
+      height:clamp(180px, 24vw, 260px);
+      object-fit:contain;
       background:#fff;
     }
     .pad{padding:12px}
@@ -139,7 +143,7 @@
     /* Bolinha WhatsApp flutuante */
     .zap-float{
       position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
-      display:grid;place-items:center;background:#25D366;color:#fff;border:1px solid #1DB954;box-shadow:var(--shadow);z-index:70
+      display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70
     }
   </style>
 </head>
@@ -148,34 +152,41 @@
   <!-- Bolinha do WhatsApp (flutuante) -->
   <a class="zap-float" aria-label="WhatsApp"
      href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20Assunto:%20(Informe)%20Produto:%20(Informe)%0APor%20favor,%20direcionar%20ao%20consultor%20Sandro.">
-    <!-- Marca WhatsApp branca sobre verde -->
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
       <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
     </svg>
   </a>
 
   <header>
-    <div class="wrap bar">
+    <div class="wrap head">
       <!-- LOGO -->
       <a class="brand" href="./index.html" aria-label="Página inicial">
         <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
-      <!-- LADO DIREITO COMPLETO: botões + telefone + WhatsApp -->
-      <div class="right">
-        <nav class="nav" aria-label="Principal">
-          <a class="nav-btn" href="./index.html">Home</a>
-          <a class="nav-btn" href="./produtos/index.html">Produtos</a>
-          <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
-        </nav>
+      <!-- NAV sempre visível -->
+      <nav class="nav" aria-label="Principal">
+        <a class="nav-btn" href="./index.html">Home</a>
+        <a class="nav-btn" href="./produtos/index.html">Produtos</a>
+        <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
+      </nav>
 
-        <a class="chip" href="tel:+5517991405464" title="Ligar agora">📞 (17) 99140-5464</a>
+      <!-- TELEFONE + ÍCONES (iguais ao zap) -->
+      <div class="actions">
+        <!-- Ícone telefone (mesmo estilo do zap) -->
+        <a class="circle" href="tel:+5517991405464" title="Ligar agora" aria-label="Telefone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.1.36 2.29.55 3.58.55a1 1 0 011 1V21a1 1 0 01-1 1C11.3 22 2 12.7 2 1a1 1 0 011-1h3.5a1 1 0 011 1c0 1.29.19 2.48.55 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+          </svg>
+        </a>
+        <!-- Número visível -->
+        <a class="tel" href="tel:+5517991405464"> (17) 99140-5464</a>
 
-        <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro."
+        <!-- Ícone WhatsApp oficial -->
+        <a class="circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro."
            aria-label="Abrir WhatsApp" title="Abrir WhatsApp">
-          <!-- Logo WhatsApp branco (oficial) -->
-          <svg width="20" height="20" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
             <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
           </svg>
         </a>
@@ -290,7 +301,7 @@
         <a class="nav-btn" href="./produtos/index.html">Ver todos os produtos</a>
         <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
       </div>
-      <a class="chip" href="tel:+5517991405464">📞 (17) 99140-5464</a>
+      <a class="tel" href="tel:+5517991405464">(17) 99140-5464</a>
       <small>© AgroForte — Todos os direitos reservados.</small>
     </div>
   </footer>
