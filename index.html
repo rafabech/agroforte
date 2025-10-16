@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AgroForte | Fertilizantes, Neem e Biológicos — atendimento rápido no WhatsApp</title>
-  <meta name="description" content="AgroForte: nutrição foliar, adjuvantes, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp (17) 99140-5464 e envio para todo o Brasil."/>
+  <title>AgroForte | Fertilizantes, Neem e Biológicos — WhatsApp (17) 99140-5464</title>
+  <meta name="description" content="AgroForte: nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp (17) 99140-5464 e envio para todo o Brasil." />
   <link rel="canonical" href="https://innovetecnologias.com.br/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="AgroForte | Soluções simples que funcionam no campo" />
   <meta property="og:description" content="Nutrição foliar, proteção com neem e biológicos. Peça no WhatsApp: (17) 99140-5464." />
@@ -16,71 +15,44 @@
 
   <style>
     :root{
-      --bg:#0e5b36;
-      --bg-2:#094f2d;
-      --card:#0c3f28;
-      --brand:#8bf51c;
-      --white:#ffffff;
-      --ink:#061a12;
-      --muted:#bfe3cf;
-      --ring:#b3f28d;
-      --shadow: 0 10px 24px rgba(0,0,0,.18);
-      --radius:16px;
-      --max:1100px;
+      --bg:#0e5b36; --bg-2:#094f2d; --card:#0c3f28; --brand:#8bf51c;
+      --white:#fff; --ink:#061a12; --muted:#bfe3cf; --ring:#b3f28d;
+      --shadow:0 10px 24px rgba(0,0,0,.18); --radius:16px; --max:1100px;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    body{
-      color:var(--white);
-      background:linear-gradient(180deg,var(--bg),var(--bg-2));
-      font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
-    }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
+    *{box-sizing:border-box} html,body{margin:0}
+    body{color:var(--white);background:linear-gradient(180deg,var(--bg),var(--bg-2));
+      font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+    a{color:inherit;text-decoration:none} img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
     /* Header */
-    .wrap{max-width:var(--max);margin:auto;padding:0 16px}
-    header{
-      position:sticky;top:0;z-index:50;
-      background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);
-      border-bottom:1px solid rgba(255,255,255,.06)
-    }
-    .topbar{display:flex;align-items:center;gap:18px;padding:12px 0}
+    header{position:sticky;top:0;z-index:50;background:rgba(9,79,45,.96);
+      backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .topbar{display:flex;align-items:center;gap:18px;padding:12px 0;flex-wrap:wrap}
     .brand{display:flex;align-items:center;gap:12px;margin-right:auto}
-    .brand img{width:180px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+    .brand img{width:200px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
     .brand strong{font-size:20px;letter-spacing:.2px}
-
     nav{display:flex;gap:8px;flex-wrap:wrap}
-    .nav-btn{
-      padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.06);transition:.2s
-    }
+    .nav-btn{padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);transition:.2s}
     .nav-btn:hover{background:rgba(255,255,255,.12)}
-    .phone-chip{
-      display:flex;align-items:center;gap:8px;
+    .phone-chip{display:flex;align-items:center;gap:8px;
       padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.06);font-weight:600
-    }
-    .zap-main{
-      display:inline-flex;align-items:center;gap:10px;
-      padding:14px 18px;border-radius:999px;background:var(--brand);color:#0a2b14;
-      font-weight:800;box-shadow:var(--shadow);border:1px solid #73d514
-    }
-    .zap-main:hover{transform:translateY(-1px)}
+      background:rgba(255,255,255,.06);font-weight:700}
 
-    /* Hero (sem carrossel) */
-    .hero{padding:32px 0 18px}
-    .hero h1{
-      margin:0 0 10px;font-size:46px;line-height:1.05;font-weight:900;letter-spacing:-.5px
-    }
-    .hero p{margin:0 0 22px;color:var(--muted);max-width:800px}
+    .zap-main{display:inline-flex;align-items:center;gap:10px;
+      padding:12px 16px;border-radius:999px;background:var(--brand);color:#0a2b14;
+      font-weight:800;box-shadow:var(--shadow);border:1px solid #73d514}
 
-    /* Cards de produtos (com link na imagem) */
+    /* Hero */
+    .hero{padding:28px 0 6px}
+    .hero h1{margin:0 0 10px;font-size:42px;line-height:1.06;font-weight:900;letter-spacing:-.5px}
+    .hero p{margin:0 0 18px;color:var(--muted);max-width:820px}
+
+    /* Produtos */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{
-      background:var(--card);border:1px solid rgba(255,255,255,.06);
-      border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)
-    }
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);
+      border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
     .card a{display:block}
     .card img{aspect-ratio:4/3;object-fit:contain;background:#fff}
     .card .pad{padding:14px}
@@ -88,81 +60,52 @@
     .card p{margin:0;color:var(--muted);font-size:14px}
 
     /* Categorias */
-    .section{padding:26px 0}
+    .section{padding:24px 0}
     .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
     .h2{margin:6px 0 14px;font-size:26px}
-    .catbar{
-      display:flex;gap:12px;flex-wrap:wrap;align-items:center;
+    .catbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;
       background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-      border-radius:20px;padding:14px
-    }
+      border-radius:20px;padding:14px}
     .cat{background:var(--bg);border:1px solid rgba(255,255,255,.14);color:#fff;
       padding:10px 14px;border-radius:14px;font-weight:800;white-space:nowrap}
     .cat:hover{outline:2px solid var(--ring)}
 
     /* FAQ + Comentários */
-    details{
-      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
-      border-radius:14px;padding:12px 14px
-    }
+    details{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;padding:12px 14px}
     summary{cursor:pointer;font-weight:800}
     .faq{display:grid;gap:10px}
-    .comment{
-      background:#fff;color:#0b1f14;border-radius:16px;padding:16px;border:1px solid #e6efe9
-    }
+    .comment{background:#fff;color:#0b1f14;border-radius:16px;padding:16px;border:1px solid #e6efe9}
     .comment label{display:block;font-weight:700;margin:6px 0 6px}
-    .comment input,.comment textarea{
-      width:100%;padding:10px 12px;border-radius:10px;border:1px solid #dfeae4;outline:none
-    }
+    .comment input,.comment textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #dfeae4;outline:none}
     .comment textarea{min-height:110px;resize:vertical}
     .comment .actions{display:flex;justify-content:center;margin-top:12px}
-    .btn-zap{
-      background:var(--brand);color:#0a2b14;border:1px solid #73d514;
-      padding:12px 18px;border-radius:999px;font-weight:900;display:inline-flex;gap:8px
-    }
+    .btn-zap{background:var(--brand);color:#0a2b14;border:1px solid #73d514;
+      padding:12px 18px;border-radius:999px;font-weight:900;display:inline-flex;gap:8px}
 
-    /* Rodapé + botões flutuantes */
     footer{border-top:1px solid rgba(255,255,255,.08);padding:18px 0;color:var(--muted)}
-    .zap-float{
-      position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
-      display:grid;place-items:center;background:var(--brand);color:#0a2b14;border:1px solid #73d514;box-shadow:var(--shadow);z-index:40
-    }
-    .call-bar{
-      position:fixed;left:16px;bottom:16px;z-index:40;
-      display:flex;gap:8px;align-items:center;justify-content:center;
-      background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
-      color:#fff;padding:8px 12px;border-radius:999px;font-weight:700
-    }
+    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
+      display:grid;place-items:center;background:#25D366;color:#fff;border:1px solid #1DB954;box-shadow:var(--shadow);z-index:40}
 
-    /* Responsivo */
-    @media (max-width:980px){
-      .brand img{width:160px}
-      .hero h1{font-size:36px}
-      .grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media (max-width:680px){
-      .topbar{flex-wrap:wrap}
-      .brand{width:100%}
-      nav{width:100%}
-      .hero h1{font-size:30px}
-      .grid{grid-template-columns:1fr}
-      .call-bar{font-size:14px;padding:8px 12px}
-    }
+    @media (max-width:980px){.brand img{width:180px}.hero h1{font-size:34px}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:680px){.hero h1{font-size:28px}.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 
-  <!-- Botões flutuantes -->
+  <!-- Bolinha flutuante do WhatsApp (apenas o ícone) -->
   <a class="zap-float" aria-label="WhatsApp"
-     href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20Assunto:%20(Informe)%20Produto:%20(Informe)%20%0APor%20favor,%20direcionar%20meu%20contato%20ao%20consultor%20Sandro.">
-    🟢
+     href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20-%20Assunto:%20(Informe)%20-%20Produto:%20(Informe)%0APor%20favor,%20direcionar%20meu%20contato%20ao%20consultor%20Sandro.">
+    <!-- Ícone WhatsApp em SVG -->
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <path fill="#fff" d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8.1.1.2.1.2.2 0 .2-.1.6-.3 1z"/>
+    </svg>
   </a>
-  <a class="call-bar" href="tel:+5517991405464">📞 (17) 99140-5464</a>
 
   <header>
     <div class="wrap topbar">
       <a class="brand" href="/">
-        <img src="/agroforte/img/produtos/logooficialfundoverde.webp" alt="AgroForte" />
+        <img src="/agroforte/img/produtos/logooficialfundoverde.webp" alt="AgroForte" loading="eager" />
         <strong>AgroForte</strong>
       </a>
 
@@ -170,21 +113,20 @@
         <a class="nav-btn" href="/">Home</a>
         <a class="nav-btn" href="/agroforte/produtos/">Produtos</a>
         <a class="nav-btn" href="/agroforte/quem-somos.html">Quem Somos</a>
-        <a class="zap-main" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20gostaria%20de%20um%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20Pode%20me%20ajudar%3F">
-          Fale no WhatsApp
-        </a>
+        <a class="phone-chip" href="tel:+5517991405464">📞 (17) 99140-5464</a>
+        <a class="zap-main" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Informe%20Assunto%20e%20Produto)%0APor%20favor,%20direcionar%20ao%20consultor%20Sandro.">Fale no WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <!-- Hero simples -->
+    <!-- Hero -->
     <section class="hero">
       <h1>Fertilizantes e soluções simples que funcionam no campo</h1>
-      <p>Conheça nossa linha com nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
+      <p>Nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
     </section>
 
-    <!-- Acesse por categoria (todos verdes) -->
+    <!-- Categorias -->
     <section class="section" id="categorias">
       <p class="kicker">Navegue por categoria</p>
       <h2 class="h2">Acesse por categoria</h2>
@@ -204,53 +146,49 @@
       <h2 class="h2" id="destaques">Produtos com maior procura</h2>
 
       <div class="grid">
-        <!-- Fitoneem -->
         <article class="card">
           <a href="/agroforte/produtos/fitoneem.html" aria-label="Ver Fitoneem">
-            <img src="/agroforte/img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem — óleo de neem" loading="lazy">
+            <img src="/agroforte/img/produtos/fitoneem_fundo_branco.webp" alt="Fitoneem — óleo de neem" loading="lazy">
           </a>
           <div class="pad">
             <h3>Óleo de Neem — Fitoneem</h3>
-            <p>Controle inteligente de pragas com ação antialimentar, repelente e regulador de crescimento.</p>
+            <p>Ação antialimentar, repelente e regulador de crescimento.</p>
           </div>
         </article>
 
-        <!-- Takotrop -->
         <article class="card">
           <a href="/agroforte/produtos/takotrop.html" aria-label="Ver Takotrop">
             <img src="/agroforte/img/produtos/takotrop.webp" alt="Takotrop biológico" loading="lazy">
           </a>
           <div class="pad">
             <h3>Takotrop (Biológico)</h3>
-            <p>Biocontrole com Pseudomonas — múltiplos modos de ação e alta seletividade.</p>
+            <p>Biocontrole com Pseudomonas. Triplo modo de ação.</p>
           </div>
         </article>
 
-        <!-- Bioolimpo -->
         <article class="card">
           <a href="/agroforte/produtos/bioolimpo.html" aria-label="Ver Bioolimpo">
             <img src="/agroforte/img/produtos/bioolimpo.webp" alt="Bioolimpo biológico" loading="lazy">
           </a>
           <div class="pad">
             <h3>Bioolimpo (Biológico)</h3>
-            <p>Beauveria + Metarhizium para amplo espectro com baixo risco de resistência.</p>
+            <p>Beauveria + Metarhizium — amplo espectro de controle.</p>
           </div>
         </article>
 
-        <!-- Nutri Completo -->
         <article class="card">
           <a href="/agroforte/produtos/nutri-completo.html" aria-label="Ver Nutri Completo">
             <img src="/agroforte/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — nutrição foliar" loading="lazy">
           </a>
           <div class="pad">
             <h3>Nutri Completo</h3>
-            <p>Fertilizante foliar versátil com macro, micros, algas e aminoácidos.</p>
+            <p>Macros, micros, algas e aminoácidos — versátil e eficiente.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- FAQ visível (SEO + UX) -->
+    <!-- FAQ -->
     <section class="section">
       <p class="kicker">Perguntas frequentes</p>
       <h2 class="h2">Dúvidas que aceleram sua decisão</h2>
@@ -270,7 +208,7 @@
       </div>
     </section>
 
-    <!-- Comentários / CTA para WhatsApp -->
+    <!-- Comentários / CTA -->
     <section class="section">
       <p class="kicker">Fale com a gente</p>
       <h2 class="h2">Deixe seu comentário</h2>
@@ -293,31 +231,19 @@
 
   <footer>
     <div class="wrap">
-      <small>© AgroForte. Atendimento rápido no WhatsApp: <a href="https://wa.me/5517991405464" style="text-decoration:underline;color:#defad1">(17) 99140-5464</a>.</small>
+      <small>© AgroForte. Telefone: <a href="tel:+5517991405464" style="text-decoration:underline;color:#defad1">(17) 99140-5464</a>. Atendimento rápido no WhatsApp.</small>
     </div>
   </footer>
 
-  <!-- FAQPage JSON-LD (SEO) -->
+  <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Vocês enviam para minha cidade?",
-        "acceptedAnswer":{"@type":"Answer","text":"Sim, enviamos para todo o Brasil com transportadoras parceiras e Correios."}
-      },
-      {
-        "@type":"Question",
-        "name":"Posso falar com um consultor pelo WhatsApp?",
-        "acceptedAnswer":{"@type":"Answer","text":"Sim. Clique nos botões de WhatsApp do site ou salve (17) 99140-5464."}
-      },
-      {
-        "@type":"Question",
-        "name":"Os produtos servem para agricultura orgânica?",
-        "acceptedAnswer":{"@type":"Answer","text":"Temos soluções compatíveis, como o Fitoneem e biológicos de controle."}
-      }
+      {"@type":"Question","name":"Vocês enviam para minha cidade?","acceptedAnswer":{"@type":"Answer","text":"Sim, enviamos para todo o Brasil com transportadoras parceiras e Correios."}},
+      {"@type":"Question","name":"Posso falar com um consultor pelo WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Sim. Clique nos botões de WhatsApp do site ou salve (17) 99140-5464."}},
+      {"@type":"Question","name":"Os produtos servem para agricultura orgânica?","acceptedAnswer":{"@type":"Answer","text":"Temos soluções compatíveis, como o Fitoneem e biológicos de controle."}}
     ]
   }
   </script>
@@ -328,8 +254,7 @@
       const nome = document.querySelector('#nome').value.trim();
       const assunto = document.querySelector('#assunto').value.trim();
       const msg = document.querySelector('#mensagem').value.trim();
-
-      const texto = `Olá, equipe AgroForte! Quero atendimento rápido pelo WhatsApp.%0A- Nome: ${encodeURIComponent(nome||'—')}%0A- Assunto: ${encodeURIComponent(assunto||'—')}%0A- Mensagem: ${encodeURIComponent(msg||'—')}%0APor favor, direcionar meu contato ao consultor Sandro. Obrigado!`;
+      const texto = `Ol%C3%A1,%20equipe%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%0A- Nome:%20${encodeURIComponent(nome||'—')}%0A- Assunto:%20${encodeURIComponent(assunto||'—')}%0A- Mensagem:%20${encodeURIComponent(msg||'—')}%0APor%20favor,%20direcionar%20meu%20contato%20ao%20consultor%20Sandro.%20Obrigado!`;
       window.location.href = `https://wa.me/5517991405464?text=${texto}`;
     }
   </script>
