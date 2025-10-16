@@ -67,6 +67,9 @@
     .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
     .card a{display:block}
     .card img{aspect-ratio:4/3;object-fit:contain;background:#fff}
+    /* >>> Ajuste pedido: ampliar apenas Fitoneem e Nutri Completo (reduz letterbox de fundo branco) */
+    #imgFit, #imgNutri{object-fit:cover;object-position:center center}
+
     .pad{padding:12px}
     .card h3{margin:0 0 6px;font-size:16px}
     .mini{margin:0;color:#ddf0e6;font-size:14px}
@@ -105,13 +108,13 @@
 
   <header>
     <div class="wrap topbar">
-      <!-- LOGO (RELATIVO) -->
+      <!-- LOGO -->
       <a class="brand" href="./index.html" aria-label="Página inicial">
         <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
-      <!-- MENU + CONTATOS (RELATIVOS) -->
+      <!-- MENU + CONTATOS -->
       <nav>
         <a class="nav-btn" href="./index.html">Home</a>
         <a class="nav-btn" href="./produtos/index.html">Produtos</a>
@@ -129,7 +132,7 @@
       <p>Nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
     </section>
 
-    <!-- CATEGORIAS (todos verdes) -->
+    <!-- CATEGORIAS -->
     <section class="section" id="categorias">
       <p class="kicker">Navegue por categoria</p>
       <h2 class="h2">Acesse por categoria</h2>
@@ -143,7 +146,7 @@
       </div>
     </section>
 
-    <!-- PRODUTOS (imagens com links e fallbacks) -->
+    <!-- PRODUTOS -->
     <section class="section" aria-labelledby="destaques">
       <p class="kicker">Destaques</p>
       <h2 class="h2" id="destaques">Produtos com maior procura</h2>
@@ -255,7 +258,7 @@
     function fallbackChain(el, paths){
       if(!el) return;
       let i=0; el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } };
-      el.src = el.src; // garante disparo se já quebrou em cache
+      el.src = el.src; // revalida
     }
     // Logo
     fallbackChain(document.getElementById('logoAgf'), [
