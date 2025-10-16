@@ -106,8 +106,8 @@
     .card a{display:block}
     .card img{
       width:100%;
-      height:clamp(180px, 24vw, 260px);     /* altura uniforme e responsiva */
-      object-fit:contain;                   /* sem cortes */
+      height:clamp(180px, 24vw, 260px);
+      object-fit:contain;
       background:#fff;
     }
     .pad{padding:12px}
@@ -148,16 +148,16 @@
   <header>
     <div class="wrap head">
       <!-- LOGO -->
-      <a class="brand" href="../index.html" aria-label="Página inicial">
+      <a class="brand" href="/agroforte/index.html" aria-label="Página inicial">
         <img id="logoAgf" src="../img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
       <!-- NAV (igual da home) -->
       <nav class="nav" aria-label="Principal">
-        <a class="nav-btn" href="../index.html">Home</a>
-        <a class="nav-btn" href="./index.html">Produtos</a>
-        <a class="nav-btn" href="../quem-somos.html">Quem Somos</a>
+        <a class="nav-btn" href="/agroforte/index.html">Home</a>
+        <a class="nav-btn" href="/agroforte/produtos/index.html" aria-current="page">Produtos</a>
+        <a class="nav-btn" href="/agroforte/quem-somos.html">Quem Somos</a>
       </nav>
 
       <!-- AÇÕES -->
@@ -298,8 +298,8 @@
   <footer>
     <div class="wrap foot">
       <div class="foot-cta">
-        <a class="nav-btn" href="../index.html">Voltar para Home</a>
-        <a class="nav-btn" href="../quem-somos.html">Quem Somos</a>
+        <a class="nav-btn" href="/agroforte/index.html">Voltar para Home</a>
+        <a class="nav-btn" href="/agroforte/quem-somos.html">Quem Somos</a>
       </div>
       <a class="tel" href="tel:+5517991405464">(17) 99140-5464</a>
       <small>© AgroForte — Todos os direitos reservados.</small>
@@ -326,7 +326,7 @@
     /* FALLBACKS de imagem (garantia para caminhos relativos a /produtos/) */
     function fallbackChain(el, paths){ if(!el) return; let i=0; el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } }; el.src=el.src; }
 
-    // Logo
+    // Logo (permanece relativo à pasta /produtos/)
     fallbackChain(document.getElementById('logoAgf'), [
       '../img/produtos/logooficialfundoverde.webp',
       '../img/produtos/logoficialfundoverde.webp',
