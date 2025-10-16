@@ -37,49 +37,97 @@
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* Header */
-    header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .topbar{display:flex;align-items:center;gap:16px;padding:12px 0;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:12px;margin-right:auto}
-    .brand img{width:200px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    .brand strong{font-size:20px;letter-spacing:.2px}
-    nav{display:flex;gap:8px;flex-wrap:wrap}
-    .nav-btn{padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06)}
+    /* ================= HEADER (compacto no mobile) ================= */
+    header{
+      position:sticky;top:0;z-index:60;
+      background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);
+      border-bottom:1px solid rgba(255,255,255,.08)
+    }
+    .topbar{
+      display:flex;align-items:center;gap:12px;justify-content:space-between;
+      padding:10px 0; /* desktop padrão */
+    }
+    .brand{display:flex;align-items:center;gap:10px;min-width:0}
+    .brand img{
+      width:200px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))
+    }
+    .brand strong{font-size:20px;letter-spacing:.2px;white-space:nowrap}
+    .actions{display:flex;align-items:center;gap:8px}
+    .nav-btn{
+      padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);font-weight:800
+    }
     .nav-btn:hover{background:rgba(255,255,255,.12)}
-    .chip{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:800;white-space:nowrap}
-    .zap-main{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--brand);color:#063a1f;font-weight:900;border:0;box-shadow:var(--shadow)}
+    .chip{
+      display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:800
+    }
+    .zap-main{
+      display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;
+      background:var(--brand);color:#063a1f;font-weight:900;border:0;box-shadow:var(--shadow)
+    }
 
-    /* Hero (sem carrossel) */
-    .hero{padding:24px 0 8px}
+    /* Ícones pequenos */
+    .icon-btn{
+      width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16)
+    }
+    .hamb{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.10);color:#fff;font-size:18px;display:none}
+
+    /* Navegação colapsável */
+    nav.nav{border-top:1px solid rgba(255,255,255,.08)}
+    nav.nav .wrap{display:flex;gap:10px;flex-wrap:wrap;padding:8px 0}
+    @media (max-width:720px){
+      /* COMPACTAÇÃO forte no mobile */
+      .topbar{padding:6px 0} /* menos altura */
+      .brand img{width:130px} /* logo menor */
+      .brand strong{display:none} /* oculta o texto ao lado da logo */
+      .zap-main{display:none} /* CTA grande some no mobile (já temos bolinha flutuante) */
+      .chip .txt{display:none} /* mostra só ícone no telefone */
+      .chip{padding:6px 8px}   /* chip menor */
+      .actions{gap:6px}
+      .hamb{display:grid}      /* aparece botão de menu */
+      /* menu recolhido por padrão */
+      nav.nav{max-height:0;overflow:hidden;transition:max-height .25s ease}
+      nav.nav.open{max-height:200px}
+      nav.nav .wrap{padding:8px 0}
+      .nav-btn{padding:8px 10px}
+    }
+
+    /* ================= HERO ================= */
+    .hero{padding:20px 0 6px}
     .hero h1{margin:0 0 8px;font-size:40px;line-height:1.06;font-weight:900;letter-spacing:-.4px}
     .hero p{margin:0;color:var(--muted);max-width:80ch}
+    @media (max-width:720px){ .hero h1{font-size:28px} }
 
-    /* Categorias */
-    .section{padding:22px 0}
+    /* ================= CATEGORIAS ================= */
+    .section{padding:20px 0}
     .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
     .h2{margin:6px 0 14px;font-size:26px}
-    .catbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:20px;padding:14px}
+    .catbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:20px;padding:12px}
     .cat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;padding:10px 14px;border-radius:14px;font-weight:900;white-space:nowrap}
     .cat:hover{outline:2px solid var(--ring)}
 
-    /* Produtos (cards) */
+    /* ================= PRODUTOS (cards) ================= */
     .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:620px){ .grid{grid-template-columns:1fr} }
+
     .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
     .card a{display:block}
-
-    /* 👇 AQUI o ajuste que corrige o “pequeno demais” SEM cortar */
+    /* Altura uniforme sem cortar (resolve “imagem pequena”) */
     .card img{
       width:100%;
-      height:clamp(180px, 24vw, 260px); /* altura uniforme e responsiva */
-      object-fit:contain;               /* nunca corta */
-      background:#fff;                  /* base branca padrão */
+      height:clamp(180px, 24vw, 260px);
+      object-fit:contain;
+      background:#fff;
     }
-
     .pad{padding:12px}
     .card h3{margin:0 0 6px;font-size:16px}
     .mini{margin:0;color:#ddf0e6;font-size:14px}
 
-    /* FAQ + Comentário */
+    /* ================= FAQ + Comentário ================= */
     details{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px 14px}
     summary{cursor:pointer;font-weight:800}
     .faq{display:grid;gap:10px}
@@ -90,15 +138,16 @@
     .comment .actions{display:flex;justify-content:center;margin-top:12px}
     .btn-zap{background:var(--brand);color:#063a1f;border:0;border-radius:999px;padding:12px 18px;font-weight:900}
 
-    footer{border-top:1px solid rgba(255,255,255,.08);padding:18px 0;color:#d7efe4}
+    /* ================= Rodapé ================= */
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;color:#d7efe4}
     .foot{display:grid;gap:8px}
     .foot-cta{display:flex;gap:8px;flex-wrap:wrap}
 
     /* Bolinha WhatsApp */
-    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;border:1px solid #1DB954;box-shadow:var(--shadow);z-index:70}
-
-    @media (max-width:980px){.brand img{width:180px}.grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:34px}}
-    @media (max-width:620px){.grid{grid-template-columns:1fr}.hero h1{font-size:28px}}
+    .zap-float{
+      position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
+      display:grid;place-items:center;background:#25D366;color:#fff;border:1px solid #1DB954;box-shadow:var(--shadow);z-index:70
+    }
   </style>
 </head>
 <body>
@@ -113,27 +162,41 @@
 
   <header>
     <div class="wrap topbar">
+      <!-- LOGO -->
       <a class="brand" href="./index.html" aria-label="Página inicial">
         <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
-      <nav>
+      <!-- Ações rápidas (compactas no mobile) -->
+      <div class="actions">
+        <a class="chip" href="tel:+5517991405464">📞 <span class="txt">(17) 99140-5464</span></a>
+        <a class="icon-btn" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro." aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3A13 13 0 006.8 25.2L5 29l3.9-1.7A13 13 0 1016 3z"/></svg>
+        </a>
+        <button class="hamb" id="hamb" aria-controls="mainNav" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <!-- Navegação colapsável -->
+    <nav id="mainNav" class="nav">
+      <div class="wrap">
         <a class="nav-btn" href="./index.html">Home</a>
         <a class="nav-btn" href="./produtos/index.html">Produtos</a>
         <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
-        <a class="chip" href="tel:+5517991405464">📞 (17) 99140-5464</a>
-        <a class="zap-main" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro.">WhatsApp</a>
-      </nav>
-    </div>
+        <a class="zap-main" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro.">Fale no WhatsApp</a>
+      </div>
+    </nav>
   </header>
 
   <main class="wrap">
+    <!-- HERO -->
     <section class="hero">
       <h1>Fertilizantes e soluções simples que funcionam no campo</h1>
       <p>Nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
     </section>
 
+    <!-- CATEGORIAS -->
     <section class="section" id="categorias">
       <p class="kicker">Navegue por categoria</p>
       <h2 class="h2">Acesse por categoria</h2>
@@ -147,6 +210,7 @@
       </div>
     </section>
 
+    <!-- PRODUTOS -->
     <section class="section" aria-labelledby="destaques">
       <p class="kicker">Destaques</p>
       <h2 class="h2" id="destaques">Produtos com maior procura</h2>
@@ -194,6 +258,7 @@
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section">
       <p class="kicker">Perguntas frequentes</p>
       <h2 class="h2">Dúvidas que aceleram sua decisão</h2>
@@ -204,6 +269,7 @@
       </div>
     </section>
 
+    <!-- Comentário -> WhatsApp -->
     <section class="section">
       <p class="kicker">Fale com a gente</p>
       <h2 class="h2">Deixe seu comentário</h2>
@@ -230,12 +296,27 @@
         <a class="nav-btn" href="./produtos/index.html">Ver todos os produtos</a>
         <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
       </div>
-      <a class="chip" href="tel:+5517991405464">📞 (17) 99140-5464</a>
+      <a class="chip" href="tel:+5517991405464">📞 <span class="txt">(17) 99140-5464</span></a>
       <small>© AgroForte — Todos os direitos reservados.</small>
     </div>
   </footer>
 
   <script>
+    /* Toggle do menu no mobile (deixa o topo curtinho) */
+    const hamb=document.getElementById('hamb');
+    const nav=document.getElementById('mainNav');
+    if(hamb && nav){
+      const mq=window.matchMedia('(max-width:720px)');
+      function setMode(){ nav.classList.toggle('nav', true); nav.classList.toggle('open', false); if(mq.matches){ nav.classList.add('nav'); } }
+      setMode();
+      hamb.addEventListener('click',()=>{
+        const isOpen=nav.classList.toggle('open');
+        hamb.setAttribute('aria-expanded', String(isOpen));
+      });
+      window.addEventListener('resize',setMode);
+    }
+
+    /* WhatsApp do formulário */
     function goZap(e){
       e.preventDefault();
       const nome=(document.getElementById('nome').value||'').trim();
@@ -251,12 +332,8 @@
       return false;
     }
 
-    /* FALLBACKS de imagem */
-    function fallbackChain(el, paths){
-      if(!el) return; let i=0;
-      el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } };
-      el.src = el.src;
-    }
+    /* FALLBACKS de imagem (garante logo e produtos) */
+    function fallbackChain(el, paths){ if(!el) return; let i=0; el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } }; el.src=el.src; }
     fallbackChain(document.getElementById('logoAgf'), [
       './img/produtos/logooficialfundoverde.webp',
       './img/produtos/logoficialfundoverde.webp',
