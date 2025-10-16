@@ -7,7 +7,6 @@
   <meta name="description" content="A AgroForte Fertilizantes está ao lado do produtor rural com tecnologia, portfólio completo e suporte técnico. Fale conosco no WhatsApp (17) 99140-5464."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/quem-somos.html"/>
 
-  <!-- SEO (Organization) -->
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"AgroForte Fertilizantes","url":"https://innovetecnologias.com.br/","logo":"https://innovetecnologias.com.br/agroforte/img/produtos/logooficialfundoverde.webp","contactPoint":[{"@type":"ContactPoint","telephone":"+55-17-99140-5464","contactType":"customer support","areaServed":"BR"}]}
   </script>
@@ -30,10 +29,10 @@
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
 
-    /* padding lateral mais generoso (nada colado nas bordas) */
+    /* padding lateral mais generoso */
     .wrap{max-width:var(--max);margin:auto;padding:0 clamp(16px,4vw,28px)}
 
-    /* ================= HEADER (igual da home/produtos) ================= */
+    /* HEADER (mesmo padrão, tel e zap maiores) */
     header{
       position:sticky;top:0;z-index:60;
       background:rgba(9,79,45,.96);
@@ -49,29 +48,23 @@
     .brand{grid-area:brand;display:flex;align-items:center;gap:10px;min-width:0}
     .brand img{width:180px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
     .brand strong{font-size:18px;letter-spacing:.2px;white-space:nowrap}
-
     .nav{grid-area:nav;display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;min-width:0}
     .nav-btn{
       padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
       background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap
     }
     .nav-btn:hover{background:rgba(255,255,255,.12)}
-
     .actions{grid-area:actions;display:flex;align-items:center;gap:10px;min-width:0}
-    /* Telefone maior */
     .tel{
       display:flex;align-items:center;gap:8px;
       padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
       background:rgba(255,255,255,.06);font-weight:900;font-size:16px;white-space:nowrap
     }
-    /* Única bolinha do WhatsApp (maior no cabeçalho) */
     .wa-circle{
       width:44px;height:44px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;
       background:var(--zap);border:1px solid var(--zap-border);color:#fff
     }
     .wa-circle svg{display:block}
-
-    /* MOBILE: vira 2 linhas compactas (sem sobreposição) */
     @media (max-width:720px){
       .head{
         grid-template-columns:1fr auto;
@@ -89,13 +82,12 @@
       .wa-circle{width:40px;height:40px}
     }
 
-    /* ================= SEÇÕES ================= */
+    /* SEÇÕES */
     .hero{padding:20px 0 6px}
     .hero h1{margin:0 0 8px;font-size:36px;line-height:1.1;font-weight:900;letter-spacing:-.3px}
     .hero p{margin:0;color:var(--muted);max-width:80ch}
     @media (max-width:720px){ .hero h1{font-size:28px} }
 
-    /* Bloco imagem fundo branco (com padding lateral maior) */
     .white-block{background:#fff;color:var(--ink)}
     .white-in{max-width:var(--max);margin:auto;padding:14px clamp(16px,4vw,28px)}
     .white-in img{margin:auto;max-width:900px}
@@ -110,7 +102,6 @@
     ul{margin:8px 0 10px 22px}
     li{margin:4px 0}
 
-    /* CTA WhatsApp */
     .cta{
       display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;
       margin-top:10px
@@ -118,12 +109,10 @@
     .btn-zap{background:var(--brand);color:#063a1f;border:0;border-radius:999px;padding:12px 18px;font-weight:900}
     .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid #e0efe6;background:#fff;color:var(--ink);font-weight:800}
 
-    /* Rodapé */
     footer{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;color:#d7efe4}
     .foot{display:grid;gap:8px}
     .foot-cta{display:flex;gap:8px;flex-wrap:wrap}
 
-    /* Bolinha WhatsApp flutuante */
     .zap-float{
       position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
       display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70
@@ -132,7 +121,7 @@
 </head>
 <body>
 
-  <!-- Única bolinha do WhatsApp (flutuante) -->
+  <!-- Bolinha do WhatsApp (flutuante) -->
   <a class="zap-float" aria-label="WhatsApp"
      href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20Assunto:%20(Informe)%20Produto:%20(Informe)%0APor%20favor,%20direcionar%20ao%20consultor%20Sandro.">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
@@ -142,20 +131,17 @@
 
   <header>
     <div class="wrap head">
-      <!-- LOGO -->
       <a class="brand" href="./index.html" aria-label="Página inicial">
         <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
-      <!-- NAV -->
       <nav class="nav" aria-label="Principal">
         <a class="nav-btn" href="./index.html">Home</a>
         <a class="nav-btn" href="./produtos/index.html">Produtos</a>
         <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
       </nav>
 
-      <!-- AÇÕES: Telefone MAIOR + ÚNICA bolinha do WhatsApp MAIOR -->
       <div class="actions">
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
         <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro."
@@ -169,28 +155,22 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="wrap hero">
       <h1>Quem Somos</h1>
       <p>Ao lado do produtor rural, com tecnologia, portfólio completo e suporte técnico para aumentar produtividade e rentabilidade.</p>
     </section>
 
-    <!-- IMAGEM EM FUNDO BRANCO -->
+    <!-- IMAGEM EM FUNDO BRANCO (usa exatamente o caminho informado) -->
     <section class="white-block">
       <div class="white-in">
-        <!-- src padrão em .webp; fallbacks para .wepg e nomes alternativos -->
         <img id="imgQuem" src="./img/produtos/quem-somos-fundo-branco.png" alt="AgroForte — Quem Somos">
       </div>
     </section>
 
-    <!-- TEXTO PRINCIPAL -->
     <section class="wrap section text">
       <p>A Agro Forte Fertilizantes é caracterizada por um grande dinamismo e desde a sua fundação vem aprimorando constantemente os seus produtos e os processos industriais.</p>
-
       <p>Neste momento, a Agro Forte Fertilizantes possui mais de 50 produtos atendendo as necessidades das mais diversas culturas e o mercado de nutrição animal. Estes produtos são classificados como acaricidas, adjuvantes, condicionador de solos, fertilizantes de solo, fertilizantes foliares, fertilizantes para fertirrigação, fertilizantes para tratamento das sementes, inoculantes, isca formicida e sais para agricultura e pecuária.</p>
-
       <p>A Agro Forte Fertilizantes mantém uma equipe de agrônomos e assistentes técnicos em constante contato com os produtores rurais para otimizar a utilização dos seus produtos com a finalidade de aumentar a produtividade e a rentabilidade agrícola.</p>
-
       <p>A Agro Forte Fertilizantes sempre esteve ao lado do produtor rural e sempre buscou alternativas para atender as suas necessidades e colaborar para maximizar o potencial produtivo das suas culturas e dos seus rebanhos.</p>
 
       <div class="cols">
@@ -256,7 +236,7 @@
   </footer>
 
   <script>
-    /* FALLBACKS de imagem (logo e imagem Quem Somos) */
+    /* Fallbacks: mantém seu caminho como prioridade e tenta alternativas se necessário */
     function fallbackChain(el, paths){ if(!el) return; let i=0; el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } }; el.src=el.src; }
 
     // Logo
@@ -267,12 +247,12 @@
       './img/produtos/logooficial.webp'
     ]);
 
-    // Imagem principal (padrão .webp, depois .wepg e outras variações)
+    // Imagem Quem Somos — 1º tenta exatamente o caminho informado (com "Img/")
     fallbackChain(document.getElementById('imgQuem'), [
+      './Img/produtos/quem-somos-fundo-branco.png',
+      './img/produtos/quem-somos-fundo-branco.png',
       './img/produtos/quemsomosfundobranco.webp',
-      './img/produtos/quemsomosfundobranco.wepg',
-      './img/produtos/quemsomos-fundo-branco.webp',
-      './img/produtos/quemsomos-fundo-branco.png'
+      './img/produtos/quemsomos-fundo-branco.webp'
     ]);
   </script>
 </body>
