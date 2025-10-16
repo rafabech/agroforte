@@ -1,364 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Innovê Tecnologias | Agroforte — Bioinsumos e Nutrição de Plantas</title>
-<meta name="description" content="Agroforte — soluções em bioinsumos e nutrição vegetal. Atendimento rápido pelo WhatsApp.">
-<link rel="canonical" href="https://innovetecnologias.com.br/"/>
-<meta name="robots" content="index,follow">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AgroForte Fertilizantes — Soluções simples e eficazes para sua lavoura</title>
+  <meta name="description" content="AgroForte Fertilizantes: nutrição foliar, proteção com neem, biológicos de controle e muito mais. Atendimento rápido no WhatsApp e envio para todo o Brasil."/>
+  <link rel="canonical" href="https://innovetecnologias.com.br/"/>
+  <link rel="icon" href="./img/produtos/logooficialfundoverde.webp" type="image/webp"/>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Innovê Tecnologias | Agroforte — Bioinsumos e Nutrição de Plantas">
-<meta property="og:description" content="Bioinseticidas e fertilizantes de alta performance. Tire dúvidas no WhatsApp e veja nossos produtos.">
-<meta property="og:url" content="https://innovetecnologias.com.br/">
-<meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp">
-<link rel="icon" href="/img/produtos/logo-oficial-fundo-verde.webp" type="image/webp">
+  <style>
+    :root{
+      --brand:#0D5E2E;
+      --brand-2:#0B5227;
+      --brand-3:#0A4823;
+      --surface:#fff;
+      --ink:#0b2316;
+      --muted:#e9f3ec;
+      --accent:#25D366; /* WhatsApp */
+      --ring:#9ae6b4;
+      --radius:18px;
+      --shadow:0 10px 28px rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      background:linear-gradient(180deg,var(--brand-3),var(--brand));
+      color:#fff; overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Agroforte","url":"https://innovetecnologias.com.br","logo":"https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp","contactPoint":[{"@type":"ContactPoint","contactType":"customer support","telephone":"+55-17-99140-5464","areaServed":"BR"}]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Innovê Tecnologias | Agroforte","url":"https://innovetecnologias.com.br","potentialAction":{"@type":"SearchAction","target":"https://innovetecnologias.com.br/?q={search_term_string}","query-input":"required name=search_term_string"}}
-</script>
-<script type="application/ld+json" id="faq-json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"O Fitoneem é aprovado para agricultura orgânica?","acceptedAnswer":{"@type":"Answer","text":"Sim, integra o MIP e atua por contato e ingestão com azadiractinas A e B."}},
-{"@type":"Question","name":"Bioolimpo controla quais pragas?","acceptedAnswer":{"@type":"Answer","text":"Lagartas, percevejos, moscas, besouros, cigarrinhas e tripes (Beauveria IBCB 66 + Metarhizium IBCB 425)."}},
-{"@type":"Question","name":"Takotrop é compatível com químicos e biológicos?","acceptedAnswer":{"@type":"Answer","text":"Sim. Formulação D.O.P, com Pseudomonas chlororaphis e P. fluorescens; ideal para MIP."}},
-{"@type":"Question","name":"Nutri Completo Premium serve para quais culturas?","acceptedAnswer":{"@type":"Answer","text":"Todas as culturas, do viveiro ao campo, com doses específicas e foco em recuperação pós-estresse."}},
-{"@type":"Question","name":"Como chamar atendimento rápido no WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Use qualquer botão de WhatsApp desta página; a mensagem vem pronta para você completar e enviar."}}
-]}
-</script>
+    .wrap{max-width:1200px;margin:0 auto;padding:0 16px}
 
-<style>
-:root{
-  --bg:#0e5c33;--surface:#0b4f2c;--card:#0b4b2a;
-  --brand:#0a6d39;--accent:#f0c419;--ink:#f4fff8;
-  --max:1200px;--r:16px;--nav:#0f2c75
-}
-*{box-sizing:border-box}html,body{margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;overflow-x:hidden}
-a{color:var(--ink);text-decoration:none}
-img{max-width:100%;height:auto;display:block}
-.wrap{max-width:var(--max);margin:0 auto;padding:14px}
+    /* Topo */
+    .topbar{position:sticky;top:0;z-index:70;background:var(--brand-3);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{width:56px;height:56px;border-radius:50%;background:#fff;box-shadow:var(--shadow)}
+    .brand strong{font-size:20px;letter-spacing:.2px}
+    .nav-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;font-weight:800;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06)}
+    .pill:hover{background:rgba(255,255,255,.12)}
+    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 16px;font-weight:900;border:0;background:#15c15c;color:#063a1f;box-shadow:var(--shadow);cursor:pointer;white-space:nowrap}
+    .btn:hover{filter:brightness(1.06)}
+    .phone{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);padding:6px 10px;border-radius:999px;font-weight:800;white-space:nowrap;font-size:14px;line-height:1.1}
 
-/* ======== Top bar + NAV ======== */
-.topbar{background:#073d22;border-bottom:1px solid #ffffff1a}
-.top-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.contact{font-weight:700}
-.brandline{background:#0a3b8e}
-.nav{display:flex;align-items:center;gap:18px;position:relative}
-.nav>a{padding:12px 4px;font-weight:800}
-.dropdown{position:relative}
-.dropbtn{display:inline-flex;align-items:center;gap:6px;padding:12px 4px;font-weight:800}
-.menu{position:absolute;top:100%;left:-8px;background:var(--nav);border-radius:10px;border:1px solid #ffffff1a;min-width:280px;display:none;flex-direction:column;padding:8px;z-index:20}
-.menu a{padding:12px 14px;border-radius:8px}
-.menu a:hover{background:#0b3a88}
-.dropdown:hover .menu{display:flex}
+    /* Hero + Carrossel */
+    .hero{padding:18px 0}
+    .hero h1{margin:0 0 6px;font-size:34px}
+    .hero p{margin:0 0 12px;opacity:.92;max-width:70ch}
 
-/* ======== Hero ======== */
-header.hero{padding:18px 0}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
-.logo{width:min(360px,60vw);filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}
-h1{font-size:clamp(26px,4.6vw,44px);line-height:1.1;margin:10px 0 12px}
-.lead{font-size:clamp(15px,1.7vw,18px);color:#eafff3}
-.chip{display:inline-block;background:#0b7b41;color:#e9fff5;padding:7px 12px;border-radius:999px;font-weight:700}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-.btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:13px 18px;font-weight:800;border:1px solid #ffffff2a}
-.btn-primary{background:var(--accent);color:#122014;border:none}
-.btn-ghost{background:transparent}
-.quick{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
-.pill{background:#0a7a3f;border:1px solid #ffffff2a;border-radius:999px;padding:9px 12px;font-weight:700}
+    .carousel{position:relative;border-radius:var(--radius);overflow:hidden;background:#0c3c23;box-shadow:var(--shadow)}
+    .slides{display:flex;scroll-behavior:smooth;overflow:hidden}
+    .slide{min-width:100%;display:grid;place-items:center;background:#113a24}
+    .slide a{display:block;width:100%}
+    .slide img{width:100%;height:420px;object-fit:contain;background:#fff}
 
-/* ======== Carousel (manual) ======== */
-.carousel-wrap{padding:10px 0}
-.carousel{position:relative;overflow:hidden;border-radius:18px;border:1px solid #ffffff24;background:#0b4f2c}
-.slides{display:flex;scroll-snap-type:x mandatory;overflow-x:auto;scroll-behavior:smooth}
-.slide{min-width:100%;scroll-snap-align:center;display:grid;place-items:center;padding:10px}
-.slide .frame{background:#fff;border-radius:16px;padding:12px;max-width:min(860px,92vw)}
-.slide img{width:100%;height:auto;border-radius:12px}
-.nav-arrows{position:absolute;inset:0;pointer-events:none}
-.nav-arrows button{pointer-events:auto;position:absolute;top:50%;transform:translateY(-50%);background:#0008;border:none;color:#fff;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;cursor:pointer}
-.nav-arrows .prev{left:10px}.nav-arrows .next{right:10px}
-.dots{position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:6px}
-.dots button{width:9px;height:9px;border-radius:50%;border:none;background:#ffffff66}
-.dots button[aria-current="true"]{background:#ffffff}
+    .ctrl{position:absolute;inset:0;pointer-events:none}
+    .arrow{
+      pointer-events:auto;position:absolute;top:50%;transform:translateY(-50%);
+      width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+      background:rgba(255,255,255,.85);color:#063a1f;border:0;cursor:pointer;font-weight:900;
+      box-shadow:0 8px 20px rgba(0,0,0,.25)
+    }
+    .arrow:hover{filter:brightness(1.05)}
+    .arrow.prev{left:10px}
+    .arrow.next{right:10px}
 
-/* ======== FAQ + formulário ======== */
-section{padding:26px 0}h2{margin:0 0 12px}
-.faq details{background:var(--surface);border:1px solid #ffffff24;border-radius:12px;padding:12px;margin-bottom:10px}
-.faq summary{cursor:pointer;font-weight:800}.faq p{margin:8px 0 0}
-.comment{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
-.form{background:var(--surface);border:1px solid #ffffff24;border-radius:12px;padding:14px}
-.form label{display:block;font-weight:700;margin-top:10px}
-.form input,.form select,.form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ffffff29;background:#0b4b2a;color:#f4fff8}
-.form textarea{min-height:120px;resize:vertical}
-.form .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .dots{position:absolute;left:0;right:0;bottom:10px;display:flex;gap:8px;justify-content:center}
+    .dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.55);border:1px solid rgba(0,0,0,.15);cursor:pointer}
+    .dot[aria-current="true"]{background:#15c15c;border-color:#0a5a2c}
 
-/* ======== Footer ======== */
-footer{background:#073d22;border-top:1px solid #ffffff1a;margin-top:26px}
-.foot{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
-.socials{display:flex;gap:10px;flex-wrap:wrap}
-.socials a{background:#0b4f2c;border:1px solid #ffffff24;padding:10px 12px;border-radius:10px}
+    /* Categorias */
+    .cats{margin:18px 0;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:14px}
+    .cats h2{margin:0 0 10px;font-size:20px}
+    .cat-row{display:flex;gap:10px;flex-wrap:wrap}
+    .cat{display:inline-flex;align-items:center;justify-content:center;text-align:center;
+      border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);padding:12px 14px;border-radius:999px;font-weight:900}
+    .cat:hover{background:rgba(255,255,255,.12)}
+    /* Botões visualmente iguais */
+    .cat--highlight{background:#2e49b8;border-color:#2e49b8}
+    .cat--highlight:hover{filter:brightness(1.06)}
 
-/* ======== FAB Zap ======== */
-.fab-zap{position:fixed;right:16px;bottom:16px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 28px rgba(0,0,0,.28)}
-.fab-zap svg{width:28px;height:28px;fill:#ffffff}
-.fab-zap:focus{outline:2px solid #ffffff88;outline-offset:2px}
+    /* P&R (SEO) */
+    .qa{background:#fff;color:var(--ink);border-radius:var(--radius);padding:18px;margin:18px 0;box-shadow:var(--shadow)}
+    .qa h2{margin:0 0 10px}
+    details{border:1px solid #eef2ef;border-radius:12px;padding:12px 14px;background:#f9fbfa}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:800}
+    .ask{margin-top:14px;display:grid;gap:10px}
+    .ask textarea{width:100%;min-height:110px;border:1px solid #dfe9e3;border-radius:12px;padding:10px;font:inherit}
+    .ask .row{display:flex;gap:10px;flex-wrap:wrap}
+    .ask .row input{flex:1;min-width:180px;border:1px solid #dfe9e3;border-radius:12px;padding:10px;font:inherit}
+    .ask .btn{background:var(--accent);color:#063a1f}
 
-.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    footer{margin:24px 0 100px;border-top:1px solid rgba(255,255,255,.12);padding-top:14px}
+    .foot{display:grid;gap:10px}
+    .foot-cta{display:flex;gap:10px;flex-wrap:wrap}
 
-@media (max-width:1100px){
-  .hero-grid,.comment{grid-template-columns:1fr}
-  .logo{width:min(280px,55vw)}
-  .foot{grid-template-columns:1fr}
-}
-@media (max-width:680px){.form .row2{grid-template-columns:1fr}}
-</style>
+    /* Zap bolinha */
+    .zap{
+      position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;
+      background:var(--accent);display:flex;align-items:center;justify-content:center;
+      box-shadow:0 8px 26px rgba(0,0,0,.3);z-index:80
+    }
+    .zap img{width:28px;height:28px}
+    @media (max-width:780px){
+      .slide img{height:320px}
+    }
+  </style>
 </head>
 <body>
+  <!-- Topo -->
+  <header class="topbar">
+    <div class="wrap nav">
+      <div class="brand">
+        <a href="./index.html" aria-label="Página inicial">
+          <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte Fertilizantes"/>
+        </a>
+        <strong>AgroForte</strong>
+      </div>
+      <div class="nav-right">
+        <a class="pill" href="./index.html">Home</a>
+        <a class="pill" href="./produtos/">Produtos</a>
+        <a class="pill" href="./quem-somo.html">Quem Somos</a>
+        <a id="phoneTop" class="phone" href="#">📞 (17) 99140-5464</a>
+        <a id="zapTop" class="btn" href="#" target="_blank" rel="noopener">Fale no WhatsApp</a>
+      </div>
+    </div>
+  </header>
 
-<!-- Topo com telefone -->
-<div class="topbar">
-  <div class="wrap top-row">
-    <div class="nav">
-      <a href="/" aria-label="Início">Home</a>
+  <main class="wrap">
+    <!-- Hero + Carrossel -->
+    <section class="hero">
+      <h1>Fertilizantes e soluções simples que funcionam no campo</h1>
+      <p>Conheça nossa linha com nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
 
-      <!-- Dropdown Produtos -->
-      <div class="dropdown">
-        <a class="dropbtn" href="/produtos/">Produtos ▾</a>
-        <div class="menu" role="menu" aria-label="Tipos de produtos">
-          <a href="/produtos/#solo" role="menuitem">Nutrição Solo Premium</a>
-          <a href="/produtos/#foliar" role="menuitem">Nutrição Foliar Premium</a>
-          <a href="/produtos/#indutores" role="menuitem">Indutores de Defesa</a>
-          <a href="/produtos/#adjuvantes" role="menuitem">Adjuvantes Premium</a>
-          <a href="/produtos/fitoneem/" role="menuitem">Proteção com Neem</a>
-          <a href="/produtos/#biologicos" role="menuitem">Biológicos Controle de Pragas</a>
+      <div class="carousel" aria-label="Produtos em destaque">
+        <div class="slides" id="slides">
+          <!-- Fitoneem -->
+          <div class="slide">
+            <a href="./produtos/fitoneem.html" aria-label="Abrir página do Óleo de Neem — Fitoneem">
+              <img id="imgFitoneem" src="./img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem — Óleo de Neem"/>
+            </a>
+          </div>
+          <!-- Takotrop -->
+          <div class="slide">
+            <a href="./produtos/takotrop.html" aria-label="Abrir página do Takotrop">
+              <img src="./img/produtos/takotrop.webp" alt="Takotrop — Biológico de Controle"/>
+            </a>
+          </div>
+          <!-- Bioolimpo -->
+          <div class="slide">
+            <a href="./produtos/bioolimpo.html" aria-label="Abrir página do Bioolimpo">
+              <img src="./img/produtos/bioolimpo.webp" alt="Bioolimpo — Biológico de Controle"/>
+            </a>
+          </div>
+          <!-- Nutri Completo -->
+          <div class="slide">
+            <a href="./produtos/nutri-completo.html" aria-label="Abrir página do Nutri Completo">
+              <img id="imgNutri" src="./img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — Nutrição Foliar"/>
+            </a>
+          </div>
+        </div>
+
+        <!-- Controles (carrossel parado por padrão; só navega se clicar) -->
+        <div class="ctrl" aria-hidden="true">
+          <button class="arrow prev" type="button" id="prev" aria-label="Slide anterior">‹</button>
+          <button class="arrow next" type="button" id="next" aria-label="Próximo slide">›</button>
+          <div class="dots" id="dots" role="tablist" aria-label="Navegação dos slides"></div>
         </div>
       </div>
+    </section>
 
-      <a href="/#quem-somos">Quem Somos</a>
-      <a id="btn-nav-zap" href="#">Fale Conosco</a>
-    </div>
+    <!-- Categorias -->
+    <section class="cats" id="categorias">
+      <h2>Acesse por categoria</h2>
+      <div class="cat-row">
+        <a class="cat" href="./produtos/nutricao-solo-premium.html">Nutrição Solo Premium</a>
+        <a class="cat" href="./produtos/nutricao-foliar-premium.html">Nutrição Foliar Premium</a>
+        <a class="cat" href="./produtos/indutores-de-defesa.html">Indutores de Defesa</a>
+        <a class="cat" href="./produtos/adjuvantes-premium.html">Adjuvantes Premium</a>
+        <a class="cat" href="./produtos/protecao-com-neem.html">Proteção com Neem</a>
+        <a class="cat cat--highlight" href="./produtos/biologicos-controle-pragas.html">Biológicos Controle Pragas</a>
+      </div>
+    </section>
 
-    <div class="contact">📞 WhatsApp: <a id="whats-top" href="#">(17) 99140-5464</a></div>
-  </div>
-</div>
+    <!-- SEO: P&R + Comentário -> WhatsApp -->
+    <section class="qa" aria-labelledby="perguntas">
+      <h2 id="perguntas">Perguntas frequentes</h2>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <img class="logo" src="/img/produtos/logooficialfundoverde.webp" alt="Agroforte — soluções em bioinsumos e nutrição vegetal">
-      <span class="chip">Resposta rápida • chama no zap</span>
-      <h1>Bioinsumos e nutrição de plantas com atendimento imediato</h1>
-      <p class="lead">Tire dúvidas técnicas, receba recomendações e condições comerciais direto no WhatsApp.</p>
-      <div class="cta">
-        <a class="btn btn-primary" id="btn-hero-zap" href="#">💬 Falar agora no WhatsApp</a>
-        <a class="btn btn-ghost" href="/produtos/">Ver produtos</a>
-      </div>
-      <div class="quick" aria-label="Respostas rápidas no WhatsApp">
-        <a class="pill" href="#" data-template="Preço e disponibilidade">💲 Preço</a>
-        <a class="pill" href="#" data-template="Doses e modo de aplicação">🧪 Doses</a>
-        <a class="pill" href="#" data-template="Compatibilidade e mistura em tanque">🔄 Compatibilidade</a>
-        <a class="pill" href="#" data-template="Envio para minha cidade e prazos">🚚 Frete</a>
-      </div>
-    </div>
+      <details>
+        <summary>Vocês enviam para a minha cidade?</summary>
+        <p>Sim. Fazemos envio para todo o Brasil. Informe seu CEP no WhatsApp que calculamos o frete e o prazo de entrega.</p>
+      </details>
 
-    <div class="visually-hidden" id="seo-long">
-      Produtos: Fitoneem (óleo de neem), Bioolimpo (Beauveria + Metarhizium), Takotrop (Pseudomonas — D.O.P),
-      Nutri Completo Premium (macro/micro/algas/aminoácidos), Titanium SuperMix (micros concentrados).
-      Culturas atendidas: soja, milho, café, citros, hortaliças, frutíferas, maracujá, feijão, algodão e cereais.
-    </div>
-  </div>
-</header>
+      <details>
+        <summary>Qual produto usar para pragas como mosca-branca, pulgão e lagartas?</summary>
+        <p>Temos opções biológicas (Takotrop, Bioolimpo) e também o Fitoneem (óleo de neem). Conte pra gente a cultura e a praga para indicar o melhor manejo.</p>
+      </details>
 
-<!-- CARROSSEL MANUAL — slides clicáveis para páginas dos produtos -->
-<section class="wrap carousel-wrap" aria-label="Destaques de produtos">
-  <div class="carousel" id="carousel">
-    <div class="slides" id="slides" aria-live="polite">
-      <div class="slide" aria-roledescription="slide" aria-label="1 de 5">
-        <div class="frame"><a href="/produtos/fitoneem/"><img src="/img/produtos/fitoneem.webp" loading="eager" alt="Fitoneem-fundo-branco — óleo de neem"></a></div>
-      </div>
-      <div class="slide" aria-roledescription="slide" aria-label="2 de 5">
-        <div class="frame"><a href="/produtos/bioolimpo/"><img src="/img/produtos/bioolimpo.webp" loading="lazy" alt="Bioolimpo — Beauveria + Metarhizium"></a></div>
-      </div>
-      <div class="slide" aria-roledescription="slide" aria-label="3 de 5">
-        <div class="frame"><a href="/produtos/takotrop/"><img src="/img/produtos/takotrop.webp" loading="lazy" alt="Takotrop — Pseudomonas (D.O.P)"></a></div>
-      </div>
-      <div class="slide" aria-roledescription="slide" aria-label="4 de 5">
-        <div class="frame"><a href="/produtos/nutri-completo/"><img src="/img/produtos/nutri-completo-fundo-branco.webp" loading="lazy" alt="Nutri Completo Premium — fertilizante foliar"></a></div>
-      </div>
-      <div class="slide" aria-roledescription="slide" aria-label="5 de 5">
-        <div class="frame"><a href="/produtos/titanium-supermix/"><img src="/img/produtos/titanium.webp" loading="lazy" alt="Titanium SuperMix — micronutrientes"></a></div>
-      </div>
-    </div>
+      <details>
+        <summary>Nutri Completo pode ser aplicado em qualquer cultura?</summary>
+        <p>Sim. É um fertilizante foliar versátil e seguro, indicado do plantio à produção. Ajudamos você com dose e momento certo.</p>
+      </details>
 
-    <!-- navegação manual -->
-    <div class="nav-arrows" aria-hidden="false">
-      <button class="prev" id="prev" aria-label="Slide anterior">‹</button>
-      <button class="next" id="next" aria-label="Próximo slide">›</button>
-      <div class="dots" id="dots" aria-label="Seleção de slides">
-        <button aria-label="Ir ao slide 1" aria-current="true"></button>
-        <button aria-label="Ir ao slide 2"></button>
-        <button aria-label="Ir ao slide 3"></button>
-        <button aria-label="Ir ao slide 4"></button>
-        <button aria-label="Ir ao slide 5"></button>
-      </div>
-    </div>
-  </div>
-
-  <div class="cta" style="justify-content:center;margin-top:14px">
-    <a class="btn btn-primary" href="/produtos/">🛒 Ver produtos</a>
-    <a class="btn btn-ghost" id="zap-carousel" href="#">💬 Falar no WhatsApp</a>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="wrap faq" id="faq">
-  <h2>Perguntas frequentes (MIP, culturas e posicionamento)</h2>
-  <details><summary>Maracujá: posso usar Fitoneem para mosca-branca e tripes?</summary><p>Sim. Posicione em horários amenos e associe espalhante/adesivo. Ajuste o intervalo conforme a pressão.</p></details>
-  <details><summary>Soja: Bioolimpo funciona para percevejo e lagartas?</summary><p>Sim. Para surtos, antecipe posicionamento e considere alternância com produtos seletivos no MIP.</p></details>
-  <details><summary>Citros: Takotrop ajuda no manejo do psilídeo (<em>Diaphorina citri</em>)?</summary><p>Sim. Triplo modo de ação: contato, ingestão e absorção, com colonização foliar rápida.</p></details>
-  <details><summary>Hortaliças: Nutri Completo melhora recuperação pós-estresse?</summary><p>Sim. Algas e aminoácidos favorecem a retomada metabólica e o vigor vegetativo.</p></details>
-  <details><summary>Compatibilidade de calda</summary><p>Takotrop: pH 5,5–7,0 e aplicar logo após preparo. Bioolimpo: evitar fungicidas sistêmicos na mistura. Fitoneem: óleos após WP/WG.</p></details>
-</section>
-
-<!-- Comentários / WhatsApp -->
-<section class="wrap" id="comentarios">
-  <h2>Deixe seu comentário ou pergunta — resposta rápida no WhatsApp</h2>
-  <div class="comment">
-    <form class="form" id="zapForm" onsubmit="return enviarZap()">
-      <div class="row2">
-        <div><label for="nome">Seu nome</label><input id="nome" placeholder="Ex.: João Silva" required></div>
-        <div><label for="cidade">Cidade/UF</label><input id="cidade" placeholder="Ex.: Rio Preto/SP" required></div>
-      </div>
-      <div class="row2">
-        <div><label for="cultura">Cultura/variedade</label><input id="cultura" placeholder="Ex.: soja, maracujá, café" required></div>
-        <div><label for="area">Área (ha)</label><input id="area" inputmode="decimal" placeholder="Ex.: 42"></div>
-      </div>
-      <div class="row2">
-        <div><label for="produto">Produto de interesse</label>
-          <select id="produto">
-            <option>Definir depois</option>
-            <option>Fitoneem</option>
-            <option>Bioolimpo</option>
-            <option>Takotrop</option>
-            <option>Nutri Completo Premium</option>
-            <option>Titanium SuperMix</option>
-          </select>
+      <h3 style="margin:14px 0 6px">Deixe seu comentário</h3>
+      <form class="ask" onsubmit="return enviarZap(event)">
+        <div class="row">
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name"/>
+          <input id="cidade" name="cidade" type="text" placeholder="Cidade/UF"/>
         </div>
-        <div><label for="assunto">Assunto</label>
-          <select id="assunto">
-            <option>Preço e disponibilidade</option>
-            <option>Doses e posicionamento</option>
-            <option>Compatibilidade/mistura</option>
-            <option>Frete e prazo</option>
-            <option>Outros</option>
-          </select>
-        </div>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua dúvida aqui. Ex.: Quero saber se vocês enviam para minha cidade e qual produto usar no maracujá contra mosca-branca."></textarea>
+        <button class="btn" type="submit">Enviar no WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap" id="contato">
+    <div class="foot">
+      <strong>AgroForte Fertilizantes</strong>
+      <div class="foot-cta">
+        <a class="btn" href="./produtos/">Ver todos os produtos</a>
+        <a class="btn" href="./quem-somo.html">Quem Somos</a>
       </div>
-      <label for="mensagem">Comentário / descrição do problema</label>
-      <textarea id="mensagem" placeholder="Conte rapidamente o que você precisa…"></textarea>
-      <div class="cta" style="margin-top:12px">
-        <button type="submit" class="btn btn-primary">📲 Enviar no WhatsApp</button>
-        <button type="button" class="btn btn-ghost" onclick="limpar()">Limpar</button>
-      </div>
-      <p class="small" style="opacity:.85;margin-top:8px">Abriremos o WhatsApp com a mensagem pronta para você revisar e enviar. O contato será direcionado ao consultor Sandro.</p>
-    </form>
+      <a id="phoneBottom" class="phone" href="#">📞 (17) 99140-5464</a>
+      <small style="opacity:.85">© AgroForte — Todos os direitos reservados.</small>
+    </div>
+  </footer>
 
-    <aside class="form" aria-label="Atalhos de resposta rápida">
-      <h3 style="margin:0 0 8px">Respostas rápidas</h3>
-      <p style="margin:0 0 10px">Clique em um atalho para abrir o WhatsApp com a pergunta pronta:</p>
-      <div class="quick">
-        <a class="pill fast" href="#" data-prod="Fitoneem" data-template="Quero preço, dose e janela de aplicação">Fitoneem — preço/dose</a>
-        <a class="pill fast" href="#" data-prod="Bioolimpo" data-template="É compatível com meu programa? Como fica no MIP?">Bioolimpo — MIP</a>
-        <a class="pill fast" href="#" data-prod="Takotrop" data-template="Doses para cigarrinha e tripes, e compatibilidade na calda">Takotrop — pragas-chave</a>
-        <a class="pill fast" href="#" data-prod="Nutri Completo Premium" data-template="Dose para florada e recuperação pós-estresse">Nutri — dose/florada</a>
-        <a class="pill fast" href="#" data-prod="Titanium SuperMix" data-template="Dose foliar e em mistura com adubação">Titanium — dose</a>
-      </div>
-    </aside>
-  </div>
-</section>
+  <!-- Bolinha do WhatsApp -->
+  <a class="zap" id="zapFloat" aria-label="Fale no WhatsApp" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="">
+  </a>
 
-<!-- Rodapé -->
-<footer>
-  <div class="wrap foot">
-    <p>📞 WhatsApp: <a id="whats-bottom" href="#">(17) 99140-5464</a><br>
-      Empresa: <strong>Agroforte</strong> • Site: <strong>innovetecnologias.com.br</strong> • <small><a href="/produtos/">/produtos/</a></small>
-    </p>
-    <div class="socials"><a href="#" aria-label="Instagram Agroforte">📷 Instagram</a><a href="#" aria-label="Facebook Agroforte">👍 Facebook</a></div>
-  </div>
-</footer>
+  <script>
+    /* WhatsApp */
+    const PHONE_DISPLAY='(17) 99140-5464';
+    const PHONE_WA='5517991405464';
 
-<!-- FAB WhatsApp -->
-<a class="fab-zap" id="fabZap" href="#" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.09c-.27-.13-1.59-.78-1.84-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.13-1.13-.42-2.16-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.11-.55.11-.11.27-.29.41-.44.14-.16.18-.27.27-.45.09-.18.05-.33-.02-.46-.07-.13-.61-1.48-.84-2.03-.22-.53-.45-.45-.61-.46l-.52-.01c-.18 0-.46.07-.7.33-.24.27-.92.9-.92 2.2s.94 2.55 1.07 2.73c.13.18 1.84 2.81 4.46 3.94.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.11.5-.07 1.59-.65 1.82-1.27.23-.62.23-1.14.16-1.27-.07-.13-.25-.2-.52-.33z"/><path d="M16.01 3.2c-7.11 0-12.87 5.76-12.87 12.87 0 2.27.6 4.51 1.75 6.48L3 29l6.6-1.73a12.75 12.75 0 0 0 6.41 1.72h.01c7.11 0 12.87-5.76 12.87-12.87S23.12 3.2 16.01 3.2z"/></svg>
-</a>
+    function waLink(msg){
+      return `https://wa.me/${PHONE_WA}?text=${encodeURIComponent(msg)}`;
+    }
 
-<script>
-/* ====== WhatsApp helpers (quebra de linha real + marcadores “•”) ====== */
-const NUMBER="5517991405464";
-function buildMsg({assunto="Dúvidas gerais",produto="Definir depois",nome="",cultura="",area="",cidade="",extra=""}={}){
-  const linhas=[
-    "Olá, equipe Agroforte! Quero atendimento rápido pelo WhatsApp.",
-    "",
-    `• Assunto: ${assunto}`,
-    `• Produto de interesse: ${produto}`,
-    nome?`• Nome: ${nome}`:"",
-    cultura?`• Cultura/variedade: ${cultura}`:"",
-    area?`• Área: ${area} ha`:"",
-    cidade?`• Cidade/UF: ${cidade}`:"",
-    extra?`• Observações: ${extra}`:"",
-    "",
-    "Por favor, direcionar meu contato ao consultor Sandro. Obrigado!"
-  ].filter(Boolean);
-  return encodeURIComponent(linhas.join("\\n"));
-}
-function waLink(params){return `https://wa.me/${NUMBER}?text=${buildMsg(params)}`;}
-const defaultParams={assunto:"Dúvidas gerais",produto:"Definir depois"};
-["whats-top","btn-hero-zap","whats-bottom","fabZap","zap-carousel","btn-nav-zap"].forEach(id=>{
-  const el=document.getElementById(id); if(el) el.href=waLink(defaultParams);
-});
-document.querySelectorAll(".pill[data-template]").forEach(el=>{
-  el.addEventListener("click",e=>{e.preventDefault();window.open(waLink({assunto:el.dataset.template}),"_blank");});
-});
-document.querySelectorAll(".fast").forEach(el=>{
-  el.addEventListener("click",e=>{e.preventDefault();window.open(waLink({assunto:el.dataset.template,produto:el.dataset.prod}),"_blank");});
-});
-function enviarZap(){
-  const nome=document.getElementById("nome").value.trim();
-  const cidade=document.getElementById("cidade").value.trim();
-  const cultura=document.getElementById("cultura").value.trim();
-  const area=document.getElementById("area").value.trim();
-  const produto=document.getElementById("produto").value;
-  const assunto=document.getElementById("assunto").value;
-  const extra=document.getElementById("mensagem").value.trim();
-  window.open(waLink({assunto,produto,nome,cultura,area,cidade,extra}),"_blank");
-  return false;
-}
-function limpar(){document.getElementById("zapForm").reset();}
+    const mensagemPadrao =
+      'Olá, equipe AgroForte! Quero atendimento rápido pelo WhatsApp.\n' +
+      '• Assunto: envio para minha cidade e informações de produtos\n' +
+      '• Produto de interesse: posso definir depois\n\n' +
+      'Por favor, direcionar meu contato ao consultor Sandro. Obrigado!';
 
-/* ====== Carousel manual (SEM autoplay; apenas setas/dots e swipe) ====== */
-const slides=document.getElementById("slides");
-const dots=[...document.querySelectorAll("#dots button")];
-const prev=document.getElementById("prev"), next=document.getElementById("next");
-const total=dots.length; let index=0;
-function go(i){
-  index=(i+total)%total;
-  slides.scrollTo({left:index*slides.clientWidth,behavior:"smooth"});
-  dots.forEach((d,k)=>d.setAttribute("aria-current",k===index?"true":"false"));
-}
-prev.addEventListener("click",()=>go(index-1));
-next.addEventListener("click",()=>go(index+1));
-dots.forEach((d,k)=>d.addEventListener("click",()=>go(k)));
-let startX=0,dx=0;
-slides.addEventListener("pointerdown",e=>{startX=e.clientX;dx=0;slides.setPointerCapture(e.pointerId);});
-slides.addEventListener("pointermove",e=>{if(startX){dx=e.clientX-startX;}});
-slides.addEventListener("pointerup",e=>{if(Math.abs(dx)>40){dx<0?go(index+1):go(index-1);}startX=0;dx=0;});
-window.addEventListener("resize",()=>go(index));
-window.addEventListener("load",()=>go(0));
-</script>
+    // aplica links
+    const waURL = waLink(mensagemPadrao);
+    ['zapTop','zapFloat'].forEach(id=>{ const a=document.getElementById(id); if(a) a.href=waURL; });
+    const telTop=document.getElementById('phoneTop'), telBot=document.getElementById('phoneBottom');
+    if(telTop){ telTop.href='tel:+5517991405464'; telTop.textContent='📞 '+PHONE_DISPLAY; }
+    if(telBot){ telBot.href='tel:+5517991405464'; telBot.textContent='📞 '+PHONE_DISPLAY; }
+
+    function enviarZap(e){
+      e.preventDefault();
+      const nome=document.getElementById('nome').value.trim();
+      const cidade=document.getElementById('cidade').value.trim();
+      const pergunta=document.getElementById('mensagem').value.trim();
+      const texto=
+        `Olá, equipe AgroForte! Quero atendimento pelo WhatsApp.\n`+
+        (nome?`• Nome: ${nome}\n`:``)+
+        (cidade?`• Cidade/UF: ${cidade}\n`:``)+
+        (pergunta?`• Mensagem: ${pergunta}\n`:``)+
+        `\nPor favor, direcionar meu contato ao consultor Sandro. Obrigado!`;
+      window.open(waLink(texto),'_blank','noopener');
+      return false;
+    }
+
+    /* Logo fallback */
+    const logo=document.getElementById('logoAgf');
+    if(logo){
+      logo.onerror=function(){
+        this.onerror=null;
+        this.src='./img/produtos/logo-oficial-fundo-verde.png';
+      };
+    }
+    /* Imagens com fundo branco - fallbacks */
+    const imgFit=document.getElementById('imgFitoneem');
+    if(imgFit){
+      imgFit.onerror=()=>{ imgFit.src='./img/produtos/fitoneem.webp'; };
+    }
+    const imgNutri=document.getElementById('imgNutri');
+    if(imgNutri){
+      imgNutri.onerror=()=>{
+        imgNutri.onerror=null;
+        imgNutri.src='./img/produtos/nutricompleto-fundo-branco.webp';
+        imgNutri.addEventListener('error',()=>{ imgNutri.src='./img/produtos/nutricompleto.webp'; },{once:true});
+      };
+    }
+
+    /* Carrossel (parado por padrão) */
+    const slides=document.getElementById('slides');
+    const prev=document.getElementById('prev');
+    const next=document.getElementById('next');
+    const dots=document.getElementById('dots');
+    const total=slides.children.length;
+    let idx=0;
+
+    function atualizar(){
+      slides.style.transform=`translateX(-${idx*100}%)`;
+      [...dots.children].forEach((d,i)=>d.setAttribute('aria-current', i===idx ? 'true' : 'false'));
+    }
+    for(let i=0;i<total;i++){
+      const b=document.createElement('button');
+      b.className='dot';
+      b.type='button';
+      b.setAttribute('aria-label',`Ir para slide ${i+1}`);
+      b.onclick=()=>{ idx=i; atualizar(); };
+      dots.appendChild(b);
+    }
+    atualizar();
+    prev.onclick=()=>{ idx=(idx-1+total)%total; atualizar(); };
+    next.onclick=()=>{ idx=(idx+1)%total; atualizar(); };
+  </script>
 </body>
 </html>
