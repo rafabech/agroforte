@@ -3,107 +3,104 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AgroForte — Produtos | Biológicos, Neem e Nutrição</title>
+  <title>AgroForte — Produtos</title>
   <meta name="description" content="Catálogo AgroForte: Takotrop, Bioolimpo, Fitoneem e Nutri Completo. Acesse por categoria: Nutrição Solo Premium, Nutrição Foliar Premium, Indutores de Defesa, Adjuvantes Premium, Proteção com Neem e Biológicos Controle de Pragas." />
   <link rel="icon" href="/img/produtos/logoficialfundoverde.webp" type="image/webp" />
   <style>
     :root{
-      --brand:#0f5a2b;        /* verde principal */
-      --brand-2:#0b4622;      /* verde escuro */
-      --chip:#0e5529;         /* fundo chips */
-      --chip-b:#0a3f1f;       /* borda chips */
-      --accent:#22d061;       /* destaque */
-      --accent-2:#19b353;     /* hover destaque */
+      /* dois verdes do seu padrão */
+      --brand:#0D5E2E;      /* principal */
+      --brand-dark:#0A4823; /* topo / fundo */
       --surface:#ffffff;
-      --ink:#082114;
-      --shadow:0 10px 30px rgba(0,0,0,.18);
-      --radius:18px;
+      --ink:#0b2316;
+      --accent:#15c15c;     /* único destaque */
+      --shadow:0 10px 28px rgba(0,0,0,.18);
+      --radius:16px;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0}
     body{
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
       color:var(--surface);
-      background:linear-gradient(180deg,var(--brand-2),var(--brand));
+      background:linear-gradient(180deg,var(--brand-dark),var(--brand));
       overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
+
     .wrap{max-width:1200px;margin:0 auto;padding:0 16px}
 
-    /* Header */
-    .topbar{position:sticky;top:0;z-index:60;background:var(--brand-2);border-bottom:1px solid rgba(255,255,255,.08)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:12px}
+    /* header */
+    .topbar{position:sticky;top:0;z-index:60;background:var(--brand-dark);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
     .brand img{width:56px;height:56px;border-radius:50%;background:#fff;box-shadow:var(--shadow)}
-    .brand strong{font-size:20px}
-
+    .brand strong{font-size:20px;letter-spacing:.2px}
     .nav-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-    .btn, .btn-ghost{
-      display:inline-flex;align-items:center;gap:10px;border-radius:999px;
-      padding:10px 16px;font-weight:800;border:0;cursor:pointer
-    }
-    .btn{background:var(--accent);color:#062c18;box-shadow:var(--shadow)}
-    .btn:hover{background:var(--accent-2)}
-    .btn-ghost{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
-    .btn-ghost:hover{background:rgba(255,255,255,.12)}
-    .phone{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 12px;font-weight:800;white-space:nowrap}
 
-    /* Dropdown Produtos */
+    .pill{
+      display:inline-flex;align-items:center;gap:10px;border-radius:999px;
+      padding:10px 16px;font-weight:800;border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05)
+    }
+    .pill:hover{background:rgba(255,255,255,.12)}
+
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+      padding:10px 16px;font-weight:900;border:0;background:var(--accent);
+      color:#063a1f;box-shadow:var(--shadow);cursor:pointer
+    }
+    .btn:hover{filter:brightness(1.06)}
+
+    .phone{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);padding:8px 12px;border-radius:999px;font-weight:800;white-space:nowrap}
+
+    /* dropdown produtos */
     .dropdown{position:relative}
     .drop-btn{
-      display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.14);padding:10px 16px;border-radius:999px;font-weight:800
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05);
+      color:#fff;border-radius:999px;padding:10px 16px;font-weight:900;cursor:pointer
     }
-    .drop-btn:hover{background:rgba(255,255,255,.12)}
-    .drop-btn::after{content:"▾";font-size:12px;opacity:.9}
+    .drop-btn:after{content:"▾";margin-left:8px;font-size:12px;opacity:.9}
     .drop-menu{
-      position:absolute;top:120%;left:0;background:#0b2f1e;border:1px solid rgba(255,255,255,.15);
-      border-radius:14px;box-shadow:var(--shadow);min-width:320px;padding:8px;display:none;
+      position:absolute;top:120%;left:0;background:#0c3a20;border:1px solid rgba(255,255,255,.15);
+      border-radius:14px;box-shadow:var(--shadow);min-width:320px;padding:8px;display:none
     }
-    .dropdown:hover .drop-menu{display:block}
-    .drop-item{
-      display:block;padding:12px 14px;border-radius:10px;font-weight:700;background:transparent
-    }
+    .drop-menu.open{display:block}
+    .drop-item{display:block;padding:12px 14px;border-radius:10px;font-weight:800}
     .drop-item:hover{background:rgba(255,255,255,.08)}
 
-    /* categorias (linha única no desktop; sem rolagem lateral no mobile) */
-    .cats{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;margin:16px 0}
-    .cats .inner{
-      display:flex;gap:10px;flex-wrap:wrap; /* quebra bonitinho no celular */
-      padding:12px;align-items:center;justify-content:center;
-    }
+    /* categorias */
+    h1.title{margin:14px 0 6px;font-size:28px}
+    .cats{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;margin:10px 0}
+    .cats .inner{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:12px}
     .chip{
-      background:var(--chip);border:1px solid var(--chip-b);color:#fff;border-radius:999px;
-      padding:14px 18px;font-weight:900;letter-spacing:.2px;display:inline-flex;align-items:center;justify-content:center;
-      white-space:nowrap;
+      border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:12px 16px;
+      font-weight:900;background:rgba(255,255,255,.05);white-space:nowrap
     }
-    .chip:hover{outline:2px solid rgba(255,255,255,.25)}
-    .chip.active{background:var(--accent);color:#062c18;border-color:transparent}
+    .chip:hover{background:rgba(255,255,255,.12)}
+    .chip.active{background:var(--accent);color:#063a1f;border-color:transparent}
 
-    h1.title{margin:8px 0 4px;font-size:28px}
-    .sub{opacity:.9;margin:0 0 6px}
-
-    /* Cards */
+    /* grid produtos */
     .grid{display:grid;gap:16px;margin:16px 0 28px;grid-template-columns:1fr}
     @media (min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
     @media (min-width:1040px){.grid{grid-template-columns:repeat(4,1fr)}}
+
     .card{
       background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
       border-radius:16px;overflow:hidden;box-shadow:var(--shadow)
     }
     .media{background:#fff;border-bottom:1px solid rgba(0,0,0,.06);padding:14px;display:flex;justify-content:center;align-items:center}
     .media img{max-height:190px;width:auto}
-    .body{padding:14px;color:#fff}
-    .body h3{margin:0 0 6px;font-size:18px}
+    .body{padding:14px}
+    .body h3{margin:0 0 6px;font-size:18px;color:#fff}
     .tag{display:inline-flex;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-weight:700;margin:6px 6px 0 0}
     .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .btn-sm{padding:8px 12px;border-radius:999px;font-weight:900}
-    .btn-outline{background:transparent;border:2px solid var(--accent)}
-    .btn-outline:hover{background:var(--accent);color:#062c18}
+    .btn-outline{padding:8px 12px;border-radius:999px;font-weight:900;border:2px solid var(--accent);background:transparent;color:#fff}
+    .btn-outline:hover{background:var(--accent);color:#063a1f}
 
-    /* footer */
-    footer{margin:22px 0 86px;border-top:1px solid rgba(255,255,255,.1);padding-top:16px}
+    /* rodapé */
+    footer{margin:20px 0 86px;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
     .foot{display:grid;gap:10px}
     .foot-cta{display:flex;gap:10px;flex-wrap:wrap}
 
@@ -120,23 +117,23 @@
   <header class="topbar">
     <div class="wrap nav">
       <div class="brand">
-        <a href="/"><img src="/img/produtos/logoficialfundoverde.webp" alt="AgroForte" /></a>
+        <a href="/"><img id="logoAgf" src="/img/produtos/logoficialfundoverde.webp" alt="AgroForte" /></a>
         <strong>AgroForte</strong>
       </div>
 
       <div class="nav-right">
-        <a class="btn-ghost" href="/">Home</a>
+        <a class="pill" href="/">Home</a>
 
-        <!-- Produtos: botão + dropdown com categorias clicáveis -->
+        <!-- Produtos com toggle (clique) -->
         <div class="dropdown">
-          <a class="drop-btn" href="/produtos/">Produtos</a>
-          <div class="drop-menu">
+          <button class="drop-btn" id="btnProdutos" type="button" aria-haspopup="true" aria-expanded="false">Produtos</button>
+          <div class="drop-menu" id="menuProdutos" role="menu">
             <a class="drop-item" href="/produtos/nutricao-solo-premium">Nutrição Solo Premium</a>
             <a class="drop-item" href="/produtos/nutricao-foliar-premium">Nutrição Foliar Premium</a>
             <a class="drop-item" href="/produtos/indutores-de-defesa">Indutores de Defesa</a>
             <a class="drop-item" href="/produtos/adjuvantes-premium">Adjuvantes Premium</a>
             <a class="drop-item" href="/produtos/protecao-com-neem">Proteção com Neem</a>
-            <a class="drop-item" href="/produtos/biologicos-controle-pragas">Biológicos Controle Pragas</a>
+            <a class="drop-item" href="/produtos/biologicos-controle-pragas">Biológicos Controle de Pragas</a>
           </div>
         </div>
 
@@ -148,9 +145,6 @@
 
   <main class="wrap">
     <h1 class="title">Produtos AgroForte</h1>
-    <p class="sub">Acesse por categoria ou clique em um produto para ver os detalhes.</p>
-
-    <!-- CATEGORIAS EM LINHA -->
     <section class="cats" aria-label="Navegue por categorias">
       <div class="inner">
         <a class="chip" href="/produtos/nutricao-solo-premium">Nutrição Solo Premium</a>
@@ -158,11 +152,11 @@
         <a class="chip" href="/produtos/indutores-de-defesa">Indutores de Defesa</a>
         <a class="chip" href="/produtos/adjuvantes-premium">Adjuvantes Premium</a>
         <a class="chip" href="/produtos/protecao-com-neem">Proteção com Neem</a>
-        <a class="chip" href="/produtos/biologicos-controle-pragas">Biológicos Controle Pragas</a>
+        <a class="chip active" href="/produtos/biologicos-controle-pragas">Biológicos Controle Pragas</a>
       </div>
     </section>
 
-    <!-- CARDS (imagens com fundo branco quando houver) -->
+    <!-- cards -->
     <section class="grid" aria-label="Lista de produtos">
       <!-- Takotrop -->
       <article class="card">
@@ -173,8 +167,8 @@
           <h3>Takotrop</h3>
           <div><span class="tag">Biológico</span><span class="tag">MIP</span></div>
           <div class="cta">
-            <a class="btn btn-sm" href="/produtos/takotrop/">Ver detalhes</a>
-            <a class="btn btn-sm btn-outline" id="zapTakotrop" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" href="/produtos/takotrop/">Ver detalhes</a>
+            <a class="btn-outline" id="zapTakotrop" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </article>
@@ -188,8 +182,8 @@
           <h3>Bioolimpo</h3>
           <div><span class="tag">Biológico</span><span class="tag">Beauveria + Metarhizium</span></div>
           <div class="cta">
-            <a class="btn btn-sm" href="/produtos/bioolimpo/">Ver detalhes</a>
-            <a class="btn btn-sm btn-outline" id="zapBioolimpo" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" href="/produtos/bioolimpo/">Ver detalhes</a>
+            <a class="btn-outline" id="zapBioolimpo" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </article>
@@ -203,8 +197,8 @@
           <h3>Proteção Neem — Fitoneem</h3>
           <div><span class="tag">Neem</span><span class="tag">Orgânico</span></div>
           <div class="cta">
-            <a class="btn btn-sm" href="/produtos/fitoneem/">Ver detalhes</a>
-            <a class="btn btn-sm btn-outline" id="zapFitoneem" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" href="/produtos/fitoneem/">Ver detalhes</a>
+            <a class="btn-outline" id="zapFitoneem" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </article>
@@ -218,15 +212,14 @@
           <h3>Nutrição Foliar — Nutri Completo</h3>
           <div><span class="tag">Aminoácidos</span><span class="tag">Algas</span></div>
           <div class="cta">
-            <a class="btn btn-sm" href="/produtos/nutri-completo/">Ver detalhes</a>
-            <a class="btn btn-sm btn-outline" id="zapNutri" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" href="/produtos/nutri-completo/">Ver detalhes</a>
+            <a class="btn-outline" id="zapNutri" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </article>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="wrap" id="contato">
     <div class="foot">
       <strong>AgroForte</strong>
@@ -245,10 +238,9 @@
   </a>
 
   <script>
-    // TELEFONE CORRETO + link único do WhatsApp
+    /* WhatsApp */
     const PHONE_DISPLAY = '(17) 99140-5464';
     const PHONE_WA = '5517991405464';
-
     const waMsg = encodeURIComponent(
       'Olá, equipe AgroForte! Quero atendimento rápido pelo WhatsApp.\n' +
       '• Assunto: Envio para minha cidade (informe seu CEP)\n' +
@@ -257,18 +249,40 @@
     );
     const waLink = `https://wa.me/${PHONE_WA}?text=${waMsg}`;
 
-    // telefone topo/rodapé
     ['phoneTop','phoneBottom'].forEach(id=>{
       const a=document.getElementById(id);
-      a.textContent = '📞 ' + PHONE_DISPLAY;
-      a.href = waLink;
+      a.textContent='📞 '+PHONE_DISPLAY;
+      a.href=waLink;
     });
-
-    // WhatsApp nos cards e bolinha
     ['zapTakotrop','zapBioolimpo','zapFitoneem','zapNutri','zapFloat'].forEach(id=>{
       const a=document.getElementById(id);
       if(a) a.href = waLink;
     });
+
+    /* Dropdown Produtos (abre por clique; fecha ao clicar fora) */
+    const btn = document.getElementById('btnProdutos');
+    const menu = document.getElementById('menuProdutos');
+    btn.addEventListener('click', e=>{
+      e.stopPropagation();
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+    });
+    document.addEventListener('click', e=>{
+      if(menu.classList.contains('open')){
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    });
+
+    /* Fallback da LOGO (garante que abra) */
+    const logo = document.getElementById('logoAgf');
+    logo.onerror = function(){
+      if(this.src.includes('logoficialfundoverde.webp')){
+        this.src='/img/produtos/logo-oficial-fundo-verde.png';
+      }else if(this.src.includes('logo-oficial-fundo-verde.png')){
+        this.src='/img/produtos/logooficial.webp';
+      }
+    };
   </script>
 </body>
 </html>
