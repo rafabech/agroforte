@@ -83,17 +83,38 @@
     h2{margin:0 0 10px}
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 
-    /* tabelas sempre fluidas */
-    table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;table-layout:fixed}
-    th,td{
-      padding:12px 14px;border-bottom:1px solid #ffffff14;background:#0b4f2c;
-      word-break:break-word;
-    }
-    th{background:#0a7a3f}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0}
-    .faq details{background:var(--surface);border:1px solid #ffffff1f;border-radius:12px;padding:12px}
-    .faq summary{cursor:pointer;font-weight:800}
+    /* Tabela fluida e legível */
+table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;table-layout:auto}
+th,td{
+  padding:12px 14px;
+  border-bottom:1px solid #ffffff14;
+  background:#0b4f2c;
+  line-height:1.35;
+  vertical-align:top;
+  white-space:normal;
+  word-break:break-word;
+}
+th{background:#0a7a3f}
+
+/* Mobile: transforma a tabela em cards, sem rolagem lateral */
+@media (max-width:700px){
+  table, thead, tbody, th, td, tr{display:block}
+  thead{display:none}
+  tr{background:#0b4f2c;border:1px solid #ffffff1a;border-radius:12px;margin-bottom:12px;overflow:hidden}
+  td{
+    display:flex; gap:10px; padding:10px 12px;
+    border:none; border-bottom:1px solid #ffffff14;
+    background:transparent;
+  }
+  td:last-child{border-bottom:none}
+  td::before{
+    content: attr(data-th);
+    flex:0 0 44%;
+    color:#cfeee0;
+    font-weight:700;
+  }
+}
+
 
     /* footer + redes */
     footer{background:#073d22;border-top:1px solid #ffffff1a;margin-top:24px}
@@ -156,23 +177,40 @@
     </div>
   </header>
 
-  <!-- composição + registro/benefícios -->
-  <section class="wrap" id="docs">
-    <div class="grid-2">
-      <div class="card">
-        <h2>Composição microbiológica</h2>
-        <table aria-label="Composição do Bioolimpo">
-          <thead><tr><th>Componente</th><th>Isolado</th><th>Concentração microbiológica*</th><th>Quantidade**</th><th>Fração (m/m)</th></tr></thead>
-          <tbody>
-            <tr><td><em>Beauveria bassiana</em></td><td>IBCB 66</td><td>1,4 × 10^5 UFC/g</td><td>150 g/kg</td><td>15%</td></tr>
-            <tr><td><em>Metarhizium anisopliae</em> (Metsch)</td><td>IBCB 425</td><td>1,4 × 10^5 UFC/g</td><td>150 g/kg</td><td>15%</td></tr>
-            <tr><td>Outros ingredientes</td><td>—</td><td>—</td><td>700 g/kg</td><td>70%</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:.9rem;color:#dfeee6;margin-top:8px">
-          *UFC: Unidades Formadoras de Colônia • **Valores de referência em formulações sólidas.
-        </p>
-      </div>
+ <table aria-label="Composição do Bioolimpo">
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Isolado</th>
+      <th>Concentração microbiológica*</th>
+      <th>Quantidade**</th>
+      <th>Fração (m/m)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-th="Componente"><em>Beauveria bassiana</em></td>
+      <td data-th="Isolado">IBCB 66</td>
+      <td data-th="Concentração microbiológica">1,4 × 10⁵ UFC/g</td>
+      <td data-th="Quantidade">150 g/kg</td>
+      <td data-th="Fração (m/m)">15%</td>
+    </tr>
+    <tr>
+      <td data-th="Componente"><em>Metarhizium anisopliae</em> (Metsch)</td>
+      <td data-th="Isolado">IBCB 425</td>
+      <td data-th="Concentração microbiológica">1,4 × 10⁵ UFC/g</td>
+      <td data-th="Quantidade">150 g/kg</td>
+      <td data-th="Fração (m/m)">15%</td>
+    </tr>
+    <tr>
+      <td data-th="Componente">Outros ingredientes</td>
+      <td data-th="Isolado">—</td>
+      <td data-th="Concentração microbiológica">—</td>
+      <td data-th="Quantidade">700 g/kg</td>
+      <td data-th="Fração (m/m)">70%</td>
+    </tr>
+  </tbody>
+</table>
 
       <div class="card">
         <h2>Como funciona</h2>
