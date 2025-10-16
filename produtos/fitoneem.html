@@ -1,289 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Fitoneem – Óleo de Neem | Agroforte</title>
+  <title>Fitoneem (Óleo de Neem) — Inseticida Natural para Agricultura Sustentável | Agroforte</title>
+  <meta name="description" content="Fitoneem é um inseticida natural à base de óleo de Neem (Azadirachta indica), com alta concentração de azadiractina. Ação por contato e ingestão, amplo espectro e aprovação para uso orgânico.">
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/fitoneem/"/>
-
-  <!-- Favicon (logo fundo verde) -->
-  <link rel="icon" type="image/webp" href="/img/produtos/logooficialfundoverde.webp"/>
-
-  <meta name="description" content="Fitoneem (óleo de neem) com azadiractina. Modos de ação: anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução. Baixe a bula e a ficha técnica. Suporte técnico Agroforte."/>
   <meta name="robots" content="index,follow"/>
-
-  <!-- Open Graph -->
   <meta property="og:type" content="product"/>
-  <meta property="og:title" content="Fitoneem – Óleo de Neem | Agroforte"/>
-  <meta property="og:description" content="Controle inteligente de pragas com azadiractina. Baixe a bula e a ficha técnica. Atendimento: (17) 99140-5464."/>
+  <meta property="og:title" content="Fitoneem (Óleo de Neem) — Inseticida Natural | Agroforte"/>
+  <meta property="og:description" content="Alta performance e múltiplos mecanismos de ação: antialimentar, regulador de crescimento, repelente e mais. Aprovado para orgânicos."/>
   <meta property="og:url" content="https://innovetecnologias.com.br/produtos/fitoneem/"/>
   <meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/fitoneem.webp"/>
+  <link rel="icon" href="/img/produtos/logooficialfundoverde.webp" type="image/webp"/>
+
+  <!-- JSON-LD básico para SEO de produto -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Fitoneem",
+    "brand":{"@type":"Brand","name":"Agroforte"},
+    "description":"Inseticida natural à base de óleo de Neem com alta concentração de azadiractina.",
+    "image":"https://innovetecnologias.com.br/img/produtos/fitoneem.webp",
+    "url":"https://innovetecnologias.com.br/produtos/fitoneem/",
+    "additionalProperty":[
+      {"@type":"PropertyValue","name":"Óleo de Neem","value":"850 g/L (85% m/v)"},
+      {"@type":"PropertyValue","name":"Azadiractina A","value":"2,00 g/L (0,200% m/v)"},
+      {"@type":"PropertyValue","name":"Azadiractina B","value":"1,00 g/L (0,100% m/v)"}
+    ]
+  }
+  </script>
 
   <style>
     :root{
-      --green:#0f5b2f; --green2:#1a7f44; --yellow:#f1b82d;
-      --bg:#0f5b2f; --ink:#183023; --surface:#ffffff; --line:#e6efe6;
-      --radius:14px; --max:1120px;
+      --bg:#0e5c33; --surface:#0b4f2c; --card:#0b4b2a;
+      --brand:#0a6d39; --brand-2:#0f8a49; --accent:#f0c419;
+      --ink:#f4fff8; --muted:#daf0e5; --max:1200px; --r:16px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:#fff;line-height:1.55}
-    a{color:#fff;text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+    img{max-width:100%;height:auto}
+    a{color:var(--ink);text-decoration:none}
+    .wrap{max-width:var(--max);margin-inline:auto;padding:14px}
+    .chip{display:inline-block;background:#0b7b41;color:#e9fff5;
+      padding:7px 12px;border-radius:999px;font-weight:700}
 
-    header{background:linear-gradient(90deg,var(--green) 0%, var(--green2) 100%)}
-    .top{display:flex;align-items:center;gap:14px;padding:16px 0}
-    .top img{height:136px} /* 4x maior */
-    .back{margin-left:auto}
-    .back a{color:#fff;border:2px solid #fff;border-radius:999px;padding:6px 12px;font-weight:700;background:transparent}
-    .back a:hover{background:rgba(255,255,255,.12)}
+    /* Topbar */
+    .topbar{background:#073d22;border-bottom:1px solid #ffffff1a}
+    .topbar .row{display:flex;align-items:center;gap:12px;justify-content:space-between}
+    .back{display:inline-flex;gap:8px;align-items:center;padding:9px 14px;
+      border:1px solid #ffffff3c;border-radius:999px}
+    .contact{font-weight:700;letter-spacing:.2px}
 
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:6px 0 18px}
-    .badge{display:inline-block;background:#fff;color:var(--green);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;margin:8px 0 12px}
-    h1{font-size:42px;line-height:1.08;margin:0 0 12px}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-block;border-radius:12px;padding:12px 16px;font-weight:700}
-    .btn-wpp{background:var(--yellow);color:#000}
-    .btn-ghost{border:2px solid #fff}
-    .btn-light{border:2px solid #cadcc9;color:#1a3c2a;background:#fff}
+    /* Hero */
+    header .hero{display:grid;grid-template-columns:1.02fr .98fr;gap:24px;align-items:center}
+    .logo{width:min(360px,48vw);filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}
+    h1{font-size:clamp(28px,3.6vw,46px);line-height:1.08;margin:8px 0 12px}
+    .lead{font-size:clamp(15px,1.7vw,18px);color:#eafff3}
+    .card{background:var(--surface);border:1px solid #ffffff24;border-radius:var(--r);padding:18px}
+    .frame{background:#fff;border-radius:18px;padding:20px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;
+      padding:13px 18px;font-weight:800;border:1px solid #ffffff2a}
+    .btn-primary{background:var(--accent);color:#1a271e;border:none}
+    .btn-ghost{background:transparent}
+    .dl{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .dl a{background:var(--brand);padding:11px 14px;border-radius:10px;font-weight:800;border:1px solid #ffffff24}
 
-    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px}
-    .rightCard{padding:10px;border-radius:18px}
-    .productShot{border-radius:12px;margin:0}
-
-    /* Botões logo abaixo da imagem (compacto) */
-    .thumb-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
-    .thumb-actions .btn{min-height:44px;text-align:center;color:#1a3c2a}
-    .mini-info{margin-top:8px;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fcfffc;color:#183023;font-size:14px}
-    .mini-info h4{margin:0 0 6px;font-size:15px}
-    .mini-info ul{margin:0;padding-left:18px}
-    .mini-info li{margin:2px 0}
-
-    main{background:#f7fbf7;color:#183023}
+    /* Sections */
     section{padding:26px 0}
-    h2{font-size:28px;margin:0 0 12px}
-    .grid{display:grid;gap:18px}
-    .cols-2{grid-template-columns:1fr 1fr}
-    .cols-3{grid-template-columns:repeat(3,1fr)}
-    .list{margin:0;padding-left:18px}
-    .card-soft{background:#ffffff;border:1px solid #eaf2ea;border-radius:14px;padding:16px}
-    .tag{display:inline-block;background:#e7f6ea;color:#0e6b3a;border:1px solid #cbe9d2;border-radius:999px;padding:4px 10px;font-size:12px;margin:2px 6px 0 0}
+    h2{margin:0 0 10px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden}
+    th,td{padding:12px 14px;border-bottom:1px solid #ffffff14;background:#0b4f2c}
+    th{background:#0a7a3f}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .faq details{background:var(--surface);border:1px solid #ffffff1f;border-radius:12px;padding:12px}
+    .faq summary{cursor:pointer;font-weight:800}
 
-    details{background:#fff;border:1px solid #e6efe6;border-radius:12px;padding:12px;margin:10px 0}
-    summary{cursor:pointer;font-weight:700;outline:none}
+    /* Footer + socials */
+    footer{background:#073d22;border-top:1px solid #ffffff1a;margin-top:24px}
+    .foot{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+    .socials{display:flex;gap:10px}
+    .socials a{background:#0b4f2c;border:1px solid #ffffff24;padding:10px 12px;border-radius:10px}
 
-    footer{background:#0a2d1a;color:#cfe6d7;padding:24px 0}
-    footer a{color:#cfe6d7;text-decoration:underline}
+    /* WhatsApp FAB */
+    .fab{position:fixed;right:18px;bottom:18px;z-index:50;background:#25d366;color:#083b22;
+      border-radius:999px;padding:12px 16px;display:flex;align-items:center;gap:10px;
+      font-weight:900;box-shadow:0 14px 28px rgba(0,0,0,.28)}
+    .fab:hover{filter:brightness(.95)}
 
-    .socials{display:flex;gap:12px;align-items:center}
-    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:#0f5b2f;border:1px solid #2b7a4a;color:#cfe6d7}
-    .socials a:hover{filter:brightness(1.1)}
-
-    /* WhatsApp flutuante discreto */
-    .wpp-float{position:fixed;right:14px;bottom:14px;z-index:50}
-    .wpp-float a{display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;border-radius:999px;padding:10px 12px;box-shadow:0 8px 24px rgba(0,0,0,.18);font-weight:700}
-    .wpp-float small{opacity:.95}
-
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr}
-      .top img{height:120px}
-      .thumb-actions{grid-template-columns:1fr}
-      .cols-2{grid-template-columns:1fr}
-      .cols-3{grid-template-columns:1fr}
+    @media (max-width:960px){
+      header .hero{grid-template-columns:1fr}
+      .frame{max-width:560px;margin-inline:auto}
+      .foot{grid-template-columns:1fr}
+      .logo{width:min(300px,60vw)}
     }
   </style>
-
-  <script defer>
-    const WPP="5517991405464";
-    function wppUrl(msg="Olá! Tenho interesse no Fitoneem."){return `https://wa.me/${WPP}?text=${encodeURIComponent(msg)}`}
-  </script>
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <div class="top">
-      <!-- LOGO OFICIAL FUNDO VERDE -->
-      <img src="/img/produtos/logooficialfundoverde.webp" alt="Agroforte" loading="eager">
-      <div class="back"><a href="/" title="Voltar para a página inicial">← Voltar</a></div>
+  <!-- Topo: voltar + telefone -->
+  <div class="topbar">
+    <div class="wrap row">
+      <a class="back" href="https://innovetecnologias.com.br">← Voltar</a>
+      <div class="contact">
+        📞 WhatsApp Sandro:
+        <a href="https://wa.me/5517991405464?text=Olá%20Sandro,%20tenho%20interesse%20no%20Fitoneem" aria-label="WhatsApp Sandro">(17) 99140-5464</a>
+      </div>
     </div>
+  </div>
 
+  <!-- Hero -->
+  <header class="wrap">
     <div class="hero">
       <div>
-        <span class="badge">100% origem vegetal • óleo de neem</span>
-        <h1>Fitoneem – controle inteligente de pragas</h1>
-        <p>Inseticida botânico obtido do óleo da semente de <i>Azadirachta indica</i> (neem). Atua por <b>contato e ingestão</b> e apresenta múltiplos modos de ação: <b>anti-alimentar</b>, <b>regulador do crescimento</b>, <b>repelente</b> e <b>inibidor da reprodução</b>, auxiliando o manejo integrado de pragas.</p>
+        <img class="logo" src="/img/produtos/logooficialfundoverde.webp" alt="Agroforte fertilizantes"/>
+        <span class="chip">Inseticida natural • óleo de neem</span>
+        <h1>Fitoneem — Inseticida Natural à Base de Óleo de Neem</h1>
+        <p class="lead">
+          FitToneem é um inseticida natural de alta performance derivado do óleo de
+          <em>Neem (Azadirachta indica)</em>, com alta concentração de Azadiractina. Oferece
+          uma solução eficaz, sustentável e segura para o controle de diversas pragas.
+        </p>
         <div class="cta">
-          <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Quero cotar o Fitoneem.');return false;">Pedir orçamento no WhatsApp</a>
-          <a class="btn btn-ghost" href="#faq">Perguntas & respostas</a>
+          <a class="btn btn-primary" href="https://wa.me/5517991405464?text=Olá%20Sandro,%20quero%20orçamento%20do%20Fitoneem" rel="nofollow">💬 Pedir orçamento no WhatsApp</a>
+          <a class="btn btn-ghost" href="#docs">Ver bula e ficha</a>
         </div>
       </div>
 
-      <!-- Card da direita – compacto -->
-      <div class="card rightCard">
-        <picture>
-          <source srcset="/img/produtos/fitoneem.webp" type="image/webp">
-          <img class="productShot" src="/img/produtos/fitoneem.webp" alt="Fitoneem 1L" loading="lazy">
-        </picture>
-
-        <!-- Botões bem próximos da foto -->
-        <div class="thumb-actions">
-          <a class="btn btn-light" href="/produtos/fitoneem/docs/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">📑 Baixar Bula (PDF)</a>
-          <a class="btn btn-light" href="/produtos/fitoneem/docs/FITONEEM.pdf" target="_blank" rel="noopener">📄 Ficha Técnica (PDF)</a>
-        </div>
-
-        <!-- Composição, Mecanismo e Registros -->
-        <div class="mini-info">
-          <h4>Composição e Mecanismo de Ação</h4>
-          <ul>
-            <li><b>Concentração:</b> 850 g/L (85% m/v) de óleo de neem.</li>
-            <li><b>Azadiractina A:</b> 2,00 g/L (0,200% m/v).</li>
-            <li><b>Azadiractina B:</b> 1,00 g/L (0,100% m/v).</li>
-            <li><b>Modo de ação:</b> contato e ingestão – interrompe alimentação, reprodução e o ciclo de vida dos insetos.</li>
-            <li><b>Eficaz contra:</b> mosca-branca, oídio do feijoeiro e outras pragas-alvo indicadas na bula.</li>
-          </ul>
-          <h4 style="margin-top:10px">Registro e Aprovações</h4>
-          <ul>
-            <li><b>MAPA:</b> registrado nº 6718.</li>
-            <li><b>Aprovação:</b> uso permitido na agricultura orgânica.</li>
-          </ul>
+      <div class="frame">
+        <img src="/img/produtos/fitoneem.webp" alt="Embalagens do Fitoneem">
+        <div class="dl">
+          <a href="/img/produtos/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">📄 Baixar Bula (PDF)</a>
+          <a href="/img/produtos/FITONEEM.pdf" target="_blank" rel="noopener">🧪 Ficha Técnica (PDF)</a>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<main>
-  <div class="wrap">
-    <!-- Sobre / Diferenciais -->
-    <section id="sobre">
-      <h2>Por que usar o Fitoneem?</h2>
-      <div class="grid cols-2">
-        <div class="card-soft">
-          <p><b>Múltiplos mecanismos de ação</b> ajudam a reduzir pressão de seleção e contribuem para programas de <b>Manejo Integrado de Pragas (MIP)</b>. Atua como anti-alimentar, regulador do crescimento, repelente e inibidor da reprodução, afetando comportamento e desenvolvimento dos insetos.</p>
-          <ul class="list">
-            <li><b>Contato + ingestão</b> para maior cobertura de cenários.</li>
-            <li><b>Compatível</b> com rotacionamento de ferramentas e práticas sustentáveis.</li>
-            <li><b>Flexível</b> para sistemas convencionais e orgânicos.</li>
-            <li><b>Assistência técnica</b> pela Agroforte para posicionamento seguro.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="tag">mosca-branca</span>
-            <span class="tag">oídio (feijoeiro)</span>
-            <span class="tag">tripes</span>
-            <span class="tag">ácaros</span>
-            <span class="tag">pulgões</span>
-          </div>
-        </div>
-        <div class="card-soft">
-          <h3 style="margin:0 0 8px">Orientações gerais de uso</h3>
-          <ul class="list">
-            <li>Aplicar por pulverização foliar visando <b>boa cobertura</b> das superfícies.</li>
-            <li>Preferir horários de menor insolação e vento; usar água limpa e manter agitação da calda.</li>
-            <li><b>Respeitar a bula</b> quanto às pragas-alvo, estádios e intervalos de aplicação.</li>
-            <li>Rotacionar mecanismos de ação e integrar com práticas de MIP e monitoramento.</li>
-          </ul>
-          <p style="font-size:14px;color:#355c40;margin-top:8px">Atenção: sempre siga o rótulo/bula do fabricante (dosagens, intervalos e restrições). Em caso de dúvida, fale com nosso suporte.</p>
+  <!-- Composição e aprovação -->
+  <section class="wrap" id="docs">
+    <div class="grid-2">
+      <div class="card">
+        <h2>Composição e Mecanismo de Ação</h2>
+        <table aria-label="Composição Fitoneem">
+          <thead><tr><th>Componente</th><th>Concentração</th></tr></thead>
+          <tbody>
+            <tr><td>Óleo de Neem (Azadirachta indica)</td><td>850 g/L (85% m/v)</td></tr>
+            <tr><td>Azadiractina A</td><td>2,00 g/L (0,200% m/v)</td></tr>
+            <tr><td>Azadiractina B</td><td>1,00 g/L (0,100% m/v)</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Modo de ação:</strong> contato e ingestão, interrompendo a alimentação, reprodução e o ciclo de vida dos insetos.</li>
+          <li><strong>Eficaz contra:</strong> mosca-branca, oídio do feijoeiro e outras pragas.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Registro e Aprovações</h2>
+        <ul>
+          <li><strong>Registrado no MAPA:</strong> nº 6718</li>
+          <li><strong>Aprovado</strong> para uso na agricultura orgânica.</li>
+        </ul>
+
+        <h3>Bioativos Potentes</h3>
+        <ul>
+          <li>Azadiractina (A e B)</li>
+          <li>Salanina</li>
+          <li>Nimbina</li>
+          <li>Meliantriol</li>
+          <li><em>Atuam em sinergia</em> para controlar as pragas.</li>
+        </ul>
+
+        <div class="dl" style="margin-top:10px">
+          <a href="/img/produtos/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">📥 Bula</a>
+          <a href="/img/produtos/FITONEEM.pdf" target="_blank" rel="noopener">📥 Ficha técnica</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Benefícios agrupados -->
-    <section id="beneficios">
-      <h2>Benefícios práticos no campo</h2>
-      <div class="grid cols-3">
-        <div class="card-soft"><b>Resposta rápida</b><br>Comportamento alimentar reduzido logo após a exposição.</div>
-        <div class="card-soft"><b>Manejo de resistência</b><br>Múltiplas frentes de ação biológica.</div>
-        <div class="card-soft"><b>Perfil de segurança</b><br>Ferramenta com origem botânica e bom encaixe em programas sustentáveis.</div>
+  <!-- Benefícios -->
+  <section class="wrap">
+    <div class="card">
+      <h2>Benefícios</h2>
+      <ul>
+        <li><strong>Amplo espectro:</strong> controla pulgões, mosca-branca, percevejos, lagartas e outras pragas.</li>
+        <li><strong>Biodegradável e seguro:</strong> não deixa resíduos tóxicos.</li>
+        <li><strong>Ação prolongada:</strong> proteção duradoura.</li>
+        <li><strong>Solução sustentável:</strong> preserva o equilíbrio ambiental.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Mecanismos -->
+  <section class="wrap">
+    <div class="card">
+      <h2>Mecanismos de Ação Multifacetados</h2>
+      <ul>
+        <li>Antialimentar: inibe a alimentação dos insetos;</li>
+        <li>Regulador de crescimento: impede a muda (ecdise) das larvas;</li>
+        <li>Esterilização: reduz a fertilidade;</li>
+        <li>Repelência: afasta os insetos das plantas;</li>
+        <li>Interrupção da comunicação sexual: dificulta a cópula;</li>
+        <li>Inibição da quitina: prejudica a formação do exoesqueleto;</li>
+        <li>Ação por contato: obstrui a respiração dos insetos;</li>
+        <li>Interferência hormonal: perturba o sistema endócrino.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Recomendações de uso -->
+  <section class="wrap">
+    <div class="card">
+      <h2>Recomendações de Uso</h2>
+      <p>Para um bom manejo com o FitToneem, garanta que a aplicação chegue ao alvo:</p>
+      <ul>
+        <li>Aplicar em horários de temperatura amena (início da manhã ou fim da tarde).</li>
+        <li>Respeitar a <strong>ordem de mistura</strong>: óleos sempre após produtos sólidos (WP, WG etc.).</li>
+        <li>Preferir temperaturas abaixo de <strong>32ºC</strong> e ventos abaixo de <strong>13 km/h</strong>.</li>
+        <li>Usar adjuvante espalhante/adesivo (ex.: Action Expand) e, quando indicado, desalojante para expor a praga.</li>
+        <li>Para misturas de calda, consulte um Engenheiro Agrônomo.</li>
+      </ul>
+      <div class="cta" style="margin-top:6px">
+        <a class="btn btn-primary" href="https://wa.me/5517991405464?text=Olá%20Sandro,%20quero%20aplicar%20Fitoneem%20e%20preciso%20de%20orientação." rel="nofollow">📲 Falar com o agrônomo</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Perguntas e Respostas (SEO) -->
-    <section id="faq">
-      <h2>Perguntas e respostas (Fitoneem)</h2>
+  <!-- FAQ curtinha para SEO -->
+  <section class="wrap faq">
+    <h2>Perguntas frequentes</h2>
+    <details>
+      <summary>Posso usar Fitoneem em manejo orgânico?</summary>
+      <p>Sim. O produto é aprovado para uso na agricultura orgânica e integra bem o MIP.</p>
+    </details>
+    <details>
+      <summary>Quais pragas o Fitoneem controla melhor?</summary>
+      <p>Destaca-se contra mosca-branca, pulgões, percevejos e lagartas, entre outras.</p>
+    </details>
+    <details>
+      <summary>Ele deixa resíduos?</summary>
+      <p>Não. É biodegradável, sem resíduos tóxicos nas colheitas quando usado corretamente.</p>
+    </details>
+  </section>
 
-      <details>
-        <summary>Posso usar Fitoneem em <b>maracujá</b>?</summary>
-        <p>O uso em frutíferas como o maracujá pode ser considerado dentro de programas de MIP, visando alvos como pulgões, tripes e mosca-branca. <b>Consulte sempre a bula e a assistência técnica</b> para confirmar o posicionamento e as condições locais de aplicação.</p>
-      </details>
-
-      <details>
-        <summary>Quais pragas-alvo o Fitoneem ajuda a manejar?</summary>
-        <p>O produto apresenta ação sobre insetos de partes moles e suctoras (ex.: <b>mosca-branca</b>, <b>pulgões</b>, <b>tripes</b>) e pode auxiliar em ácaros e situações de desequilíbrio no sistema, conforme as orientações do fabricante. <b>Siga a bula</b> para enquadramento e estágios de desenvolvimento.</p>
-      </details>
-
-      <details>
-        <summary>Funciona no <b>feijoeiro</b> (oídio e mosca-branca)?</summary>
-        <p>Sim, o material técnico indica eficácia para ajudar no manejo de <b>mosca-branca</b> e também é utilizado em programas que combatem o <b>oídio do feijoeiro</b>. A eficiência depende de <b>boa cobertura</b>, do <b>momento da aplicação</b> e do <b>respeito à bula</b>.</p>
-      </details>
-
-      <details>
-        <summary>E na <b>soja</b> e em <b>hortaliças</b> (HF)?</summary>
-        <p>Fitoneem se integra a programas de MIP na soja e em HF para auxiliar no manejo de insetos suctoras (ex.: mosca-branca) e situações de pressão de pragas em estufas/campo aberto. Ajuste o posicionamento conforme o monitoramento e a recomendação técnica local.</p>
-      </details>
-
-      <details>
-        <summary>Como é o <b>modo de ação</b>?</summary>
-        <p>É um inseticida de contato e ingestão com múltiplos mecanismos: <b>anti-alimentar</b>, <b>regulador do crescimento</b> (muda/desenvolvimento), <b>repelência</b> (evita superfícies tratadas) e <b>inibição da reprodução</b> (atraso de acasalamento e postura).</p>
-      </details>
-
-      <details>
-        <summary>Posso misturar com outros produtos?</summary>
-        <p>Verifique a <b>compatibilidade</b> e a sequência de preparo da calda; faça <b>teste de jarra</b> quando necessário. Mantenha agitação constante e aplique em condições ambientais adequadas. Em caso de dúvida, contate nosso suporte técnico.</p>
-      </details>
-
-      <details>
-        <summary>Armazenamento e segurança</summary>
-        <p>Guardar na embalagem original, em local ventilado, afastado de calor e alimentos. Usar EPI completo durante preparo e aplicação. Siga as orientações do rótulo/bula quanto a intervalos de reentrada e descarte de embalagens.</p>
-      </details>
-    </section>
-
-    <!-- Documentos técnicos (redundância de links) -->
-    <section id="docs">
-      <h2>Documentos técnicos</h2>
-      <div class="card-soft" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-        <div>
-          <p>Baixe os materiais oficiais do produto (PDFs):</p>
-          <div class="cta">
-            <a class="btn btn-light" href="/produtos/fitoneem/docs/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">📑 Bula</a>
-            <a class="btn btn-light" href="/produtos/fitoneem/docs/FITONEEM.pdf" target="_blank" rel="noopener">📄 Ficha Técnica</a>
-          </div>
-        </div>
-        <a class="btn btn-wpp" href="#" onclick="location.href=wppUrl('Olá! Preciso de orientação técnica do Fitoneem.');return false;">Falar com Sandro</a>
+  <!-- Rodapé -->
+  <footer>
+    <div class="wrap foot">
+      <p>
+        📞 Contato comercial – Sandro:
+        <a href="https://wa.me/5517991405464?text=Oi%20Sandro,%20tenho%20dúvidas%20sobre%20o%20Fitoneem">(17) 99140-5464</a><br/>
+        Empresa: <strong>Agroforte</strong> • Site: <a href="https://innovetecnologias.com.br">innovetecnologias.com.br</a>
+      </p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram Agroforte">📷 Instagram</a>
+        <a href="#" aria-label="Facebook Agroforte">👍 Facebook</a>
       </div>
-    </section>
-  </div>
-</main>
+    </div>
+  </footer>
 
-<footer>
-  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
-    <div>© <span id="y"></span> Agroforte — innovetecnologias.com.br</div>
-    <!-- Espaço para redes sociais (links placeholders) -->
-    <div class="socials" title="Nossas redes (em breve)">
-      <a href="#" aria-label="Instagram (definir link futuramente)">
-        <!-- Ícone Instagram -->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM18 6.5a1 1 0 1 1 0 2.001 1 1 0 0 1 0-2.001z"/>
-        </svg>
-      </a>
-      <a href="#" aria-label="Facebook (definir link futuramente)">
-        <!-- Ícone Facebook -->
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0 1 14.5 6H17V2h-2.5A5.5 5.5 0 0 0 9 7.5V10H6v4h3v8h4z"/>
-        </svg>
-      </a>
-  </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</footer>
-
-<!-- Botão flutuante discreto do WhatsApp -->
-<div class="wpp-float" aria-live="polite">
-  <a href="#" onclick="location.href=wppUrl('Olá! Vim da página do Fitoneem.');return false;" aria-label="WhatsApp Agroforte">
-    <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.09c-.27-.13-1.59-.78-1.84-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.13-1.13-.42-2.16-1.35-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.11-.55.11-.11.27-.29.41-.44.14-.16.18-.27.27-.45.09-.18.05-.33-.02-.46-.07-.13-.61-1.48-.84-2.03-.22-.53-.45-.45-.61-.46l-.52-.01c-.18 0-.46.07-.7.33-.24.27-.92.9-.92 2.2s.94 2.55 1.07 2.73c.13.18 1.84 2.81 4.46 3.94.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.11.5-.07 1.59-.65 1.82-1.27.23-.62.23-1.14.16-1.27-.07-.13-.25-.2-.52-.33z"/><path d="M16.01 3.2c-7.11 0-12.87 5.76-12.87 12.87 0 2.27.6 4.51 1.75 6.48L3 29l6.6-1.73a12.75 12.75 0 0 0 6.41 1.72h.01c7.11 0 12.87-5.76 12.87-12.87S23.12 3.2 16.01 3.2zm7.56 20.43c-.32.9-1.85 1.72-2.58 1.84-.66.12-1.51.16-2.44-.15-1.41-.46-2.89-1.01-4.99-2.12-3.77-1.97-6.2-5.75-6.38-6.01-.18-.27-1.53-2.04-1.53-3.9 0-1.86.93-2.77 1.26-3.16.32-.39.7-.49.93-.49.23 0 .46 0 .66.01.21.01.49-.08.76.58.27.66.91 2.27.99 2.44.08.16.13.35.02.57-.11.23-.17.37-.34.57-.18.2-.35.45-.5.61-.16.16-.32.33-.14.66.18.33.78 1.28 1.67 2.08 1.15 1.03 2.12 1.35 2.45 1.51.33.16.53.13.73-.08.23-.23.84-.93 1.06-1.25.23-.33.45-.27.74-.16.29.1 1.86.88 2.18 1.04.32.16.53.23.61.35.08.12.08.69-.24 1.59z"/></svg>
-    <small>WhatsApp</small>
+  <!-- WhatsApp flutuante -->
+  <a class="fab" href="https://wa.me/5517991405464?text=Olá%20Sandro,%20quero%20saber%20mais%20sobre%20o%20Fitoneem" target="_blank" rel="nofollow noopener" aria-label="Falar com Sandro no WhatsApp">
+    🟢 WhatsApp Sandro
   </a>
-</div>
-
 </body>
 </html>
