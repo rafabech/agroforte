@@ -37,63 +37,56 @@
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* ================= HEADER (compacto no mobile) ================= */
+    /* ================= HEADER (fixo com botões + tel + WhatsApp) ================= */
     header{
       position:sticky;top:0;z-index:60;
-      background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);
+      background:rgba(9,79,45,.96);
+      backdrop-filter:saturate(140%) blur(6px);
       border-bottom:1px solid rgba(255,255,255,.08)
     }
-    .topbar{
-      display:flex;align-items:center;gap:12px;justify-content:space-between;
-      padding:10px 0; /* desktop padrão */
+    .bar{
+      display:grid;grid-template-columns:auto 1fr;align-items:center;
+      padding:6px 0; /* bem compacto */
+      gap:10px;
     }
     .brand{display:flex;align-items:center;gap:10px;min-width:0}
-    .brand img{width:200px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    .brand strong{font-size:20px;letter-spacing:.2px;white-space:nowrap}
-    .actions{display:flex;align-items:center;gap:8px}
+    .brand img{width:180px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+    .brand strong{font-size:18px;letter-spacing:.2px;white-space:nowrap}
+
+    .right{
+      display:flex;align-items:center;justify-content:flex-end;gap:8px;min-width:0;
+      flex-wrap:nowrap; /* tudo paradinho numa linha */
+    }
+    .nav{display:flex;gap:6px;min-width:0;flex-wrap:nowrap}
     .nav-btn{
-      padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.06);font-weight:800
+      padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap
     }
     .nav-btn:hover{background:rgba(255,255,255,.12)}
+
     .chip{
-      display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;
+      display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;
       border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);
-      font-weight:800;white-space:nowrap
-    }
-    .zap-main{
-      display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;
-      background:var(--brand);color:#063a1f;font-weight:900;border:0;box-shadow:var(--shadow)
+      font-weight:800;white-space:nowrap;font-size:14px
     }
 
-    /* Ícones pequenos */
-    .icon-btn{
+    .wa-circle{
       width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
-      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);color:#fff
+      background:#25D366;border:1px solid #1DB954;color:#fff;flex:0 0 auto
     }
-    .icon-btn.whats{background:#25D366;border-color:#1DB954;color:#fff} /* logo WhatsApp */
-    .hamb{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,255,255,.16);
-      background:rgba(255,255,255,.10);color:#fff;font-size:18px;display:none}
+    .wa-circle svg{display:block}
 
-    /* Navegação colapsável */
-    nav.nav{border-top:1px solid rgba(255,255,255,.08)}
-    nav.nav .wrap{display:flex;gap:10px;flex-wrap:wrap;padding:8px 0}
-
+    /* MOBILE: mantém tudo em 1 linha, só reduz tamanhos */
     @media (max-width:720px){
-      /* COMPACTAÇÃO no mobile */
-      .topbar{padding:6px 0}
       .brand img{width:130px}
       .brand strong{display:none}
-      /* Agora o telefone aparece mesmo no mobile (sem esconder!) */
-      .chip{padding:6px 10px;font-size:14px}
-      .chip .txt{display:inline}  /* <- garante número visível */
-      .actions{gap:6px}
-      .zap-main{display:none}     /* CTA grande some; usamos bolinha flutuante e ícone no topo */
-      .hamb{display:grid}
-      nav.nav{max-height:0;overflow:hidden;transition:max-height .25s ease}
-      nav.nav.open{max-height:200px}
-      nav.nav .wrap{padding:8px 0}
-      .nav-btn{padding:8px 10px}
+      .nav-btn{padding:6px 10px;font-size:13px}
+      .chip{padding:5px 8px;font-size:13px}
+      .wa-circle{width:34px;height:34px}
+      .bar{padding:4px 0}
+      /* previne quebra: se ficar muito apertado, o conjunto pode rolar horizontalmente apenas no header */
+      .right{overflow-x:auto;scrollbar-width:none}
+      .right::-webkit-scrollbar{display:none}
     }
 
     /* ================= HERO ================= */
@@ -114,6 +107,7 @@
     .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
     @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr)} }
     @media (max-width:620px){ .grid{grid-template-columns:1fr} }
+
     .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
     .card a{display:block}
     .card img{
@@ -154,44 +148,39 @@
   <!-- Bolinha do WhatsApp (flutuante) -->
   <a class="zap-float" aria-label="WhatsApp"
      href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20Assunto:%20(Informe)%20Produto:%20(Informe)%0APor%20favor,%20direcionar%20ao%20consultor%20Sandro.">
-    <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-      <path d="M16 3a13 13 0 00-9.2 22.2L5 29l3.9-1.7A13 13 0 1016 3zm7 17.3c-.3.9-1.8 1.6-2.5 1.7s-1.7.2-2.8-.2c-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4l-.3.5c-.1.1-.3.4-.4.5s-.3.3-.1.6c.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
+    <!-- Marca WhatsApp branca sobre verde -->
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
+      <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
     </svg>
   </a>
 
   <header>
-    <div class="wrap topbar">
+    <div class="wrap bar">
       <!-- LOGO -->
       <a class="brand" href="./index.html" aria-label="Página inicial">
         <img id="logoAgf" src="./img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
         <strong>AgroForte</strong>
       </a>
 
-      <!-- Ações rápidas (telefone visível + logo WhatsApp + menu) -->
-      <div class="actions">
-        <a class="chip" href="tel:+5517991405464" title="Ligar agora">
-          📞 <span class="txt">(17) 99140-5464</span>
-        </a>
-        <a class="icon-btn whats" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro."
+      <!-- LADO DIREITO COMPLETO: botões + telefone + WhatsApp -->
+      <div class="right">
+        <nav class="nav" aria-label="Principal">
+          <a class="nav-btn" href="./index.html">Home</a>
+          <a class="nav-btn" href="./produtos/index.html">Produtos</a>
+          <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
+        </nav>
+
+        <a class="chip" href="tel:+5517991405464" title="Ligar agora">📞 (17) 99140-5464</a>
+
+        <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro."
            aria-label="Abrir WhatsApp" title="Abrir WhatsApp">
-          <!-- Logo WhatsApp oficial em SVG (branco sobre verde) -->
-          <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-            <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8.1.1.2.1.2.2 0 .2-.1.6-.3 1z"/>
+          <!-- Logo WhatsApp branco (oficial) -->
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
+            <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
           </svg>
         </a>
-        <button class="hamb" id="hamb" aria-controls="mainNav" aria-expanded="false" title="Abrir menu">☰</button>
       </div>
     </div>
-
-    <!-- Navegação colapsável -->
-    <nav id="mainNav" class="nav">
-      <div class="wrap">
-        <a class="nav-btn" href="./index.html">Home</a>
-        <a class="nav-btn" href="./produtos/index.html">Produtos</a>
-        <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
-        <a class="zap-main" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20quero%20atendimento%20r%C3%A1pido%20no%20WhatsApp.%20(Assunto%20e%20Produto)%0ADirecionar%20ao%20consultor%20Sandro.">Fale no WhatsApp</a>
-      </div>
-    </nav>
   </header>
 
   <main class="wrap">
@@ -301,26 +290,12 @@
         <a class="nav-btn" href="./produtos/index.html">Ver todos os produtos</a>
         <a class="nav-btn" href="./quem-somos.html">Quem Somos</a>
       </div>
-      <a class="chip" href="tel:+5517991405464">📞 <span class="txt">(17) 99140-5464</span></a>
+      <a class="chip" href="tel:+5517991405464">📞 (17) 99140-5464</a>
       <small>© AgroForte — Todos os direitos reservados.</small>
     </div>
   </footer>
 
   <script>
-    /* Toggle do menu no mobile */
-    const hamb=document.getElementById('hamb');
-    const nav=document.getElementById('mainNav');
-    if(hamb && nav){
-      const mq=window.matchMedia('(max-width:720px)');
-      function setMode(){ nav.classList.toggle('nav', true); nav.classList.toggle('open', false); if(mq.matches){ nav.classList.add('nav'); } }
-      setMode();
-      hamb.addEventListener('click',()=>{
-        const isOpen=nav.classList.toggle('open');
-        hamb.setAttribute('aria-expanded', String(isOpen));
-      });
-      window.addEventListener('resize',setMode);
-    }
-
     /* WhatsApp do formulário */
     function goZap(e){
       e.preventDefault();
