@@ -7,11 +7,13 @@
   <meta name="description" content="Fitoneem é um inseticida natural à base de óleo de Neem (Azadirachta indica) com alta concentração de azadiractina. Ação por contato e ingestão, amplo espectro e aprovado para orgânicos.">
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/fitoneem/"/>
   <meta name="robots" content="index,follow"/>
+
   <meta property="og:type" content="product"/>
   <meta property="og:title" content="Fitoneem (Óleo de Neem) — Inseticida Natural | Agroforte"/>
   <meta property="og:description" content="Alta performance e múltiplos mecanismos de ação: antialimentar, regulador de crescimento, repelente e mais."/>
   <meta property="og:url" content="https://innovetecnologias.com.br/produtos/fitoneem/"/>
   <meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/fitoneem.webp"/>
+
   <link rel="icon" href="/img/produtos/logooficialfundoverde.webp" type="image/webp"/>
 
   <script type="application/ld+json">
@@ -37,28 +39,28 @@
       --brand:#0a6d39; --accent:#f0c419; --ink:#f4fff8;
       --muted:#daf0e5; --max:1200px; --r:16px;
     }
-    /* reset e base */
     *{box-sizing:border-box}
     html,body{margin:0;padding:0}
     body{
       background:var(--bg); color:var(--ink);
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
-      overflow-x:hidden; /* sem rolagem lateral */
+      overflow-x:hidden; /* SEM rolagem lateral */
     }
     img{max-width:100%;height:auto;display:block}
     a{color:var(--ink);text-decoration:none;word-break:break-word}
-    .wrap{max-width:var(--max);margin:0 auto;padding:14px}
+    .wrap{max-width:var(--max);width:100%;margin:0 auto;padding:14px}
+
     .chip{display:inline-block;background:#0b7b41;color:#e9fff5;
       padding:7px 12px;border-radius:999px;font-weight:700}
 
-    /* Topbar */
+    /* topbar */
     .topbar{background:#073d22;border-bottom:1px solid #ffffff1a}
     .row{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
     .back{display:inline-flex;gap:8px;align-items:center;padding:9px 14px;
       border:1px solid #ffffff3c;border-radius:999px;white-space:nowrap}
     .contact{font-weight:700;letter-spacing:.2px}
 
-    /* Hero */
+    /* hero */
     header .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center}
     .logo{width:min(320px,60vw);filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}
     h1{font-size:clamp(26px,4.6vw,44px);line-height:1.1;margin:8px 0 12px}
@@ -74,19 +76,24 @@
     .dl{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
     .dl a{background:var(--brand);padding:11px 14px;border-radius:10px;font-weight:800;border:1px solid #ffffff24}
 
-    /* Sections */
+    /* sections */
     section{padding:26px 0}
     h2{margin:0 0 10px}
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden}
-    th,td{padding:12px 14px;border-bottom:1px solid #ffffff14;background:#0b4f2c}
+
+    /* tabelas sempre fluidas */
+    table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;table-layout:fixed}
+    th,td{
+      padding:12px 14px;border-bottom:1px solid #ffffff14;background:#0b4f2c;
+      word-break:break-word; /* quebra segura em telas estreitas */
+    }
     th{background:#0a7a3f}
     ul{margin:8px 0 0 18px}
     li{margin:6px 0}
     .faq details{background:var(--surface);border:1px solid #ffffff1f;border-radius:12px;padding:12px}
     .faq summary{cursor:pointer;font-weight:800}
 
-    /* Footer + socials */
+    /* footer + redes */
     footer{background:#073d22;border-top:1px solid #ffffff1a;margin-top:24px}
     .foot{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
     .socials{display:flex;gap:10px;flex-wrap:wrap}
@@ -98,9 +105,10 @@
       font-weight:900;box-shadow:0 14px 28px rgba(0,0,0,.28);max-width:90vw}
     .fab:hover{filter:brightness(.95)}
 
-    /* 100% mobile-first */
-    @media (max-width:960px){
+    /* responsividade antecipada (evita scroll horizontal) */
+    @media (max-width:1100px){
       header .hero{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
       .frame{max-width:600px;margin-inline:auto}
       .foot{grid-template-columns:1fr}
       .logo{width:min(260px,55vw)}
@@ -109,7 +117,7 @@
 </head>
 <body>
 
-  <!-- Topo: voltar + telefone -->
+  <!-- topo -->
   <div class="topbar">
     <div class="wrap row">
       <a class="back" href="https://innovetecnologias.com.br">← Voltar</a>
@@ -120,7 +128,7 @@
     </div>
   </div>
 
-  <!-- Hero -->
+  <!-- hero -->
   <header class="wrap">
     <div class="hero">
       <div>
@@ -140,7 +148,6 @@
       <div class="frame">
         <img src="/img/produtos/fitoneem.webp" alt="Embalagens do Fitoneem">
         <div class="dl" role="group" aria-label="Downloads do Fitoneem">
-          <!-- LINKS AJUSTADOS PARA ABRIR OS PDFs -->
           <a href="/img/produtos/Fitoneem_1L-Bula_Fev-23.pdf" target="_blank" rel="noopener">📄 Baixar Bula (PDF)</a>
           <a href="/img/produtos/FITONEEM.pdf" target="_blank" rel="noopener">🧪 Ficha Técnica (PDF)</a>
         </div>
@@ -148,7 +155,7 @@
     </div>
   </header>
 
-  <!-- Composição e aprovação -->
+  <!-- composição + registro (sem overflow no mobile) -->
   <section class="wrap" id="docs">
     <div class="grid-2">
       <div class="card">
@@ -166,6 +173,7 @@
           <li><strong>Eficaz contra:</strong> mosca-branca, oídio do feijoeiro e outras pragas.</li>
         </ul>
       </div>
+
       <div class="card">
         <h2>Registro e Aprovações</h2>
         <ul>
@@ -187,7 +195,6 @@
     </div>
   </section>
 
-  <!-- Benefícios -->
   <section class="wrap">
     <div class="card">
       <h2>Benefícios</h2>
@@ -200,7 +207,6 @@
     </div>
   </section>
 
-  <!-- Mecanismos -->
   <section class="wrap">
     <div class="card">
       <h2>Mecanismos de Ação Multifacetados</h2>
@@ -211,7 +217,6 @@
     </div>
   </section>
 
-  <!-- Recomendações de uso -->
   <section class="wrap">
     <div class="card">
       <h2>Recomendações de Uso</h2>
@@ -228,7 +233,6 @@
     </div>
   </section>
 
-  <!-- FAQ curtinha -->
   <section class="wrap faq">
     <h2>Perguntas frequentes</h2>
     <details>
@@ -245,7 +249,6 @@
     </details>
   </section>
 
-  <!-- Rodapé -->
   <footer>
     <div class="wrap foot">
       <p>
@@ -260,7 +263,6 @@
     </div>
   </footer>
 
-  <!-- WhatsApp flutuante -->
   <a class="fab" href="https://wa.me/5517991405464?text=Olá%20Sandro,%20quero%20saber%20mais%20sobre%20o%20Fitoneem" target="_blank" rel="nofollow noopener" aria-label="Falar com Sandro no WhatsApp">
     🟢 WhatsApp Sandro
   </a>
