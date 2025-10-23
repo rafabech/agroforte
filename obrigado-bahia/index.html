@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Obrigado! Agroforte Bahia</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Redirecionando para o WhatsApp… | AgroForte</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="canonical" href="https://innovetecnologias.com.br/obrigado-bahia.html"/>
 
-  <!-- Global site tag (substitua pelos seus IDs ao criar a conversão no Google Ads) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <!-- Cole seu gtag real no lugar de G-XXXX se quiser medir esta página -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-XXXXXXXXX');
-    // Dispara o evento de conversão desta página:
-    gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/CONVERSION_LABEL'});
+    gtag('config', 'G-XXXX');
   </script>
+  -->
 
-  <meta http-equiv="refresh" content="1; url=https://wa.me/5517991405464?text=Ol%C3%A1!%20Quero%20saber%20sobre%20biodefensivos%20para%20maracuj%C3%A1%20na%20Bahia." />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;display:grid;place-items:center;min-height:100vh}
-    .box{max-width:540px;padding:28px;text-align:center}
-    h1{font-size:28px;margin:0 0 10px}
-    p{font-size:16px;opacity:.8;margin:0 0 14px}
-    a{display:inline-block;text-decoration:none;padding:12px 18px;border:1px solid #25D366;border-radius:10px}
+    :root{--bg:#0e5b36;--bg2:#094f2d;--white:#fff;--muted:#cfead9;--zap:#25D366;--zapb:#1DB954}
+    *{box-sizing:border-box} html,body{margin:0}
+    body{font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+         color:var(--white); background:linear-gradient(180deg,var(--bg),var(--bg2));
+         display:grid; place-items:center; min-height:100vh; padding:24px}
+    .box{max-width:720px; width:100%; background:rgba(255,255,255,.06);
+         border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:20px}
+    h1{margin:0 0 8px; font-size:24px}
+    p{margin:6px 0; color:var(--muted)}
+    .cta{display:inline-flex; align-items:center; gap:10px; margin-top:12px;
+         padding:12px 16px; border-radius:999px; background:var(--zap); color:#063a1f;
+         border:1px solid var(--zapb); font-weight:900; text-decoration:none}
+    .small{font-size:14px}
+    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .row a{color:#fff; text-decoration:underline}
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Obrigado! 🚜</h1>
-    <p>Estamos direcionando você para nosso WhatsApp da Agroforte Bahia… Caso não seja direcionado entre em contato pelo fone / whats (17)99140-5456</p>
-    <a href="https://wa.me/5517991405464?text=Ol%C3%A1!%20Quero%20saber%20sobre%20biodefensivos%20para%20maracuj%C3%A1%20na%20Bahia.">Ir agora para o WhatsApp</a>
-  </div>
+  <main class="box" role="main" aria-live="polite">
+    <h1>Um instante… abrindo seu WhatsApp</h1>
+    <p>Se nada acontecer em 2–3 segundos, toque no botão abaixo.</p>
+    <a id="go" class="cta" href="#" rel="nofollow noopener">📲 Abrir conversa no WhatsApp</a>
+    <p class="small">Contato direto: <a id="tel" href="tel:+5517991405464" style="color:#fff">(17) 99140-5464</a></p>
+
+    <div class="row small">
+      <a href="/index.html">← Voltar para a página inicial</a>
+      <a href="/produtos/index.html">Ver produtos</a>
+      <a href="/bahia/">Página da Bahia</a>
+    </div>
+  </main>
+
+  <script>
+    // Monta a URL do WhatsApp
+    (function(){
+      const qp = new URLSearchParams(location.search);
+      const msg = qp.get('msg') && qp.get('msg').trim()
+        ? qp.get('msg').trim()
+        : `Olá, equipe AgroForte! Vim pela página da Bahia e quero atendimento rápido.
+• Assunto: (informe)
+• Produto: (Fitoneem, Takotrop, Bioolimpo, Nutri Completo)
+• Cidade/Região: (Barreiras, LEM, Juazeiro, Feira, Irecê, etc.)
+
+Por favor, direcionar meu contato ao consultor Sandro. Obrigado!`;
+
+      const wa = `https://wa.me/5517991405464?text=${encodeURIComponent(msg)}&utm_source=site&utm_medium=redirect&utm_campaign=bahia`;
+      const go = document.getElementById('go');
+      go.href = wa;
+
+      // Redireciona automaticamente
+      try { window.location.replace(wa); }
+      catch(e){ window.location.href = wa; }
+    })();
+  </script>
+
+  <noscript>
+    <p style="margin-top:12px;color:#fff">
+      JavaScript desativado. Toque aqui para abrir:
+      <a href="https://wa.me/5517991405464" style="color:#fff">https://wa.me/5517991405464</a>
+    </p>
+  </noscript>
 </body>
 </html>
