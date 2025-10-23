@@ -1,83 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <!-- Página inicial -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/index.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/index.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
     <image:image>
-      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/logooficialfundoverde.webp</image:loc>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp</image:loc>
       <image:title>AgroForte — Fertilizantes e Biológicos</image:title>
     </image:image>
   </url>
 
   <!-- Quem Somos -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/quem-somos.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/quem-somos.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.70</priority>
     <image:image>
-      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/quem-somos-fundo-branco.png</image:loc>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/quem-somos-fundo-branco.png</image:loc>
       <image:title>AgroForte — Quem Somos</image:title>
     </image:image>
   </url>
 
-  <!-- Listagem de produtos -->
+  <!-- Listagem de Produtos -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/produtos/index.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/index.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <!-- Fitoneem -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/produtos/fitoneem.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/fitoneem.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
     <image:image>
-      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/fitoneem-fundo-branco.webp</image:loc>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/fitoneem-fundo-branco.webp</image:loc>
       <image:title>Fitoneem — Óleo de Neem</image:title>
     </image:image>
   </url>
 
   <!-- Takotrop -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/produtos/takotrop.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/takotrop.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
     <image:image>
-      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/takotrop.webp</image:loc>
-      <image:title>Takotrop — Bioinseticida</image:title>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
+      <image:title>Takotrop — Bioinseticida (Pseudomonas)</image:title>
     </image:image>
   </url>
 
   <!-- Bioolimpo -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/produtos/bioolimpo.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/bioolimpo.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
     <image:image>
-      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/bioolimpo.webp</image:loc>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
       <image:title>Bioolimpo — Beauveria + Metarhizium</image:title>
     </image:image>
   </url>
 
   <!-- Nutri Completo -->
   <url>
-    <loc>https://innovetecnologias.com.br/agroforte/produtos/nutri-completo.html</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/nutri-completo.html</loc>
+    <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
     <image:image>
-      <image:loc>https://innovetecnologias.com.br/agroforte/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
       <image:title>Nutri Completo — Nutrição Foliar</image:title>
     </image:image>
   </url>
+
+  <!-- Página Bahia -->
+  <url>
+    <loc>https://innovetecnologias.com.br/bahia/index.html</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/fitoneem-fundo-branco.webp</image:loc>
+      <image:title>Fitoneem — Bahia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
+      <image:title>Bioolimpo — Bahia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
+      <image:title>Takotrop — Bahia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
+      <image:title>Nutri Completo — Bahia</image:title>
+    </image:image>
+  </url>
+
+  <!-- Obrigado Bahia -->
+  <url>
+    <loc>https://innovetecnologias.com.br/obrigado-bahia.html</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+
+  <!-- Página Ceará -->
+  <url>
+    <loc>https://innovetecnologias.com.br/ceara/index.html</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/fitoneem-fundo-branco.webp</image:loc>
+      <image:title>Fitoneem — Ceará</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
+      <image:title>Bioolimpo — Ceará</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
+      <image:title>Takotrop — Ceará</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
+      <image:title>Nutri Completo — Ceará</image:title>
+    </image:image>
+  </url>
+
+  <!-- Obrigado Ceará -->
+  <url>
+    <loc>https://innovetecnologias.com.br/obrigado-ceara.html</loc>
+    <lastmod>2025-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+
 </urlset>
