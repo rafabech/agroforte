@@ -7,41 +7,10 @@
   <meta name="description" content="Soluções AgroForte na Bahia: Fitoneem (óleo de neem), Takotrop e Bioolimpo (biológicos) e Nutri Completo (nutrição foliar). Forte em Barreiras, LEM, Juazeiro, Feira, Irecê e Bom Jesus da Lapa para maracujá, manga, uva, citros, soja e hortaliças. WhatsApp (17) 99140-5464."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/bahia/"/>
 
-  <!-- SEO JSON-LD: Organização + FAQ + Lista de produtos -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"AgroForte Fertilizantes",
-    "url":"https://innovetecnologias.com.br/",
-    "logo":"https://innovetecnologias.com.br/agroforte/img/produtos/logooficialfundoverde.webp",
-    "contactPoint":[{"@type":"ContactPoint","telephone":"+55-17-99140-5464","contactType":"customer support","areaServed":"BR"}]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Vocês atendem Barreiras, LEM e Juazeiro?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todo o estado da Bahia: Barreiras, Luís Eduardo Magalhães, Juazeiro, Feira de Santana, Irecê, Bom Jesus da Lapa, região Sisaleira e Extremo Sul."}},
-      {"@type":"Question","name":"Quais pragas mais comuns no Oeste Baiano?","acceptedAnswer":{"@type":"Answer","text":"Mosca-branca, pulgões, percevejos, tripes, lagartas (Spodoptera), ácaro-rajado, psilídeo dos citros e mosca-das-frutas em manga e uva."}},
-      {"@type":"Question","name":"Quais produtos da AgroForte funcionam bem no clima da Bahia?","acceptedAnswer":{"@type":"Answer","text":"Fitoneem (óleo de neem), Takotrop e Bioolimpo (biológicos de controle) e Nutri Completo (nutrição foliar com algas + aminoácidos)."}}
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"Soluções AgroForte para a Bahia",
-    "itemListElement":[
-      {"@type":"Product","name":"Óleo de Neem — Fitoneem","url":"https://innovetecnologias.com.br/agroforte/produtos/fitoneem.html"},
-      {"@type":"Product","name":"Takotrop (Biológico)","url":"https://innovetecnologias.com.br/agroforte/produtos/takotrop.html"},
-      {"@type":"Product","name":"Bioolimpo (Biológico)","url":"https://innovetecnologias.com.br/agroforte/produtos/bioolimpo.html"},
-      {"@type":"Product","name":"Nutri Completo","url":"https://innovetecnologias.com.br/agroforte/produtos/nutri-completo.html"}
-    ]
-  }
-  </script>
+  <!-- JSON-LD: Organização + FAQ + Lista de produtos -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AgroForte Fertilizantes","url":"https://innovetecnologias.com.br/","logo":"https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp","contactPoint":[{"@type":"ContactPoint","telephone":"+55-17-99140-5464","contactType":"customer support","areaServed":"BR"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vocês atendem Barreiras, LEM e Juazeiro?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todo o estado da Bahia: Barreiras, Luís Eduardo Magalhães, Juazeiro, Feira de Santana, Irecê, Bom Jesus da Lapa, região Sisaleira e Extremo Sul."}},{"@type":"Question","name":"Quais pragas mais comuns no Oeste Baiano?","acceptedAnswer":{"@type":"Answer","text":"Mosca-branca, pulgões, percevejos, tripes, lagartas (Spodoptera), ácaro-rajado, psilídeo dos citros e mosca-das-frutas em manga e uva."}},{"@type":"Question","name":"Quais produtos funcionam bem no clima da Bahia?","acceptedAnswer":{"@type":"Answer","text":"Fitoneem (óleo de neem), Takotrop e Bioolimpo (biológicos de controle) e Nutri Completo (nutrição foliar com algas + aminoácidos)."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Soluções AgroForte para a Bahia","itemListElement":[{"@type":"Product","name":"Óleo de Neem — Fitoneem","url":"https://innovetecnologias.com.br/produtos/fitoneem.html"},{"@type":"Product","name":"Takotrop (Biológico)","url":"https://innovetecnologias.com.br/produtos/takotrop.html"},{"@type":"Product","name":"Bioolimpo (Biológico)","url":"https://innovetecnologias.com.br/produtos/bioolimpo.html"},{"@type":"Product","name":"Nutri Completo","url":"https://innovetecnologias.com.br/produtos/nutri-completo.html"}]}</script>
 
   <style>
     :root{
@@ -58,7 +27,7 @@
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* HEADER padrão (igual ao site) */
+    /* HEADER padrão */
     header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);
       backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
     .head{display:grid;gap:8px;align-items:center;padding:6px 0;
@@ -115,9 +84,8 @@
 </head>
 <body>
 
-  <!-- WhatsApp flutuante -->
-  <a class="zap-float" aria-label="WhatsApp"
-     href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Sou%20da%20Bahia%20e%20quero%20orienta%C3%A7%C3%A3o%20para%20minha%20lavoura.">
+  <!-- WhatsApp flutuante -> obrigado-bahia.html -->
+  <a class="zap-float" aria-label="WhatsApp" href="/obrigado-bahia.html">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
       <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3z"/>
     </svg>
@@ -126,17 +94,17 @@
   <!-- HEADER -->
   <header>
     <div class="wrap head">
-      <a class="brand" href="../index.html" aria-label="Página inicial">
-        <img id="logoAgf" src="../agroforte/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
+      <a class="brand" href="/index.html" aria-label="Página inicial">
+        <img id="logoAgf" src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
       </a>
       <nav class="nav" aria-label="Principal">
-        <a class="nav-btn" href="../index.html">Página Inicial</a>
-        <a class="nav-btn" href="../agroforte/produtos/index.html">Produtos</a>
-        <a class="nav-btn" href="../agroforte/quem-somos.html">Quem Somos</a>
+        <a class="nav-btn" href="/index.html">Página Inicial</a>
+        <a class="nav-btn" href="/produtos/index.html">Produtos</a>
+        <a class="nav-btn" href="/quem-somos.html">Quem Somos</a>
       </nav>
       <div class="actions">
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
-        <a class="wa-circle" href="https://wa.me/5517991405464?text=Sou%20da%20Bahia%20e%20quero%20atendimento."></a>
+        <a class="wa-circle" href="/obrigado-bahia.html" aria-label="Abrir WhatsApp"></a>
       </div>
     </div>
   </header>
@@ -144,7 +112,7 @@
   <main class="wrap">
     <section class="hero">
       <h1>AgroForte na Bahia</h1>
-      <p>Atendimento forte em <b>Barreiras</b>, <b>Luís Eduardo Magalhães (LEM)</b>, <b>Juazeiro</b>, <b>Feira de Santana</b>, <b>Irecê</b> e <b>Bom Jesus da Lapa</b>. Soluções para <b>maracujá</b>, <b>manga</b>, <b>uva</b>, <b>citros</b>, <b>soja</b> e <b>hortaliças</b> com biológicos de controle, óleo de neem e nutrição foliar de alto desempenho.</p>
+      <p>Atendimento forte em <b>Barreiras</b>, <b>Luís Eduardo Magalhães (LEM)</b>, <b>Juazeiro</b>, <b>Feira de Santana</b>, <b>Irecê</b> e <b>Bom Jesus da Lapa</b>. Soluções para <b>maracujá</b>, <b>manga</b>, <b>uva</b>, <b>citros</b>, <b>soja</b> e <b>hortaliças</b> com biológicos de controle, óleo de neem e nutrição foliar.</p>
     </section>
 
     <section class="section">
@@ -168,8 +136,8 @@
       <h2 class="h2">Soluções AgroForte para a Bahia</h2>
       <div class="grid">
         <article class="card">
-          <a href="../agroforte/produtos/fitoneem.html" aria-label="Fitoneem — Óleo de Neem">
-            <img id="imgFit" src="../agroforte/img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem — Óleo de Neem">
+          <a href="/produtos/fitoneem.html" aria-label="Fitoneem — Óleo de Neem">
+            <img id="imgFit" src="/img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem — Óleo de Neem">
           </a>
           <div class="pad">
             <h3>Óleo de Neem — Fitoneem</h3>
@@ -178,8 +146,8 @@
         </article>
 
         <article class="card">
-          <a href="../agroforte/produtos/takotrop.html" aria-label="Takotrop (Biológico)">
-            <img id="imgTako" src="../agroforte/img/produtos/takotrop.webp" alt="Takotrop — Biológico">
+          <a href="/produtos/takotrop.html" aria-label="Takotrop (Biológico)">
+            <img id="imgTako" src="/img/produtos/takotrop.webp" alt="Takotrop — Biológico">
           </a>
           <div class="pad">
             <h3>Takotrop</h3>
@@ -188,8 +156,8 @@
         </article>
 
         <article class="card">
-          <a href="../agroforte/produtos/bioolimpo.html" aria-label="Bioolimpo (Biológico)">
-            <img id="imgBio" src="../agroforte/img/produtos/bioolimpo.webp" alt="Bioolimpo — Biológico">
+          <a href="/produtos/bioolimpo.html" aria-label="Bioolimpo (Biológico)">
+            <img id="imgBio" src="/img/produtos/bioolimpo.webp" alt="Bioolimpo — Biológico">
           </a>
           <div class="pad">
             <h3>Bioolimpo</h3>
@@ -198,12 +166,12 @@
         </article>
 
         <article class="card">
-          <a href="../agroforte/produtos/nutri-completo.html" aria-label="Nutri Completo">
-            <img id="imgNutri" src="../agroforte/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — Nutrição foliar">
+          <a href="/produtos/nutri-completo.html" aria-label="Nutri Completo">
+            <img id="imgNutri" src="/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — Nutrição foliar">
           </a>
           <div class="pad">
             <h3>Nutri Completo</h3>
-            <p class="mini">Macros, micros, <b>algas</b> e <b>aminoácidos</b>. Gera vigor, melhora a <b>florada</b>, o <b>pegamento</b> e a <b>produtividade</b> em todas as culturas.</p>
+            <p class="mini">Macros, micros, <b>algas</b> e <b>aminoácidos</b>. Vigor, melhor <b>florada</b> e <b>produtividade</b> em todas as culturas.</p>
           </div>
         </article>
       </div>
@@ -214,11 +182,11 @@
       <div class="cols">
         <div class="card pad">
           <h3>Maracujá e Manga (LEM / Juazeiro)</h3>
-          <p>Iniciar com <a href="../agroforte/produtos/fitoneem.html">Fitoneem</a> como base, associado a <a href="../agroforte/produtos/bioolimpo.html">Bioolimpo</a> em alta pressão de pragas. Reforçar vigor com <a href="../agroforte/produtos/nutri-completo.html">Nutri Completo</a> no pré-floral e pós-florada.</p>
+          <p>Base com <a href="/produtos/fitoneem.html">Fitoneem</a> e <a href="/produtos/bioolimpo.html">Bioolimpo</a> em alta pressão. Reforçar vigor com <a href="/produtos/nutri-completo.html">Nutri Completo</a> no pré-floral e pós-florada.</p>
         </div>
         <div class="card pad">
           <h3>Soja e Hortaliças (Barreiras / Oeste Baiano)</h3>
-          <p>Para picos de insetos, posicionar <a href="../agroforte/produtos/takotrop.html">Takotrop</a> e rotação com <a href="../agroforte/produtos/bioolimpo.html">Bioolimpo</a>. Manter <a href="../agroforte/produtos/fitoneem.html">Fitoneem</a> como suporte antialimentar/repelente. Foliar com <a href="../agroforte/produtos/nutri-completo.html">Nutri Completo</a>.</p>
+          <p>Picos de insetos: <a href="/produtos/takotrop.html">Takotrop</a> em rotação com <a href="/produtos/bioolimpo.html">Bioolimpo</a>. Suporte com <a href="/produtos/fitoneem.html">Fitoneem</a>. Foliar com <a href="/produtos/nutri-completo.html">Nutri Completo</a>.</p>
         </div>
       </div>
     </section>
@@ -254,8 +222,8 @@
   <footer>
     <div class="wrap foot">
       <div>
-        <a class="nav-btn" href="../index.html">Página Inicial</a>
-        <a class="nav-btn" href="../agroforte/produtos/index.html">Ver Produtos</a>
+        <a class="nav-btn" href="/index.html">Página Inicial</a>
+        <a class="nav-btn" href="/produtos/index.html">Ver Produtos</a>
       </div>
       <a class="tel" href="tel:+5517991405464">(17) 99140-5464</a>
       <small>© AgroForte — Soluções Biológicas e Nutricionais para a Bahia.</small>
@@ -263,7 +231,7 @@
   </footer>
 
   <script>
-    // Enviar comentário para o WhatsApp
+    // Form -> obrigado-bahia.html (tracking + redireciona pro Whats)
     function goZap(e){
       e.preventDefault();
       const nome=(document.getElementById('nome').value||'').trim();
@@ -271,32 +239,25 @@
       const msg=(document.getElementById('mensagem').value||'').trim();
       const texto =
         `Olá, equipe AgroForte (Bahia)! Quero atendimento rápido pelo WhatsApp.\n`+
-        `• Nome: ${nome||'—'}\n`+
-        `• Assunto: ${assunto||'—'}\n`+
-        `• Mensagem: ${msg||'—'}\n\n`+
-        `Por favor, direcionar meu contato ao consultor Sandro. Obrigado!`;
-      window.location.href = `https://wa.me/5517991405464?text=${encodeURIComponent(texto)}`;
+        `• Nome: ${nome||'—'}\n• Assunto: ${assunto||'—'}\n• Mensagem: ${msg||'—'}\n\n`+
+        `Direcionar ao consultor Sandro.`;
+      // passa a mensagem via query para a /obrigado-bahia.html (se quiser usar)
+      location.href = `/obrigado-bahia.html?msg=${encodeURIComponent(texto)}`;
       return false;
     }
 
-    // Fallbacks de imagem para não quebrar
+    // Fallbacks de imagem (usa caminhos RAIZ /img/produtos/)
     function fb(el, arr){ if(!el) return; let i=0; el.onerror=function(){ i++; if(i<arr.length){ el.src=arr[i]; } else { el.onerror=null; } }; }
     fb(document.getElementById('logoAgf'), [
-      '../agroforte/img/produtos/logooficialfundoverde.webp',
-      '../agroforte/img/produtos/logoficialfundoverde.webp',
-      '../agroforte/img/produtos/logo-oficial-fundo-verde.png',
-      '../agroforte/img/produtos/logooficial.webp'
+      '/img/produtos/logooficialfundoverde.webp',
+      '/img/produtos/logoficialfundoverde.webp',
+      '/img/produtos/logo-oficial-fundo-verde.png',
+      '/img/produtos/logooficial.webp'
     ]);
-    fb(document.getElementById('imgFit'), [
-      '../agroforte/img/produtos/fitoneem-fundo-branco.webp',
-      '../agroforte/img/produtos/fitoneem.webp'
-    ]);
-    fb(document.getElementById('imgTako'), ['../agroforte/img/produtos/takotrop.webp']);
-    fb(document.getElementById('imgBio'), ['../agroforte/img/produtos/bioolimpo.webp']);
-    fb(document.getElementById('imgNutri'), [
-      '../agroforte/img/produtos/nutri-completo-fundo-branco.webp',
-      '../agroforte/img/produtos/nutricompleto.webp'
-    ]);
+    fb(document.getElementById('imgFit'), ['/img/produtos/fitoneem-fundo-branco.webp','/img/produtos/fitoneem.webp']);
+    fb(document.getElementById('imgTako'), ['/img/produtos/takotrop.webp']);
+    fb(document.getElementById('imgBio'), ['/img/produtos/bioolimpo.webp']);
+    fb(document.getElementById('imgNutri'), ['/img/produtos/nutri-completo-fundo-branco.webp','/img/produtos/nutricompleto.webp']);
   </script>
 </body>
 </html>
