@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>AgroForte na Bahia | Maracujá, Manga, Uva, Citros, Soja — Nutrição e Biológicos</title>
-  <meta name="description" content="AgroForte na Bahia: soluções para maracujá, manga, uva, citros, hortaliças e soja nas regiões de Barreiras, Luís Eduardo Magalhães (LEM) e Juazeiro. Fitoneem (óleo de neem), Takotrop, Bioolimpo e Nutri Completo. WhatsApp (17) 99140-5464."/>
-  <link rel="canonical" href="https://innovetecnologias.com.br/agroforte/bahia/"/>
+  <title>AgroForte na Bahia | Maracujá, Manga, Uva, Citros, Soja — Biológicos, Neem e Nutrição Foliar</title>
+  <meta name="description" content="AgroForte na Bahia: soluções em nutrição foliar, biológicos e óleo de neem para maracujá, manga, uva, citros, soja e hortaliças nas regiões de Barreiras, Luís Eduardo Magalhães (LEM) e Juazeiro. Atendimento via WhatsApp (17) 99140-5464."/>
+  <link rel="canonical" href="https://innovetecnologias.com.br/bahia/"/>
 
-  <!-- Structured Data: Organization + FAQ + Reviews -->
+  <!-- Estrutura SEO -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -18,26 +18,15 @@
     "contactPoint":[{"@type":"ContactPoint","telephone":"+55-17-99140-5464","contactType":"customer support","areaServed":"BR"}]
   }
   </script>
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {"@type":"Question","name":"Vocês atendem Barreiras, LEM e Juazeiro?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todo o Oeste da Bahia e o Vale do São Francisco, com envio para fazendas e pomares."}},
-      {"@type":"Question","name":"O que usar contra mosca-branca e pulgões no maracujá e nas hortaliças?","acceptedAnswer":{"@type":"Answer","text":"Fitoneem (óleo de neem) e os biológicos Takotrop e Bioolimpo formam um manejo eficiente e seletivo."}},
-      {"@type":"Question","name":"Nutri Completo serve para uva, manga e citros?","acceptedAnswer":{"@type":"Answer","text":"Sim. É foliar versátil com macro/micronutrientes, algas e aminoácidos — indicado para videiras, mangueiras e citros."}}
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"url":"https://innovetecnologias.com.br/agroforte/produtos/fitoneem.html","name":"Óleo de Neem — Fitoneem"},
-      {"@type":"ListItem","position":2,"url":"https://innovetecnologias.com.br/agroforte/produtos/takotrop.html","name":"Takotrop"},
-      {"@type":"ListItem","position":3,"url":"https://innovetecnologias.com.br/agroforte/produtos/bioolimpo.html","name":"Bioolimpo"},
-      {"@type":"ListItem","position":4,"url":"https://innovetecnologias.com.br/agroforte/produtos/nutri-completo.html","name":"Nutri Completo"}
+      {"@type":"Question","name":"A AgroForte entrega produtos na Bahia?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendemos todo o estado da Bahia — Barreiras, Luís Eduardo Magalhães (LEM), Juazeiro, Feira de Santana, Irecê, Bom Jesus da Lapa e demais regiões."}},
+      {"@type":"Question","name":"Quais as principais pragas nas lavouras baianas?","acceptedAnswer":{"@type":"Answer","text":"Mosca-branca, pulgões, percevejos, lagartas e ácaros afetam maracujá, manga, soja, citros e hortaliças na Bahia."}},
+      {"@type":"Question","name":"Quais soluções a AgroForte indica para o clima do Oeste Baiano?","acceptedAnswer":{"@type":"Answer","text":"Fitoneem (óleo de neem), Takotrop e Bioolimpo (biológicos de controle) e Nutri Completo (nutrição foliar com algas e aminoácidos)."}}
     ]
   }
   </script>
@@ -46,235 +35,130 @@
     :root{
       --bg:#0e5b36; --bg2:#094f2d; --surface:#0b3e26; --brand:#15c15c;
       --ink:#0b1f14; --white:#fff; --muted:#cfead9; --ring:#9ae6b4;
-      --shadow:0 10px 24px rgba(0,0,0,.18); --radius:16px; --max:1100px;
+      --shadow:0 10px 24px rgba(0,0,0,.18); --max:1100px;
       --zap:#25D366; --zap-border:#1DB954;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
-    body{
-      color:var(--white);
-      background:linear-gradient(180deg,var(--bg),var(--bg2));
-      font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
-      overflow-x:hidden;
-    }
+    body{color:var(--white);background:linear-gradient(180deg,var(--bg),var(--bg2));
+      font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;overflow-x:hidden}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
-
-    /* ====== HEADER (padrão) ====== */
-    header{
-      position:sticky;top:0;z-index:60;
-      background:rgba(9,79,45,.96);
-      backdrop-filter:saturate(140%) blur(6px);
-      border-bottom:1px solid rgba(255,255,255,.08)
-    }
-    .head{
-      display:grid;align-items:center;gap:8px;
-      grid-template-columns:auto 1fr auto;
-      grid-template-areas:"brand nav actions";
-      padding:6px 0;
-    }
-    .brand{grid-area:brand;display:flex;align-items:center;gap:10px;min-width:0}
-    .brand img{width:180px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    .brand strong{font-size:18px;letter-spacing:.2px;white-space:nowrap}
-    .nav{grid-area:nav;display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;min-width:0}
-    .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap}
-    .nav-btn:hover{background:rgba(255,255,255,.12)}
-    .actions{grid-area:actions;display:flex;align-items:center;gap:8px;min-width:0}
-    .tel{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900;font-size:15px;white-space:nowrap}
-    .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;background:var(--zap);border:1px solid var(--zap-border);color:#fff}
-    .wa-circle svg{display:block}
+    header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);
+      backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .head{display:grid;align-items:center;gap:8px;
+      grid-template-columns:auto 1fr auto;grid-template-areas:"brand nav actions";padding:6px 0}
+    .brand img{width:180px;height:auto}
+    .nav{display:flex;gap:8px;justify-content:center}
+    .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);font-weight:800;font-size:14px}
+    .actions{display:flex;align-items:center;gap:8px}
+    .tel{padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);font-weight:800}
+    .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+      background:var(--zap);border:1px solid var(--zap-border)}
     @media (max-width:720px){
-      .head{grid-template-columns:1fr auto;grid-template-areas:"brand actions" "nav nav";padding:4px 0;}
-      .brand img{width:130px} .brand strong{display:none}
-      .nav{justify-content:flex-start;gap:6px}
+      .brand img{width:130px}
       .nav-btn{padding:6px 10px;font-size:13px}
-      .tel{padding:4px 8px;font-size:14px}
+      .tel{font-size:13px;padding:4px 8px}
       .wa-circle{width:34px;height:34px}
     }
-
-    /* ====== SEÇÕES ====== */
     .hero{padding:20px 0 6px}
-    .hero h1{margin:0 0 8px;font-size:34px;line-height:1.1;font-weight:900;letter-spacing:-.3px}
-    .hero p{margin:0;color:var(--muted);max-width:85ch}
-    @media (max-width:720px){ .hero h1{font-size:26px} }
-
+    .hero h1{margin:0 0 8px;font-size:32px;font-weight:900}
+    .hero p{margin:0;color:var(--muted)}
     .section{padding:20px 0}
-    .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
     .h2{margin:6px 0 14px;font-size:26px}
-
-    /* GRID de produtos */
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:620px){ .grid{grid-template-columns:1fr} }
-    .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
-    .card a{display:block}
-    .card img{width:100%;height:clamp(190px,24vw,260px);object-fit:contain;background:#fff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .card{background:var(--surface);border-radius:14px;overflow:hidden;
+      border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow)}
+    .card img{background:#fff;object-fit:contain;height:220px}
     .pad{padding:12px}
-    .card h3{margin:0 0 6px;font-size:16px}
-    .mini{margin:0;color:#ddf0e6;font-size:14px}
-
-    details{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px 14px}
-    summary{cursor:pointer;font-weight:800}
-    .faq{display:grid;gap:10px}
-
-    .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px}
-    .star{color:#ffd166}
-
+    .mini{color:#d7efe4;font-size:14px;margin:0}
     footer{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;color:#d7efe4}
-    .foot{display:grid;gap:8px}
-    .foot-cta{display:flex;gap:8px;flex-wrap:wrap}
-
-    /* Bolinha WhatsApp flutuante */
-    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70}
+    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;
+      border-radius:50%;display:grid;place-items:center;background:var(--zap);
+      color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70}
   </style>
 </head>
 <body>
 
-  <!-- Bolinha do WhatsApp (flutuante) -->
-  <a class="zap-float" aria-label="WhatsApp"
-     href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20na%20Bahia.%20Diga%20sua%20cultura%20(%20maracuj%C3%A1,%20manga,%20uva,%20citros,%20soja%20)%20e%20cidade.">
-    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
-      <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
-    </svg>
-  </a>
+  <!-- WhatsApp flutuante -->
+  <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Sou%20da%20Bahia%20e%20quero%20orienta%C3%A7%C3%A3o%20para%20minha%20lavoura."
+     aria-label="WhatsApp AgroForte"><svg width="26" height="26" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3z"/></svg></a>
 
-  <!-- HEADER -->
   <header>
     <div class="wrap head">
-      <a class="brand" href="../index.html" aria-label="Página inicial">
-        <img id="logoAgf" src="../img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
-        <strong>AgroForte</strong>
-      </a>
-      <nav class="nav" aria-label="Principal">
+      <a class="brand" href="../index.html"><img src="../agroforte/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/></a>
+      <nav class="nav">
         <a class="nav-btn" href="../index.html">Página Inicial</a>
-        <a class="nav-btn" href="../produtos/index.html">Produtos</a>
-        <a class="nav-btn" href="../quem-somos.html">Quem Somos</a>
+        <a class="nav-btn" href="../agroforte/produtos/index.html">Produtos</a>
+        <a class="nav-btn" href="../agroforte/quem-somos.html">Quem Somos</a>
       </nav>
       <div class="actions">
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
-        <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20sou%20da%20Bahia%20e%20quero%20atendimento%20AgroForte." aria-label="WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3z"/></svg>
-        </a>
+        <a class="wa-circle" href="https://wa.me/5517991405464?text=Sou%20da%20Bahia%20e%20quero%20atendimento."></a>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <!-- HERO -->
     <section class="hero">
       <h1>AgroForte na Bahia</h1>
-      <p>Atendemos **Barreiras, Luís Eduardo Magalhães (LEM), Juazeiro e região** com nutrição foliar e biológicos que funcionam no campo. Culturas foco: <strong>maracujá, manga, uva, citros, hortaliças e soja</strong>. Principais pragas regionais: <em>mosca-branca</em>, <em>pulgões</em>, <em>tripes</em>, <em>ácaro-rajado</em>, <em>percevejos</em>, <em>cigarrinhas</em> e <em>bicho-mineiro</em> (café).</p>
+      <p>Atuamos nas principais regiões agrícolas da Bahia — <strong>Barreiras</strong>, <strong>Luís Eduardo Magalhães (LEM)</strong>, <strong>Juazeiro</strong>, <strong>Feira de Santana</strong>, <strong>Irecê</strong> e <strong>Bom Jesus da Lapa</strong> — oferecendo produtos de alto desempenho para culturas de maracujá, manga, uva, citros, soja e hortaliças.</p>
     </section>
 
-    <!-- Produtos (com imagens clicáveis) -->
-    <section class="section" aria-labelledby="prod-bahia">
-      <p class="kicker">Soluções que entregam resultado</p>
-      <h2 class="h2" id="prod-bahia">Produtos AgroForte para a Bahia</h2>
+    <section class="section">
+      <h2 class="h2">Culturas e Principais Pragas da Bahia</h2>
+      <p>O clima quente e o manejo intensivo exigem soluções eficazes e sustentáveis. Confira os principais desafios enfrentados pelos produtores baianos:</p>
+      <ul>
+        <li><b>Maracujá:</b> mosca-branca, pulgões, tripes, ácaros e fungos de solo.</li>
+        <li><b>Manga:</b> mosca-das-frutas, cochonilhas e oídio.</li>
+        <li><b>Uva:</b> oídio, míldio e tripes.</li>
+        <li><b>Citros:</b> psilídeo (Huanglongbing), pulgões e ácaros.</li>
+        <li><b>Soja:</b> percevejos, lagartas, ferrugem asiática e mosca-branca.</li>
+        <li><b>Hortaliças:</b> mosca-minadora, pulgões e lagarta-do-cartucho.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="h2">Soluções AgroForte Recomendadas</h2>
       <div class="grid">
         <article class="card">
-          <a href="../produtos/fitoneem.html" aria-label="Óleo de Neem — Fitoneem">
-            <img id="imgFit" src="../img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem — óleo de neem"/>
-          </a>
-          <div class="pad">
-            <h3>Óleo de Neem — Fitoneem</h3>
-            <p class="mini">Antialimentar, repelente e regulador de crescimento. Ação sobre mosca-branca, pulgões, tripes e mais.</p>
-          </div>
+          <a href="../agroforte/produtos/fitoneem.html"><img src="../agroforte/img/produtos/fitoneem-fundo-branco.webp" alt="Fitoneem - Óleo de Neem"></a>
+          <div class="pad"><h3>Fitoneem — Óleo de Neem</h3><p class="mini">Eficaz contra pulgões, mosca-branca e tripes. Atua por contato e ingestão, seguro para uso em agricultura orgânica.</p></div>
         </article>
-
         <article class="card">
-          <a href="../produtos/takotrop.html" aria-label="Takotrop">
-            <img id="imgTako" src="../img/produtos/takotrop.webp" alt="Takotrop — biológico Pseudomonas"/>
-          </a>
-          <div class="pad">
-            <h3>Takotrop</h3>
-            <p class="mini">Pseudomonas (tecnologia D.O.P). Triplo modo de ação: contato, ingestão e absorção.</p>
-          </div>
+          <a href="../agroforte/produtos/takotrop.html"><img src="../agroforte/img/produtos/takotrop.webp" alt="Takotrop - Biológico"></a>
+          <div class="pad"><h3>Takotrop</h3><p class="mini">Bactéria Pseudomonas com triplo modo de ação. Ideal para soja, citros e maracujá no Oeste Baiano.</p></div>
         </article>
-
         <article class="card">
-          <a href="../produtos/bioolimpo.html" aria-label="Bioolimpo">
-            <img id="imgBio" src="../img/produtos/bioolimpo.webp" alt="Bioolimpo — Beauveria + Metarhizium"/>
-          </a>
-          <div class="pad">
-            <h3>Bioolimpo</h3>
-            <p class="mini">Beauveria + Metarhizium para amplo espectro. Excelente ajuste regional para hortaliças e frutíferas.</p>
-          </div>
+          <a href="../agroforte/produtos/bioolimpo.html"><img src="../agroforte/img/produtos/bioolimpo.webp" alt="Bioolimpo - Biológico"></a>
+          <div class="pad"><h3>Bioolimpo</h3><p class="mini">Combinação Beauveria + Metarhizium. Controle natural de lagartas e percevejos em soja e hortaliças.</p></div>
         </article>
-
         <article class="card">
-          <a href="../produtos/nutri-completo.html" aria-label="Nutri Completo">
-            <img id="imgNutri" src="../img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo — nutrição foliar"/>
-          </a>
-          <div class="pad">
-            <h3>Nutri Completo</h3>
-            <p class="mini">Macros, micros, algas e aminoácidos — suporte do crescimento à frutificação em manga, uva e citros.</p>
-          </div>
+          <a href="../agroforte/produtos/nutri-completo.html"><img src="../agroforte/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutri Completo"></a>
+          <div class="pad"><h3>Nutri Completo</h3><p class="mini">Fertilizante foliar com algas, aminoácidos e micronutrientes. Favorece floração, pegamento e enchimento de frutos.</p></div>
         </article>
       </div>
     </section>
 
-    <!-- FAQ com foco Bahia -->
     <section class="section">
-      <p class="kicker">Perguntas frequentes</p>
-      <h2 class="h2">Dúvidas rápidas — região Bahia</h2>
-      <div class="faq">
-        <details><summary>Funciona para maracujá na região de LEM e Barreiras?</summary><div>Sim. Fitoneem e os biológicos (Takotrop/Bioolimpo) são escolhas seguras e eficientes para maracujá, com bons resultados em mosca-branca e tripes.</div></details>
-        <details><summary>Para uva e manga no Vale do São Francisco?</summary><div>Nutri Completo é a base da condução foliar e, quando necessário, associamos Fitoneem e Takotrop em janelas de maior pressão de pragas.</div></details>
-        <details><summary>Vocês enviam para a minha cidade?</summary><div>Enviamos para toda a Bahia. Fale no WhatsApp, informe <strong>cultura</strong> e <strong>município</strong> que montamos o melhor manejo.</div></details>
-      </div>
-    </section>
-
-    <!-- Depoimentos (SEO + prova social) -->
-    <section class="section" aria-labelledby="dep">
-      <p class="kicker">Resultados no campo</p>
-      <h2 class="h2" id="dep">O que produtores da Bahia dizem</h2>
-
-      <div class="review"><strong>Produtor de Maracujá — Barreiras/BA</strong> <span class="star">★★★★★</span><br>
-        “Reduziu muito a pressão de mosca-branca com o <b>Fitoneem</b> e <b>Takotrop</b> em sequência. Atendimento rápido e orientação certeira.”</div>
-
-      <div class="review"><strong>Uva de mesa — Juazeiro/BA</strong> <span class="star">★★★★★</span><br>
-        “Com <b>Nutri Completo</b> a brotação veio uniforme e a qualidade de cacho melhorou. Manejo biológico manteve baixas as infestações.”</div>
-
-      <div class="review"><strong>Manga Palmer — LEM/BA</strong> <span class="star">★★★★★</span><br>
-        “O <b>Bioolimpo</b> entrou bem no nosso calendário. Integramos com Fitoneem e mantivemos a área equilibrada.”</div>
+      <h2 class="h2">Depoimentos de Produtores Baianos</h2>
+      <ul>
+        <li>“Uso o <b>Fitoneem</b> em <b>maracujá</b> aqui em LEM. Reduzi muito a mosca-branca e o pulgão sem fitotoxicidade.”</li>
+        <li>“O <b>Takotrop</b> estabilizou o controle da cigarrinha-das-pastagens na soja em Barreiras.”</li>
+        <li>“Em Juazeiro, <b>Bioolimpo</b> tem dado excelente resultado contra lagartas e percevejos.”</li>
+        <li>“O <b>Nutri Completo</b> deu uma resposta rápida na manga Palmer — folhas mais verdes e floração uniforme.”</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <div class="wrap foot">
-      <div class="foot-cta">
-        <a class="nav-btn" href="../index.html">Voltar para Página Inicial</a>
-        <a class="nav-btn" href="../produtos/index.html">Ver todos os produtos</a>
-      </div>
-      <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
-      <small>© AgroForte — Atendimento Bahia. Todos os direitos reservados.</small>
+    <div class="wrap">
+      <a class="tel" href="tel:+5517991405464">(17) 99140-5464</a>
+      <p>© 2025 AgroForte Fertilizantes — Soluções Biológicas e Nutricionais para a Bahia.</p>
     </div>
   </footer>
-
-  <!-- Fallbacks para garantir abertura das imagens -->
-  <script>
-    function fallbackChain(el, paths){
-      if(!el) return; let i=0;
-      el.onerror=function(){ i++; if(i<paths.length){ el.src=paths[i]; } else { el.onerror=null; } };
-      el.src=el.src;
-    }
-    fallbackChain(document.getElementById('logoAgf'),[
-      '../img/produtos/logooficialfundoverde.webp',
-      '../img/produtos/logoficialfundoverde.webp',
-      '../img/produtos/logo-oficial-fundo-verde.png',
-      '../img/produtos/logooficial.webp'
-    ]);
-    fallbackChain(document.getElementById('imgFit'),[
-      '../img/produtos/fitoneem-fundo-branco.webp',
-      '../img/produtos/fitoneem.webp'
-    ]);
-    fallbackChain(document.getElementById('imgTako'),['../img/produtos/takotrop.webp']);
-    fallbackChain(document.getElementById('imgBio'),['../img/produtos/bioolimpo.webp']);
-    fallbackChain(document.getElementById('imgNutri'),[
-      '../img/produtos/nutri-completo-fundo-branco.webp',
-      '../img/produtos/nutricompleto.webp'
-    ]);
-  </script>
 </body>
 </html>
