@@ -1,10 +1,5 @@
-# AgroForte — regras para rastreadores
+# Robots.txt — innovetecnologias.com.br
 User-agent: *
 Allow: /
 
-# Bloqueios comuns (se não existir, não há problema)
-Disallow: /agroforte/tmp/
-Disallow: /agroforte/private/
-
-# Local do sitemap
-Sitemap: https://innovetecnologias.com.br/agroforte/sitemap.xml
+Sitemap: https://innovetecnologias.com.br/sitemap.xml
