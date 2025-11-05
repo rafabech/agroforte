@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>AgroForte | Fertilizantes, Neem e Biológicos — WhatsApp (17) 99140-5464</title>
-  <meta name="description" content="AgroForte: nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp (17) 99140-5464 e envio para todo o Brasil."/>
+  <title>AgroForte | Fertilizantes, Neem e Biológicos — Frete grátis • Envio para todo o Brasil — WhatsApp (17) 99140-5464</title>
+  <meta name="description" content="AgroForte: nutrição foliar, proteção com neem e biológicos. Frete grátis com envio para todo o Brasil e atendimento rápido no WhatsApp (17) 99140-5464."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/"/>
+  <link rel="icon" href="./img/produtos/logo-oficial-fundo-verde.png" type="image/png"/>
 
   <!-- SEO (Organization, WebSite, FAQ, AggregateRating) -->
   <script type="application/ld+json">
@@ -37,6 +38,7 @@
     "@type":"FAQPage",
     "mainEntity":[
       {"@type":"Question","name":"Vocês enviam para minha cidade?","acceptedAnswer":{"@type":"Answer","text":"Sim. Entregamos para todo o Brasil. Envie seu CEP no WhatsApp para calcular frete e prazo."}},
+      {"@type":"Question","name":"O frete é grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim, oferecemos frete grátis com envio para todo o Brasil em todos os produtos AgroForte."}},
       {"@type":"Question","name":"O que usar contra mosca-branca, pulgões e lagartas?","acceptedAnswer":{"@type":"Answer","text":"Indicamos biológicos (Takotrop, Bioolimpo) e óleo de neem (Fitoneem). Informe sua cultura que orientamos o melhor manejo."}},
       {"@type":"Question","name":"Nutri Completo serve para qualquer cultura?","acceptedAnswer":{"@type":"Answer","text":"Sim. Multiuso e seguro — auxilia do crescimento à produção. Orientamos época e forma de aplicação conforme sua cultura."}},
       {"@type":"Question","name":"Consigo falar com um agrônomo pelo WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Sim. Clique em qualquer botão do WhatsApp ou salve (17) 99140-5464 que nossa equipe atende rapidamente."}}
@@ -50,6 +52,7 @@
       --ink:#0b1f14; --white:#fff; --muted:#cfead9; --ring:#9ae6b4;
       --shadow:0 10px 24px rgba(0,0,0,.18); --radius:16px; --max:1100px;
       --zap:#25D366; --zap-border:#1DB954; --gold:#f2c94c;
+      --promo:#12d46e; --promo-ink:#073a22;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -62,6 +65,22 @@
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
+
+    /* ===== Promo bar (Frete grátis / Envio Brasil) ===== */
+    .promo{
+      position:sticky; top:0; z-index:70;
+      background:linear-gradient(90deg,var(--promo),#1ddf8a);
+      color:var(--promo-ink);
+      border-bottom:1px solid rgba(0,0,0,.08);
+      box-shadow:0 2px 10px rgba(0,0,0,.08);
+    }
+    .promo .pwrap{
+      max-width:var(--max); margin:auto; padding:8px 16px;
+      display:flex; align-items:center; justify-content:center; gap:10px; text-align:center;
+      font-weight:900; letter-spacing:.2px;
+    }
+    .promo b{white-space:nowrap}
+    .promo small{opacity:.9; font-weight:700}
 
     /* ================= HEADER ================= */
     header{
@@ -114,6 +133,7 @@
       .actions{gap:6px}
       .tel{padding:6px 10px;font-size:16px}
       .wa-circle{width:34px;height:34px}
+      .promo .pwrap{padding:8px 12px; font-size:14px}
     }
 
     /* ================= HERO ================= */
@@ -186,6 +206,14 @@
 </head>
 <body>
 
+  <!-- Faixa Promocional -->
+  <div class="promo" role="status" aria-live="polite">
+    <div class="pwrap">
+      <span>🚚</span>
+      <b>Frete grátis</b> <small>•</small> <b>Envio para todo o Brasil</b>
+    </div>
+  </div>
+
   <!-- Bolinha do WhatsApp (flutuante) -->
   <a class="zap-float" aria-label="WhatsApp"
      href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20atendimento%20r%C3%A1pido%20pelo%20WhatsApp.%20Assunto:%20(Informe)%20Produto:%20(Informe)%0APor%20favor,%20direcionar%20ao%20consultor%20Sandro.">
@@ -226,7 +254,7 @@
     <!-- HERO -->
     <section class="hero">
       <h1>Fertilizantes e soluções simples que funcionam no campo</h1>
-      <p>Nutrição foliar, proteção com neem e biológicos de controle. Atendimento rápido via WhatsApp e envio para todo o Brasil.</p>
+      <p>Nutrição foliar, proteção com neem e biológicos de controle. <b>Frete grátis</b> e <b>envio para todo o Brasil</b>. Atendimento rápido via WhatsApp.</p>
     </section>
 
     <!-- CATEGORIAS -->
