@@ -1,5 +1,57 @@
-# Robots.txt — innovetecnologias.com.br
+# ==============================
+# robots.txt — AgroForte | Innovet Tecnologias
+# Última atualização: 05/11/2025
+# ==============================
+
 User-agent: *
 Allow: /
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /uploads/
+Disallow: /scripts/
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /404.html
+Disallow: /*?*
 
+# Bloqueios específicos para bots agressivos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+# ==============================
+# Sitemap XML principal
+# ==============================
 Sitemap: https://innovetecnologias.com.br/sitemap.xml
+
+# ==============================
+# SEO e controle de indexação
+# ==============================
+# Permite indexar apenas as páginas e produtos oficiais
+Allow: /index.html
+Allow: /produtos/
+Allow: /blog/
+Allow: /quem-somos.html
+
+# Bloqueia duplicações e versões antigas
+Disallow: /old/
+Disallow: /backup/
+Disallow: /testes/
+Disallow: /versao-antiga/
+
+# ==============================
+# Observação
+# ==============================
+# Este arquivo garante que os motores de busca rastreiem
+# as páginas de produtos, blog e institucionais.
+# As imagens e scripts são bloqueados para reduzir consumo
+# de crawl budget e melhorar desempenho do SEO.
