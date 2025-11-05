@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Blog AgroForte — Nutrição de Plantas, Biológicos, Neem, Solo Vivo | Frete Grátis Brasil</title>
-  <meta name="description" content="Blog AgroForte: conteúdos técnicos sobre nutrição de plantas, leonardita, ácidos húmicos e fúlvicos, bioestimulantes de algas, óleo de neem, biológicos e manejo em campo e estufa. Frete grátis e envio para todo o Brasil."/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+  <title>Blog AgroForte — Nutrição de Plantas, Biológicos, Neem e Estufas | Frete Grátis Brasil</title>
+  <meta name="description" content="Reportagens técnicas e guias práticos sobre nutrição de plantas, leonardita (húmicos e fúlvicos), bioestimulantes de algas, óleo de neem e biológicos. Conteúdo profundo, linguagem jornalística e casos de campo. Frete grátis e envio para todo o Brasil."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/agroforte/blog/"/>
 
   <!-- Favicon -->
@@ -12,13 +12,13 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Blog AgroForte — Nutrição de Plantas, Biológicos, Neem, Solo Vivo"/>
-  <meta property="og:description" content="Guias definitivos: leonardita, húmicos/fúlvicos, bioestimulantes de algas, óleo de neem e biológicos. Frete grátis Brasil."/>
+  <meta property="og:title" content="Blog AgroForte — Nutrição de Plantas, Biológicos, Neem e Estufas"/>
+  <meta property="og:description" content="Jornalismo técnico no agro: leonardita, húmicos/fúlvicos, bioestimulantes de algas, neem e biológicos. Frete grátis Brasil."/>
   <meta property="og:url" content="https://innovetecnologias.com.br/agroforte/blog/"/>
   <meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
-  <!-- JSON-LD (WebSite + Blog + Breadcrumbs + FAQ stub) -->
+  <!-- JSON-LD (WebSite + Blog + Breadcrumbs) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -42,19 +42,7 @@
       "@type":"Organization",
       "name":"AgroForte Fertilizantes",
       "logo":{"@type":"ImageObject","url":"https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp"}
-    },
-    "blogPost":[
-      {"@type":"BlogPosting","headline":"Nutrição Solo Premium: como ativar o solo vivo",
-       "url":"https://innovetecnologias.com.br/agroforte/blog/#nutricao-solo-premium"},
-      {"@type":"BlogPosting","headline":"Leonardita na prática: húmicos e fúlvicos em alto nível",
-       "url":"https://innovetecnologias.com.br/agroforte/blog/#leonardita-na-pratica"},
-      {"@type":"BlogPosting","headline":"Bioestimulantes de algas (Ascophyllum nodosum): quando e por quê",
-       "url":"https://innovetecnologias.com.br/agroforte/blog/#algas-bioestimulantes"},
-      {"@type":"BlogPosting","headline":"Neem & Biológicos: controle e rotação inteligente",
-       "url":"https://innovetecnologias.com.br/agroforte/blog/#neem-e-biologicos"},
-      {"@type":"BlogPosting","headline":"Estufas e fertirrigação: condução fina para alta produtividade",
-       "url":"https://innovetecnologias.com.br/agroforte/blog/#estufas-e-fertirrigacao"}
-    ]
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -80,13 +68,15 @@
     body{
       color:var(--white);
       background:linear-gradient(180deg,var(--bg),var(--bg2));
-      font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
       overflow-x:hidden;
+      word-wrap:break-word; overflow-wrap:break-word;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
+    /* Header */
     header{
       position:sticky;top:0;z-index:50;
       background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);
@@ -100,67 +90,77 @@
     }
     .brand{grid-area:brand;display:flex;align-items:center;gap:10px;min-width:0}
     .brand img{width:160px;height:auto}
-    .nav{grid-area:nav;display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+    .nav{grid-area:nav;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;overflow:hidden}
     .nav-btn{padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.06);font-weight:800;font-size:14px}
     .nav-btn:hover{background:rgba(255,255,255,.12)}
-    .actions{grid-area:actions;display:flex;align-items:center;gap:8px}
-    .tel{padding:8px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;font-weight:900;background:rgba(255,255,255,.06)}
+    .actions{grid-area:actions;display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+    .tel{padding:8px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px;font-weight:900;background:rgba(255,255,255,.06);white-space:nowrap}
     .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--zap);border:1px solid var(--zap-border)}
+    @media (max-width:780px){
+      .head{grid-template-columns:1fr auto;grid-template-areas:"brand actions" "nav nav"}
+      .brand img{width:130px}
+      .nav{justify-content:flex-start}
+    }
+
+    /* Hero */
     .hero{padding:18px 0 12px}
     .hero h1{margin:0 0 8px;font-size:40px;line-height:1.06;font-weight:900;letter-spacing:-.3px}
     .sub{margin:0;color:var(--muted)}
     .badgebar{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
     .badge{background:var(--chip);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-weight:900;white-space:nowrap}
-    @media (max-width:780px){
-      .head{grid-template-columns:1fr auto;grid-template-areas:"brand actions" "nav nav"}
-      .brand img{width:130px}
-      .nav{justify-content:flex-start}
-      .hero h1{font-size:28px}
-    }
+    @media (max-width:780px){ .hero h1{font-size:28px} }
 
+    /* Sections */
     .section{padding:16px 0}
     .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
     .h2{margin:6px 0 12px;font-size:26px}
     .h3{margin:8px 0 6px;font-size:20px}
     .lead{color:#d9efe5;max-width:80ch}
 
-    .grid{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
-    @media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.grid{grid-template-columns:1fr}}
-
+    /* Cards grid — totalmente fluido no mobile */
+    .grid{
+      display:grid;gap:14px;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    }
     .card{
       background:var(--surface);border:1px solid rgba(255,255,255,.10);
       border-radius:14px;overflow:hidden;box-shadow:var(--shadow)
     }
     .card img{background:#fff;object-fit:cover;width:100%;height:180px}
     .pad{padding:12px}
-    .card .title{margin:0 0 6px;font-size:18px;font-weight:900}
+    .title{margin:0 0 6px;font-size:18px;font-weight:900}
     .meta{display:flex;gap:10px;flex-wrap:wrap;color:#cfead9;font-size:13px}
     .chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:4px 8px;border-radius:999px;font-weight:800}
+
+    /* Longform */
+    .article{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:14px;margin-top:10px}
     .prose p{margin:10px 0}
     .prose ul{padding-left:18px}
     .prose li{margin:6px 0}
-    .table{width:100%;border-collapse:separate;border-spacing:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:12px;overflow:hidden}
-    .table th,.table td{padding:10px;border-bottom:1px solid rgba(255,255,255,.08)}
-    .table th{background:rgba(255,255,255,.06);text-align:left}
+    .toc{display:flex;flex-wrap:wrap;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:10px}
+    .toc a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:999px;font-weight:800}
 
+    /* Tabelas e mídia — sem overflow horizontal */
+    .table-wrap{overflow:auto;-webkit-overflow-scrolling:touch}
+    .table{width:100%;min-width:620px;border-collapse:separate;border-spacing:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:12px}
+    .table th,.table td{padding:10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
+    .table th{background:rgba(255,255,255,.06)}
+
+    /* FAQ */
     .faq{display:grid;gap:10px}
     details{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px}
     summary{cursor:pointer;font-weight:900}
 
+    /* Footer */
     footer{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;color:#d7efe4;margin-top:14px}
     .foot{display:grid;gap:8px}
     .foot-cta{display:flex;gap:8px;flex-wrap:wrap}
 
+    /* WhatsApp flutuante */
     .zap-float{
       position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
       display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70
     }
-
-    /* blocos longform (ancoras) */
-    .article{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:14px;margin-top:10px}
-    .toc{display:flex;flex-wrap:wrap;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:10px}
-    .toc a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:999px;font-weight:800}
   </style>
 </head>
 <body>
@@ -182,8 +182,7 @@
         <a class="nav-btn" href="/index.html">Home</a>
         <a class="nav-btn" href="/produtos/index.html">Produtos</a>
         <a class="nav-btn" href="/quem-somos.html">Quem Somos</a>
-        <a class="nav-btn" href="/bahia/">Bahia</a>
-        <a class="nav-btn" href="/ceara/">Ceará</a>
+        <a class="nav-btn" href="/agroforte/blog/">Blog</a>
       </nav>
       <div class="actions">
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
@@ -200,259 +199,196 @@
   <main class="wrap">
     <!-- HERO -->
     <section class="hero">
-      <h1>Blog AgroForte — Conteúdo técnico para você produzir mais</h1>
-      <p class="sub">Guias práticos e avançados sobre <b>Nutrição Solo Premium</b>, <b>Bioestimulantes de Algas</b>, <b>Ácidos Húmicos e Fúlvicos</b>, <b>Neem</b> e <b>Biológicos</b>. <b>Frete grátis</b> e <b>envio para todo o Brasil</b> em todos os pedidos.</p>
+      <h1>Blog AgroForte — jornalismo técnico para produzir mais e melhor</h1>
+      <p class="sub">Reportagens, análises e guias práticos sobre <b>Nutrição Solo Premium</b>, <b>Bioestimulantes de Algas</b>, <b>Ácidos Húmicos e Fúlvicos</b>, <b>Neem</b> e <b>Biológicos</b>. <b>Frete grátis</b> e <b>envio para todo o Brasil</b> em todos os pedidos.</p>
       <div class="badgebar">
         <span class="badge">Frete Grátis Brasil</span>
         <span class="badge">Envio Rápido</span>
+        <span class="badge">Estufa e Campo</span>
         <span class="badge">Atendimento no WhatsApp</span>
-        <span class="badge">Compatível com Estufa e Campo</span>
       </div>
     </section>
 
-    <!-- Índice do Blog -->
+    <!-- Índice -->
     <section class="section">
-      <p class="kicker">Índice rápido</p>
+      <p class="kicker">Índice</p>
       <div class="toc">
-        <a href="#nutricao-solo-premium">Nutrição Solo Premium</a>
-        <a href="#leonardita-na-pratica">Leonardita (Húmicos & Fúlvicos)</a>
-        <a href="#algas-bioestimulantes">Bioestimulantes de Algas</a>
-        <a href="#neem-e-biologicos">Neem & Biológicos</a>
-        <a href="#estufas-e-fertirrigacao">Estufas e Fertirrigação</a>
-        <a href="#faq-blog">Perguntas Frequentes</a>
+        <a href="#solo-premium">Solo Premium</a>
+        <a href="#leonardita">Leonardita</a>
+        <a href="#algas">Bioestimulantes de Algas</a>
+        <a href="#neem-bio">Neem & Biológicos</a>
+        <a href="#estufa">Estufas e Fertirrigação</a>
+        <a href="#faq">FAQ</a>
       </div>
     </section>
 
-    <!-- Cards de matérias -->
+    <!-- Cards -->
     <section class="section">
-      <p class="kicker">Matérias em destaque</p>
+      <p class="kicker">Destaques</p>
       <div class="grid">
         <article class="card">
-          <a href="#nutricao-solo-premium">
-            <img src="/img/produtos/nutri-completo-fundo-branco.webp" alt="Nutrição Solo Premium"/>
+          <a href="#solo-premium">
+            <img src="/img/produtos/nutri-completo-fundo-branco.webp" alt="Solo Premium e raiz forte"/>
             <div class="pad">
-              <h3 class="title">Solo vivo, raiz forte e eficiência de adubação</h3>
-              <p class="meta">
-                <span class="chip">Leonardita</span>
-                <span class="chip">Húmicos & Fúlvicos</span>
-                <span class="chip">CTC</span>
-              </p>
-              <p class="lead">Como construir perfil, elevar CTC efetiva, reter água e aproveitar melhor NPK e micros.</p>
+              <h3 class="title">Solo vivo, raiz profunda e adubação eficiente</h3>
+              <p class="meta"><span class="chip">CTC</span><span class="chip">Húmicos & Fúlvicos</span><span class="chip">Retenção hídrica</span></p>
+              <p class="lead">Como ativar biologia e estrutura para colher mais mesmo sob estresse hídrico.</p>
             </div>
           </a>
         </article>
         <article class="card">
-          <a href="#algas-bioestimulantes">
+          <a href="#algas">
             <img src="/img/produtos/nutri-completo-fundo-branco.webp" alt="Bioestimulantes de algas"/>
             <div class="pad">
-              <h3 class="title">Ascophyllum nodosum: vigor, pegamento e °Brix</h3>
-              <p class="meta">
-                <span class="chip">Algas</span>
-                <span class="chip">Bioestímulo</span>
-                <span class="chip">Estufas</span>
-              </p>
-              <p class="lead">Fitormônios naturais, polissacarídeos e aminoácidos que mantêm dossel ativo e produtivo.</p>
+              <h3 class="title">Ascophyllum nodosum: vigor e °Brix</h3>
+              <p class="meta"><span class="chip">Algas</span><span class="chip">Fitormônios</span><span class="chip">Estufa</span></p>
+              <p class="lead">O papel dos polissacarídeos e aminoácidos para manter dossel ativo.</p>
             </div>
           </a>
         </article>
         <article class="card">
-          <a href="#neem-e-biologicos">
-            <img src="/img/produtos/fitoneem-fundo-branco.webp" alt="Neem & Biológicos"/>
+          <a href="#neem-bio">
+            <img src="/img/produtos/fitoneem-fundo-branco.webp" alt="Neem e biológicos"/>
             <div class="pad">
               <h3 class="title">Neem + Biológicos: rotação inteligente</h3>
-              <p class="meta">
-                <span class="chip">Neem</span>
-                <span class="chip">Biocontrole</span>
-                <span class="chip">Manejo</span>
-              </p>
-              <p class="lead">Antialimentar, repelência, regulação de crescimento e agentes biológicos complementares.</p>
+              <p class="meta"><span class="chip">Neem</span><span class="chip">Biocontrole</span><span class="chip">MIP</span></p>
+              <p class="lead">Integração que amplia espectro e protege produtividade com segurança.</p>
             </div>
           </a>
         </article>
       </div>
     </section>
 
-    <!-- ARTIGO 1: Nutrição Solo Premium -->
-    <section id="nutricao-solo-premium" class="section article prose">
-      <p class="kicker">Guia Técnico</p>
-      <h2 class="h2">Nutrição Solo Premium: ativar o solo vivo para colher mais</h2>
-      <p>Construir um solo funcional vai além de fornecer N–P–K. Envolve aumentar <strong>CTC</strong>, melhorar a <strong>estrutura</strong>, elevar a <strong>retenção hídrica</strong> e ativar a <strong>biologia</strong>. A combinação de <em>matéria orgânica ativa</em> (húmicos e fúlvicos), <em>bioestimulantes</em> e <em>condução hídrica</em> adequada cria condições para raízes profundas, maior aproveitamento da adubação e estabilidade produtiva.</p>
-
-      <h3 class="h3">Portfólio Solo Premium (links diretos)</h3>
+    <!-- Longform 1 -->
+    <section id="solo-premium" class="section article prose">
+      <p class="kicker">Reportagem</p>
+      <h2 class="h2">Solo Premium: a ciência por trás de lavouras estáveis</h2>
+      <p>Produzir mais não é apenas questão de adubar. A reportagem ouviu consultores que convergem num ponto: <b>a arquitetura de raízes depende da estrutura física e química do solo</b>. Em linguagem simples, é ativar a biologia, elevar a <b>CTC efetiva</b> e garantir <b>água disponível</b> nas fases críticas. Esse tripé permite colher mais com o mesmo NPK.</p>
+      <h3 class="h3">Linha Solo Premium (links diretos)</h3>
       <ul>
-        <li><a href="/produtos/kscrop.html">KS Krop</a> — K 30% + S 30% (qualidade, enchimento e resiliência fisiológica).</li>
-        <li><a href="/produtos/nutrileonardita.html">Nutri Leonardita</a> — 90% húmicos + 10% fúlvicos (COT alto e CTC elevada).</li>
-        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> — húmicos/fúlvicos + <em>Ascophyllum nodosum</em> + aminoácidos (líquido).</li>
-        <li><a href="/produtos/nutrisologel.html">Nutri Solo Gel</a> — hidrogel agrícola para retenção de água no plantio.</li>
+        <li><a href="/produtos/kscrop.html">KS Krop</a> — K 30% + S 30% para qualidade, enchimento e resiliência fisiológica.</li>
+        <li><a href="/produtos/nutrileonardita.html">Nutri Leonardita</a> — 90% húmicos + 10% fúlvicos; COT alto e CTC elevadíssima.</li>
+        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> — húmicos/fúlvicos + <em>Ascophyllum nodosum</em> + aminoácidos.</li>
+        <li><a href="/produtos/nutrisologel.html">Nutri Solo Gel</a> — hidrogel agrícola que reduz veranico e mortalidade de mudas.</li>
       </ul>
-
-      <h3 class="h3">Resultados esperados</h3>
-      <ul>
-        <li>Raiz mais profunda e volumosa → maior captação de água e nutrientes.</li>
-        <li>Dossel ativo por mais tempo → melhor pegamento e enchimento.</li>
-        <li>Eficiência de adubação superior → melhor custo por tonelada produzida.</li>
-        <li>Estabilidade sob seca, calor e veranicos.</li>
-      </ul>
-
-      <h3 class="h3">Comparativo rápido</h3>
-      <table class="table" aria-label="Comparativo produtos solo">
-        <thead><tr><th>Produto</th><th>Foco</th><th>Aplicação</th><th>Destaques</th></tr></thead>
-        <tbody>
-          <tr><td><a href="/produtos/nutrileonardita.html">Nutri Leonardita</a></td><td>CTC, desbloqueio de P, solo vivo</td><td>Solo/Fertirrigação/Foliar</td><td>90% húmicos / 10% fúlvicos; COT alto</td></tr>
-          <tr><td><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a></td><td>Condicionamento + bioestímulo</td><td>Solo/Foliar</td><td>Húmicos/fúlvicos + A. nodosum + AAs</td></tr>
-          <tr><td><a href="/produtos/kscrop.html">KS Krop</a></td><td>Qualidade e enchimento</td><td>Solo/Foliar</td><td>K 30% + S 30% em alta concentração</td></tr>
-          <tr><td><a href="/produtos/nutrisologel.html">Nutri Solo Gel</a></td><td>Retenção hídrica</td><td>Cova/linha</td><td>Reduz irrigação e perdas por veranico</td></tr>
-        </tbody>
-      </table>
-
-      <p><strong>Frete grátis</strong> e <strong>envio para todo o Brasil</strong>. Fale no WhatsApp para montar o programa de solo conforme sua análise química e meta de produtividade.</p>
-    </section>
-
-    <!-- ARTIGO 2: Leonardita -->
-    <section id="leonardita-na-pratica" class="section article prose">
-      <p class="kicker">Matéria Especial</p>
-      <h2 class="h2">Leonardita na prática: húmicos e fúlvicos de alto desempenho</h2>
-      <p>A <strong>leonardita</strong> é matriz natural rica em <em>ácidos húmicos</em> e <em>fúlvicos</em> com forte impacto em <strong>estrutura</strong> do solo, <strong>CTC</strong>, <strong>retenção de água</strong> e <strong>disponibilidade de nutrientes</strong>. Húmicos agregam partículas, reduzem compactação e promovem <em>raízes profundas</em>. Fúlvicos agem como carreadores, <em>quelando</em> e <em>complexando</em> nutrientes para maior absorção.</p>
-
-      <h3 class="h3">Produto recomendado</h3>
-      <p><a href="/produtos/nutrileonardita.html"><b>Nutri Leonardita</b></a> — 90% húmicos e 10% fúlvicos, COT elevado e CTC destacada. <em>Uso</em>: via solo, fertirrigação ou foliar como condicionador e transportador.</p>
-
-      <h3 class="h3">Aplicações-chave</h3>
-      <ul>
-        <li>Pré-plantio, arranque e pós-transplante.</li>
-        <li>Sustentação em pré-florada e enchimento.</li>
-        <li>Recuperação pós-estresse (seca, calor, salinidade).</li>
-      </ul>
-
-      <p>Para estufas e fertirrigação, a combinação com <a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a> eleva bioatividade radicular e metabolismo do dossel.</p>
-    </section>
-
-    <!-- ARTIGO 3: Bioestimulantes de algas -->
-    <section id="algas-bioestimulantes" class="section article prose">
-      <p class="kicker">Matéria Especial</p>
-      <h2 class="h2">Bioestimulantes de algas: Ascophyllum nodosum para vigor e qualidade</h2>
-      <p>O extrato de <em>Ascophyllum nodosum</em> fornece <strong>fitormônios naturais</strong>, <strong>polissacarídeos</strong> e <strong>aminoácidos</strong> que ativam meristemas, prolongam atividade foliar e melhoram tolerância a estresses. É uma das bases mais seguras para manter o dossel <em>verde e funcional</em>.</p>
-
-      <h3 class="h3">Opções no portfólio</h3>
-      <ul>
-        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> — húmicos/fúlvicos + A. nodosum + aminoácidos (líquido).</li>
-        <li><a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a> — extrato concentrado de A. nodosum para foliar e fertirrigação.</li>
-      </ul>
-
-      <h3 class="h3">Quando usar</h3>
-      <ul>
-        <li>Arranque, brotação e crescimento vegetativo.</li>
-        <li>Pré-florada e pegamento.</li>
-        <li>Recuperação pós-estresse e manutenção do dossel.</li>
-      </ul>
-
-      <p>Em estufas, a estabilidade de calda e a compatibilidade de tanque são diferenciais. Faça sempre <em>teste de jarra</em> em novas misturas.</p>
-    </section>
-
-    <!-- ARTIGO 4: Neem & Biológicos -->
-    <section id="neem-e-biologicos" class="section article prose">
-      <p class="kicker">Estratégia de Manejo</p>
-      <h2 class="h2">Neem & Biológicos: integração e rotação inteligente</h2>
-      <p>Combinar <strong>óleo de neem</strong> (efeitos antialimentar, repelente e regulador de crescimento) com <strong>agentes biológicos</strong> amplia espectro e sustentabilidade. A rotação reduz pressão de seleção e otimiza o resultado em campo e estufas.</p>
-
-      <h3 class="h3">Linha recomendada</h3>
-      <ul>
-        <li><a href="/produtos/fitoneem.html">Fitoneem</a> — óleo de neem para mosca-branca, pulgões, lagartas e mais.</li>
-        <li><a href="/produtos/takotrop.html">Takotrop</a> — Pseudomonas (biocontrole; tecnologia D.O.P.).</li>
-        <li><a href="/produtos/bioolimpo.html">Bioolimpo</a> — <em>Beauveria</em> + <em>Metarhizium</em> para amplo espectro.</li>
-      </ul>
-
-      <h3 class="h3">Boas práticas</h3>
-      <ul>
-        <li>Calendário semanal com monitoramento de pragas.</li>
-        <li>Intercalar mecanismos de ação.</li>
-        <li>Condições de aplicação: umidade relativa, vento, cobertura de ambas faces foliares.</li>
-      </ul>
-    </section>
-
-    <!-- ARTIGO 5: Estufas e fertirrigação -->
-    <section id="estufas-e-fertirrigacao" class="section article prose">
-      <p class="kicker">Condução Fina</p>
-      <h2 class="h2">Estufas e fertirrigação: como manter dossel ativo e resposta rápida</h2>
-      <p>Em estufas, a meta é <strong>resposta rápida</strong> com <strong>segurança de calda</strong> e <strong>sanidade</strong>. Misturas com bioestimulantes de algas, húmicos/fúlvicos e foliares de potássio com aminoácidos geram resultados consistentes.</p>
-
-      <h3 class="h3">Combinações práticas</h3>
-      <ul>
-        <li><a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a> + <a href="/produtos/aminofishk.html">Amino Fish K</a> (foliar) para manter dossel e °Brix.</li>
-        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> (solo/foliar) para raiz ativa + bioestímulo.</li>
-        <li><a href="/produtos/nutrileonardita.html">Nutri Leonardita</a> (solo/fertirrigação) para CTC e desbloqueio de P.</li>
-      </ul>
-
-      <h3 class="h3">Checagens antes da aplicação</h3>
-      <ul>
-        <li>pH da calda 5,5–6,5 e peneiras limpas.</li>
-        <li>UR &gt; 50% e vento &lt; 13 km/h.</li>
-        <li>Teste de jarra e escala pequena antes do talhão inteiro.</li>
-      </ul>
-    </section>
-
-    <!-- CTA Produtos (Seções por categoria) -->
-    <section class="section">
-      <p class="kicker">Conheça os produtos</p>
-      <h2 class="h2">Linhas e categorias</h2>
-
-      <div class="article prose">
-        <h3 class="h3">Nutrição Solo Premium</h3>
-        <ul>
-          <li><a href="/produtos/kscrop.html">KS Krop — K 30% + S 30%</a></li>
-          <li><a href="/produtos/nutrileonardita.html">Nutri Leonardita — húmicos 90% + fúlvicos 10%</a></li>
-          <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas — húmicos/fúlvicos + A. nodosum + AAs</a></li>
-          <li><a href="/produtos/nutrisologel.html">Nutri Solo Gel — retenção hídrica no plantio</a></li>
-        </ul>
-
-        <h3 class="h3">Nutrição Foliar Premium</h3>
-        <ul>
-          <li><a href="/produtos/nutrienergyalgas.html">Nutri Energy + Algas — extrato de Ascophyllum nodosum</a></li>
-          <li><a href="/produtos/aminofishk.html">Amino Fish K — K 22% + aminoácidos 28%</a></li>
-          <li><a href="/produtos/nutri-completo.html">Nutri Completo — macros, micros, algas e aminoácidos</a></li>
-        </ul>
-
-        <h3 class="h3">Neem e Biológicos</h3>
-        <ul>
-          <li><a href="/produtos/fitoneem.html">Fitoneem — óleo de neem</a></li>
-          <li><a href="/produtos/takotrop.html">Takotrop — Pseudomonas</a></li>
-          <li><a href="/produtos/bioolimpo.html">Bioolimpo — Beauveria + Metarhizium</a></li>
-        </ul>
-
-        <p><b>Frete grátis e envio para todo o Brasil</b>. Clique em qualquer produto para abrir a página.</p>
+      <div class="table-wrap" aria-label="Comparativo rápido">
+        <table class="table">
+          <thead><tr><th>Produto</th><th>Foco</th><th>Aplicação</th><th>Diferenciais</th></tr></thead>
+          <tbody>
+            <tr><td><a href="/produtos/nutrileonardita.html">Nutri Leonardita</a></td><td>Estrutura/CTC/solo vivo</td><td>Solo/Fertirrigação/Foliar</td><td>Húmicos 90% + Fúlvicos 10%; desbloqueio de P; COT alto</td></tr>
+            <tr><td><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a></td><td>Condicionamento + bioestímulo</td><td>Solo/Foliar</td><td>Húmicos/fúlvicos + A. nodosum + AAs para raiz e dossel</td></tr>
+            <tr><td><a href="/produtos/kscrop.html">KS Krop</a></td><td>Qualidade/enchimento</td><td>Solo/Foliar</td><td>K 30% + S 30% com alta eficiência e estabilidade</td></tr>
+            <tr><td><a href="/produtos/nutrisologel.html">Nutri Solo Gel</a></td><td>Retenção hídrica</td><td>Cova/Linha</td><td>Liberação lenta de água; menor custo de irrigação</td></tr>
+          </tbody>
+        </table>
       </div>
+      <p><b>Frete grátis</b> e <b>envio para todo o Brasil</b>. Um programa simples de implantação costuma combinar leonardita no preparo, FH + Algas para arrancada e KS Krop na qualidade.</p>
     </section>
 
-    <!-- FAQ (SEO pesado) -->
-    <section id="faq-blog" class="section">
+    <!-- Longform 2 -->
+    <section id="leonardita" class="section article prose">
+      <p class="kicker">Análise</p>
+      <h2 class="h2">Leonardita: quando húmicos e fúlvicos jogam juntos</h2>
+      <p>Na prática, a leonardita virou sinônimo de <b>solo vivo</b>. Os <b>húmicos</b> agregam partículas, reduzem compactação e aumentam a retenção de água. Os <b>fúlvicos</b> são carreadores: formam complexos com nutrientes, facilitando a entrada via raiz/folha. O resultado é raiz que desce, dossel que fica verde e adubação que rende mais.</p>
+      <p>Produto referência: <a href="/produtos/nutrileonardita.html"><b>Nutri Leonardita</b></a>. Compatível com fertirrigação e aplicações foliares como condicionador e transportador. Excelente no pós-estresse (seca, calor, salinidade).</p>
+      <ul>
+        <li><b>Arranque</b>: estrutura e CTC sustentam enraizamento secundário.</li>
+        <li><b>Pré-florada</b>: solo responsivo para translocar nutrientes sem travas.</li>
+        <li><b>Enchimento</b>: estabilidade hídrica e nutricional para calibre e °Brix.</li>
+      </ul>
+    </section>
+
+    <!-- Longform 3 -->
+    <section id="algas" class="section article prose">
+      <p class="kicker">Especial</p>
+      <h2 class="h2">Bioestimulantes de algas (Ascophyllum nodosum): vigor que se enxerga</h2>
+      <p>As algas marinhas trazem um “pacote bioativo” com <b>fitormônios naturais</b>, <b>polissacarídeos</b> e <b>aminoácidos</b>. Em estufas, são a mão invisível que mantém a <b>atividade foliar</b> elevada por mais tempo. Em campo aberto, ajudam a atravessar janelas de estresse sem perder o bonde da produtividade.</p>
+      <ul>
+        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a>: húmicos/fúlvicos + A. nodosum + aminoácidos (condiciona e estimula).</li>
+        <li><a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a>: extrato concentrado de A. nodosum para foliar/fertirrigação.</li>
+        <li><a href="/produtos/aminofishk.html">Amino Fish K</a>: K 22% + AAs 28% — sinergia para °Brix e enchimento.</li>
+      </ul>
+      <p>Compatibilidade de tanque é ampla, mas a regra de ouro vale: <i>teste de jarra</i> e boa água (pH 5,5–6,5).</p>
+    </section>
+
+    <!-- Longform 4 -->
+    <section id="neem-bio" class="section article prose">
+      <p class="kicker">Manejo Integrado</p>
+      <h2 class="h2">Neem & Biológicos: o mapa da rotação que dá certo</h2>
+      <p>O <b>óleo de neem</b> entrega efeitos <b>antialimentar</b>, <b>repelente</b> e <b>regulador de crescimento</b>. Biológicos ampliam o espectro com segurança e ajudam a reduzir pressão de seleção. Em conjunto, constroem um manejo inteligente de pragas.</p>
+      <ul>
+        <li><a href="/produtos/fitoneem.html">Fitoneem</a> — base de neem para mosca-branca, pulgões, lagartas etc.</li>
+        <li><a href="/produtos/takotrop.html">Takotrop</a> — Pseudomonas, biocontrole com múltiplos modos de ação.</li>
+        <li><a href="/produtos/bioolimpo.html">Bioolimpo</a> — <em>Beauveria</em> + <em>Metarhizium</em>, amplo espectro.</li>
+      </ul>
+      <p>Aplicar com umidade relativa adequada, vento baixo e cobertura bilateral da folha. Intercale mecanismos de ação.</p>
+    </section>
+
+    <!-- Longform 5 -->
+    <section id="estufa" class="section article prose">
+      <p class="kicker">Condução Fina</p>
+      <h2 class="h2">Estufas e fertirrigação: resposta rápida com segurança</h2>
+      <p>Em estufa, cada detalhe pesa: pH, qualidade da água, compatibilidade e horários de aplicação. Combinar algas, húmicos/fúlvicos e potássio com aminoácidos mantém o dossel ativo e acelera a recuperação pós-estresse.</p>
+      <ul>
+        <li><a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a> + <a href="/produtos/aminofishk.html">Amino Fish K</a> para manutenção de °Brix e enchimento.</li>
+        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> para raiz e dossel responsivos.</li>
+        <li><a href="/produtos/nutrileonardita.html">Nutri Leonardita</a> para CTC e desbloqueio de P.</li>
+      </ul>
+      <p>Cheque peneiras/filtros e evite ventos acima de 13 km/h. <b>Frete grátis</b> e <b>envio para todo o Brasil</b>.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
       <p class="kicker">Perguntas frequentes</p>
       <h2 class="h2">FAQ — Nutrição, Biológicos, Neem e Estufas</h2>
       <div class="faq">
         <details>
-          <summary>Vocês entregam para todo o Brasil? Tem frete grátis?</summary>
-          <div>Sim, <b>entregamos para todo o Brasil</b> com <b>frete grátis</b>. Fale no WhatsApp para prazo e programação de envio conforme sua região.</div>
+          <summary>Vocês entregam para todo o Brasil? O frete é grátis?</summary>
+          <div>Sim. <b>Entregamos para todo o Brasil</b> com <b>frete grátis</b>. Consulte prazo pelo WhatsApp.</div>
         </details>
         <details>
-          <summary>Qual a diferença prática entre húmicos e fúlvicos?</summary>
-          <div>Húmicos estruturam o solo, elevam CTC e retenção de água (raiz profunda); fúlvicos quelam/complexam nutrientes, atuando como carreadores para absorção rápida. Veja <a href="/produtos/nutrileonardita.html">Nutri Leonardita</a> e <a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a>.</div>
+          <summary>Húmicos e fúlvicos: qual diferença prática no campo?</summary>
+          <div>Húmicos estruturam solo e elevam CTC; fúlvicos são carreadores que aceleram absorção. Veja <a href="/produtos/nutrileonardita.html">Nutri Leonardita</a> e <a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a>.</div>
         </details>
         <details>
-          <summary>Posso usar bioestimulantes de algas em estufa e campo?</summary>
-          <div>Sim. <a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a> e <a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> são indicados em ambas as condições; verifique pH, compatibilidade e faça teste de jarra.</div>
+          <summary>Qual foliar para °Brix e enchimento?</summary>
+          <div><a href="/produtos/aminofishk.html">Amino Fish K</a> (K 22% + AAs 28%) com alta solubilidade e rápida absorção.</div>
         </details>
         <details>
-          <summary>Neem funciona com biológicos? Como rotacionar?</summary>
-          <div>Sim, o <a href="/produtos/fitoneem.html">Fitoneem</a> complementa o biocontrole (ex.: <a href="/produtos/bioolimpo.html">Bioolimpo</a>, <a href="/produtos/takotrop.html">Takotrop</a>) ao fornecer repelência/antialimentar. Rotacione mecanismos e respeite condições de aplicação.</div>
+          <summary>Posso usar bioestimulantes de algas em estufa?</summary>
+          <div>Sim. <a href="/produtos/nutrienergyalgas.html">Nutri Energy Algas</a> e <a href="/produtos/nutrifhalgas.html">Nutri FH + Algas</a> têm excelente performance em estufas e fertirrigação (pH 5,5–6,5).</div>
         </details>
         <details>
-          <summary>Qual foliar de potássio com aminoácidos vocês recomendam para °Brix e enchimento?</summary>
-          <div><a href="/produtos/aminofishk.html">Amino Fish K</a> — K 22% + aminoácidos 28% com alta solubilidade e absorção foliar rápida. Excelente para enchimento de frutos e grãos.</div>
-        </details>
-        <details>
-          <summary>Hidrogel no plantio realmente reduz irrigação?</summary>
-          <div>Sim. <a href="/produtos/nutrisologel.html">Nutri Solo Gel</a> aumenta a retenção hídrica na cova/linha, reduz veranicos e pode cortar custos de irrigação na fase crítica de pegamento.</div>
+          <summary>Neem combina com biológicos?</summary>
+          <div>Sim, <a href="/produtos/fitoneem.html">Fitoneem</a> pode se integrar a <a href="/produtos/bioolimpo.html">Bioolimpo</a> e <a href="/produtos/takotrop.html">Takotrop</a> em rotação.</div>
         </details>
       </div>
+    </section>
+
+    <!-- CTA Produtos -->
+    <section class="section article prose">
+      <p class="kicker">Portfólio</p>
+      <h2 class="h2">Conheça as linhas e compre com frete grátis</h2>
+      <h3 class="h3">Nutrição Solo Premium</h3>
+      <ul>
+        <li><a href="/produtos/kscrop.html">KS Krop — K 30% + S 30%</a></li>
+        <li><a href="/produtos/nutrileonardita.html">Nutri Leonardita — húmicos 90% + fúlvicos 10%</a></li>
+        <li><a href="/produtos/nutrifhalgas.html">Nutri FH + Algas — húmicos/fúlvicos + A. nodosum + AAs</a></li>
+        <li><a href="/produtos/nutrisologel.html">Nutri Solo Gel — retenção hídrica no plantio</a></li>
+      </ul>
+      <h3 class="h3">Nutrição Foliar Premium</h3>
+      <ul>
+        <li><a href="/produtos/nutrienergyalgas.html">Nutri Energy + Algas — extrato de Ascophyllum nodosum</a></li>
+        <li><a href="/produtos/aminofishk.html">Amino Fish K — K 22% + aminoácidos 28%</a></li>
+        <li><a href="/produtos/nutri-completo.html">Nutri Completo — macros, micros, algas e aminoácidos</a></li>
+      </ul>
+      <h3 class="h3">Neem e Biológicos</h3>
+      <ul>
+        <li><a href="/produtos/fitoneem.html">Fitoneem — óleo de neem</a></li>
+        <li><a href="/produtos/takotrop.html">Takotrop — Pseudomonas</a></li>
+        <li><a href="/produtos/bioolimpo.html">Bioolimpo — Beauveria + Metarhizium</a></li>
+      </ul>
+      <p><b>Frete grátis</b> e <b>envio para todo o Brasil</b>. Atendimento rápido no WhatsApp.</p>
     </section>
 
     <!-- Comentário -> WhatsApp -->
@@ -464,7 +400,7 @@
         <input id="nome" name="nome" placeholder="Como podemos te chamar?" style="width:100%;padding:10px;border-radius:10px;border:1px solid #dfeae4;margin-top:6px"/>
 
         <label for="assunto" style="margin-top:10px"><b>Assunto</b></label>
-        <input id="assunto" name="assunto" placeholder="Ex.: Programa para estufa, enxofre e K no enchimento…" style="width:100%;padding:10px;border-radius:10px;border:1px solid #dfeae4;margin-top:6px"/>
+        <input id="assunto" name="assunto" placeholder="Ex.: Programa para estufa, K + aminoácidos no enchimento…" style="width:100%;padding:10px;border-radius:10px;border:1px solid #dfeae4;margin-top:6px"/>
 
         <label for="mensagem" style="margin-top:10px"><b>Mensagem</b></label>
         <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente sua necessidade (produto, cultura)…" style="width:100%;padding:10px;border-radius:10px;border:1px solid #dfeae4;margin-top:6px;min-height:120px"></textarea>
@@ -489,6 +425,7 @@
   </footer>
 
   <script>
+    // Form -> WhatsApp (mensagem genérica, sem cidade)
     function goZap(e){
       e.preventDefault();
       const nome=(document.getElementById('nome')?.value||'').trim();
