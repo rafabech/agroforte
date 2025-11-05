@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Nutri Leonardita | Ácidos Húmicos e Fúlvicos 100% Solúveis — Solo Vivo, Grow e Alta Produtividade</title>
-  <meta name="description" content="Nutri Leonardita: húmicos 90% + fúlvicos 10%, COT 34,8% e CTC 2.415 mmolc/kg. 100% solúvel para solo, fertirrigação e GROW (estufas). Raiz forte, mais água e maior eficiência de adubação."/>
+  <meta name="description" content="Nutri Leonardita (húmicos 90% + fúlvicos 10%, COT 34,8%, CTC 2.415 mmolc/kg). 100% solúvel para solo, fertirrigação e estufas (grow). Raiz forte, maior retenção de água e eficiência de adubação."/>
+
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/leonardita/"/>
 
-  <!-- Structured Data: Organization + Product + FAQ -->
+  <!-- Organization -->
   <script type="application/ld+json">
   {"@context":"https://schema.org",
    "@type":"Organization",
@@ -17,6 +17,8 @@
    "logo":"https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp",
    "contactPoint":[{"@type":"ContactPoint","telephone":"+55-17-99140-5464","contactType":"customer support","areaServed":"BR"}]}
   </script>
+
+  <!-- Product -->
   <script type="application/ld+json">
   {"@context":"https://schema.org",
    "@type":"Product",
@@ -35,16 +37,17 @@
      {"@type":"PropertyValue","name":"Solubilidade","value":"100% em água"}
    ]}
   </script>
+
+  <!-- FAQ (resumido em schema; o conteúdo completo vai no corpo) -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org",
-   "@type":"FAQPage",
+  {"@context":"https://schema.org","@type":"FAQPage",
    "mainEntity":[
-     {"@type":"Question","name":"Pode usar a Leonardita em estufas (grow indoor)?",
-      "acceptedAnswer":{"@type":"Answer","text":"Sim. É 100% solúvel e compatível com irrigação em vasos, substratos (turfa, coco, misturas) e sistemas de fertirrigação. Recomendamos pH de calda 5,5–6,5 e aplicação com substrato úmido."}},
-     {"@type":"Question","name":"Quais os benefícios principais no campo e no grow?",
-      "acceptedAnswer":{"@type":"Answer","text":"Aumenta CTC e disponibilidade de nutrientes, melhora a estrutura física do solo/substrato, eleva retenção de água, estimula raízes profundas e reduz perdas de NPK por fixação e lixiviação."}},
-     {"@type":"Question","name":"É compatível com outras adubações e defensivos?",
-      "acceptedAnswer":{"@type":"Answer","text":"Alta compatibilidade em tanque; faça sempre teste de jarra. Pode atuar como carreador, melhorando a absorção via raiz e folha."}}
+     {"@type":"Question","name":"Posso usar em estufas (grow) e em lavouras?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sim. É 100% solúvel e funciona em substratos (coco, turfa, soil mix) e fertirrigação, além de lavouras no campo."}},
+     {"@type":"Question","name":"Qual pH/EC recomendados?",
+      "acceptedAnswer":{"@type":"Answer","text":"pH de 5,5–6,5. Ajuste a EC conforme o seu programa de adubação e fase fenológica."}},
+     {"@type":"Question","name":"Ajuda a economizar fertilizante?",
+      "acceptedAnswer":{"@type":"Answer","text":"Eleva a CTC, quelando nutrientes e reduzindo perdas por fixação/lixiviação, melhorando a eficiência de NPK."}}
    ]}
   </script>
 
@@ -63,47 +66,54 @@
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* HEADER (mesmo padrão do site) */
+    /* Header */
     header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);
            backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .head{display:grid;align-items:center;gap:8px;
-          grid-template-columns:auto 1fr auto;grid-template-areas:"brand nav actions";padding:6px 0}
-    .brand{grid-area:brand;display:flex;align-items:center;gap:10px;min-width:0}
+    .head{display:grid;align-items:center;gap:8px;grid-template-columns:auto 1fr auto;grid-template-areas:"brand nav actions";padding:6px 0}
+    .brand{grid-area:brand;display:flex;align-items:center;gap:10px}
     .brand img{width:180px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    .brand strong{font-size:18px;letter-spacing:.2px;white-space:nowrap}
-    .nav{grid-area:nav;display:flex;gap:6px;justify-content:center;flex-wrap:nowrap;min-width:0}
-    .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
-             background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap}
+    .brand strong{font-size:18px;white-space:nowrap}
+    .nav{grid-area:nav;display:flex;gap:6px;justify-content:center}
+    .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);font-weight:800;font-size:14px}
     .nav-btn:hover{background:rgba(255,255,255,.12)}
-    .actions{grid-area:actions;display:flex;align-items:center;gap:8px;min-width:0}
-    .tel{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;
-         border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);
-         font-weight:900;font-size:17px;white-space:nowrap}
-    .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;
-               background:var(--zap);border:1px solid var(--zap-border);color:#fff}
+    .actions{grid-area:actions;display:flex;align-items:center;gap:8px}
+    .tel{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900;font-size:17px}
+    .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--zap);border:1px solid var(--zap-border);color:#fff}
     .wa-circle svg{display:block}
     @media (max-width:720px){
       .head{grid-template-columns:1fr auto;grid-template-areas:"brand actions" "nav nav";padding:4px 0}
       .brand img{width:130px}.brand strong{display:none}
-      .nav{justify-content:flex-start;gap:6px}.nav-btn{padding:6px 10px;font-size:13px}
+      .nav{justify-content:flex-start}.nav-btn{padding:6px 10px;font-size:13px}
       .tel{padding:6px 10px;font-size:16px}.wa-circle{width:34px;height:34px}
     }
 
-    /* HERO + GRID */
+    /* Hero */
     .hero{padding:20px 0 6px}
     .hero h1{margin:0 0 8px;font-size:38px;line-height:1.08;font-weight:900;letter-spacing:-.3px}
     .hero p{margin:0;color:var(--muted);max-width:85ch}
     @media (max-width:720px){ .hero h1{font-size:28px} }
-    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
-    .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;box-shadow:var(--shadow);padding:16px}
-    .frame{background:#fff;border-radius:14px;padding:14px}
-    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
-    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:12px 16px;
-         font-weight:900;border:1px solid #ffffff22}
-    .btn-primary{background:var(--brand);color:#063a1f;border:0}
 
-    /* TABLE (nutrientes) */
-    table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:12px}
+    /* Destaque (foto + copy) — MOBILE-FIRST */
+    .feature{
+      display:grid;gap:16px;grid-template-columns:1fr; /* mobile: 1 coluna */
+    }
+    .f-media{background:#fff;border-radius:14px;padding:12px}
+    .f-media img{width:100%;height:auto;object-fit:contain}
+    .f-copy{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+    .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:12px 16px;font-weight:900;border:1px solid #ffffff22}
+    .btn-primary{background:var(--brand);color:#063a1f;border:0}
+    /* desktop: 2 colunas com proporção agradável */
+    @media (min-width:860px){
+      .feature{grid-template-columns:1.05fr .95fr;align-items:stretch}
+      .f-media{order:2}   /* mantém texto à esquerda e foto à direita em desktop */
+      .f-copy{order:1}
+    }
+
+    /* Tabela */
+    .section{padding:20px 0}
+    .card{background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+    table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden}
     th,td{padding:12px 14px;border-bottom:1px solid #ffffff14;background:#0b4f2c;line-height:1.35}
     th{background:#0a7a3f;text-align:left}
     @media (max-width:720px){
@@ -116,7 +126,6 @@
     }
 
     /* FAQ + Comentário */
-    .section{padding:20px 0}
     details{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px 14px}
     summary{cursor:pointer;font-weight:800}
     .faq{display:grid;gap:10px}
@@ -127,7 +136,7 @@
     .comment .actions{display:flex;justify-content:center;margin-top:12px}
     .btn-zap{background:var(--brand);color:#063a1f;border:0;border-radius:999px;padding:12px 18px;font-weight:900}
 
-    /* Rodapé + WhatsApp flutuante */
+    /* Rodapé + Zap flutuante */
     footer{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;color:#d7efe4}
     .foot{display:grid;gap:8px}
     .foot-cta{display:flex;gap:8px;flex-wrap:wrap}
@@ -137,9 +146,9 @@
 </head>
 <body>
 
-  <!-- Bolinha do WhatsApp (flutuante) -->
+  <!-- WhatsApp flutuante -->
   <a class="zap-float" aria-label="WhatsApp"
-     href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20innovetecnologias.%20Quero%20informacoes%20sobre%20Nutri%20Leonardita.">
+     href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20innovetecnologias.%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Nutri%20Leonardita.">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
   </a>
 
@@ -155,7 +164,9 @@
       </nav>
       <div class="actions">
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
-        <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20innovetecnologias.%20Quero%20informacoes%20sobre%20Nutri%20Leonardita."><svg width="18" height="18" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3z"/></svg></a>
+        <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20innovetecnologias.%20Quero%20informa%C3%A7%C3%B5es%20sobre%20Nutri%20Leonardita.">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3z"/></svg>
+        </a>
       </div>
     </div>
   </header>
@@ -163,28 +174,30 @@
   <main class="wrap">
     <section class="hero">
       <h1>Nutri Leonardita — Ácidos Húmicos e Fúlvicos 100% solúveis</h1>
-      <p>Solo vivo, raiz forte e maior produtividade em <b>grãos, hortaliças, frutíferas, café</b> e também em <b>estufas de grow</b> (substratos e fertirrigação). Fórmula premium com húmicos 90% e fúlvicos 10%, <b>COT 34,8%</b> e <b>CTC 2.415 mmolc/kg</b>.</p>
+      <p>Solo vivo, raiz forte e produtividade em <b>grãos, hortaliças, frutíferas, café</b> e <b>estufas (grow)</b>. Húmicos 90% + fúlvicos 10% com <b>COT 34,8%</b> e <b>CTC 2.415 mmolc/kg</b> para desbloquear nutrientes e elevar a eficiência de NPK.</p>
     </section>
 
-    <section class="grid section" aria-label="Destaque do produto">
-      <div class="card">
+    <!-- FEATURE: agora mobile-first -->
+    <section class="feature section" aria-label="Destaque do produto">
+      <div class="f-media">
+        <img src="../../img/produtos/leonardita.webp" alt="Nutri Leonardita — embalagem" loading="lazy">
+      </div>
+      <div class="f-copy">
         <h2>Por que funciona</h2>
         <ul>
-          <li><b>Húmicos 90%</b>: estrutura o solo/substrato, reduz compactação e aumenta retenção de água → <b>raiz profunda</b>.</li>
-          <li><b>Fúlvicos 10%</b>: quelam/complexam nutrientes, <b>turbinando a absorção</b> e a eficiência da adubação.</li>
+          <li><b>Húmicos 90%</b>: estrutura solo/substrato, reduz compactação e aumenta retenção de água → <b>raiz profunda</b>.</li>
+          <li><b>Fúlvicos 10%</b>: quelam/complexam nutrientes, <b>turbina a absorção</b> e a eficiência da adubação.</li>
           <li><b>COT 34,8% + CTC 2.415</b>: mais troca de cátions e <b>desbloqueio de fósforo</b> ligado a Fe/Al.</li>
-          <li><b>Fitormônios naturais</b>: estimulam brotação, alongamento e área foliar.</li>
+          <li><b>Fitormônios naturais</b>: brotação vigorosa, alongamento e maior área foliar.</li>
         </ul>
         <div class="cta">
-          <a class="btn btn-primary" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20innovetecnologias.%20Quero%20posicionar%20a%20Nutri%20Leonardita%20na%20minha%20cultura%2Fgrow.">💬 Falar no WhatsApp</a>
+          <a class="btn btn-primary" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20innovetecnologias.%20Quero%20posicionar%20a%20Nutri%20Leonardita%20no%20meu%20sistema%20(grow%20ou%20lavoura).">💬 Falar no WhatsApp</a>
           <a class="btn" href="../index.html">← Ver todos os produtos</a>
         </div>
       </div>
-      <div class="frame">
-        <img src="../../img/produtos/leonardita.webp" alt="Nutri Leonardita — embalagem"/>
-      </div>
     </section>
 
+    <!-- Tabela -->
     <section class="section">
       <div class="card">
         <h2>Nutrientes (garantias)</h2>
@@ -203,49 +216,43 @@
       </div>
     </section>
 
+    <!-- Posicionamento -->
     <section class="section">
       <div class="card">
         <h2>Posicionamento prático</h2>
         <ul>
-          <li><b>Pré-plantio e arranque:</b> formar raízes e estrutura do solo/substrato.</li>
-          <li><b>Pós-transplante e pós-estresse:</b> seca, calor, salinidade, fitotoxicidade.</li>
-          <li><b>Solos arenosos/empobrecidos</b> ou áreas com baixa CTC e queda de MO.</li>
-          <li><b>Pré-florada e enchimento</b>: sustentar demanda nutricional elevada.</li>
+          <li><b>Pré-plantio e arranque</b> (raízes e estrutura do solo/substrato).</li>
+          <li><b>Pós-transplante e pós-estresse</b> (seca, calor, salinidade, fitotox).</li>
+          <li><b>Solos arenosos/empobrecidos</b> e áreas com baixa CTC e queda de MO.</li>
+          <li><b>Pré-florada e enchimento</b> para sustentar alta demanda nutricional.</li>
         </ul>
         <h3 style="margin-top:10px">Uso em <u>Grow (estufas)</u></h3>
         <ul>
-          <li>Compatível com <b>substrato de coco</b>, turfas e mixes (“soil”).</li>
-          <li>Aplicar na irrigação (fertirrigação) ou via foliar como condicionador/carreador.</li>
-          <li><b>pH de calda 5,5–6,5</b> e substrato úmido para melhor absorção.</li>
-          <li>Alta compatibilidade de tanque; faça <b>teste de jarra</b> antes.</li>
+          <li>Compatível com <b>substrato de coco</b>, turfa e mixes “soil”.</li>
+          <li>Aplicar na <b>fertirrigação</b> (solução nutritiva) ou via foliar como condicionador/carreador.</li>
+          <li><b>pH 5,5–6,5</b> e substrato úmido para melhor absorção; ajuste a <b>EC</b> conforme fase.</li>
+          <li>Alta compatibilidade de tanque; sempre faça <b>teste de jarra</b>.</li>
         </ul>
       </div>
     </section>
 
+    <!-- FAQ EXTENSO (muito SEO para grow/estufa) -->
     <section class="section">
-      <div class="card">
-        <h2>Benefícios visíveis</h2>
-        <ul>
-          <li><b>Mais aeração e agregação</b> → maior volume explorado pelas raízes.</li>
-          <li><b>Maior retenção de água</b> → menor estresse hídrico e dossel estável.</li>
-          <li><b>Maior eficiência de NPK</b> e melhor aproveitamento da adubação.</li>
-          <li><b>Solo vivo</b>: ativa microrganismos e acelera mineralização.</li>
-          <li><b>Raiz densa e profunda</b>, pegamento superior e enchimento uniforme.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FAQ de página (texto + SEO) -->
-    <section class="section">
-      <p style="letter-spacing:.12em;text-transform:uppercase;color:#cfead9;font-weight:800;font-size:12px">Perguntas frequentes</p>
+      <p style="letter-spacing:.12em;text-transform:uppercase;color:#cfead9;font-weight:800;font-size:12px">Perguntas frequentes (Grow & Campo)</p>
       <div class="faq">
-        <details><summary>Serve para agricultura e para grow indoor?</summary><div>Sim. A Nutri Leonardita foi pensada para lavouras e estufas. É 100% solúvel, fácil de usar em vasos, bancadas e sistemas de fertirrigação.</div></details>
-        <details><summary>Ajuda a economizar fertilizante?</summary><div>Ao elevar a CTC e quelar nutrientes, reduz perdas por fixação/lixiviação e <b>aumenta a eficiência da adubação</b>.</div></details>
-        <details><summary>Posso combinar com óleo de neem ou biológicos?</summary><div>Em geral, sim. Mantendo pH 5,5–6,5 e fazendo teste de jarra, a compatibilidade é alta. Para biológicos específicos, peça orientação no WhatsApp.</div></details>
+        <details><summary>Como a Leonardita melhora <b>retenção de água</b> e o desempenho do <b>substrato de coco/turfa</b> no grow?</summary><div>Os <b>ácidos húmicos</b> agregam partículas e aumentam a capacidade de retenção de água, reduzindo a secagem rápida do substrato e estabilizando a solução nutritiva. Resultado: menor estresse hídrico, menor murcha e <b>mais rendimento</b> por irrigação.</div></details>
+        <details><summary>Ajuda a <b>desbloquear fósforo</b> e a aumentar a <b>CTC</b> do sistema?</summary><div>Sim. Com <b>COT 34,8%</b> e <b>CTC 2.415 mmolc/kg</b>, há complexação de cátions e redução de interações que imobilizam P, K e micronutrientes. O efeito é uma <b>eficiência de NPK</b> maior e desenvolvimento radicular acelerado.</div></details>
+        <details><summary>Qual o <b>pH</b> e <b>EC</b> de trabalho recomendados em estufas?</summary><div>Mantenha a solução entre <b>pH 5,5–6,5</b>. A <b>EC</b> deve seguir o seu programa de nutrição e a fase (enraizamento, crescimento, florescimento/frutificação). Leonardita é <b>100% solúvel</b> e estável nessas faixas.</div></details>
+        <details><summary>Posso fazer <b>flushing</b> usando Leonardita?</summary><div>Para flushing, use água ajustada no pH e volumes maiores. Leonardita pode ser usada em doses baixas para <b>condicionar o substrato</b> e manter tampão de pH, mas o objetivo do flushing é reduzir sais — ajuste conforme sua análise de drenagem.</div></details>
+        <details><summary>Compatibilidade de tanque com <b>fertilizantes</b> e <b>defensivos</b> (inclui óleo de neem/biológicos)?</summary><div>Alta compatibilidade. Mantendo pH 5,5–6,5, a miscibilidade costuma ser excelente. <b>Teste de jarra</b> é obrigatório, especialmente com biológicos sensíveis.</div></details>
+        <details><summary>Vai interferir em <b>luz</b>, <b>fotoperíodo</b> ou reguladores?</summary><div>Não. É um <b>condicionador de solo/substrato</b> e carreador natural. O ganho vem de raiz saudável, melhor absorção e dossel estável — o que tende a refletir em <b>flores/frutos mais uniformes</b> e maior qualidade (peso, calibre, °Brix).</div></details>
+        <details><summary>Quais sinais de que a dose está correta no grow?</summary><div>Raízes <b>brancas/densas</b>, menor oscilação de pH/EC entre irrigações, folhas com <b>verde estável</b>, menos “queima” por sais na borda e melhor pegamento na troca de vasos.</div></details>
+        <details><summary>É indicada para <b>solos arenosos</b> e áreas com <b>baixa matéria orgânica</b>?</summary><div>Sim. É onde a Leonardita mais aparece: melhora a estrutura, eleva a CTC e <b>retém água/nutrientes</b>, reduzindo perdas por lixiviação.</div></details>
+        <details><summary>Qual a melhor janela de uso para <b>crescimento</b> e <b>florescimento/frutificação</b>?</summary><div>No crescimento: foco em <b>enraizamento</b> e expansão do dossel. Na transição e frutificação: suporte à <b>demanda nutricional</b> com melhor disponibilidade de P, K e micros.</div></details>
       </div>
     </section>
 
-    <!-- Comentário -> WhatsApp -->
+    <!-- Form -> WhatsApp -->
     <section class="section">
       <h2 style="margin:0 0 12px">Fale com um consultor</h2>
       <form class="comment" onsubmit="return goZap(event)">
@@ -256,7 +263,7 @@
         <input id="assunto" name="assunto" placeholder="Ex.: Uso em grow / lavoura / dúvidas técnicas">
 
         <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente sua necessidade (cultura, área, sistema)…"></textarea>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente sua necessidade (substrato, pH/EC, fase)…"></textarea>
 
         <div class="actions">
           <button class="btn-zap" type="submit">📲 Enviar no WhatsApp</button>
@@ -277,17 +284,17 @@
   </footer>
 
   <script>
-    // Form -> WhatsApp (sem cidade no texto, como você pediu)
+    // Form -> WhatsApp (sem cidade no texto)
     function goZap(e){
       e.preventDefault();
       const nome=(document.getElementById('nome').value||'').trim();
       const assunto=(document.getElementById('assunto').value||'').trim();
       const msg=(document.getElementById('mensagem').value||'').trim();
       const texto =
-        `Ol\u00E1, vim pelo site da innovetecnologias.\\n`+
-        `Produto: Nutri Leonardita\\n`+
-        `Nome: ${nome||'—'}\\n`+
-        `Assunto: ${assunto||'—'}\\n`+
+        `Ol\u00E1, vim pelo site da innovetecnologias.\n`+
+        `Produto: Nutri Leonardita\n`+
+        `Nome: ${nome||'—'}\n`+
+        `Assunto: ${assunto||'—'}\n`+
         `Mensagem: ${msg||'—'}`;
       window.location.href = `https://wa.me/5517991405464?text=${encodeURIComponent(texto)}`;
       return false;
