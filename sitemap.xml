@@ -1,149 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Página inicial -->
+  <!-- ==================== PÁGINAS PRINCIPAIS ==================== -->
   <url>
-    <loc>https://innovetecnologias.com.br/index.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <loc>https://innovetecnologias.com.br/</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp</image:loc>
-      <image:title>AgroForte — Fertilizantes e Biológicos</image:title>
-    </image:image>
   </url>
 
-  <!-- Quem Somos -->
+  <url>
+    <loc>https://innovetecnologias.com.br/produtos/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <url>
     <loc>https://innovetecnologias.com.br/quem-somos.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/quem-somos-fundo-branco.png</image:loc>
-      <image:title>AgroForte — Quem Somos</image:title>
-    </image:image>
+    <priority>0.80</priority>
   </url>
 
-  <!-- Listagem de Produtos -->
   <url>
-    <loc>https://innovetecnologias.com.br/produtos/index.html</loc>
-    <lastmod>2025-10-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://innovetecnologias.com.br/blog/index.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ==================== PRODUTOS ==================== -->
+
+  <!-- Nutrição Solo Premium -->
+  <url>
+    <loc>https://innovetecnologias.com.br/produtos/kscropmix/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
-  <!-- Fitoneem -->
   <url>
-    <loc>https://innovetecnologias.com.br/produtos/fitoneem.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/leonardita/</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/fitoneem-fundo-branco.webp</image:loc>
-      <image:title>Fitoneem — Óleo de Neem</image:title>
-    </image:image>
+    <priority>0.90</priority>
   </url>
 
-  <!-- Takotrop -->
   <url>
-    <loc>https://innovetecnologias.com.br/produtos/takotrop.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/nutrifhalgas/</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
-      <image:title>Takotrop — Bioinseticida (Pseudomonas)</image:title>
-    </image:image>
+    <priority>0.90</priority>
   </url>
 
-  <!-- Bioolimpo -->
   <url>
-    <loc>https://innovetecnologias.com.br/produtos/bioolimpo.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/nutrigel/</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
-      <image:title>Bioolimpo — Beauveria + Metarhizium</image:title>
-    </image:image>
+    <priority>0.90</priority>
   </url>
 
-  <!-- Nutri Completo -->
+  <!-- Nutrição Foliar Premium -->
+  <url>
+    <loc>https://innovetecnologias.com.br/produtos/nutrienergyalgas/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://innovetecnologias.com.br/produtos/aminofishk/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://innovetecnologias.com.br/produtos/nutri-completo.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
-      <image:title>Nutri Completo — Nutrição Foliar</image:title>
-    </image:image>
+    <priority>0.90</priority>
   </url>
 
-  <!-- Página Bahia -->
+  <!-- Proteção com Neem -->
   <url>
-    <loc>https://innovetecnologias.com.br/bahia/index.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <loc>https://innovetecnologias.com.br/produtos/fitoneem.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Biológicos -->
+  <url>
+    <loc>https://innovetecnologias.com.br/produtos/takotrop.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://innovetecnologias.com.br/produtos/bioolimpo.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- ==================== BLOG (EXEMPLOS DE POSTS) ==================== -->
+  <url>
+    <loc>https://innovetecnologias.com.br/blog/nutricao-solo-premium.html</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/fitoneem-fundo-branco.webp</image:loc>
-      <image:title>Fitoneem — Bahia</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
-      <image:title>Bioolimpo — Bahia</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
-      <image:title>Takotrop — Bahia</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
-      <image:title>Nutri Completo — Bahia</image:title>
-    </image:image>
+    <priority>0.75</priority>
   </url>
 
-  <!-- Obrigado Bahia -->
   <url>
-    <loc>https://innovetecnologias.com.br/obrigado-bahia.html</loc>
-    <lastmod>2025-10-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.40</priority>
-  </url>
-
-  <!-- Página Ceará -->
-  <url>
-    <loc>https://innovetecnologias.com.br/ceara/index.html</loc>
-    <lastmod>2025-10-23</lastmod>
+    <loc>https://innovetecnologias.com.br/blog/biologicos-controle-de-pragas.html</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/fitoneem-fundo-branco.webp</image:loc>
-      <image:title>Fitoneem — Ceará</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
-      <image:title>Bioolimpo — Ceará</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
-      <image:title>Takotrop — Ceará</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://innovetecnologias.com.br/img/produtos/nutri-completo-fundo-branco.webp</image:loc>
-      <image:title>Nutri Completo — Ceará</image:title>
-    </image:image>
+    <priority>0.75</priority>
   </url>
 
-  <!-- Obrigado Ceará -->
   <url>
-    <loc>https://innovetecnologias.com.br/obrigado-ceara.html</loc>
-    <lastmod>2025-10-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.40</priority>
+    <loc>https://innovetecnologias.com.br/blog/oleo-de-neem-fitoneem.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
 
 </urlset>
