@@ -62,12 +62,20 @@
     .tel{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900;font-size:17px}
     .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--zap);border:1px solid var(--zap-border);color:#fff}
 
+    /* ==== ÚNICA MUDANÇA AQUI: manter o menu visível no celular ==== */
     @media (max-width:720px){
       .head{grid-template-columns:1fr auto;grid-template-areas:"brand actions";padding:4px 0}
       .brand img{width:130px}
-      nav{display:none}
+      /* Antes: nav{display:none} — Agora mostramos o menu, com wrap e rolagem horizontal suave se precisar */
+      nav{grid-area:nav;display:flex;gap:6px;justify-content:flex-start;flex-wrap:wrap;margin-top:6px;overflow:auto;-webkit-overflow-scrolling:touch}
+      .nav-btn{padding:6px 10px;font-size:13px}
       .tel{padding:6px 10px;font-size:16px}
       .wa-circle{width:34px;height:34px}
+      /* Reposiciona o nav abaixo da brand+actions em telas pequenas */
+      .head{grid-template-areas:
+        "brand actions"
+        "nav   nav";
+      }
     }
 
     .hero{padding:18px 0 6px}
@@ -113,7 +121,6 @@
         <img id="logoAgf" src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
       </a>
       <nav aria-label="Principal">
-        <!-- ORDEM AJUSTADA: Home, Blog, Quem Somos, Produtos -->
         <a class="nav-btn" href="/index.html">Home</a>
         <a class="nav-btn" href="/blog/index.html">Blog</a>
         <a class="nav-btn" href="/quem-somos.html">Quem Somos</a>
