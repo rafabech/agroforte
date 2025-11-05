@@ -4,114 +4,365 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Nutri Solo Gel — Gel para Plantio, Retenção de Água e Pegamento de Mudas | AgroForte</title>
-  <meta name="description" content="Nutri Solo Gel: hidrogel agrícola para plantio de eucalipto, café, milho e soja. Aumenta a retenção de água, reduz irrigação e melhora o pegamento de mudas."/>
+  <meta name="description" content="Nutri Solo Gel: hidrogel agrícola que retém água no solo, reduz irrigação e melhora o pegamento de mudas. Indicado para eucalipto, café, milho, soja, cacau, hortaliças e reflorestamento. Frete grátis e envio para todo o Brasil."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/nutrigel/"/>
 
   <!-- Favicon (raiz do site) -->
   <link rel="icon" type="image/png" href="/img/produtos/logo-oficial-fundo-verde.png"/>
 
-  <!-- Schema.org -->
+  <!-- JSON-LD: Product -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org/","@type":"Product","name":"Nutri Solo Gel","image":"https://innovetecnologias.com.br/img/produtos/nutrigel.webp","description":"Gel agrícola (hidrogel) para plantio — aumenta a retenção de água, reduz perdas por seca e melhora o pegamento de mudas. Ideal para eucalipto, milho, soja, café, cacau e reflorestamento.","brand":{"@type":"Brand","name":"AgroForte"},"sku":"NUTRIGEL001","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"187"}}
+  {
+    "@context":"https://schema.org/",
+    "@type":"Product",
+    "name":"Nutri Solo Gel",
+    "image":"https://innovetecnologias.com.br/img/produtos/nutrigel.webp",
+    "description":"Gel agrícola (hidrogel) para plantio — aumenta a retenção de água, reduz perdas por seca e melhora o pegamento de mudas. Ideal para eucalipto, milho, soja, café, cacau, hortaliças e reflorestamento.",
+    "brand":{"@type":"Brand","name":"AgroForte"},
+    "sku":"NUTRIGEL001",
+    "offers": {
+      "@type":"Offer",
+      "availability":"https://schema.org/InStock",
+      "priceCurrency":"BRL"
+    },
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"187"}
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://innovetecnologias.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Produtos","item":"https://innovetecnologias.com.br/produtos/"},
+      {"@type":"ListItem","position":3,"name":"Nutri Solo Gel","item":"https://innovetecnologias.com.br/produtos/nutrigel/"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Para quais culturas o Nutri Solo Gel é indicado?","acceptedAnswer":{"@type":"Answer","text":"Eucalipto, café, milho, soja, cacau, frutíferas, hortaliças, mudas nativas/ornamentais e reflorestamento — em sequeiro ou irrigado."}},
+      {"@type":"Question","name":"O gel reduz a necessidade de irrigação?","acceptedAnswer":{"@type":"Answer","text":"Sim. Por reter água e liberá-la gradualmente, ajuda a reduzir a frequência de irrigação e a enfrentar veranicos."}},
+      {"@type":"Question","name":"Posso misturar com adubo de plantio?","acceptedAnswer":{"@type":"Answer","text":"Sim. Pode ser aplicado seco misturado ao adubo na cova ou pré-hidratado; recomenda-se teste de jarra para novas misturas."}},
+      {"@type":"Question","name":"É compatível com gotejamento e fertirrigação?","acceptedAnswer":{"@type":"Answer","text":"Compatível com sistemas irrigados (gotejo, microaspersão, pivô). Respeite peneiras/filtros para evitar entupimentos."}},
+      {"@type":"Question","name":"Funciona em solos arenosos?","acceptedAnswer":{"@type":"Answer","text":"Sim. O ganho de retenção hídrica é especialmente percebido em solos arenosos, com menor lixiviação e melhor pegamento."}}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo (Aplicação Básica) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Como aplicar Nutri Solo Gel no plantio",
+    "step": [
+      {"@type":"HowToStep","name":"Preparar a cova","text":"Abra a cova de plantio e umedeça levemente o entorno."},
+      {"@type":"HowToStep","name":"Aplicar o gel","text":"Misture Nutri Solo Gel seco ao adubo de plantio ou utilize pré-hidratado, posicionando próximo à zona radicular."},
+      {"@type":"HowToStep","name":"Assentar a muda","text":"Posicione a muda garantindo contato do gel com as raízes."},
+      {"@type":"HowToStep","name":"Completar e irrigar","text":"Feche a cova, compacte suavemente e irrigue para ativar a absorção inicial."}
+    ]
+  }
   </script>
 
   <style>
-    :root{--bg:#0e5b36;--bg2:#094f2d;--zap:#25D366;--max:1100px;--white:#fff;--muted:#cfead9;--shadow:0 10px 24px rgba(0,0,0,.18)}
-    *{box-sizing:border-box} body{margin:0;font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--white)}
-    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    :root{
+      --bg:#0e5b36;--bg2:#094f2d;--surface:#0b3e26;--white:#fff;--muted:#cfead9;--ink:#0b1f14;
+      --zap:#25D366;--ring:#9ae6b4;--shadow:0 10px 24px rgba(0,0,0,.18);--max:1100px;--chip:#0c6b3a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      color:var(--white);
+      background:linear-gradient(180deg,var(--bg),var(--bg2));
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
-    header{text-align:center;padding:10px 0;background:#094f2d}
-    header img{width:180px}
-    .hero{padding:22px 0;text-align:center}
-    .hero h1{font-size:28px;margin:0 0 8px}
-    .card{max-width:360px;margin:10px auto;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+
+    /* HEADER */
+    header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .head{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;padding:6px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{width:170px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+    nav{display:flex;gap:6px;justify-content:center}
+    .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);font-weight:800;font-size:14px;white-space:nowrap}
+    .nav-btn:hover{background:rgba(255,255,255,.12)}
+    .actions{display:flex;align-items:center;gap:8px}
+    .tel{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900;font-size:17px}
+    .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--zap);border:1px solid #1DB954;color:#fff}
+
+    /* MOBILE NAV */
+    @media (max-width:720px){
+      .head{grid-template-columns:1fr auto;grid-auto-rows:min-content}
+      nav{display:none}
+      .brand img{width:130px}
+      .tel{padding:6px 10px;font-size:16px}
+      .wa-circle{width:34px;height:34px}
+    }
+
+    /* HERO */
+    .hero{padding:18px 0 8px}
+    .hero h1{margin:0 0 10px;font-size:30px;line-height:1.1;font-weight:900;letter-spacing:-.2px}
+    .sub{margin:0;color:var(--muted)}
+    .banner{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .badge{background:#0aa84f;border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px;font-weight:900;white-space:nowrap}
+
+    /* LAYOUT */
+    .section{padding:20px 0}
+    .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
+    .h2{margin:6px 0 14px;font-size:26px}
+    .grid-2{display:grid;grid-template-columns:370px 1fr;gap:16px;align-items:start}
+    @media (max-width:900px){ .grid-2{grid-template-columns:1fr} }
+
+    /* CARD IMG */
+    .card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.06)}
     .card img{background:#fff}
-    .section{padding:18px 0}
-    h2{font-size:22px;margin:0 0 10px}
-    p{margin:0 0 12px}
-    table{width:100%;border-collapse:collapse;background:#fff;color:#000;border-radius:10px;overflow:hidden}
+
+    /* TABLE */
+    table{width:100%;border-collapse:collapse;background:#fff;color:#000;border-radius:12px;overflow:hidden}
     th,td{padding:10px;border-bottom:1px solid #e6e6e6;text-align:left}
     th{background:#2e7d32;color:#fff}
-    details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px;margin:8px 0}
-    summary{cursor:pointer;font-weight:700}
-    .comment{background:#fff;color:#000;border-radius:12px;padding:14px}
-    .comment input,.comment textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
-    .btn{margin-top:10px;width:100%;padding:12px;border:0;border-radius:999px;background:var(--zap);color:#fff;font-weight:800}
-    footer{text-align:center;padding:18px;color:var(--muted);font-size:14px}
-    .zap-float{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--zap);box-shadow:var(--shadow)}
+
+    /* DETAILS / FAQ */
+    details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px}
+    details+details{margin-top:8px}
+    summary{cursor:pointer;font-weight:800}
+
+    /* FORM -> WHATSAPP */
+    .comment{background:#fff;color:var(--ink);border:1px solid #e6efe9;border-radius:14px;padding:14px}
+    .comment label{display:block;font-weight:700;margin:6px 0}
+    .comment input,.comment textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #dfeae4}
+    .comment textarea{min-height:110px;resize:vertical}
+    .btn{margin-top:10px;width:100%;padding:12px;border:0;border-radius:999px;background:var(--zap);color:#fff;font-weight:900}
+
+    /* FOOTER */
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:18px 0;color:#cfead9;font-size:14px;text-align:center}
+
+    /* WhatsApp flutuante */
+    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid #1DB954;box-shadow:var(--shadow);z-index:70}
+
+    /* LISTINHAS SEO */
+    .chipbar{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:var(--chip);border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <a href="/"><img src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte Fertilizantes"></a>
+    <div class="wrap head">
+      <a class="brand" href="/index.html" aria-label="Página inicial">
+        <img src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte Fertilizantes">
+      </a>
+      <nav aria-label="Principal">
+        <a class="nav-btn" href="/index.html">Home</a>
+        <a class="nav-btn" href="/produtos/">Produtos</a>
+        <a class="nav-btn" href="/blog/index.html">Blog</a>
+        <a class="nav-btn" href="/quem-somos.html">Quem Somos</a>
+      </nav>
+      <div class="actions">
+        <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
+        <a class="wa-circle" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Innovet%20Tecnologias%20e%20quero%20atendimento%20sobre%20o%20Nutri%20Solo%20Gel.">
+          <svg width="18" height="18" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
+        </a>
+      </div>
+    </div>
   </header>
 
   <main class="wrap">
+    <!-- HERO -->
     <section class="hero">
-      <h1>Nutri Solo Gel — Hidrogel Agrícola para Plantio</h1>
+      <h1>Nutri Solo Gel — Hidrogel Agrícola para Plantio e Pegamento de Mudas</h1>
+      <p class="sub">Retém água, reduz irrigação, melhora o enraizamento e aumenta a sobrevivência das mudas. <b>Frete grátis</b> e <b>envio para todo o Brasil</b>.</p>
+      <div class="banner">
+        <span class="badge">🚚 Frete grátis</span>
+        <span class="badge">🗺️ Envio nacional</span>
+        <span class="badge">⚡ Atendimento imediato no WhatsApp</span>
+      </div>
+    </section>
+
+    <!-- VITRINE + RESUMO -->
+    <section class="section grid-2" aria-labelledby="sobre-produto">
       <div class="card">
         <img id="imgGel" src="/img/produtos/nutrigel.webp" alt="Nutri Solo Gel — Gel para Plantio e Retenção de Água" loading="eager">
       </div>
-      <p>O <strong>Nutri Solo Gel</strong> aumenta a <b>retenção hídrica</b> e reduz perdas por lixiviação. Ideal para <b>eucalipto, milho, soja, café, cacau</b> e mudas ornamentais.</p>
+      <div>
+        <p id="sobre-produto"><strong>Nutri Solo Gel</strong> atua como <em>gel condicionador de solo</em>, aumentando a <b>retenção hídrica</b> e liberando água lentamente para as raízes. Com isso, mantém o metabolismo ativo durante veranicos, reduz a lixiviação e eleva o <b>pegamento</b> e a <b>uniformidade</b> de lavouras e reflorestamentos.</p>
+        <ul>
+          <li><b>Indicações:</b> eucalipto, café, milho, soja, cacau, frutíferas, hortaliças, mudas nativas/ornamentais.</li>
+          <li><b>Sistemas:</b> sequeiro e irrigado (gotejo, microaspersão, pivô), berçário e campo.</li>
+          <li><b>Resultados práticos:</b> mais raízes, menor mortalidade, stand vigoroso e colheitas mais uniformes.</li>
+        </ul>
+
+        <div class="chipbar" aria-label="Cidades e estados atendidos">
+          <span class="chip">SP: Ribeirão Preto, Campinas, SJ Rio Preto</span>
+          <span class="chip">MG: Sul de Minas, Triângulo</span>
+          <span class="chip">BA: Barreiras, LEM, Juazeiro</span>
+          <span class="chip">PR/SC/RS: polos agrícolas</span>
+          <span class="chip">MT/MS/GO: grãos e algodão</span>
+          <span class="chip">ES: Linhares e norte capixaba</span>
+        </div>
+      </div>
     </section>
 
+    <!-- BENEFÍCIOS -->
     <section class="section">
-      <h2>Benefícios e Aplicações</h2>
-      <p>✔ Germinação uniforme, raízes fortes e maior pegamento.</p>
-      <p>✔ Proteção contra seca por até 30 dias e economia de até 50% de água.</p>
-      <p>✔ Uso em sequeiro e irrigado; mistura com adubo/substrato ou hidratado.</p>
+      <p class="kicker">Por que funciona</p>
+      <h2 class="h2">Benefícios agronômicos do hidrogel no plantio</h2>
+      <ul>
+        <li><b>Retenção hídrica elevada</b> → reduz estresse por seca e mantém raízes ativas.</li>
+        <li><b>Liberação gradual</b> de água e nutrientes → menor lixiviação, melhor aproveitamento do adubo.</li>
+        <li><b>Pegamento e vigor inicial</b> → mudas mais uniformes e menor mortalidade pós-transplante.</li>
+        <li><b>Versatilidade</b> → uso seco na cova ou pré-hidratado; compatível com adubos/substratos.</li>
+        <li><b>Eficiência operacional</b> → menor necessidade de replantio e menor custo de irrigação.</li>
+      </ul>
     </section>
 
+    <!-- GARANTIAS / PARÂMETROS TÉCNICOS -->
     <section class="section">
-      <h2>Garantias Técnicas</h2>
+      <p class="kicker">Parâmetros</p>
+      <h2 class="h2">Características técnicas</h2>
       <table>
         <tr><th>Parâmetro</th><th>Valor</th></tr>
-        <tr><td>CTC – Capacidade de Troca Catiónica</td><td>270.000 mmolc/kg</td></tr>
-        <tr><td>CRA – Capacidade de Retenção de Água</td><td>6.000,00% peso/peso</td></tr>
+        <tr><td>CTC (capacidade de troca iônica)</td><td>270.000 mmolc/kg</td></tr>
+        <tr><td>CRA (capacidade de retenção de água)</td><td>Até 6.000% p/p</td></tr>
+        <tr><td>Forma</td><td>Granulado/particulado para hidratação</td></tr>
+        <tr><td>Compatibilidade</td><td>Adubos e substratos (realizar teste de jarra em misturas novas)</td></tr>
       </table>
+      <p class="sub">Valores indicativos típicos do produto. Para melhor posicionamento, chame no WhatsApp e informe cultura, clima e sistema.</p>
     </section>
 
+    <!-- COMO APLICAR -->
     <section class="section">
-      <h2>Perguntas Frequentes</h2>
-      <details><summary>Como aplicar?</summary><p>Misture o produto seco na cova ou hidrate previamente. Pode ir junto ao adubo de plantio.</p></details>
-      <details><summary>Funciona com gotejamento?</summary><p>Sim, totalmente compatível com irrigação localizada e também uso em sequeiro.</p></details>
-      <details><summary>Economiza água?</summary><p>Sim, reduz a necessidade de irrigação em até 50% e mantém a umidade nas raízes.</p></details>
-      <details><summary>Para quais culturas?</summary><p>Eucalipto, milho, soja, café, cacau, hortaliças, ornamentais e nativas para reflorestamento.</p></details>
+      <p class="kicker">Aplicação</p>
+      <h2 class="h2">Como aplicar no dia a dia</h2>
+      <details>
+        <summary><b>Plantio de mudas (eucalipto, café, frutíferas)</b></summary>
+        <p>Aplicar <b>Nutri Solo Gel seco</b> misturado ao adubo na cova ou <b>pré-hidratado</b> e posicionado próximo às raízes. Umedecer o entorno após o fechamento da cova.</p>
+      </details>
+      <details>
+        <summary><b>Grãos (milho, soja)</b></summary>
+        <p>No sulco ou na linha de plantio, visando <b>arranque</b> e <b>uniformidade</b> em solos mais leves/arenosos. Ajuste de volume conforme equipamento e umidade do perfil.</p>
+      </details>
+      <details>
+        <summary><b>Hortaliças e ornamentais</b></summary>
+        <p>No transplante de mudas ou mistura com substrato para <b>estufas e viveiros</b>. A hidratação prévia auxilia distribuição e contato radicular.</p>
+      </details>
+      <details>
+        <summary><b>Irrigado x Sequeiro</b></summary>
+        <p>Em irrigado, reduz frequência de turnos; em sequeiro, atua como <b>seguro hídrico</b> para o pegamento em períodos críticos.</p>
+      </details>
     </section>
 
+    <!-- COMPATIBILIDADE / DICAS -->
     <section class="section">
-      <h2>Fale com um consultor</h2>
+      <p class="kicker">Compatibilidade</p>
+      <h2 class="h2">Dicas práticas e boas práticas</h2>
+      <ul>
+        <li>Compatível com a maioria dos adubos; evite excessos de sais no momento da hidratação.</li>
+        <li>Respeite peneiras/filtros do sistema de irrigação para evitar entupimentos.</li>
+        <li>Hidrate com água limpa quando optar por pré-hidratação.</li>
+        <li>Umedeça o perfil após o plantio para ativar a absorção inicial do gel.</li>
+      </ul>
+    </section>
+
+    <!-- COMPARAÇÃO / POSICIONAMENTO -->
+    <section class="section">
+      <p class="kicker">Posicionamento</p>
+      <h2 class="h2">Quando o Nutri Solo Gel mais se destaca</h2>
+      <ul>
+        <li><b>Solos arenosos</b> com baixa capacidade de retenção.</li>
+        <li><b>Períodos secos/veranicos</b> em janelas de plantio.</li>
+        <li><b>Transplantes</b> sensíveis (café novo, frutíferas, hortaliças).</li>
+        <li><b>Reflorestamento</b> e restauração com mudas nativas.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ EXPANDIDO -->
+    <section class="section">
+      <p class="kicker">Perguntas frequentes</p>
+      <h2 class="h2">Tire suas dúvidas</h2>
+      <details><summary>Qual a diferença para “gel caseiro”?</summary><p>Nutri Solo Gel é um <b>insumo agrícola</b> com formulação e granulometria adequadas ao campo, performance consistente e compatibilidade com adubos/substratos.</p></details>
+      <details><summary>Impacta na adubação?</summary><p>Ajuda a <b>aproveitar melhor</b> a adubação ao reduzir lixiviação e manter umidade, favorecendo absorção radicular.</p></details>
+      <details><summary>Posso usar com inoculantes/biológicos?</summary><p>Regra geral, sim. Faça <b>teste de jarra</b> e evite salinidade elevada na hidratação.</p></details>
+      <details><summary>Funciona em viveiros/berçários?</summary><p>Sim, como condicionador de substrato, melhorando a retenção no pote/bandeja e a recuperação pós-transplante.</p></details>
+      <details><summary>Quanto tempo segura água?</summary><p>Depende de textura do solo, temperatura e regime hídrico. O objetivo é atravessar períodos curtos de déficit com <b>menor estresse</b>.</p></details>
+    </section>
+
+    <!-- RELATO DE CAMPO (SEO) -->
+    <section class="section">
+      <p class="kicker">Resultados</p>
+      <h2 class="h2">Relatos resumidos de campo</h2>
+      <ul>
+        <li><b>Eucalipto (SP/PR)</b>: maior pegamento em talhões arenosos; replantio reduzido.</li>
+        <li><b>Café novo (Sul de MG)</b>: menor mortalidade pós-transplante e stand mais uniforme.</li>
+        <li><b>Hortaliças (BA/PE)</b>: menor murchamento na fase inicial e recuperação mais rápida.</li>
+      </ul>
+      <p class="sub">Quer avaliar para sua cultura? Envie sua situação no WhatsApp e indicamos o posicionamento.</p>
+    </section>
+
+    <!-- CONTATO / FORM -> WHATSAPP -->
+    <section class="section">
+      <p class="kicker">Fale com a gente</p>
+      <h2 class="h2">Atendimento imediato no WhatsApp</h2>
       <form class="comment" onsubmit="return goZap(event)">
         <label for="nome">Seu nome</label>
-        <input id="nome" placeholder="Como podemos te chamar?">
+        <input id="nome" name="nome" placeholder="Como podemos te chamar?"/>
+
         <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" placeholder="Quero saber mais sobre o Nutri Solo Gel."></textarea>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente sua necessidade (cultura, área, sistema — sequeiro/irrigado)…"></textarea>
+
         <button class="btn" type="submit">📲 Enviar no WhatsApp</button>
       </form>
+      <p class="sub" style="margin-top:8px">Mensagem padrão: “Olá, vim do site da Innovet Tecnologias. Produto: Nutri Solo Gel.”</p>
     </section>
   </main>
 
-  <footer>© AgroForte — Soluções em Nutrição e Sustentabilidade Agrícola</footer>
+  <footer>
+    <div class="wrap">
+      <p>© AgroForte — Frete grátis e envio para todo o Brasil • Atendimento: <a href="tel:+5517991405464">(17) 99140-5464</a></p>
+    </div>
+  </footer>
 
   <!-- Botão flutuante WhatsApp -->
-  <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1,%20vim%20do%20site%20da%20Innovet%20Tecnologias%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20o%20Nutri%20Solo%20Gel.">
-    <svg width="28" height="28" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
+  <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Innovet%20Tecnologias%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20o%20Nutri%20Solo%20Gel.">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
   </a>
 
   <script>
-    // Fallback de imagem (garante carregamento mesmo se o nome variar)
+    // Fallback da imagem (garante carregamento mesmo se o nome variar)
     (function(){
       const el = document.getElementById('imgGel');
-      const tries = ["/img/produtos/nutrigel.webp","/img/produtos/nutri-gel.webp","/img/produtos/nutrigel.png","/img/produtos/nutrigel.jpg"];
-      let i=0; el.onerror=function(){ i++; if(i<tries.length){ el.src=tries[i]; } else { el.onerror=null; } };
+      const tries = [
+        "/img/produtos/nutrigel.webp",
+        "/img/produtos/nutri-gel.webp",
+        "/img/produtos/nutrigel.png",
+        "/img/produtos/nutrigel.jpg"
+      ];
+      let i = 0;
+      el.onerror = function(){
+        i++; if(i < tries.length){ el.src = tries[i]; } else { el.onerror = null; }
+      };
     })();
 
+    // Form -> WhatsApp (sem citar cidade, conforme seu padrão)
     function goZap(e){
       e.preventDefault();
       const nome=(document.getElementById('nome').value||'—').trim();
       const msg=(document.getElementById('mensagem').value||'—').trim();
-      const texto = `Olá, vim do site da Innovet Tecnologias.%0A• Nome: ${nome}%0A• Mensagem: ${msg}%0AProduto: Nutri Solo Gel.`;
-      location.href = `https://wa.me/5517991405464?text=${texto}`;
+      const texto = "Ol\u00E1, vim do site da Innovet Tecnologias.\n• Nome: "+nome+"\n• Mensagem: "+msg+"\nProduto: Nutri Solo Gel.";
+      location.href = "https://wa.me/5517991405464?text="+encodeURIComponent(texto);
+      return false;
     }
   </script>
 </body>
