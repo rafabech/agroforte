@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,19 +24,6 @@
   }
   </script>
 
-  <!-- JSON-LD Breadcrumb -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://innovetecnologias.com.br/"},
-      {"@type":"ListItem","position":2,"name":"Produtos","item":"https://innovetecnologias.com.br/produtos/"},
-      {"@type":"ListItem","position":3,"name":"Nutri Energy + Algas","item":"https://innovetecnologias.com.br/produtos/energy/"}
-    ]
-  }
-  </script>
-
   <style>
     :root{
       --bg:#0e5b36; --bg2:#094f2d; --surface:#0b3e26; --brand:#15c15c;
@@ -55,7 +41,7 @@
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* Header fixo com logo à esquerda e navegação sempre visível no mobile */
+    /* Header fixo */
     header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
     .head{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:8px 0}
     .brand{display:flex;align-items:center;gap:10px}
@@ -76,13 +62,35 @@
     .chipbar{display:flex;gap:8px;flex-wrap:wrap}
     .chip{background:var(--chip);border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
 
-    /* Cartão da imagem: altura controlada e cover centrado SEM distorção */
-    .card{max-width:480px;margin:10px auto;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
-    .card .imgbox{width:100%;height:clamp(220px,38vw,320px);display:grid;place-items:center;background:#fff}
-    .card .imgbox img{max-height:100%;max-width:100%;object-fit:contain}
+    /* Imagem do produto (corrigido) */
+    .card{
+      max-width:480px;
+      margin:10px auto;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:#fff;
+    }
+    .card .imgbox{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#fff;
+      padding:16px;
+    }
+    .card .imgbox img{
+      width:100%;
+      height:auto;
+      max-height:420px;
+      object-fit:contain;
+    }
+    @media (max-width:640px){
+      .card .imgbox{padding:12px;}
+      .card .imgbox img{max-height:280px;}
+    }
 
     .section{padding:18px 0}
-    .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
     h2{margin:6px 0 10px;font-size:24px}
     p{margin:0 0 12px}
     ul{margin:8px 0 12px 20px}
@@ -169,40 +177,6 @@
          <b>Mochila 20 L</b>: <b>80–100 mL/20 L</b>.<br>
          <b>Equivalência (200 L/ha)</b>: <b>0,8–1,0 L/ha</b>.<br>
          <b>Intervalo típico</b>: <b>10–20 dias</b> (7–10 dias em estresse/alta exigência; 20–30 em manutenção).</p>
-      <details>
-        <summary>Grãos/Fibras (soja, milho, trigo, arroz, sorgo, algodão, feijão)</summary>
-        <p>Aplicar do vegetativo ativo ao pré/pós-florada; reforçar no enchimento: <b>0,8–1,0 L/ha</b>.</p>
-      </details>
-      <details>
-        <summary>Hortaliças (tomate, pimentão, berinjela, cucurbitáceas)</summary>
-        <p><b>0,8–1,0 L/ha</b> do pré-florescimento ao enchimento a cada 10–15 dias; em estufa, monitorar 2–3×/semana.</p>
-      </details>
-      <details>
-        <summary>Folhosas (alface etc.)</summary>
-        <p><b>0,5–1,0 L/ha</b> do estabelecimento ao crescimento, a cada 7–12 dias (começar na faixa inferior em materiais sensíveis).</p>
-      </details>
-      <details>
-        <summary>Tuberosas e bulbos (batata, cebola, alho)</summary>
-        <p><b>0,8–1,0 L/ha</b> do início da tuberização/bulbificação, a cada 10–15 dias.</p>
-      </details>
-      <details>
-        <summary>Frutíferas, citros, videira, café e perenes</summary>
-        <p><b>0,8–1,0 L/ha</b> em brotações, pré/pós-florada e crescimento de frutos; 15–30 dias.</p>
-      </details>
-      <details>
-        <summary>Pastagens/forrageiras</summary>
-        <p><b>0,8–1,0 L/ha</b> após pastejo/corte; repetir em 15–30 dias.</p>
-      </details>
-    </section>
-
-    <section class="section">
-      <h2>Condições de aplicação e preparo da calda</h2>
-      <ul>
-        <li><b>Horários</b>: início da manhã ou fim da tarde/noite; UR &gt; 50%, vento &lt; 12–13 km/h, T ≤ 30–32 °C.</li>
-        <li><b>Preparo</b>: água limpa (70–80%) no tanque, ajustar pH 5,5–6,5, adicionar o produto, completar com água e manter agitação.</li>
-        <li>Usar peneiras <b>50–80 mesh</b> e filtros limpos. <b>Teste de jarra</b> obrigatório para novas misturas.</li>
-        <li><b>Fertirrigação</b>: compatível com gotejo/microaspersão/pivô conforme recomendação técnica.</li>
-      </ul>
     </section>
 
     <section class="section">
@@ -214,15 +188,6 @@
         <tr><td>Densidade</td><td>1,1 g/mL</td></tr>
       </table>
       <p style="opacity:.9;margin-top:8px"><small>Compostos bioativos naturais de <em>Ascophyllum nodosum</em>: citocinina-like, betainas, manitol, laminarina, alginatos, aminoácidos, vitaminas e minerais.</small></p>
-    </section>
-
-    <section class="section">
-      <h2>Segurança, armazenamento e manuseio</h2>
-      <ul>
-        <li>Usar EPI no preparo e aplicação; reentrada após secagem.</li>
-        <li>Armazenar em local seco e ventilado (5–35 °C), ao abrigo do sol. Não congelar.</li>
-        <li>Contato pele/olhos: lavar com água corrente. Ingestão: não provocar vômito; procurar atendimento com rótulo/bula.</li>
-      </ul>
     </section>
 
     <section class="section">
