@@ -16,7 +16,7 @@
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Torta de Neem",
-    "image": "/img/produtos/torta.webp.png",
+    "image": "https://innovetecnologias.com.br/img/produtos/torta.webp.png",
     "description": "Fertilizante orgânico feito de castanhas de Neem moídas, seguro para gado e plantas. Excelente solubilidade, resposta rápida e eficiência contra pragas.",
     "brand": {"@type": "Brand", "name": "AgroForte"},
     "sku": "TOR-NEEM-001",
@@ -43,10 +43,10 @@
     .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);font-weight:800}
     .tel{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);font-weight:900;white-space:nowrap}
     @media (max-width:720px){
-      .head{grid-template-columns:1fr;grid-auto-rows:auto;gap:6px}
-      .brand img{width:130px}
-      nav{justify-content:flex-start;flex-wrap:wrap}
-      .tel{justify-self:start}
+      .head{grid-template-columns:1fr;grid-auto-rows:auto;gap:6px;text-align:center}
+      .brand img{width:130px;margin:auto}
+      nav{justify-content:center;flex-wrap:wrap}
+      .tel{justify-self:center}
     }
 
     .hero{padding:22px 0 8px;text-align:center}
@@ -102,12 +102,12 @@
         <span class="badge">🚚 Frete grátis</span>
         <span class="badge">🗺️ Envio para todo o Brasil</span>
       </div>
-      <p>A <strong>Torta de Neem</strong> é um fertilizante orgânico natural feito a partir das castanhas de Neem moídas, com alta eficiência agronômica e segurança para plantas e animais. Atua no controle de pragas, melhora o solo, e estimula o crescimento das culturas.</p>
+      <p>A <strong>Torta de Neem</strong> é um fertilizante orgânico natural feito a partir das castanhas de Neem moídas, com alta eficiência agronômica e segurança para plantas e animais. Atua no controle de pragas, melhora o solo e estimula o crescimento das culturas.</p>
     </section>
 
     <div class="photo-card">
       <div class="photo-frame">
-        <img id="imgTorta" src="/agroforte/img/produtos/torta.webp.png" alt="Torta de Neem embalagem">
+        <img id="imgTorta" src="/img/produtos/torta.webp.png" alt="Torta de Neem embalagem">
       </div>
     </div>
 
@@ -157,7 +157,7 @@
     (function(){
       const el=document.getElementById('imgTorta');
       const tries=[
-        "/agroforte/img/produtos/torta.webp.png",
+        "/img/produtos/torta.webp.png",
         "/img/produtos/torta.webp",
         "/img/produtos/torta.png",
         "/img/produtos/torta.jpg"
