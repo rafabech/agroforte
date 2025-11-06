@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Torta de Neem — Fertilizante Orgânico Natural | AgroForte</title>
-  <meta name="description" content="Torta de Neem 100% natural — fertilizante orgânico feito com castanhas de Neem moídas. Atua no controle de pragas, aumenta a produtividade e melhora a recuperação das plantas. Frete grátis e envio para todo o Brasil."/>
+  <meta name="description" content="Torta de Neem 100% natural — fertilizante orgânico feito com castanhas de Neem moídas. Seguro para gado e plantas, ajuda a controlar pragas, eleva produtividade e qualidade. Frete grátis e envio para todo o Brasil."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/torta/"/>
 
   <!-- Favicon -->
@@ -13,79 +13,96 @@
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
+    "@context": "https://schema.org",
     "@type": "Product",
     "name": "Torta de Neem",
     "image": "https://innovetecnologias.com.br/img/produtos/torta.png",
-    "description": "Fertilizante orgânico feito de castanhas de Neem moídas, seguro para gado e plantas. Excelente solubilidade, resposta rápida e eficiência contra pragas.",
-    "brand": {"@type": "Brand", "name": "AgroForte"},
-    "sku": "TOR-NEEM-001",
-    "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","reviewCount": "132"}
+    "description": "Fertilizante orgânico natural feito com castanhas de Neem moídas. Fácil aplicação, resposta rápida e auxílio no controle natural de pragas. Seguro para gado e vegetais.",
+    "brand": {"@type":"Brand","name":"AgroForte"},
+    "sku":"TOR-NEEM-001",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"132"}
   }
   </script>
 
   <style>
     :root{
       --bg:#0e5b36;--bg2:#094f2d;--white:#fff;--muted:#cfead9;--zap:#25D366;
-      --shadow:0 10px 24px rgba(0,0,0,.18);--max:1100px;
+      --shadow:0 10px 24px rgba(0,0,0,.18);--max:1100px;--ink:#14261b;
+      --chip:#0aa84f;
     }
     *{box-sizing:border-box}
-    body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--white);overflow-x:hidden}
+    body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--white);overflow-x:hidden}
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block;height:auto}
+    img{display:block;max-width:100%;height:auto}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* Header */
+    /* Header (mesmo padrão do ktrop) */
     header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
     .head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;padding:8px 0}
     .brand img{width:160px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
     .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);font-weight:800}
     .tel{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);font-weight:900;white-space:nowrap}
     @media (max-width:720px){
       .head{grid-template-columns:1fr;grid-auto-rows:auto;gap:6px;text-align:center}
       .brand img{width:130px;margin:auto}
-      nav{justify-content:center;flex-wrap:wrap}
+      nav{justify-content:center}
       .tel{justify-self:center}
     }
 
+    /* Hero */
     .hero{padding:22px 0 8px;text-align:center}
     .hero h1{margin:0 0 10px;font-size:28px;line-height:1.2;font-weight:900}
-    .hero p{color:var(--muted);margin:0 auto;max-width:900px}
-    .banner{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
-    .badge{background:#0aa84f;border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px;font-weight:900}
+    .hero p{max-width:920px;margin:0 auto;color:var(--muted)}
+    .badgebar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0 0}
+    .badge{background:var(--chip);border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px;font-weight:900}
 
-    /* Imagem */
-    .photo-card{margin:14px auto;background:#fff;border-radius:14px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.06);width:min(680px,100%);padding:12px}
-    .photo-frame{display:grid;place-items:center;aspect-ratio:1/1;background:#fff;border-radius:10px;overflow:hidden}
-    .photo-frame img{width:100%;height:100%;object-fit:contain;object-position:center center}
+    /* Imagem do produto – mesmo tamanho dos cards grandes (ktrop) */
+    .media{margin:14px auto;width:min(560px,100%)}
+    .frame{
+      background:#fff;border:1px solid rgba(0,0,0,.06);box-shadow:var(--shadow);
+      border-radius:14px;padding:12px;
+    }
+    .img-box{
+      aspect-ratio:1/1; /* quadrado como os demais */
+      background:#fff;border-radius:10px;overflow:hidden;display:grid;place-items:center;
+    }
+    .img-box img{
+      width:100%;height:100%;
+      object-fit:contain;         /* sem corte e sem distorção */
+      object-position:center center;
+    }
 
-    .section{padding:20px 0}
+    /* Conteúdo */
+    .section{padding:18px 0}
     h2{font-size:22px;margin:0 0 10px}
     p{margin:0 0 12px}
     ul{margin:0 0 10px 20px}
-    .table{width:100%;border-collapse:collapse;background:#fff;color:#18271f;border-radius:12px;overflow:hidden}
-    .table th,.table td{padding:10px;border-bottom:1px solid #e8eee9;text-align:left}
+    .table{width:100%;border-collapse:collapse;background:#fff;color:var(--ink);border-radius:12px;overflow:hidden}
+    .table th,.table td{padding:10px;border-bottom:1px solid #e7efe9;text-align:left}
     .table th{background:#2e7d32;color:#fff}
+
     details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px;margin:8px 0}
     summary{cursor:pointer;font-weight:800}
 
-    footer{text-align:center;padding:18px;color:#cfead9;border-top:1px solid rgba(255,255,255,.08)}
+    footer{text-align:center;padding:18px;color:var(--muted);border-top:1px solid rgba(255,255,255,.08)}
     .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:var(--shadow);z-index:70}
   </style>
 </head>
 <body>
 
-  <!-- WhatsApp Flutuante -->
-  <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Innovet%20e%20quero%20saber%20mais%20sobre%20a%20Torta%20de%20Neem.">
-    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
+  <!-- WhatsApp Float -->
+  <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20a%20Torta%20de%20Neem.">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
   </a>
 
   <!-- Header -->
   <header>
     <div class="wrap head">
-      <a class="brand" href="/index.html"><img src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/></a>
-      <nav>
+      <a class="brand" href="/index.html" aria-label="AgroForte Home">
+        <img src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte">
+      </a>
+      <nav aria-label="Principal">
         <a class="nav-btn" href="/index.html">Home</a>
         <a class="nav-btn" href="/produtos/">Produtos</a>
         <a class="nav-btn" href="/blog/index.html">Blog</a>
@@ -98,67 +115,69 @@
   <main class="wrap">
     <section class="hero">
       <h1>Torta de Neem — Fertilizante Orgânico 100% Natural</h1>
-      <div class="banner">
+      <div class="badgebar">
         <span class="badge">🚚 Frete grátis</span>
         <span class="badge">🗺️ Envio para todo o Brasil</span>
+        <span class="badge">⚡ Atendimento imediato no WhatsApp</span>
       </div>
-      <p>A <strong>Torta de Neem</strong> é um fertilizante orgânico natural feito a partir das castanhas de Neem moídas, com alta eficiência agronômica e segurança para plantas e animais. Atua no controle de pragas, melhora o solo e estimula o crescimento das culturas.</p>
+      <p>A <strong>Torta de Neem</strong> é produzida das <b>castanhas de Neem moídas</b>. Pode ser aplicada em <b>plantas e pastagens</b> (segura para o gado) e auxilia no <b>controle natural de pragas</b>. Possui <b>excelente solubilidade</b>, <b>resposta rápida</b> e contribui para <b>crescimento celular</b>, <b>recuperação pós-estresse</b> e <b>maior produtividade</b>.</p>
     </section>
 
-    <div class="photo-card">
-      <div class="photo-frame">
-        <img id="imgTorta" src="/img/produtos/torta.png" alt="Torta de Neem embalagem">
+    <!-- Imagem no mesmo tamanho dos produtos (sem distorção) -->
+    <div class="media">
+      <div class="frame">
+        <div class="img-box">
+          <img id="imgTorta" src="/img/produtos/torta.png" alt="Torta de Neem — embalagem AgroForte">
+        </div>
       </div>
     </div>
 
     <section class="section">
-      <h2>Principais Benefícios</h2>
+      <h2>Benefícios principais</h2>
       <ul>
-        <li>✔ Controle natural de pragas — sem afetar o gado nem as plantas.</li>
-        <li>✔ Alta solubilidade e fácil aplicação.</li>
-        <li>✔ Resposta rápida da planta, rica em compostos bioativos.</li>
-        <li>✔ Estimula crescimento celular e resistência contra estresses.</li>
-        <li>✔ Contém fitormônios de algas marinhas, auxiliando na recuperação pós-estresse.</li>
-        <li>✔ Aumenta produtividade e rentabilidade em todas as culturas.</li>
-        <li>✔ Melhora a qualidade de frutos, grãos, tubérculos e bulbos.</li>
+        <li>✔ <b>Controle natural de pragas</b> sem afetar gado nem vegetais.</li>
+        <li>✔ <b>Fácil aplicação</b> e <b>excelente solubilidade</b>.</li>
+        <li>✔ <b>Resposta rápida</b> por conter nutrientes em solução.</li>
+        <li>✔ <b>Estimula crescimento celular</b> e melhora o vigor.</li>
+        <li>✔ Alto teor de <b>fitormônios (algas marinhas)</b> — ajuda na <b>recuperação pós-estresse</b> (seca, calor, fitotoxidade, ataque de pragas).</li>
+        <li>✔ <b>Mais produtividade e rentabilidade</b> nas culturas.</li>
+        <li>✔ <b>Melhora a qualidade</b> de frutos, grãos, tubérculos e bulbos.</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Doses e Recomendações</h2>
-      <table class="table">
-        <thead><tr><th>Cultura</th><th>Dose</th><th>Intervalo</th></tr></thead>
+      <table class="table" aria-label="Tabela de doses da Torta de Neem">
+        <thead><tr><th>Cultura</th><th>Dose (foliar/ha)</th><th>Reaplicação</th></tr></thead>
         <tbody>
-          <tr><td>Hortaliças</td><td>200 mL/ha</td><td>Reaplicar a cada 15 dias</td></tr>
-          <tr><td>Frutíferas</td><td>400 mL/ha</td><td>A cada 30 dias</td></tr>
-          <tr><td>Grãos</td><td>250 mL/ha</td><td>A cada 30 dias</td></tr>
-          <tr><td>Pastagem</td><td>400 mL/ha</td><td>A cada 120 dias</td></tr>
-          <tr><td>Cana-de-Açúcar</td><td>400 mL/ha</td><td>A cada 45 dias</td></tr>
+          <tr><td>Hortaliças</td><td>200 mL/ha</td><td>a cada 15 dias</td></tr>
+          <tr><td>Frutíferas</td><td>400 mL/ha</td><td>a cada 30 dias</td></tr>
+          <tr><td>Grãos</td><td>250 mL/ha</td><td>a cada 30 dias</td></tr>
+          <tr><td>Pastagem</td><td>400 mL/ha</td><td>a cada 120 dias</td></tr>
+          <tr><td>Cana-de-açúcar</td><td>400 mL/ha</td><td>a cada 45 dias</td></tr>
         </tbody>
       </table>
-
       <details>
-        <summary><strong>Modo de Aplicação</strong></summary>
+        <summary><strong>Condições ideais de aplicação</strong></summary>
         <ul>
-          <li>Aplicar em horários de temperatura amena (manhã ou fim da tarde).</li>
-          <li>Temperaturas abaixo de 32°C e ventos menores que 13 km/h.</li>
-          <li>Aplicar com solo levemente úmido.</li>
-          <li>Evitar calor intenso e sol direto.</li>
-          <li>Para mistura em calda, realizar teste de jarra e consultar técnico.</li>
+          <li>Aplicar em <b>temperaturas amenas</b> (manhã/tarde) e com <b>solo levemente úmido</b>.</li>
+          <li>Temperatura &le; <b>32 ºC</b> e vento &lt; <b>13 km/h</b>.</li>
+          <li>Preferir <b>UR &gt; 50%</b> e evitar sol a pino.</li>
+          <li>Para misturas, <b>teste de jarra</b> e consulta ao <b>Eng. Agrônomo</b>.</li>
+          <li>Excelente sinergia com <b>bioestimulantes à base de algas</b>.</li>
         </ul>
       </details>
     </section>
   </main>
 
-  <footer>© AgroForte — Fertilizantes Naturais com Frete Grátis para todo o Brasil.</footer>
+  <footer>© AgroForte — Frete grátis e envio para todo o Brasil. | Suporte: (17) 99140-5464</footer>
 
   <script>
-    // Fallback para garantir exibição da imagem
+    // Fallbacks garantem exibição se o nome do arquivo mudar
     (function(){
       const el=document.getElementById('imgTorta');
       const tries=["/img/produtos/torta.png","/img/produtos/torta.webp","/img/produtos/torta.jpg"];
-      let i=0;
-      el.onerror=function(){i++;if(i<tries.length){el.src=tries[i];}else{el.onerror=null;}};
+      let i=0; el.onerror=function(){i++; if(i<tries.length){el.src=tries[i];} else {el.onerror=null;}}
     })();
   </script>
 </body>
