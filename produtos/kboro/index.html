@@ -14,22 +14,19 @@
   <meta property="og:url" content="https://innovetecnologias.com.br/produtos/kboro/"/>
   <meta property="og:image" content="https://innovetecnologias.com.br/img/produtos/kboro.webp"/>
 
-  <!-- Favicon (raiz do site) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/webp" href="/img/produtos/logooficialfundoverde.webp"/>
 
   <!-- Schema.org: Organization + Breadcrumb + Product -->
-  <script type="application/ld+json">
-  {
+  <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"AgroForte Fertilizantes",
     "url":"https://innovetecnologias.com.br/",
     "logo":"https://innovetecnologias.com.br/img/produtos/logooficialfundoverde.webp",
     "contactPoint":[{"@type":"ContactPoint","telephone":"+55-17-99140-5464","contactType":"customer support","areaServed":"BR"}]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
+  }</script>
+  <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"BreadcrumbList",
     "itemListElement":[
@@ -37,10 +34,8 @@
       {"@type":"ListItem","position":2,"name":"Produtos","item":"https://innovetecnologias.com.br/produtos/"},
       {"@type":"ListItem","position":3,"name":"K-BORO","item":"https://innovetecnologias.com.br/produtos/kboro/"}
     ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
+  }</script>
+  <script type="application/ld+json">{
     "@context":"https://schema.org/",
     "@type":"Product",
     "name":"K-BORO",
@@ -50,8 +45,7 @@
     "sku":"KBORO-044B04-AA01",
     "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"132"},
     "offers":{"@type":"Offer","priceCurrency":"BRL","availability":"https://schema.org/InStock","price":"0.00","url":"https://innovetecnologias.com.br/produtos/kboro/"}
-  }
-  </script>
+  }</script>
 
   <style>
     :root{
@@ -78,14 +72,26 @@
     .tel{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900;font-size:17px}
     .wa-circle{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--zap);border:1px solid var(--zap-border);color:#fff}
 
+    /* Mobile nav fixa no rodapé (sempre visível no celular) */
+    .mobile-nav{display:none}
     @media (max-width:720px){
       .head{grid-template-columns:1fr auto;grid-template-areas:"brand actions";padding:4px 0}
       .brand img{width:130px}
       nav{display:none}
       .tel{padding:6px 10px;font-size:16px}
       .wa-circle{width:34px;height:34px}
-      /* Atalho fixo inferior para navegação no mobile */
-      .mobnav{position:sticky;top:0}
+      .mobile-nav{
+        position:fixed;left:0;right:0;bottom:0;z-index:65;
+        display:flex;justify-content:space-around;gap:6px;padding:8px 10px;
+        background:rgba(9,79,45,.98);backdrop-filter:saturate(140%) blur(6px);
+        border-top:1px solid rgba(255,255,255,.12)
+      }
+      .mobile-nav a{
+        flex:1;text-align:center;padding:10px 8px;border-radius:12px;
+        border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);
+        font-weight:800;font-size:13px;white-space:nowrap
+      }
+      body{padding-bottom:66px;} /* espaço para não esconder conteúdo atrás da barra */
     }
 
     /* Hero */
@@ -100,9 +106,17 @@
     @media (max-width:980px){ .grid-2{grid-template-columns:1fr} }
 
     .card{background:#fff;color:#111;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
-    .card img{background:#fff}
-    .pad{padding:14px}
+    /* Caixa da imagem centralizada perfeitamente */
+    .imgbox{
+      display:grid;place-items:center;background:#fff;
+      height:clamp(220px, 40vw, 420px); /* responsivo */
+      padding:8px;
+    }
+    .imgbox img{
+      max-height:100%; width:auto; object-fit:contain; object-position:center center;
+    }
 
+    .pad{padding:14px}
     .section{padding:18px 0}
     h2{margin:0 0 10px;font-size:22px}
     h3{margin:12px 0 8px;font-size:18px}
@@ -123,12 +137,13 @@
     footer{text-align:center;padding:18px;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,.08)}
 
     /* WhatsApp flutuante */
-    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70}
+    .zap-float{position:fixed;right:16px;bottom:70px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);box-shadow:var(--shadow);z-index:70}
+    @media (min-width:721px){ .zap-float{bottom:16px} }
   </style>
 </head>
 <body>
 
-  <!-- Botão flutuante WhatsApp -->
+  <!-- Botão WhatsApp -->
   <a class="zap-float" aria-label="WhatsApp"
      href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20o%20K-BORO%20(K2O%2044%%20+%20B%204%%20+%20AAs%201%%20)%20para%20minha%20cultura.">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
@@ -155,6 +170,14 @@
     </div>
   </header>
 
+  <!-- Barra de navegação fixa (apenas mobile) -->
+  <nav class="mobile-nav" aria-label="Navegação móvel">
+    <a href="/index.html">Home</a>
+    <a href="/produtos/">Produtos</a>
+    <a href="/blog/index.html">Blog</a>
+    <a href="/quem-somos.html">Quem Somos</a>
+  </nav>
+
   <main class="wrap">
     <!-- HERO -->
     <section class="hero">
@@ -172,7 +195,9 @@
     <!-- VISUAL + GARANTIAS -->
     <section class="section grid-2" aria-labelledby="garantias">
       <div class="card">
-        <img id="imgKboro" src="/img/produtos/kboro.webp" alt="K-BORO — Fertilizante foliar K₂O 44% + B 4% + aminoácidos 1%"/>
+        <div class="imgbox">
+          <img id="imgKboro" src="/img/produtos/kboro.webp" alt="K-BORO — Fertilizante foliar K₂O 44% + B 4% + aminoácidos 1%"/>
+        </div>
       </div>
       <div>
         <h2 id="garantias">Garantias Técnicas</h2>
@@ -208,7 +233,7 @@
       </ul>
     </section>
 
-    <!-- DOSES E RECOMENDAÇÕES (RESUMO) -->
+    <!-- DOSES E RECOMENDAÇÕES -->
     <section class="section" id="doses">
       <h2>Dosagens e Recomendações</h2>
       <p><b>Concentração padrão (foliar):</b> 0,25–0,50% → 250–500 g/100 L. <b>Mochila 20 L:</b> 50–100 g. <b>Equivalência (200 L/ha):</b> 0,5–1,0 kg/ha. <b>Intervalo:</b> 10–20 dias (7–10 dias em alta exigência/estresse).</p>
@@ -285,7 +310,7 @@
       <p style="opacity:.9;margin-top:10px">Dica: envie também <b>fotos do talhão</b> e, se tiver, <b>análise foliar/solo</b> para posicionarmos a dose com precisão.</p>
     </section>
 
-    <!-- SEO extra expansível -->
+    <!-- SEO extra -->
     <section class="section">
       <details>
         <summary><b>Mais detalhes técnicos e boas práticas</b></summary>
