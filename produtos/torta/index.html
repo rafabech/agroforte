@@ -7,10 +7,8 @@
   <meta name="description" content="Torta de Neem 100% natural — fertilizante orgânico feito com castanhas de Neem moídas. Atua no controle de pragas, aumenta a produtividade e melhora a recuperação das plantas. Frete grátis e envio para todo o Brasil."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/torta/"/>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/produtos/logo-oficial-fundo-verde.png"/>
 
-  <!-- Schema.org Produto -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -35,7 +33,6 @@
     img{max-width:100%;display:block;height:auto}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* Header */
     header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
     .head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;padding:8px 0}
     .brand img{width:160px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
@@ -55,9 +52,9 @@
     .banner{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
     .badge{background:#0aa84f;border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px;font-weight:900}
 
-    /* Imagem */
     .photo-card{margin:14px auto;background:#fff;border-radius:14px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.06);width:min(680px,100%);padding:12px}
     .photo-frame{display:grid;place-items:center;aspect-ratio:1/1;background:#fff;border-radius:10px;overflow:hidden}
+    /* Garante NUNCA cortar a embalagem e mantê-la centralizada */
     .photo-frame img{width:100%;height:100%;object-fit:contain;object-position:center center}
 
     .section{padding:20px 0}
@@ -76,12 +73,10 @@
 </head>
 <body>
 
-  <!-- WhatsApp Flutuante -->
   <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20Innovet%20e%20quero%20saber%20mais%20sobre%20a%20Torta%20de%20Neem.">
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
   </a>
 
-  <!-- Header -->
   <header>
     <div class="wrap head">
       <a class="brand" href="/index.html"><img src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/></a>
@@ -107,7 +102,12 @@
 
     <div class="photo-card">
       <div class="photo-frame">
-        <img id="imgTorta" src="/img/produtos/torta.webp.png" alt="Torta de Neem embalagem">
+        <!-- Picture com múltiplas alternativas + cache-buster -->
+        <picture>
+          <source srcset="/img/produtos/torta.webp.png?v=3" type="image/png">
+          <source srcset="/img/produtos/torta.webp?v=3" type="image/webp">
+          <img id="imgTorta" src="/img/produtos/torta.webp.png?v=3" alt="Torta de Neem embalagem">
+        </picture>
       </div>
     </div>
 
@@ -153,16 +153,20 @@
   <footer>© AgroForte — Fertilizantes Naturais com Frete Grátis para todo o Brasil.</footer>
 
   <script>
-    // Garantir imagem da Torta carregando
+    // Fallback extra: se a primeira URL não carregar, alterna automaticamente
     (function(){
-      const el=document.getElementById('imgTorta');
-      const tries=[
-        "/img/produtos/torta.webp.png",
-        "/img/produtos/torta.webp",
-        "/img/produtos/torta.png",
-        "/img/produtos/torta.jpg"
+      const img=document.getElementById('imgTorta');
+      const opts=[
+        "/img/produtos/torta.webp.png?v=4",
+        "/img/produtos/torta.webp?v=4",
+        "/img/produtos/torta.png?v=4",
+        "/img/produtos/torta.jpg?v=4"
       ];
-      let i=0; el.onerror=function(){i++; if(i<tries.length){el.src=tries[i];} else {el.onerror=null;}};
+      let i=0;
+      img.addEventListener('error', function(){
+        i++;
+        if(i<opts.length){ img.src=opts[i]; } else { img.removeEventListener('error', this); }
+      }, {once:false});
     })();
   </script>
 </body>
