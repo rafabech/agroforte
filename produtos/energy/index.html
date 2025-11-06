@@ -3,44 +3,79 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Nutri Energy + Algas — Bioestimulante de Ascophyllum nodosum | Crescimento, Florada e Resiliência</title>
-  <meta name="description" content="Nutri Energy Algas: bioestimulante de Ascophyllum nodosum. Estimula crescimento, florada e pegamento, aumenta °Brix e tolerância a seca e calor. Uso foliar e fertirrigação em grãos, hortaliças, frutíferas, café, citros e cana.">
-  <link rel="canonical" href="/produtos/energy/"/>
+  <title>Nutri Energy Algas — Bioestimulante de Ascophyllum nodosum | Crescimento, Florada e Resiliência | AgroForte</title>
+  <meta name="description" content="Nutri Energy Algas: bioestimulante de alta performance com extrato de Ascophyllum nodosum. Ativa enraizamento, florada e pegamento, eleva °Brix e a qualidade de frutos e grãos. Uso foliar e fertirrigação. Frete grátis e envio para todo o Brasil."/>
+  <link rel="canonical" href="https://innovetecnologias.com.br/produtos/nutrienergyalgas/"/>
+
+  <!-- Favicon -->
   <link rel="icon" href="/img/produtos/logooficialfundoverde.webp" type="image/webp"/>
 
-  <!-- JSON-LD: Product Schema -->
+  <!-- JSON-LD: Product -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "Nutri Energy + Algas",
-    "image": "https://innovetecnologias.com.br/img/produtos/energy.webp",
-    "description": "Bioestimulante de algas (Ascophyllum nodosum) para crescimento, florada, pegamento e resiliência.",
-    "brand": {"@type": "Brand", "name": "AgroForte"},
-    "sku": "ENERGYALGAS001",
-    "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","reviewCount": "142"}
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Nutri Energy Algas",
+    "image":"https://innovetecnologias.com.br/img/produtos/nutrienergyalgas.webp",
+    "description":"Bioestimulante de Ascophyllum nodosum para crescimento radicular, florada, pegamento e tolerância a estresses. Uso foliar e fertirrigação.",
+    "brand":{"@type":"Brand","name":"AgroForte"},
+    "sku":"NEA-001",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"157"},
+    "offers":{
+      "@type":"Offer",
+      "priceCurrency":"BRL",
+      "availability":"https://schema.org/InStock",
+      "url":"https://innovetecnologias.com.br/produtos/nutrienergyalgas/"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://innovetecnologias.com.br/"},
+      {"@type":"ListItem","position":2,"name":"Produtos","item":"https://innovetecnologias.com.br/produtos/"},
+      {"@type":"ListItem","position":3,"name":"Nutri Energy Algas","item":"https://innovetecnologias.com.br/produtos/nutrienergyalgas/"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ (reforço de SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Para quais culturas o Nutri Energy Algas é indicado?","acceptedAnswer":{"@type":"Answer","text":"Grãos, fibras, hortaliças, frutíferas, citros, café, cana e cultivos em estufa/túnel, do berçário à colheita."}},
+      {"@type":"Question","name":"Posso usar via fertirrigação?","acceptedAnswer":{"@type":"Answer","text":"Sim. Além da aplicação foliar, o produto é compatível com gotejo, microaspersão e pivô, seguindo as boas práticas de preparo de calda."}},
+      {"@type":"Question","name":"O produto aumenta °Brix e qualidade?","acceptedAnswer":{"@type":"Answer","text":"Sim. O pacote bioativo melhora a partição de fotoassimilados, elevando calibre, firmeza e °Brix com melhor padronização visual."}}
+    ]
   }
   </script>
 
   <style>
     :root{
-      --bg:#0e5b36; --bg2:#094f2d; --surface:#0b3e26; --white:#fff;
-      --muted:#cfead9; --zap:#25D366; --shadow:0 10px 24px rgba(0,0,0,.18);
-      --max:1100px; --chip:#0c6b3a;
+      --bg:#0e5b36; --bg2:#094f2d; --surface:#0b3e26; --brand:#15c15c;
+      --ink:#0b1f14; --white:#fff; --muted:#cfead9; --ring:#9ae6b4;
+      --shadow:0 10px 24px rgba(0,0,0,.18); --radius:16px; --max:1100px;
+      --zap:#25D366; --zap-border:#1DB954; --gold:#f2c94c;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
     body{
       color:var(--white);
       background:linear-gradient(180deg,var(--bg),var(--bg2));
-      font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
       overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;height:auto;display:block}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* HEADER */
+    /* HEADER (logo à esquerda + nav no centro/direita + telefone) */
     header{
       position:sticky;top:0;z-index:60;
       background:rgba(9,79,45,.96);
@@ -48,108 +83,119 @@
       border-bottom:1px solid rgba(255,255,255,.08)
     }
     .head{
-      display:grid;align-items:center;gap:10px;
+      display:grid;
       grid-template-columns:auto 1fr auto;
       grid-template-areas:"brand nav actions";
-      padding:8px 0
+      gap:10px;
+      align-items:center;
+      padding:8px 0;
     }
     .brand{grid-area:brand;display:flex;align-items:center;gap:10px}
-    .brand img{width:120px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    nav[aria-label="Principal"]{grid-area:nav;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+    .brand img{width:140px;height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+    nav[aria-label="Principal"]{
+      grid-area:nav;display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap;
+    }
     .nav-btn{
-      padding:8px 12px;border-radius:999px;
+      display:inline-flex;align-items:center;justify-content:center;
+      height:36px;padding:0 12px;border-radius:999px;
       border:1px solid rgba(255,255,255,.14);
       background:rgba(255,255,255,.06);
       font-weight:800;font-size:14px;white-space:nowrap
     }
     .nav-btn:hover{background:rgba(255,255,255,.12)}
-    .actions{grid-area:actions;display:flex;gap:8px;align-items:center}
-    .tel{
-      padding:8px 12px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.06);font-weight:900
-    }
+    .actions{grid-area:actions;display:flex;align-items:center;gap:8px}
+    .tel{display:inline-flex;align-items:center;height:36px;padding:0 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);font-weight:900}
 
-    /* Faixa Frete Grátis */
-    .ann{
-      background:#0aa84f;border-bottom:1px solid rgba(255,255,255,.18);
-      color:#fff
+    /* BARRA DE INFO (separada da nav) */
+    .infobar{
+      background:rgba(255,255,255,.08);
+      border-top:1px solid rgba(255,255,255,.06);
+      border-bottom:1px solid rgba(255,255,255,.06);
     }
-    .ann .inner{
-      max-width:1100px;margin:auto;padding:6px 16px;
-      display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
-      font-weight:900
+    .infobar .content{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;
+      padding:8px 0;color:#e8fff3;font-weight:800
     }
-
-    @media (max-width:720px){
-      .brand img{width:96px}
-      .nav-btn{font-size:13px;padding:7px 10px}
-      .tel{font-size:15px}
-    }
+    .badge{background:#0aa84f;border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px}
 
     /* HERO */
-    .hero{padding:20px 0 10px}
-    .hero h1{margin:0 0 10px;font-size:30px;line-height:1.15;font-weight:900;letter-spacing:-.2px}
-    .chipbar{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{background:var(--chip);border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;font-weight:800;font-size:13px}
+    .hero{padding:20px 0 8px}
+    .hero h1{margin:0 0 8px;font-size:32px;line-height:1.12;font-weight:900;letter-spacing:-.2px}
+    .hero p{margin:0;color:var(--muted);max-width:80ch}
 
-    /* IMAGEM DO PRODUTO */
-    .card{
-      max-width:480px;
-      margin:10px auto;
-      border-radius:14px;
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      background:#fff;
+    /* FIGURA do produto (sem corte no mobile) */
+    .hero-figure{
+      margin-top:12px;
+      background:#fff;border-radius:14px;
+      border:1px solid #e8efe9;box-shadow:var(--shadow);
+      display:grid;place-items:center;
+      padding:14px;
     }
-    .card .imgbox{
-      width:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:#fff;
-      padding:16px;
+    .hero-figure img{
+      width:auto; height:auto;
+      max-width:100%;
+      max-height:360px;          /* limita a altura para não ficar gigante */
+      object-fit:contain;        /* evita corte da imagem */
     }
-    .card .imgbox img{
-      width:100%;
-      height:auto;
-      max-height:420px;
-      object-fit:contain;
-    }
-    @media (max-width:640px){
-      .card .imgbox{padding:12px;}
-      .card .imgbox img{max-height:280px;}
+    @media (max-width:720px){
+      .brand img{width:110px}
+      .head{grid-template-columns:auto 1fr;grid-template-areas:"brand actions" "nav nav"}
+      nav[aria-label="Principal"]{justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch}
+      .nav-btn,.tel{height:34px;font-size:13px;padding:0 10px}
+      .hero h1{font-size:26px}
+      .hero-figure img{max-height:300px}
     }
 
-    /* TEXTOS */
+    /* SEÇÕES */
     .section{padding:18px 0}
+    .kicker{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800;font-size:12px}
     h2{margin:6px 0 10px;font-size:24px}
+    h3{margin:12px 0 8px;font-size:18px}
     p{margin:0 0 12px}
-    ul{margin:8px 0 12px 20px}
+
+    .card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;
+      padding:14px
+    }
+    ul{margin:8px 0 12px 18px}
     li{margin:6px 0}
 
-    /* TABELA */
-    table{width:100%;border-collapse:collapse;background:#fff;color:#000;border-radius:12px;overflow:hidden}
-    th,td{padding:10px;border-bottom:1px solid #e6e6e6;text-align:left}
+    /* Tabelas */
+    table{width:100%;border-collapse:collapse;background:#fff;color:#222;border-radius:12px;overflow:hidden}
+    th,td{padding:10px;border-bottom:1px solid #e8e8e8;text-align:left}
     th{background:#2e7d32;color:#fff}
 
-    footer{border-top:1px solid rgba(255,255,255,.08);padding:16px 0;color:#d7efe4;text-align:center}
-    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:var(--shadow);z-index:70}
+    /* FAQ e Comentário */
+    details{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:10px;margin:8px 0}
+    summary{cursor:pointer;font-weight:800}
+
+    .comment{background:#fff;color:#0b1f14;border:1px solid #e6efe9;border-radius:12px;padding:14px}
+    .comment label{display:block;font-weight:700;margin:6px 0 6px}
+    .comment input,.comment textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid #dfeae4}
+    .comment textarea{min-height:110px;resize:vertical}
+    .btn{margin-top:10px;width:100%;padding:12px;border:0;border-radius:999px;background:var(--brand);color:#063a1f;font-weight:900}
+
+    footer{border-top:1px solid rgba(255,255,255,.08);padding:16px 0;color:#d7efe4}
+    .foot{display:grid;gap:8px}
+    .foot-cta{display:flex;gap:8px;flex-wrap:wrap}
+
+    /* WhatsApp flutuante */
+    .zap-float{
+      position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;
+      display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid var(--zap-border);
+      box-shadow:var(--shadow);z-index:70
+    }
   </style>
 </head>
-
 <body>
-
-  <!-- WhatsApp Flutuante -->
-  <a class="zap-float" href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20Nutri%20Energy%20%2B%20Algas.">
-    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
-  </a>
 
   <!-- HEADER -->
   <header>
     <div class="wrap head">
       <a class="brand" href="/index.html" aria-label="Voltar à Home">
-        <img id="logoAgf" src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte">
+        <img src="/img/produtos/logooficialfundoverde.webp" alt="AgroForte"/>
       </a>
       <nav aria-label="Principal">
         <a class="nav-btn" href="/index.html">Home</a>
@@ -161,82 +207,177 @@
         <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
       </div>
     </div>
-
-    <!-- Faixa separada -->
-    <div class="ann">
-      <div class="inner">🚚 Frete grátis • Envio para todo o Brasil</div>
+    <!-- Barra de informação separada da NAV -->
+    <div class="infobar">
+      <div class="wrap content">
+        <span class="badge">🚚 Frete grátis</span>
+        <span class="badge">🗺️ Envio para todo o Brasil</span>
+        <span class="badge">⚡ Atendimento rápido no WhatsApp</span>
+      </div>
     </div>
   </header>
 
-  <!-- CONTEÚDO -->
+  <!-- HERO -->
   <main class="wrap">
     <section class="hero">
-      <h1>Nutri Energy + Algas — Bioestimulante de <em>Ascophyllum nodosum</em></h1>
+      <h1>Nutri Energy Algas — Bioestimulante de <em>Ascophyllum nodosum</em></h1>
+      <p>Extrato concentrado de algas marinhas para <b>vigor vegetativo</b>, <b>florada intensa</b>, <b>pegamento uniforme</b>, <b>recuperação pós-estresse</b> e <b>qualidade superior</b> de frutos e grãos. Uso <b>foliar</b> e <b>fertirrigação</b>; alta compatibilidade de tanque.</p>
+      <figure class="hero-figure">
+        <img id="img-nea" src="/img/produtos/nutrienergyalgas.webp" alt="Nutri Energy Algas — bioestimulante de Ascophyllum nodosum">
+      </figure>
+    </section>
+
+    <!-- POR QUE FUNCIONA -->
+    <section class="section">
+      <p class="kicker">Por que funciona</p>
+      <h2>Pacote bioativo completo e operação simples</h2>
       <div class="card">
-        <div class="imgbox">
-          <img id="imgEnergy" src="/img/produtos/energy.webp" alt="Nutri Energy + Algas — Bioestimulante de Algas Marinhas">
-        </div>
+        <p><b>Nutri Energy Algas</b> é um bioestimulante de alta performance obtido do extrato concentrado da alga <em>Ascophyllum nodosum</em>, referência mundial em compostos bioativos. A matriz rica em <b>fitormônios naturais</b> (efeito citocinina-like), <b>betainas</b>, <b>manitol</b>, <b>laminarina</b>, <b>alginatos</b>, <b>aminoácidos</b>, vitaminas e minerais:</p>
+        <ul>
+          <li><b>Ativa crescimento</b> e equilibra a fisiologia (meristemas e dossel em alta rotação).</li>
+          <li><b>Carreia nutrientes</b> e melhora absorção/translocação (xilema/floema).</li>
+          <li><b>Estabiliza membranas</b>, melhora estado hídrico/osmótico e acelera a <b>recuperação pós-fitotoxicidade</b>.</li>
+          <li><b>Fortalece raízes</b>, aumenta área foliar funcional e <b>eleva °Brix</b> e padronização de frutos/grãos.</li>
+          <li><b>Resiliência</b> a seca, calor, salinidade e frio com perdas reduzidas e recuperação rápida.</li>
+        </ul>
+        <p><b>Indicado</b> para grãos, fibras, hortaliças, frutíferas, citros, café, cana e estufa. <b>Compatível de tanque</b> com programas nutricionais e defensivos seletivos (realizar teste de jarra). Aplicação <b>foliar</b> ou <b>fertirrigação</b> (gotejo/microaspersão/pivô) com calda estável, <b>alta solubilidade</b> e ótimo espalhamento.</p>
       </div>
-      <div class="chipbar" style="margin-top:6px">
-        <span class="chip">🌱 Crescimento e enraizamento</span>
-        <span class="chip">💐 Florada e pegamento</span>
-        <span class="chip">🔥 Resiliência a seca e calor</span>
-        <span class="chip">🧪 Uso foliar e fertirrigação</span>
+    </section>
+
+    <!-- BENEFÍCIOS DIRETOS -->
+    <section class="section">
+      <p class="kicker">Benefícios</p>
+      <h2>Vigor, florada, pegamento e qualidade comercial</h2>
+      <div class="card">
+        <ul>
+          <li><b>Arranque e crescimento vegetativo</b> intensos; brotações ativas e coloração marcada.</li>
+          <li><b>Florada forte</b> e <b>pegamento uniforme</b>; menor abortamento reprodutivo.</li>
+          <li><b>Frutos maiores</b>, mais <b>doces (°Brix)</b> e padronizados, com melhor acabamento comercial.</li>
+          <li><b>Resiliência</b> a seca, calor, salinidade e frio; <b>recuperação rápida</b> do talhão.</li>
+          <li><b>Eficiência de adubação</b>: melhor aproveitamento de N–P–K e micronutrientes.</li>
+          <li><b>Operação versátil</b>: campo aberto e ambiente protegido (estufa/túnel), foliar ou fertirrigação.</li>
+        </ul>
+        <p class="mini">SEO: nutri energy algas, <em>Ascophyllum nodosum</em>, bioestimulante de algas, extrato de algas marinhas, crescimento radicular, florada e pegamento, recuperação pós-estresse, aumento de °Brix, qualidade de frutos e grãos, eficiência de adubação, agricultura sustentável, estufa e campo aberto.</p>
       </div>
-      <p style="margin-top:10px">O <strong>Nutri Energy Algas</strong> é um bioestimulante premium obtido do extrato concentrado da alga <em>Ascophyllum nodosum</em>. A combinação de fitohormônios naturais, polissacarídeos e aminoácidos melhora a tolerância a estresses, intensifica a florada e o pegamento e eleva calibre e °Brix de frutos e grãos.</p>
     </section>
 
+    <!-- INSTRUÇÕES DE USO -->
     <section class="section">
-      <h2>Benefícios diretos</h2>
-      <ul>
-        <li>Arranque vigoroso, brotação ativa e coloração intensa do dossel.</li>
-        <li>Florada abundante, melhor viabilidade de pólen e pegamento uniforme.</li>
-        <li>Frutos e grãos com maior calibre, peso e °Brix; lotes mais homogêneos.</li>
-        <li>Tolerância a seca, calor e salinidade; menor perda por estresses.</li>
-        <li>Compatível com programas nutricionais e defensivos seletivos.</li>
-      </ul>
+      <p class="kicker">Instruções de uso</p>
+      <h2>Modo de aplicação, condições ideais e compatibilidade</h2>
+      <div class="card">
+        <h3>Modo de aplicação</h3>
+        <p>Preferencialmente via <b>pulverização foliar</b> com cobertura homogênea. Também pode ser utilizado em <b>tratamento de sementes</b> ou <b>aplicado no sulco</b> conforme a cultura e a recomendação técnica.</p>
+
+        <h3>Condições ideais</h3>
+        <ul>
+          <li><b>Horários:</b> início da manhã ou fim da tarde/noite.</li>
+          <li><b>Temperatura:</b> até 32 °C; <b>UR</b> &gt; 50%; <b>vento</b> &lt; 13 km/h.</li>
+          <li><b>Dossel:</b> limpo (sem poeira) para maximizar a absorção foliar; direcionar também à <b>face inferior</b> das folhas.</li>
+        </ul>
+
+        <h3>Compatibilidade</h3>
+        <p>Alta compatibilidade com defensivos e fertilizantes foliares. <b>Sempre faça teste de jarra</b> em novas misturas; evite oxidantes fortes e <b>misturas muito alcalinas</b>. Use peneiras 50–80 mesh e mantenha filtros limpos.</p>
+      </div>
     </section>
 
+    <!-- DOSES (ORIENTATIVO) -->
     <section class="section">
-      <h2>Dosagens e aplicação</h2>
-      <p><b>Via foliar</b>: 0,40–0,50% → 400–500 mL/100 L<br>
-      <b>Mochila 20 L</b>: 80–100 mL/20 L<br>
-      <b>Equivalência (200 L/ha)</b>: 0,8–1,0 L/ha<br>
-      <b>Intervalo</b>: 10–20 dias (7–10 dias em estresse, 20–30 em manutenção)</p>
+      <p class="kicker">Doses e posicionamento</p>
+      <h2>Referências operacionais por objetivo</h2>
+      <div class="card">
+        <p><b>Via foliar (tanque):</b> usar dentro do programa nutricional para <b>arranque</b>, <b>pré/pós-florada</b> e <b>enchimento</b>. Ajuste dose/intervalo conforme análise foliar, estádio, clima e porte do dossel.</p>
+        <table aria-label="Doses referenciais">
+          <thead><tr><th>Objetivo</th><th>Faixa usual (exemplo)</th><th>Janela</th></tr></thead>
+          <tbody>
+            <tr><td>Arranque vegetativo</td><td>0,5–1,0 L/ha</td><td>V2–V6 / crescimento ativo</td></tr>
+            <tr><td>Pré/Pós-florada &amp; Pegamento</td><td>0,6–1,2 L/ha</td><td>Pré-floração até “chumbinho”</td></tr>
+            <tr><td>Enchimento / Qualidade</td><td>0,6–1,2 L/ha</td><td>Enchimento de frutos/grãos</td></tr>
+          </tbody>
+        </table>
+        <p><b>Intervalo típico:</b> 10–20 dias (encurtar para 7–10 em alta exigência/estresse; estender para 20–30 em manutenção). Em materiais sensíveis, iniciar na faixa inferior e observar 24–48 h.</p>
+      </div>
     </section>
 
+    <!-- FAQ VISUAL -->
     <section class="section">
-      <h2>Garantias (teores)</h2>
-      <table>
-        <tr><th>Nutriente</th><th>Teor</th></tr>
-        <tr><td>Cálcio (Ca)</td><td>1,0%</td></tr>
-        <tr><td>Magnésio (Mg)</td><td>1,0%</td></tr>
-        <tr><td>Densidade</td><td>1,1 g/mL</td></tr>
-      </table>
+      <p class="kicker">Perguntas frequentes</p>
+      <h2>Dúvidas comuns sobre o Nutri Energy Algas</h2>
+      <details>
+        <summary>Funciona em estufa?</summary>
+        <p>Sim. Tem excelente desempenho em ambiente protegido (estufa/túnel), com redução de perdas por estresse e manutenção da sanidade do dossel.</p>
+      </details>
+      <details>
+        <summary>Melhora °Brix e padronização?</summary>
+        <p>Sim. Favorece a partição de carboidratos, elevando calibre, firmeza e °Brix, com lotes mais homogêneos e acabamento visual consistente.</p>
+      </details>
+      <details>
+        <summary>Posso usar com N–P–K e micronutrientes?</summary>
+        <p>Sim. O produto potencializa o aproveitamento de nutrientes aplicados via solo ou folha; realize teste de jarra nas primeiras misturas.</p>
+      </details>
     </section>
 
+    <!-- FORM/WHATSAPP -->
     <section class="section">
-      <h2>Fale com um consultor</h2>
-      <p>Atendimento técnico imediato via WhatsApp. Tire dúvidas de posicionamento, compatibilidade e manejo por cultura.</p>
-      <a class="nav-btn" href="https://wa.me/5517991405464?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20saber%20sobre%20o%20Nutri%20Energy%20%2B%20Algas.">📲 Chamar no WhatsApp</a>
+      <p class="kicker">Fale conosco</p>
+      <h2>Tire dúvidas e receba o posicionamento para sua cultura</h2>
+      <form class="comment" onsubmit="return goZap(event)">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" placeholder="Como podemos te chamar?"/>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Ex.: Cultura, cidade/estado, objetivo (florada, pegamento, enchimento)…"></textarea>
+
+        <button class="btn" type="submit">📲 Falar no WhatsApp</button>
+        <p style="margin-top:8px;color:#4b6a58"><b>Frete grátis</b> e <b>envio para todo o Brasil</b>.</p>
+      </form>
     </section>
   </main>
 
+  <!-- RODAPÉ -->
   <footer>
-    <div class="wrap">
-      <p><a class="nav-btn" href="/index.html">Home</a> <a class="nav-btn" href="/produtos/">Produtos</a> <a class="nav-btn" href="/blog/index.html">Blog</a> <a class="nav-btn" href="/quem-somos.html">Quem Somos</a></p>
-      <small>© AgroForte — Frete grátis e envio para todo o Brasil • Tel: (17) 99140-5464</small>
+    <div class="wrap foot">
+      <div class="foot-cta">
+        <a class="nav-btn" href="/index.html">Home</a>
+        <a class="nav-btn" href="/produtos/">Produtos</a>
+        <a class="nav-btn" href="/blog/index.html">Blog</a>
+        <a class="nav-btn" href="/quem-somos.html">Quem Somos</a>
+      </div>
+      <a class="tel" href="tel:+5517991405464">(17) 99140-5464</a>
+      <small>© AgroForte — Frete grátis e envio para todo o Brasil.</small>
     </div>
   </footer>
 
+  <!-- Botão flutuante WhatsApp -->
+  <a class="zap-float" aria-label="WhatsApp"
+     href="https://wa.me/5517991405464?text=Ol%C3%A1%20AgroForte!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20Nutri%20Energy%20Algas%20(%20cultura%2Fcidade%20)%20e%20frete.">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
+      <path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/>
+    </svg>
+  </a>
+
   <script>
-    // Fallback da imagem
+    // Fallbacks de imagem
     (function(){
-      const el=document.getElementById('imgEnergy');
-      if(!el)return;
-      const tries=["/img/produtos/energy.webp","/img/produtos/energy.png"];
-      let i=0;el.onerror=function(){i++;if(i<tries.length){el.src=tries[i];}else{el.onerror=null;}};
+      const el = document.getElementById('img-nea');
+      const tries = [
+        "/img/produtos/nutrienergyalgas.webp",
+        "/img/produtos/nutri-energy-algas.webp",
+        "/img/produtos/nutrienergyalgas.png",
+        "/img/produtos/nutrienergyalgas.jpg"
+      ];
+      let i=0; el.onerror=function(){ i++; if(i<tries.length){ el.src=tries[i]; } else { el.onerror=null; } };
     })();
+
+    // Form -> WhatsApp
+    function goZap(e){
+      e.preventDefault();
+      const nome=(document.getElementById('nome').value||'—').trim();
+      const msg=(document.getElementById('mensagem').value||'—').trim();
+      const texto = `Ol\u00E1 AgroForte! Quero orienta\u00E7\u00E3o sobre Nutri Energy Algas.\n• Nome: ${nome}\n• Mensagem: ${msg}\n• CEP p/ frete: ______`;
+      location.href = `https://wa.me/5517991405464?text=${encodeURIComponent(texto)}`;
+      return false;
+    }
   </script>
 </body>
 </html>
