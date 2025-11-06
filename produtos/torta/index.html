@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,7 +7,7 @@
   <meta name="description" content="Torta de Neem 100% natural (castanhas de neem moídas). Fácil aplicação, excelente solubilidade e resposta rápida. Ajuda no controle de pragas, acelera recuperação pós-estresse e aumenta produtividade em hortaliças, frutíferas, grãos, pastagens e cana. Doses e recomendações completas."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/torta/"/>
 
-  <!-- Favicon (raiz) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/produtos/logo-oficial-fundo-verde.png"/>
 
   <!-- JSON-LD Produto -->
@@ -21,10 +20,10 @@
     "description":"Fertilizante orgânico feito de castanhas de neem moídas. Solubilidade elevada, resposta rápida e ampla aplicação em diversas culturas. Contribui para manejo de pragas sem afetar o gado ou plantas.",
     "sku":"TORNEEM-ORG-001",
     "image":[
-      "/img/produtos/torta.webp.png",
-      "/img/produtos/torta.webp",
-      "/img/produtos/torta.png",
-      "/img/produtos/torta.jpg"
+      "https://innovetecnologias.com.br/agroforte/img/produtos/torta.webp.png",
+      "https://innovetecnologias.com.br/img/produtos/torta.webp",
+      "https://innovetecnologias.com.br/img/produtos/torta.png",
+      "https://innovetecnologias.com.br/img/produtos/torta.jpg"
     ],
     "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"87"}
   }
@@ -45,23 +44,26 @@
     img{max-width:100%;display:block;height:auto}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* Header fixo com navegação visível no mobile */
+    /* Header fixo com navegação + telefone (visível no mobile) */
     header{position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .head{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center;padding:8px 0}
+    .head{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:8px 0}
     .brand img{width:170px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-    nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+    nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
     .nav-btn{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);font-weight:800}
     .nav-btn:focus,.nav-btn:hover{outline:2px solid var(--ring)}
+    .tel{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);font-weight:900;white-space:nowrap}
     @media (max-width:720px){
-      .head{grid-template-columns:1fr}
-      nav{justify-content:flex-start}
+      .head{grid-template-columns:1fr;grid-auto-rows:auto;gap:6px}
       .brand img{width:135px}
+      nav{justify-content:flex-start}
+      .tel{justify-self:start}
     }
 
-    /* Hero */
     .hero{padding:18px 0 8px}
     .hero h1{margin:0 0 8px;font-size:30px;line-height:1.15;font-weight:900}
     .hero p{margin:0;color:var(--muted)}
+    .banner{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .badge{background:#0aa84f;border:1px solid rgba(255,255,255,.18);padding:6px 10px;border-radius:12px;font-weight:900}
 
     /* Card de imagem centralizada e sem corte */
     .photo-card{
@@ -74,7 +76,7 @@
       background:#fff;border-radius:10px;overflow:hidden;
     }
     .photo-frame img{
-      width:100%;height:100%;object-fit:contain; /* garante sem corte */
+      width:100%;height:100%;object-fit:contain; /* sem corte */
       object-position:center center;
     }
 
@@ -84,16 +86,13 @@
     ul{margin:0 0 10px 18px}
     .pill{display:inline-block;margin:6px 6px 0 0;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-weight:800}
 
-    /* Tabelas */
     .table{width:100%;border-collapse:collapse;background:#fff;color:#18271f;border-radius:12px;overflow:hidden}
     .table th,.table td{padding:10px;border-bottom:1px solid #e8eee9;text-align:left}
     .table th{background:#2e7d32;color:#fff}
 
-    /* Caixas */
     details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px;margin:8px 0}
     summary{cursor:pointer;font-weight:800}
 
-    /* Form WhatsApp */
     .comment{background:#fff;color:#0b1f14;border-radius:12px;padding:14px;border:1px solid #e6efe9}
     .comment label{display:block;font-weight:700;margin:6px 0}
     .comment input,.comment textarea{width:100%;padding:10px;border:1px solid #cfdad3;border-radius:10px}
@@ -101,8 +100,6 @@
     .btn{margin-top:10px;width:100%;padding:12px;border:0;border-radius:999px;background:var(--zap);color:#fff;font-weight:900}
 
     footer{text-align:center;padding:18px;color:#cfead9;border-top:1px solid rgba(255,255,255,.08)}
-
-    /* WhatsApp flutuante */
     .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:var(--shadow);z-index:70}
   </style>
 </head>
@@ -114,7 +111,7 @@
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
   </a>
 
-  <!-- Header com navegação (visível no celular) -->
+  <!-- Header -->
   <header>
     <div class="wrap head">
       <a class="brand" href="/index.html" aria-label="Voltar para a Home">
@@ -126,6 +123,7 @@
         <a class="nav-btn" href="/blog/index.html">Blog</a>
         <a class="nav-btn" href="/quem-somos.html">Quem Somos</a>
       </nav>
+      <a class="tel" href="tel:+5517991405464">📞 (17) 99140-5464</a>
     </div>
   </header>
 
@@ -133,13 +131,17 @@
     <!-- HERO -->
     <section class="hero">
       <h1>Torta de Neem — Fertilizante Orgânico 100% Natural</h1>
+      <div class="banner">
+        <span class="badge">🚚 Frete grátis</span>
+        <span class="badge">🗺️ Envio para todo o Brasil</span>
+      </div>
       <p>Feita a partir das <strong>castanhas de Neem moídas</strong> (<em>Azadirachta indica</em>), segura para <strong>gado</strong> e <strong>plantas</strong>, com fácil aplicação, ótima solubilidade e <strong>resposta rápida</strong>. Contribui no <strong>controle de pragas</strong>, acelera a recuperação pós-estresse e eleva produtividade.</p>
     </section>
 
-    <!-- IMAGEM CENTRALIZADA -->
+    <!-- IMAGEM CENTRALIZADA (sem corte) -->
     <div class="photo-card">
       <div class="photo-frame">
-        <img id="imgTorta" src="/img/produtos/torta.webp.png" alt="Torta de Neem — embalagem do produto">
+        <img id="imgTorta" src="/agroforte/img/produtos/torta.webp.png" alt="Torta de Neem — embalagem do produto">
       </div>
     </div>
 
@@ -155,19 +157,11 @@
         <li><strong>Mais produtividade e rentabilidade</strong> por hectare.</li>
         <li><strong>Melhora qualidade</strong> de frutos, grãos, tubérculos e bulbos (calibre, firmeza e padrão comercial).</li>
       </ul>
-      <div>
-        <span class="pill">Orgânico</span>
-        <span class="pill">Solúvel</span>
-        <span class="pill">Solo e Foliar</span>
-        <span class="pill">Recuperação pós-estresse</span>
-        <span class="pill">Compatível com manejos</span>
-      </div>
     </section>
 
     <!-- DOSES -->
     <section class="section">
       <h2>Dosagens e Recomendações</h2>
-
       <table class="table" aria-label="Doses por cultura">
         <thead><tr><th>Cultura</th><th>Quando aplicar</th><th>Dose indicativa</th><th>Reaplicação</th></tr></thead>
         <tbody>
@@ -183,7 +177,7 @@
         <summary><strong>Condições ideais de aplicação</strong></summary>
         <ul>
           <li><strong>Horário:</strong> início da manhã ou fim da tarde (temperaturas amenas).</li>
-          <li><strong>Clima:</strong> temperaturas <em>&le;</em> 32&nbsp;°C, vento &lt; 13&nbsp;km/h, umidade adequada.</li>
+          <li><strong>Clima:</strong> temperaturas &le; 32&nbsp;°C, vento &lt; 13&nbsp;km/h, umidade adequada.</li>
           <li><strong>Solo:</strong> preferir com alguma umidade.</li>
           <li><strong>Compatibilidades:</strong> indicado usar com bioestimulante de algas; fazer <em>teste de jarra</em> para misturas.</li>
         </ul>
@@ -210,15 +204,6 @@
       </details>
     </section>
 
-    <!-- FAQ -->
-    <section class="section">
-      <h2>Perguntas Frequentes</h2>
-      <details><summary>A Torta de Neem afeta o gado ou as plantas?</summary><p>Não. O produto é <strong>seguro para gado e vegetais</strong> quando usado conforme orientação.</p></details>
-      <details><summary>Ajuda no controle de pragas?</summary><p>Sim. Os compostos do neem auxiliam no <strong>manejo de pragas</strong> e na recuperação da planta após ataques.</p></details>
-      <details><summary>Posso misturar com outros insumos?</summary><p>Via de regra, sim, mas <strong>sempre faça teste de jarra</strong> ao montar novas misturas.</p></details>
-      <details><summary>Qual volume de calda usar?</summary><p>Adequar ao dossel: 80–200&nbsp;L/ha em extensivas; 150–300&nbsp;L/ha em hortifruti/copas densas.</p></details>
-    </section>
-
     <!-- Contato -->
     <section class="section">
       <h2>Fale com um consultor</h2>
@@ -235,11 +220,11 @@
   <footer>© AgroForte — Orgânicos, Biológicos e Nutrição Inteligente</footer>
 
   <script>
-    // Fallback da imagem (inclui o nome que você subiu: torta.webp.png)
+    // Fallback da imagem (1º o caminho que você enviou)
     (function(){
       const el = document.getElementById('imgTorta');
       const tries = [
-        "/img/produtos/torta.webp.png",
+        "/agroforte/img/produtos/torta.webp.png",
         "/img/produtos/torta.webp",
         "/img/produtos/torta.png",
         "/img/produtos/torta.jpg"
