@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Torta de Neem — Fertilizante Orgânico Natural e Sustentável | AgroForte</title>
-  <meta name="description" content="Torta de Neem AgroForte — fertilizante orgânico 100% natural feito de castanhas de Neem moídas. Melhora o solo, ajuda no controle de pragas e aumenta a produtividade. Frete grátis e envio para todo o Brasil."/>
+  <meta name="description" content="Torta de Neem AgroForte — fertilizante orgânico 100% natural feito de castanhas de Neem moídas. Seguro para o gado e as plantas. Melhora solo, ajuda no controle de pragas e aumenta a produtividade. Frete grátis e envio para todo o Brasil."/>
   <link rel="canonical" href="https://innovetecnologias.com.br/produtos/torta/"/>
   <link rel="icon" href="/img/produtos/logo-oficial-fundo-verde.png" type="image/png"/>
 
@@ -15,7 +15,7 @@
     "@type":"Product",
     "name":"Torta de Neem",
     "image":"https://innovetecnologias.com.br/img/produtos/torta.png",
-    "description":"Fertilizante orgânico natural feito de castanhas de Neem moídas. Seguro para o gado e as plantas, melhora o solo, ajuda no controle de pragas e aumenta a produtividade.",
+    "description":"Fertilizante orgânico natural feito de castanhas de Neem moídas. Seguro para o gado e as plantas. Melhora o solo, ajuda no controle de pragas e aumenta a produtividade.",
     "brand":{"@type":"Brand","name":"AgroForte"},
     "sku":"TOR-NEEM-001",
     "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"142"}
@@ -39,53 +39,37 @@
     img{display:block;max-width:100%;height:auto}
     .wrap{max-width:var(--max);margin:auto;padding:0 16px}
 
-    /* ===== HEADER AJUSTADO (logo à esquerda + itens ao lado) ===== */
+    /* ===== HEADER (logo à esquerda + nav/telefone ao lado) ===== */
     header{
       position:sticky;top:0;z-index:60;background:rgba(9,79,45,.96);
       backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid rgba(255,255,255,.1)
     }
     .head{
-      display:grid;
-      grid-template-columns:auto 1fr auto; /* logo | nav | telefone */
-      align-items:center;gap:12px;padding:8px 0;
+      display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:8px 0;
     }
-    .brand{display:flex;align-items:center}
-    .brand img{width:120px;height:auto}               /* menor e à esquerda */
+    .brand img{width:120px;height:auto}
     nav{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-start}
-    .nav-btn{
-      padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.10);
-      border:1px solid rgba(255,255,255,.15);font-weight:700;font-size:14px;
-    }
+    .nav-btn{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);font-weight:700;font-size:14px}
     .nav-btn:hover{background:rgba(255,255,255,.18)}
-    .tel{
-      font-weight:900;border:1px solid rgba(255,255,255,.15);
-      background:rgba(255,255,255,.08);border-radius:999px;padding:6px 10px;
-      white-space:nowrap;font-size:14px
-    }
+    .tel{font-weight:900;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);border-radius:999px;padding:6px 10px;white-space:nowrap;font-size:14px}
 
-    /* Mobile: mantém logo à esquerda e empilha nav + telefone ao lado/abaixo sem ficar gigante */
     @media(max-width:760px){
-      .head{
-        grid-template-columns:auto 1fr;               /* logo | conteúdo */
-        grid-template-areas:
-          "brand nav"
-          "brand tel";
-      }
+      .head{grid-template-columns:auto 1fr;grid-template-areas:"brand nav" "brand tel"}
       .brand{grid-area:brand}
-      nav{grid-area:nav;gap:6px}
+      nav{grid-area:nav}
       .tel{grid-area:tel;margin-top:6px;justify-self:start}
-      .brand img{width:96px}                          /* reduz mais no mobile */
+      .brand img{width:96px}
       .nav-btn{padding:5px 9px;font-size:13px}
     }
 
     /* Hero */
-    .hero{text-align:left;padding:18px 0 10px}
+    .hero{padding:18px 0 10px}
     .hero h1{font-size:26px;line-height:1.25;margin-bottom:8px;font-weight:900}
     .hero p{max-width:900px;color:var(--muted)}
     .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
     .badge{background:var(--chip);padding:6px 10px;border-radius:12px;font-weight:800}
 
-    /* Imagem do produto — proporcional e pequena */
+    /* Imagem produto (contida e centralizada) */
     .photo{margin:16px 0 6px;text-align:center}
     .photo img{
       width:320px;max-width:90%;
@@ -93,22 +77,21 @@
       background:#fff;padding:8px;object-fit:contain;object-position:center;
     }
 
-    /* Texto e seções */
+    /* Seções de conteúdo */
     .section{padding:18px 0}
     h2{font-size:22px;margin-bottom:10px}
     p,li{margin-bottom:10px}
     ul{margin-left:20px}
-    .table{width:100%;border-collapse:collapse;background:#fff;color:#163021;
-      border-radius:12px;overflow:hidden;margin-top:8px}
+
+    .table{width:100%;border-collapse:collapse;background:#fff;color:#163021;border-radius:12px;overflow:hidden;margin-top:8px}
     .table th,.table td{padding:10px;border-bottom:1px solid #e8eee9;text-align:left}
     .table th{background:#2e7d32;color:#fff}
-    details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
-      border-radius:12px;padding:10px;margin-top:10px}
+
+    details{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:10px;margin-top:10px}
     summary{cursor:pointer;font-weight:800}
+
     footer{text-align:center;padding:18px;color:#cfead9;border-top:1px solid rgba(255,255,255,.08)}
-    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;
-      border-radius:50%;display:grid;place-items:center;background:var(--zap);
-      color:#fff;box-shadow:var(--shadow);z-index:70}
+    .zap-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--zap);color:#fff;box-shadow:var(--shadow);z-index:70}
   </style>
 </head>
 <body>
@@ -118,7 +101,7 @@
     <svg width="26" height="26" viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9.4 3 4.1 8.2 4.1 14.8c0 2.4.7 4.6 2 6.5L4 29l7-2.1c1.8 1 3.9 1.5 6 1.5 6.6 0 11.9-5.3 11.9-11.9S22.6 3 16 3zm6.9 17.1c-.3.9-1.8 1.6-2.5 1.7-.7.1-1.7.2-2.8-.2-2.4-.9-3.9-2.9-4.1-3.1-.2-.2-1-1.3-1-2.5s.6-1.8.8-2c.3-.2.6-.3.8-.3.2 0 .4 0 .6.1.2.4.5 1.3.6 1.4.1.1.1.2 0 .4-.1.2-.1.3-.3.5-.1.1-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.3 1.1 2.4 1.4 2.7 1.6.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.6-.2.2.1 1.5.7 1.7.8l.2.2c0 .2-.1.6-.3 1z"/></svg>
   </a>
 
-  <!-- ===== Header (logo à esquerda) ===== -->
+  <!-- Header -->
   <header>
     <div class="wrap head">
       <a class="brand" href="/index.html" aria-label="Home">
@@ -142,24 +125,48 @@
         <span class="badge">🗺️ Envio para todo o Brasil</span>
         <span class="badge">🌱 Produto 100% natural e sustentável</span>
       </div>
-      <p>A <strong>Torta de Neem AgroForte</strong> é um fertilizante orgânico 100% natural obtido da <b>trituração das castanhas de Neem</b>. Atua como <b>biofertilizante</b> e como apoio ao <b>manejo natural de pragas</b>, sendo segura para o gado e para todas as culturas agrícolas. Além de nutrir, melhora a <b>estrutura física e biológica do solo</b>, favorecendo raízes ativas e maior eficiência no uso de água e nutrientes.</p>
+      <p>A <strong>Torta de Neem AgroForte</strong> é um fertilizante orgânico 100% natural obtido da <b>trituração das castanhas de Neem</b>. Atua como <b>biofertilizante</b> e apoio ao <b>manejo natural de pragas</b>, sendo segura para o gado e para todas as culturas. Melhora a <b>estrutura do solo</b>, a <b>atividade microbiana benéfica</b> e a <b>resiliência</b> das plantas.</p>
     </section>
 
     <div class="photo">
       <img id="imgTorta" src="/img/produtos/torta.png" alt="Torta de Neem — embalagem AgroForte">
     </div>
 
-    <section class="section">
-      <h2>Benefícios e Diferenciais</h2>
-      <p>✔ <b>Excelente solubilidade</b> e aplicação simples via solo ou fertirrigação.<br>
-         ✔ <b>Resposta rápida</b> por conter compostos bioativos prontos para absorção.<br>
-         ✔ Estímulo de <b>crescimento celular</b> e recuperação pós-estresse (seca, calor, fitotoxicidade).<br>
-         ✔ <b>Mais produtividade e qualidade</b> de frutos, grãos, tubérculos e bulbos.<br>
-         ✔ Reforça a <b>biologia do solo</b> e favorece o equilíbrio do sistema radicular.</p>
+    <!-- SEÇÃO COM O TEXTO QUE VOCÊ ENVIOU -->
+    <section class="section" id="informacoes-fornecidas">
+      <h2>Informações do Produto</h2>
+      <p>É um fertilizante orgânico 100% natural feito com as castanhas de Neem moídas, que pode ser aplicado para o gado e para as plantas com o objetivo de controlar as pragas. <b>Não afeta o gado e nem os vegetais.</b></p>
+      <ul>
+        <li>Fácil aplicação;</li>
+        <li>Excelente solubilidade;</li>
+        <li>Resposta rápida da planta (por já conter os nutrientes em solução);</li>
+        <li>Ajuda a planta a aumentar sua produtividade por induzir um crescimento celular;</li>
+        <li>Um produto com um alto teor de fitormônios (através das algas marinhas) ajudando a planta a se recuperar de um estresse, seja por falta de chuvas, por alguma fitotoxicidade e ataque de pragas em geral;</li>
+        <li>Maior produtividade e rentabilidade das culturas;</li>
+        <li>Melhora a qualidade dos frutos, grãos, tubérculos, bulbos.</li>
+      </ul>
+      <h3>Doses orientativas</h3>
+      <ul>
+        <li><b>Hortaliças:</b> 200 mL/ha — reaplicar a cada 15 dias;</li>
+        <li><b>Frutíferas:</b> 400 mL/ha — reaplicar a cada 30 dias;</li>
+        <li><b>Grãos:</b> 250 mL/ha — reaplicar a cada 30 dias;</li>
+        <li><b>Pastagem:</b> 400 mL/ha — reaplicar a cada 120 dias;</li>
+        <li><b>Cana-de-açúcar:</b> 400 mL/ha — reaplicar a cada 45 dias.</li>
+      </ul>
+      <h3>Condições ideais de aplicação</h3>
+      <ul>
+        <li>Aplicar sempre em <b>temperaturas mais amenas</b> (começo do dia ou fim da tarde);</li>
+        <li>Aplicar com <b>umidade no solo</b>;</li>
+        <li>Preferir temperaturas <b>abaixo de 32&nbsp;ºC</b>;</li>
+        <li>Ventos <b>abaixo de 13&nbsp;km/h</b>;</li>
+        <li>Indicado usar o <b>Protect Bio AlgaVity</b> junto de qualquer adubação foliar para melhor aproveitamento dos nutrientes e desenvolvimento celular;</li>
+        <li>Para misturas de calda com outros produtos, <b>consultar Engenheiro Agrônomo</b> ou corpo técnico da empresa.</li>
+      </ul>
     </section>
 
+    <!-- Doses em tabela (mantidas) -->
     <section class="section">
-      <h2>Doses e Recomendações</h2>
+      <h2>Doses e Recomendações (resumo)</h2>
       <table class="table">
         <thead><tr><th>Cultura</th><th>Dose</th><th>Reaplicação</th></tr></thead>
         <tbody>
@@ -171,30 +178,20 @@
         </tbody>
       </table>
       <details>
-        <summary><strong>Condições ideais de aplicação</strong></summary>
-        <ul>
-          <li>Aplicar em <b>temperaturas amenas</b> (início da manhã ou fim da tarde/noite).</li>
-          <li>Preferir <b>solo levemente úmido</b> e UR &gt; 50%.</li>
-          <li>Temperatura ≤ 32 °C e vento &lt; 13 km/h.</li>
-          <li>Para misturas, realizar <b>teste de jarra</b> e seguir orientação técnica.</li>
-        </ul>
+        <summary><strong>Boas práticas de aplicação</strong></summary>
+        <p>Mantenha agitação constante da calda, use peneiras 50–80 mesh e realize teste de jarra em novas misturas.</p>
       </details>
-    </section>
-
-    <section class="section">
-      <h2>Resultados e Sustentabilidade</h2>
-      <p>O uso contínuo da Torta de Neem melhora a <b>retenção hídrica</b>, a <b>atividade microbiana benéfica</b> e a <b>resiliência</b> das plantas, permitindo reduzir a dependência de insumos convencionais e elevar a <b>rentabilidade por hectare</b>. Produto indicado para sistemas convencionais e orgânicos.</p>
     </section>
   </main>
 
   <footer>© AgroForte — Frete grátis para todo o Brasil | Atendimento: (17) 99140-5464</footer>
 
   <script>
-    // Fallback de imagem
+    // Fallback de imagem robusto
     (function(){
       const img=document.getElementById('imgTorta');
-      const altSrc=["/img/produtos/torta.webp","/img/produtos/torta.jpg"];
-      let i=0; img.onerror=function(){if(i<altSrc.length){img.src=altSrc[i++];}else{img.onerror=null;}}
+      const alts=["/img/produtos/torta.webp.png","/img/produtos/torta.webp","/img/produtos/torta.jpg"];
+      let i=0; img.onerror=function(){ if(i<alts.length){ img.src=alts[i++]; } else { img.onerror=null; } };
     })();
   </script>
 </body>
