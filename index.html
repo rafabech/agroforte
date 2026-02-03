@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Google Ads tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17674376709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17674376709');
+</script>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>AgroForte | Fertilizantes, Neem e Biológicos — Frete Grátis Brasil | WhatsApp (17) 99140-5464</title>
@@ -481,5 +490,15 @@
     fallbackChain(document.getElementById('imgTako'), ['./img/produtos/takotrop.webp']);
     fallbackChain(document.getElementById('imgBio'), ['./img/produtos/bioolimpo.webp']);
   </script>
+  <script>
+document.querySelectorAll('a[href*="wa.me"]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17674376709/whatsapp_click'
+    });
+  });
+});
+</script>
+
 </body>
 </html>
