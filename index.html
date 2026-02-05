@@ -490,15 +490,16 @@
     fallbackChain(document.getElementById('imgTako'), ['./img/produtos/takotrop.webp']);
     fallbackChain(document.getElementById('imgBio'), ['./img/produtos/bioolimpo.webp']);
   </script>
-  <script>
+<script>
 document.querySelectorAll('a[href*="wa.me"]').forEach(function(btn){
   btn.addEventListener('click', function(){
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17674376709/whatsapp_click'
-    });
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17674376709/whatsapp_click'
+      });
+    }
   });
 });
 </script>
-
 </body>
 </html>
