@@ -340,17 +340,32 @@
     ]);
   </script>
 <script>
-document.querySelectorAll('a[href*="wa.me"]').forEach(function(btn){
-  btn.addEventListener('click', function(){
+(function () {
+  function trackWhatsAppClick(e) {
+    var a = e.currentTarget;
+    var href = a.getAttribute('href');
+    e.preventDefault();
+
     if (typeof gtag === 'function') {
       gtag('event', 'conversion', {
-'send_to': 'AW-17674376709/DydcCK-CmPbElWs5utB'
-
+        'send_to': 'AW-17674376709/DydcCK-CmPbElWs5utB',
+        'event_callback': function () {
+          window.location.href = href;
+        }
       });
-    }
-  });
-});
-</script>
 
+      setTimeout(function () {
+        window.location.href = href;
+      }, 800);
+    } else {
+      window.location.href = href;
+    }
+  }
+
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
+    a.addEventListener('click', trackWhatsAppClick);
+  });
+})();
+</script>
 </body>
 </html>
