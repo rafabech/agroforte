@@ -2,39 +2,63 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8"/>
-  <meta conjunto de caracteres="utf-8"/>
 
-<!-- Google Ads tag -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17674376709"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Ads tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17674376709"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17674376709');
+  </script>
 
-  gtag('config', 'AW-17674376709');
-</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <meta name="theme-color" content="#0b1220"/>
 
-<meta nome="janela de visualização" conteente="largura-largura-do-dispositivo,escala-inicial=1"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Takotrop® — Inseticida biológico (P. chlororaphis + P. fluorescens) | Innove Agro</title>
   <meta name="description" content="Takotrop® é um bioinseticida com Pseudomonas chlororaphis e P. fluorescens. Tecnologia D.O.P, ação por contato, ingestão e absorção. Fale com nosso agrônomo no WhatsApp."/>
-  <link rel="canonical" href="https://innovetecnologias.com.br/produtos/takotrop.html"/>
   <meta name="robots" content="index,follow"/>
 
-  <!-- Open Graph -->
+  <!-- Canonical / OG -->
+  <link rel="canonical" href="https://innovetecnologias.com.br/produtos/takotrop.html"/>
   <meta property="og:type" content="product"/>
   <meta property="og:title" content="Takotrop® — Inseticida biológico com tecnologia D.O.P"/>
   <meta property="og:description" content="Ação tarsal e cuticular. Compatível com químicos e biológicos. Fale com o agrônomo no WhatsApp."/>
   <meta property="og:url" content="https://innovetecnologias.com.br/produtos/takotrop.html"/>
   <meta property="og:image" content="https://innovetecnologias.com.br/agroforte/img/produtos/takotrop.webp"/>
 
-  <link rel="icon" href="/img/produtos/logooficial.webp" type="image/webp"/>
-  <link rel="shortcut icon" href="/img/produtos/logooficial.webp" type="image/webp"/>
-  <link rel="apple-touch-icon" href="/img/produtos/logooficial.webp"/>
+  <!-- FAVICON (conforme solicitado) -->
+  <link rel="icon" href="/agroforte/img/produtos/logo-oficial-fundo-verde.png" type="image/png"/>
+  <link rel="shortcut icon" href="/agroforte/img/produtos/logo-oficial-fundo-verde.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="/agroforte/img/produtos/logo-oficial-fundo-verde.png"/>
 
-  <!-- SEO Product -->
+  <!-- SEO Product (corrigido para Rich Results) -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Product","name":"Takotrop","brand":{"@type":"Brand","name":"Innove Agro"},"description":"Bioinseticida com Pseudomonas chlororaphis e Pseudomonas fluorescens (tecnologia D.O.P).","image":"https://innovetecnologias.com.br/agroforte/img/produtos/takotrop.webp","url":"https://innovetecnologias.com.br/produtos/takotrop.html"}
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Takotrop®",
+    "brand":{"@type":"Brand","name":"Innove Agro"},
+    "description":"Bioinseticida com Pseudomonas chlororaphis e Pseudomonas fluorescens (tecnologia D.O.P).",
+    "image":[
+      "https://innovetecnologias.com.br/agroforte/img/produtos/takotrop.webp"
+    ],
+    "url":"https://innovetecnologias.com.br/produtos/takotrop.html",
+    "sku":"takotrop",
+    "offers":{
+      "@type":"Offer",
+      "url":"https://innovetecnologias.com.br/produtos/takotrop.html",
+      "priceCurrency":"BRL",
+      "availability":"https://schema.org/InStock",
+      "itemCondition":"https://schema.org/NewCondition",
+      "priceSpecification":{
+        "@type":"PriceSpecification",
+        "price":"0.00",
+        "priceCurrency":"BRL"
+      },
+      "priceValidUntil":"2027-12-31"
+    }
+  }
   </script>
 
   <style>
@@ -170,7 +194,6 @@
       color: #fff !important;
       border: 1px solid #000 !important;
     }
-
   </style>
 </head>
 <body>
@@ -233,7 +256,6 @@
         <div class="frame">
           <img src="../img/produtos/takotrop.webp" alt="Embalagem do Takotrop">
           <div class="cta" role="group" aria-label="Downloads do Takotrop" style="margin-top:14px">
-            <!-- Ajuste o nome do PDF se necessário -->
             <a id="btn-bula" class="btn" href="./takotropbula.pdf" target="_blank" rel="noopener">📄 Baixar Bula (PDF)</a>
           </div>
         </div>
@@ -324,7 +346,7 @@
       </div>
     </section>
 
-    <!-- FAQ (linguagem simples, sem sigla) -->
+    <!-- FAQ -->
     <section>
       <div class="card">
         <h2>Perguntas frequentes</h2>
@@ -347,35 +369,32 @@
   </footer>
 
   <script>
-    /* Fallbacks removidos (logo removida) */
-  </script>
-<script>
-(function () {
-  function trackWhatsAppClick(e) {
-    var a = e.currentTarget;
-    var href = a.getAttribute('href');
-    e.preventDefault();
+  (function () {
+    function trackWhatsAppClick(e) {
+      var a = e.currentTarget;
+      var href = a.getAttribute('href');
+      e.preventDefault();
 
-    if (typeof gtag === 'function') {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17674376709/DydcCK-CmPbElWs5utB',
-        'event_callback': function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17674376709/DydcCK-CmPbElWs5utB',
+          'event_callback': function () {
+            window.location.href = href;
+          }
+        });
+
+        setTimeout(function () {
           window.location.href = href;
-        }
-      });
-
-      setTimeout(function () {
+        }, 800);
+      } else {
         window.location.href = href;
-      }, 800);
-    } else {
-      window.location.href = href;
+      }
     }
-  }
 
-  document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="web.whatsapp.com"]').forEach(function (a) {
-    a.addEventListener('click', trackWhatsAppClick);
-  });
-})();
-</script>
+    document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="web.whatsapp.com"]').forEach(function (a) {
+      a.addEventListener('click', trackWhatsAppClick);
+    });
+  })();
+  </script>
 </body>
 </html>
