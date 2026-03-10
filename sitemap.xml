@@ -38,6 +38,11 @@
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/kscropmix.webp</image:loc>
+      <image:title>Nutrição Solo Premium</image:title>
+      <image:caption>Produto de Nutrição Solo Premium</image:caption>
+    </image:image>
   </url>
 
   <url>
@@ -45,20 +50,11 @@
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://innovetecnologias.com.br/produtos/nutrifhalgas/</loc>
-    <lastmod>2025-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://innovetecnologias.com.br/produtos/nutrigel/</loc>
-    <lastmod>2025-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/leonardita.webp</image:loc>
+      <image:title>Leonardita</image:title>
+      <image:caption>Leonardita para nutrição do solo</image:caption>
+    </image:image>
   </url>
 
   <!-- Nutrição Foliar Premium -->
@@ -67,28 +63,11 @@
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://innovetecnologias.com.br/produtos/aminofishk/</loc>
-    <lastmod>2025-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://innovetecnologias.com.br/produtos/nutri-completo.html</loc>
-    <lastmod>2025-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- Proteção com Neem -->
-  <url>
-    <loc>https://innovetecnologias.com.br/produtos/fitoneem.html</loc>
-    <lastmod>2025-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/nutrienergyalgas.webp</image:loc>
+      <image:title>Nutrição Foliar Energy Algas</image:title>
+      <image:caption>Nutrição foliar com algas</image:caption>
+    </image:image>
   </url>
 
   <!-- Biológicos -->
@@ -97,6 +76,11 @@
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/takotrop.webp</image:loc>
+      <image:title>Takotrop Biológico</image:title>
+      <image:caption>Biocontrole Takotrop</image:caption>
+    </image:image>
   </url>
 
   <url>
@@ -104,6 +88,11 @@
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://innovetecnologias.com.br/img/produtos/bioolimpo.webp</image:loc>
+      <image:title>Bioolimpo Biológico</image:title>
+      <image:caption>Controle biológico com Bioolimpo</image:caption>
+    </image:image>
   </url>
 
   <!-- ==================== BLOG (EXEMPLOS DE POSTS) ==================== -->
